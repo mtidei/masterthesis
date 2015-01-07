@@ -1,0 +1,48 @@
+% Chapter 1
+
+\chapter{Introduction} % Main chapter title
+
+\label{introduction} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+
+\lhead{Chapter 1. \emph{Introduction}} % This is for the header on each page - perhaps a shortened title
+
+%----------------------------------------------------------------------------------------
+
+
+Mobile Devices are rapidly evolving to very powerful personal devices full of sensors that provide several kind of context information, combined with great computing power in an hand held device. \\
+This level of computing power was reserved for stationary desktop computers a few years ago, or to room filling supercomputers some decades ago.
+At the same time, the devices are spreading out to more and more people. 
+
+This development empowers a new kind of computing to find it's way out of research laboratories, where such systems ran on special hardware in artificial environments, into our daily lives: \cite[cf.][]{age-of-context}
+\emph{context-aware computing}. 
+
+
+\section{The goal of this work}
+
+This thesis is about designing and implementing a context-aware mobile system for guiding a visitor through indoor and outdoor exhibitions like parks and a museums.
+
+The goal is to design a flexible software platform that is easily adaptable to fit different exhibitions and runs on commodity hardware. 
+
+The system consists of two main parts:
+
+The first one is a kind of a content management system that allows to define all relevant textual and audio information describing the exhibitions areas and single exhibits using a web interface.
+
+The second one is the application running on the mobile device of the visitor. The goal is to provide relevant information at the right time to the visitor, thus enhancing his experience.
+
+\section{Motivation}
+
+This work is a basis for the first product of the start-up contexagon GmbH in Kreuzlingen, Switzerland. The company was founded in September 2014 by the author, Maurizio Tidei, and Sascha P. Lorenz \footnote{S. P. Lorenz is currently writing his Master Thesis on Big Data Processing, e.g. for analyzing visitor interests} after several conversations with museum directors in the area of the Lake of Constance in Summer 2014, which expressed interest in such a solution and encouraged us in pursuing the development of an affordable system based on commodity hardware and a highly configurable software platform.
+
+\section{The Approach}
+
+Since the location context is key for the system that has to be designed, first, different methods for providing the location context are evaluated (Chapter 2.1). 
+
+Chapter 2.2 describes the chosen programming languages and tools.
+
+Out of the possible context providing methods, the best fitting ones are tested in several technology prototypes (Chapter 3).
+
+The system design will be discussed in Chapter 4.
+
+The first results using the application in a real-life scenario in the "Schloss Arenenberg" Park and World War I exposition are presented in Chapter 5.
+
+Chapter 6 handles the conclusion and future work. 

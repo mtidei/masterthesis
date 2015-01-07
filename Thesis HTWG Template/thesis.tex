@@ -1,0 +1,91 @@
+
+\documentclass[11pt,a4paper]{report}		                                   
+
+\usepackage{graphicx}
+\usepackage{a4}
+\usepackage[utf8]{inputenc}
+
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{listofsymbols}
+
+
+\newcommand{\thema}{Konzeption und Implementierung eines kontextsensitiven Museumsführers}
+\newcommand{\schlagworte}{Contextual Computing, Indoor Navigation, Scala, Swift}
+\newcommand{\zusammenfassung}{Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.}
+\newcommand{\ausgabedatum}{16.10.2014}
+\newcommand{\abgabedatum}{16.04.2015}
+\newcommand{\autor}{Maurizio Tidei}
+\newcommand{\autorStrasse}{Kapellenstr.4}
+\newcommand{\autorPLZ}{78262 }
+\newcommand{\autorOrt}{Gailingen}
+\newcommand{\autorGeburtsort}{Singen}
+\newcommand{\autorGeburtsdatum}{23.11.1980}
+\newcommand{\prueferA}{Prof. Dr. Marko Boger}
+\newcommand{\prueferB}{Prof. Dr. Christian Johner}
+\newcommand{\firma}{HTWG / contexagon GmbH}
+\newcommand{\studiengang}{Master of Science Informatik}
+
+
+\begin{document}
+
+% Define the page headers using the FancyHdr package and set up for one-sided printing
+\fancyhead{} % Clears all page headers and footers
+\rhead{\thepage} % Sets the right side header to show the page number
+\lhead{} % Clears the left side page header
+
+\pagestyle{fancy} % Finally, use the "fancy" page style to implement the FancyHdr headers
+
+\include{cover}
+\include{title}
+\include{abstract}
+\include{affidavit}
+
+%----------------------------------------------------------------------------------------
+%	LIST OF CONTENTS/FIGURES/TABLES PAGES
+%----------------------------------------------------------------------------------------
+
+\pagestyle{fancy} % The page style headers have been "empty" all this time, now use the "fancy" headers as defined before to bring them back
+
+\lhead{\emph{Contents}} % Set the left side page header to "Contents"
+\tableofcontents % Write out the Table of Contents
+
+\lhead{\emph{List of Figures}} % Set the left side page header to "List of Figures"
+\listoffigures % Write out the List of Figures
+
+\lhead{\emph{List of Tables}} % Set the left side page header to "List of Tables"
+\listoftables % Write out the List of Tables
+
+%----------------------------------------------------------------------------------------
+%	ABBREVIATIONS
+%----------------------------------------------------------------------------------------
+
+\clearpage % Start a new page
+
+\setstretch{1.5} % Set the line spacing to 1.5, this makes the following tables easier to read
+
+\lhead{\emph{Abbreviations}} % Set the left side page header to "Abbreviations"
+\listofsymbols{ll} % Include a list of Abbreviations (a table of two columns)
+{
+\textbf{LAH}  \textbf{L}ist \textbf{A}bbreviations \textbf{H}ere \\
+%\textbf{Acronym} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or \\
+}
+
+\include{introduction}
+% The thesis must clearly state its theme, hypotheses and/or goals (sometimes called “the research question(s)”), and provide sufficient background information to enable a non-specialist researcher to understand them. It must contain a thorough review of relevant literature, perhaps in a separate chapter.
+
+\include{research}
+% The account of the research should be presented in a manner suitable for the field. It should be complete, systematic, and sufficiently detailed to enable a reader to understand how the data were gathered and how to apply similar methods in another study. Notation and formatting must be consistent throughout the thesis, including units of measure, abbreviations, and the numbering scheme for tables, figures, footnotes, and citations. One or more chapters may consist of material published (or submitted for publication) elsewhere. See “Including Published Material in a Thesis or Dissertation” for details.
+
+\include{conclusion}
+% In this section the student must demonstrate his/her mastery of the field and describe the work's overall contribution to the broader discipline in context. A strong conclusion includes the following:
+% Conclusions regarding the goals or hypotheses presented in the Introduction,
+% Reflective analysis of the research and its conclusions in light of current knowledge in the field,
+% Comments on the significance and contribution of the research reported,
+% Comments on strengths and limitations of the research,
+% Discussion of any potential applications of the research findings, and
+% A description of possible future research directions, drawing on the work reported.
+
+\end{document}
+

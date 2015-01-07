@@ -1,0 +1,230 @@
+% Chapter 2
+
+\chapter{Theoretical Background}
+
+%\lhead{Chapter 2. \emph{Theoretical Background}} % This is for the header on each page - perhaps a shortened title
+
+%----------------------------------------------------------------------------------------
+\section{What is Context-Aware Computing?}
+
+Since context-aware computing emerged as a subcategory of ubiquitous computing, the latter one is described fist.
+Ubiquitous computing means ...
+  
+
+The term "context-aware computing" was first used by B. Schilit et. al. 1994 in the paper "Context-Aware Computing Applications" \cite{Schilit94context-awarecomputing}. They introduce a this new kind of computing as a "new class of applications that are aware of the context in which they are run. Such context-aware systems adapts according to the location of use, the collection of nearby people, hosts, and accessible devices, as well as to changes to such things over time".
+
+They describe the following four categories of context-aware applications:
+
+\begin{itemize}
+\item Proximate Selection
+
+Highlighting actions or information based on the current location of the user is called "Proximate Selection". While this user interface technique generally requires a user entering his location manually, context-aware systems default it automatically to the currently sensed location. \\
+Nowadays, we encounter this behavior in many smartphone applications like weather forecasts for the current city, searching nearby stores in digital yellow-pages or even when performing online searches on non-portable computers.
+
+\item Automatic Contextual Reconfiguration
+
+"Automatic Contextual Reconfiguration" means loading and activating different system configurations based on the current context of use. For example, loading a different digital whiteboard per room gives the illusion of accessing it as if it was physically mounted in that room. But the considered context information is not limited to the location. Changing the energy plan of a notebook based on the connection status of the A/C power cable or the current battery level are further examples for this category. 
+
+\item Contextual Information and Commands
+
+This category contains systems providing the right piece of information and offering the adequate actions at the right time fitting the current context.
+
+Retrieving information provided as text, audio, picture and video form, fitting to the current location context of the user is obviously a key feature of the museum guide that is developed as part of this master thesis.
+
+\item Context-Triggered Actions
+
+Context-triggered actions are applications that execute a defined action when a specific predefined context-state is reached. In contrast to contextual information and commands, these actions are automatically executed. Combining multiple rules allows designing more complex behaviors.
+
+\end{itemize}
+
+Obviously, nowadays there are many applications that fit in two or more categories. A modern smartphone based navigating system for example offers functions like "Take me to a gas station", displaying a list with the nearest one already preselected (proximate selection). When light conditions change, like when entering a tunnel or when it gets dark, the display is automatically dimmed. The pedestrian mode is an example for two categories: The device senses steps and switches automatically into pedestrian mode considering paths not accessible by car (automatic contextual reconfiguration) and offering commands like "Take me back to my parking lot" (contextual commands).
+
+
+
+There are many different types of Context: 
+
+\begin{itemize}
+\item Location
+
+The Location is the most obvious kind of context in modern applications. It can be subdivided in two different sub types of location: 
+
+\subitem Kind of Location
+
+For example "Home" or "At Work" or slightly different "In a Library" or "Inside a restaurant"
+
+\subitem Absolute Position
+
+For example "47.667230, 9.172134" as geographic coordinates on earth or 2nd floor room 205 in the F-Building of HTWG Konstanz.
+
+\item Time
+\subitem Season
+\subitem Daytime
+\subitem Date
+\item Activity
+
+E.g. Walking, Driving a Car, Jogging...
+\item Environment
+
+Some examples for environment information are the current temperature, the weather, the intensity of ambient light, the noise level.
+\end{itemize}
+
+A context aware application collects context information without explicitly asking the user for input. The goal should always be improving the user experience by providing the right information or taking the right actions at the right time without distracting or annoying the user. 
+Basic tasks like automatically dimming mobile phone displays are well-known automatically performed actions. Others like remembering the parking location without user interaction are new .
+
+By enhancing the sensing for further 
+
+\begin{itemize}
+\item Emotional State
+Is the user happy, angry, worried? At which level is the personal stress level?
+\item Fitness State
+Is the user rested or tired?
+\item Health State
+Are all vital parameters of the user inside reasonable limits?
+\end{itemize}
+
+% Picture?
+
+
+
+\section{Sensors of Mobile Devices}
+
+\subsection{Accelerometer}
+
+\subsection{Gyroscope}
+
+Pedometer ref.
+
+\subsection{Magnetometer}
+
+\subsection{Barometer}
+
+Some of the latest smartphones and tablets are equipped with a barometer for measuring the air pressure. This information combined with the current weather dependent ground pressure can be used to determine the current altitude or the floor of the building the device is in. 
+
+\subsection{Proximity Sensor}
+
+The proximity sensor typically measures the distance of the device's front to the next object. It is used to turn off the display when holding a mobile phone at the ear or to determine if the phone is inside a pocket.
+
+\subsection{Light Sensor}
+
+The light sensor measures the intensity of the light. It is primarily used to adapt the screen brightness to the ambient light.
+
+\section{Localization Techniques}
+
+\section{Bluetooth Low Energy iBeacons}
+
+Bluetooth Low Energy (BLE) is a standard %TODO year
+
+\section{Swift}
+
+\subsection{What is Swift?}
+
+Swift is a modern programming language released by Apple in 2014. In \cite{swift-book} Apple introduces Swift as "a new programming language for iOS and OS X that builds on the best of C and Objective-C, without the constraints of C compatibility".
+
+Since Swift is a cutting-edge language, this section is dedicated more attention as one would normally do for a implementation language inside a thesis. 
+
+Developers already familiar with the well designed functional programming language Scala will recognize several concepts. It has a concise Syntax avoiding big parts of boilerplate code and syntactic noise, supports functional programming and is statically typed.
+
+The following section is an overview comparison of Scala and Swift features, created during the familiarization with Swift for this thesis. Language features marked will a * will be discussed separately in section \ref{majorDiffs}.
+
+\subsection{Comparison Scala and Swift}
+
+\newcommand{\yes}{yes}
+
+\begin{longtable}{|P{5.5cm}|P{4cm}|P{4cm}|}
+
+\hline \textbf{Language Feature} & \textbf{Scala} & \textbf{Swift} \endhead
+\hline Type inference & \yes & \yes \\
+\hline Line end separates commands (no need for semicolon) & \yes & \yes\\
+\hline Implicit type conversions * & \yes & no \\
+\hline Default access levels (access level has to be only provided if it differs from default) & \yes & \yes \\
+\hline Functions are first class types\footnote{Functions can be passed to functions, returned from functions, created at runtime and assigned to variables} & \yes & \yes \\
+\hline Closures & \yes & \yes \\
+\hline Curried functions & \yes & \yes \\
+\hline Operator functions & \yes & \yes \\
+\hline Optionals * & via \smalltt{Option[T]} class & widely used, dedicated Syntax\\
+\hline Switch with pattern matching & \yes & \yes \\
+\hline String interpolation & \yes \newline \smalltt{"Hello \$nameVar"} & \yes \newline \smalltt{"Hello \textbackslash(nameVar)"} \\
+\hline Keyword for variable definition & var radius = 1 & var radius = 1 \\
+\hline Keyword for constant definition & let pi = 3.14 & val pi = 3.14 \\
+\hline Array literal & \smalltt{Array(1,2,3)} & \smalltt{[1,2,3]} \\
+\hline Map literal & \smalltt{Map(1->"a", 2->"b")} & \smalltt{[1:"a", 2:"b"]} \footnote{Maps are called dictionaries in Swift} \\
+\hline If condition must be boolean & \yes & \yes \\
+\hline Tuples & \yes, but without named elements & \yes\\
+\hline Ranges & \smalltt{for i <- 0 to 4} \newline \smalltt{0 until 4} & \smalltt{for i in 0...4} \newline \smalltt{0..<4}\\
+\hline Constructor & def this() & init() \\
+\hline Extended getter/setter concept * & \yes, no observers & \yes, very flexible concept including observers (willSet() didSet() events) \\
+\hline Interfaces & trait & protocol \\
+\hline Extension of existing types & \yes & \yes \\
+\hline Struct & no & \yes \\
+\hline Enum & via extending the Enumeration class & \yes, dedicated keyword \\
+\hline "Any" Type & Any, AnyVal, AnyRef & Any (instance of any type, even function types) \newline AnyObject (instance of any class type) \\
+\hline Qeury an instance of a type by a key in brackets, like arrays or maps & obj(index) calls obj.apply method\newline obj(index) = newValue calls obj.update(0, newValue) & \smalltt{subscript(i:T) -> T2 \{ \newline
+\phantom{.} get \{\ldots\} \newline
+\phantom{.} set(newValue) \{\ldots\} \newline
+\}
+} \\
+\hline Memory Management & JVM Garbage Collection & Automatic Reference Counting \\
+\hline Nested Functions & \yes & \yes \\
+\hline Generics & \yes & \yes \\
+\hline 
+
+\end{longtable}
+
+\subsection{Major Differences to Scala} \label{majorDiffs}
+
+In this section, the major differences between Scala and Swift that are encountered during the first Swift projects are described.
+
+\textbf{Implicit Type Conversions}
+
+In Swift, every type conversion has to be explicit. Even when using different numerical types inside an arithmetic expression, the conversion is not done automatically. So this code yields a compile error for example:
+
+\begin{lstlisting}
+let a = 1.0
+let b = 2
+let c = a + b // error: cannot invoke '+' with an argument list of type '(@lvalue Double, @lvalue Int)
+\end{lstlisting}
+
+To get an integer 3 assigned to the variable 'c', you need to cast 'a' to Int. For a decimal 3.0, the variable 'b' has to be cast to Double.
+
+\begin{lstlisting}
+let c = Int(a) + b 		// ok, c is 3 Int
+let d = a + Double(b) 	// ok, d is 3.0 Double
+\end{lstlisting}
+
+Although initially it can be a bit frustrating running into compile errors of this kind, you get used to explicitly casting the values to the desired types fast. The advantage of this approach is that the developer explicitly sees the type of the resulting value without having to remember language specific rules.
+
+In contrast, Scala has a powerful implicit type conversion system. Combined with operator overloading it enables developers to create beautiful inner DSL (Domain Specific Languages) that read like natural language. %TODO Link to kg g dsl
+But, as M. Odersky wrote in \cite[Chapter 6.13]{scala-book}, "... bear in mind that with power comes responsibility. If used unartfully, [...] implicit conversions can give rise to client code that is hard to read and understand.".
+
+\textbf{Optionals}
+
+Variables are non nullable by default in Swift. So the following code will not compile:
+\begin{lstlisting}
+var name = "swift"
+name = nil // error
+\end{lstlisting}
+
+As a consequence, the variable can safely be accessed at any time without the danger of a NullPointerException.
+
+To allow a variable to assume the value of nil (the null equivalent in Swift), it has to be defined as Optional by the '?' postfix to the type.
+
+\begin{lstlisting}
+var name:String? = "swift"
+name = nil // ok
+println(name) // 
+name!
+\end{lstlisting}
+
+%TODO Optional Chaining, 
+%TODO cite null pointer ideator, failable initializers
+
+\textbf{Getter/Setter}
+
+\textbf{Exception Handling}
+
+\subsubsection{test}
+
+\section{iOS and Cocoa Touch}
+
+iOS Cocoa Touch Framework 
+Developing with XCode

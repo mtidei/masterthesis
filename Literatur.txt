@@ -1,0 +1,33 @@
+Integrierte Navigationssysteme : Sensordatenfusion, GPS und Inertiale Navigation
+Jan Wendel
+erschienen	München [u.a.] : Oldenbourg, 2007
+HTWG Konstanz	Buchbereich / 1. OG Halle	ed4/240	00916390	Standardleihe	verfügbar
+
+
+Fundamentals of Inertial Navigation, Satellite-based Positioning and their Integration
+Aboelmagd Noureldin, Tashfeen B. Karamat, Jacques Georgy
+
+
+Principles of GNSS, Inertial, and Multisensor Integrated Navigation Systems
+Paul D. Groves
+2013 Artech House Inc
+
+
+Verbesserung der referenzlosen inertialen Objektverfolgung zur Low-cost Indoor-Navigation durch Anwendung der Kalman-Filterung 
+Markus Haid
+Hrsg.: Dieter Maier; Fraunhofer TEG, Stuttgart; 
+2005, 182 S., zahlr. teilw. farb. Abb. u. Tab., Kartoniert 
+Sprache: Deutsch
+Fraunhofer IRB Verlag
+
+
+Magnetometer Aided Inertial Navigation System: MODELING AND SIMULATION OF A NAVIGATION SYSTEM WITH AN IMU AND A MAGNETOMETER (Englisch) Taschenbuch – 11. November 2009
+von U?ur Kayasal (Autor)
+
+
+Dissertation: Overcoming Urban GPS Navigation Challenges: Through the Use of MEMS Inertial Sensors and Proper Verification of System Performance (Englisch) Taschenbuch – 11. Februar 2011
+von Eric Vinande (Autor)
+
+
+Strapdown Inertial Navigation Technology, 2nd Edition
+ von David Titterton,John L. Weston

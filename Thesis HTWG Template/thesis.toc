@@ -1,0 +1,23 @@
+\contentsline {chapter}{Ehrenw\IeC {\"o}rtliche Erkl\IeC {\"a}rung}{3}{chapter*.1}
+\contentsline {chapter}{\numberline {1}Chapter Title Here}{8}{chapter.1}
+\contentsline {section}{\numberline {1.1}Welcome and Thank You}{8}{section.1.1}
+\contentsline {section}{\numberline {1.2}Learning \LaTeX {}}{9}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}A (not so short) Introduction to \LaTeX {}}{9}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}A Short Math Guide for \LaTeX {}}{9}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Common \LaTeX {} Math Symbols}{10}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}\LaTeX {} on a Mac}{10}{subsection.1.2.4}
+\contentsline {section}{\numberline {1.3}Getting Started with this Template}{10}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}About this Template}{11}{subsection.1.3.1}
+\contentsline {section}{\numberline {1.4}What this Template Includes}{11}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Folders}{11}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Files}{12}{subsection.1.4.2}
+\contentsline {section}{\numberline {1.5}Filling in the `\texttt {Thesis.cls}' File}{14}{section.1.5}
+\contentsline {section}{\numberline {1.6}The `\texttt {Thesis.tex}' File Explained}{14}{section.1.6}
+\contentsline {section}{\numberline {1.7}Thesis Features and Conventions}{16}{section.1.7}
+\contentsline {subsection}{\numberline {1.7.1}Printing Format}{16}{subsection.1.7.1}
+\contentsline {subsection}{\numberline {1.7.2}Using US Letter Paper}{17}{subsection.1.7.2}
+\contentsline {subsection}{\numberline {1.7.3}References}{17}{subsection.1.7.3}
+\contentsline {subsection}{\numberline {1.7.4}Figures}{18}{subsection.1.7.4}
+\contentsline {subsection}{\numberline {1.7.5}Typesetting mathematics}{19}{subsection.1.7.5}
+\contentsline {section}{\numberline {1.8}Sectioning and Subsectioning}{20}{section.1.8}
+\contentsline {section}{\numberline {1.9}In Closing}{20}{section.1.9}

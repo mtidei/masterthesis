@@ -1,0 +1,34 @@
+Titel: "Konzeption und Implementierung eines kontextsensitiven Museumsführers für mobile Geräte"
+
+(Forschungsfrage: "Wie kann das Besuchserlebnis in einem Museum mit aktueller Informationstechnik bereichert werden?",
+konkreter: "Kann eine kontextsensitive mobile Anwendung das Besuchserlebnis im Vergleich zu konventionellen Audioguides verbessert werden?",
+technischer: "Kann mit modernen mobilen Geräten, deren vielfältigen Sensoren und neuen Ortungstechniken ein kontextsensitiver Audioguide geschaffen werden, der ohne explizite Benutzereingaben auskommt?")
+
+- Einordnung Contextual Computing
+   - Erklärung Contextual Computing
+   - Entwicklung Anfänge bis heute
+   - Persönliche Assistenten
+   - Aktuelle Arbeiten
+
+- Technische Grundlagen
+   - Recherche vorhandener Indoor/(Outdoor)-Ortungstechniken
+        - Inertialsensoren, WLAN, GPS ...
+        - Sensorkombination
+   - Bluetooth Smart / iBeacons
+   - Mobile Geräte
+
+[- Konzeption und Entwicklung CMS für Museumsführer]
+    - Grundriss als Bild importieren
+    - Bereiche definieren (z.B. ganze Räume) und mit Bildern, Audio und Text anreichern, jeweils in verschiedenen Detailstufen
+    - POIs definieren (z.B. einzelne Ausstellungsstücke) und mit Bildern, Audio und Text anreichern, jeweils in verschiedenen Detailstufen
+    [- Veröffentlichen der Daten auf einem Server (z.B. REST-Server)]
+
+- Konzeption und Entwicklung kontextsensitiver Museumsführer als App
+    - Verschiedene Betriebsmodi (reiner Audioguide ohne explizite Bedienung, virtuelle Erweiterung der Ausstellungsfläche mit Zusatzinfos)
+    - Sensorkombination (Trilateration iBeacons, Inertialsensoren, GPS)
+    - Erkennung besonderes Interesse und Abspielen der tieferen Detailstufen
+    [- Aktualisierung der Daten über einen Server bei bestehender Internetverbindung]
+
+- Konkretes Anwendungsbeispiel, Testlauf: Napoleonmuseum im Schloss Arenenberg
+   - Indoor Napoleonmuseum
+   - Outdoor Schlossgarten Arenenberg 
