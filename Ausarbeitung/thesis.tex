@@ -35,7 +35,41 @@
 
 \usepackage{longtable}
 \usepackage{array}
+\usepackage{xcolor}
 \newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+% Listings configuration for Swift
+\lstdefinelanguage{swift}
+{
+  morekeywords={
+    func,if,then,else,for,in,while,do,switch,case,default,where,break,continue,fallthrough,return,
+    typealias,struct,class,enum,protocol,var,func,let,get,set,willSet,didSet,inout,init,deinit,extension,
+    subscript,prefix,operator,infix,postfix,precedence,associativity,left,right,none,convenience,dynamic,
+    final,lazy,mutating,nonmutating,optional,override,required,static,unowned,safe,weak,internal,
+    private,public,is,as,self,unsafe,dynamicType,true,false,nil,Type,Protocol,
+  },
+  morecomment=[l]{//}, % l is for line comment
+  morecomment=[s]{/*}{*/}, % s is for start and end delimiter
+  morestring=[b]" % defines that strings are enclosed in double quotes
+}
+ 
+\definecolor{keyword}{HTML}{BA2CA3}
+\definecolor{string}{HTML}{D12F1B}
+\definecolor{comment}{HTML}{008400}
+ 
+\lstset{
+  language=swift,
+  basicstyle=\small\ttfamily,
+  showstringspaces=false, % lets spaces in strings appear as real spaces
+  columns=fixed,
+  keepspaces=true,
+  keywordstyle=\color{keyword},
+  stringstyle=\color{string},
+  commentstyle=\color{comment},
+  breaklines=true,
+  belowskip=0pt
+}
+
 
 \begin{document}
 
@@ -223,6 +257,7 @@ Lorem ipsum dolor
 {
 \textbf{INS} & \textbf{I}nertial \textbf{N}avigation \textbf{S}ystem \\
 \textbf{MEMS} & \textbf{M}icro\textbf{e}lectro\textbf{m}echanical \textbf{S}ystem \\
+\textbf{DSL} & \textbf{D}omain\textbf{S}pecific\textbf{L}anguages \\
 %\textbf{Acronym} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or \\
 }
 

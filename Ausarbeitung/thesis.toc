@@ -25,9 +25,9 @@
 \contentsline {subsection}{\numberline {2.5.1}What is Swift?}{7}{subsection.28}
 \contentsline {subsection}{\numberline {2.5.2}Comparison Scala and Swift}{7}{subsection.29}
 \contentsline {subsection}{\numberline {2.5.3}Major Differences to Scala}{9}{subsection.33}
-\contentsline {subsubsection}{\numberline {2.5.3.1}test}{10}{subsubsection.38}
-\contentsline {subsection}{\numberline {2.5.4}iOS}{10}{subsection.39}
+\contentsline {subsubsection}{\numberline {2.5.3.1}test}{12}{subsubsection.72}
+\contentsline {section}{\numberline {2.6}iOS and Cocoa Touch}{12}{section.73}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Appendix Title Here}{11}{appendix.40}
+\contentsline {chapter}{\numberline {A}Appendix Title Here}{13}{appendix.74}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{12}{dummy.41}
+\contentsline {chapter}{Bibliography}{14}{dummy.75}

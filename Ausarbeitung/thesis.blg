@@ -7,46 +7,49 @@ A level-1 auxiliary file: htwg/abstract.aux
 A level-1 auxiliary file: htwg/affidavit.aux
 The style file: unsrtnat.bst
 Database file #1: Bibliography.bib
+Warning--entry type for "scala-dsl-example" isn't style-file defined
+--line 11 of file Bibliography.bib
 Warning--empty author and editor in swift-book
-You've used 4 entries,
+Warning--empty year in scala-dsl-example
+You've used 5 entries,
             2481 wiz_defined-function locations,
-            582 strings with 5119 characters,
-and the built_in function-call counts, 1439 in all, are:
-= -- 125
-> -- 57
-< -- 2
-+ -- 24
-- -- 16
-* -- 100
-:= -- 219
-add.period$ -- 14
-call.type$ -- 4
-change.case$ -- 8
-chr.to.int$ -- 4
-cite$ -- 6
-duplicate$ -- 88
-empty$ -- 145
-format.name$ -- 21
-if$ -- 320
+            585 strings with 5161 characters,
+and the built_in function-call counts, 1681 in all, are:
+= -- 143
+> -- 64
+< -- 3
++ -- 28
+- -- 18
+* -- 109
+:= -- 254
+add.period$ -- 16
+call.type$ -- 5
+change.case$ -- 10
+chr.to.int$ -- 5
+cite$ -- 8
+duplicate$ -- 102
+empty$ -- 175
+format.name$ -- 24
+if$ -- 373
 int.to.chr$ -- 1
-int.to.str$ -- 5
+int.to.str$ -- 6
 missing$ -- 6
-newline$ -- 28
-num.names$ -- 9
-pop$ -- 41
+newline$ -- 32
+num.names$ -- 12
+pop$ -- 54
 preamble$ -- 1
-purify$ -- 4
+purify$ -- 5
 quote$ -- 0
-skip$ -- 50
+skip$ -- 63
 stack$ -- 0
-substring$ -- 33
-swap$ -- 16
+substring$ -- 35
+swap$ -- 18
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 19
-warning$ -- 1
-while$ -- 9
+type$ -- 26
+warning$ -- 2
+while$ -- 11
 width$ -- 0
-write$ -- 62
-(There was 1 warning)
+write$ -- 71
+(There were 3 warnings)

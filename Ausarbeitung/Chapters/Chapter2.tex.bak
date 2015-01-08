@@ -2,7 +2,7 @@
 
 \chapter{Theoretical Background}
 
-%\lhead{Chapter 2. \emph{Theoretical Background}} % This is for the header on each page - perhaps a shortened title
+\lhead{Chapter 2. \emph{Theoretical Background}} % This is for the header on each page - perhaps a shortened title
 
 %----------------------------------------------------------------------------------------
 \section{What is Context-Aware Computing?}
@@ -168,6 +168,8 @@ The following section is an overview comparison of Scala and Swift features, cre
 \hline Generics & \yes & \yes \\
 \hline 
 
+%TODO static
+
 \end{longtable}
 
 \subsection{Major Differences to Scala} \label{majorDiffs}
@@ -176,51 +178,110 @@ In this section, the major differences between Scala and Swift that are encounte
 
 \textbf{Implicit Type Conversions}
 
-In Swift, every type conversion has to be explicit. Even when using different numerical types inside an arithmetic expression, the conversion is not done automatically. So this code yields a compile error for example:
+In Swift, every type conversion has to be explicit. Even when using different numerical types inside an arithmetic expression, the conversion is not done automatically, in contrast to Scala and even Java. So this code yields a compile time error for example:
 
-\begin{lstlisting}
+\begin{lstlisting}[frame=none]
 let a = 1.0
 let b = 2
-let c = a + b // error: cannot invoke '+' with an argument list of type '(@lvalue Double, @lvalue Int)
+let c = a + b // compiler error: cannot invoke '+' with an argument list of type '(@lvalue Double, @lvalue Int)
 \end{lstlisting}
 
 To get an integer 3 assigned to the variable 'c', you need to cast 'a' to Int. For a decimal 3.0, the variable 'b' has to be cast to Double.
 
-\begin{lstlisting}
-let c = Int(a) + b 		// ok, c is 3 Int
-let d = a + Double(b) 	// ok, d is 3.0 Double
+\begin{lstlisting}[frame=none]
+let c = Int(a) + b    // ok, c is 3 Int
+let d = a + Double(b) // ok, d is 3.0 Double
 \end{lstlisting}
 
 Although initially it can be a bit frustrating running into compile errors of this kind, you get used to explicitly casting the values to the desired types fast. The advantage of this approach is that the developer explicitly sees the type of the resulting value without having to remember language specific rules.
 
-In contrast, Scala has a powerful implicit type conversion system. Combined with operator overloading it enables developers to create beautiful inner DSL (Domain Specific Languages) that read like natural language. %TODO Link to kg g dsl
-But, as M. Odersky wrote in \cite[Chapter 6.13]{scala-book}, "... bear in mind that with power comes responsibility. If used unartfully, [...] implicit conversions can give rise to client code that is hard to read and understand.".
+In contrast, Scala has a powerful implicit type conversion system. Combined with operator overloading it enables developers to create beautiful internal DSL (Domain Specific Languages) that read more like natural language. \footnote{A good example for using implicit conversion to build a DSL query language can be found at \cite{scala-dsl-example}}
+But, as M. Odersky rightly wrote in \cite[Chapter 6.13]{scala-book}, "... bear in mind that with power comes responsibility. If used unartfully, both operator methods and implicit conversions can give rise to client code that is hard to read and understand.".
 
 \textbf{Optionals}
 
 Variables are non nullable by default in Swift. So the following code will not compile:
-\begin{lstlisting}
-var name = "swift"
-name = nil // error
+
+\begin{lstlisting}[frame=none, language=swift]
+var name = "Swift"
+name = nil // compile time error: Type 'String' does not conform to protocol 'NilLiteralConvertible'
 \end{lstlisting}
 
-As a consequence, the variable can safely be accessed at any time without the danger of a NullPointerException.
+As a consequence, the variable can safely be accessed at any time without the danger of a NullPointerException respectively a nil runtime error.
 
-To allow a variable to assume the value of nil (the null equivalent in Swift), it has to be defined as Optional by the '?' postfix to the type.
+To allow a variable to assume the value of nil (the null equivalent in Swift), it's type has to be defined as optional by the '?' postfix to the type name.
 
-\begin{lstlisting}
-var name:String? = "swift"
-name = nil // ok
-println(name) // 
-name!
+\begin{lstlisting}[frame=none]
+var name:String? = "Swift"
+println(name)  // prints 'Optional("Swift")' to the console
+println(name!) // prints 'Swift'
+name = nil     // ok
+let statement = name + " is great" // compile time error: value of optional type 'String?' not unwrapped
+println(name!) // runtime error: unexpectedly found nil while unwrapping an Optional value
 \end{lstlisting}
 
-%TODO Optional Chaining, 
-%TODO cite null pointer ideator, failable initializers
+The first println statement outputs 'Optional("Swift")' because the string value is wrapped inside the optional and needs to be unwrapped using the '!' postfix. Note that trying to unwrap an optional without value yields a runtime error.
 
-\textbf{Getter/Setter}
+A convenient way of querying properties or calling methods on optionals is called optional chaining. Imagine a circle object with an optional custom style that may have a border, which in turn has an optional custom color. To check the existence of the custom border color, instead of
+
+\begin{lstlisting}[frame=none]
+if circle.style != nil && circle.style.border != nil && circle.style.border.color != nil
+\end{lstlisting}
+
+it is possible to write
+
+\begin{lstlisting}[frame=none]
+if circle.style?.border?.color != nil
+\end{lstlisting}
+
+If any link in this chain is nil, the whole chain fails gracefully and returns nil.
+
+Another concept in the context of optionals are failable initializers (known as constructors in other languages). When explicitly defining an initializer as failable appending a question mark (init?), it's return type is optional variant of the type it should initialize. That can be useful for handling invalid parameter values or other initialization problems.
+
+Optionals are widely used in Swift's iOS APIs and their syntax one of the first things noticed when looking to Swift sources as a novice.  
+In my opinion, the usage of optionals results in beeing more aware of the presence or absence of values and coding more prudently. Of course, optionals can only add real value if not blindly unwrapped just to silence the compiler errors.  
+
+%TODO cite null pointer ideator
+
+\textbf{Getter and Setter}
+
+Swift has a very well designed property access system, with a concise syntax due to built-in language support. 
+
+It addresses the two main problems, encapsulation and dependency management, classical getter and setter methods solve, without the overhead of writing separate access methods for object properties.
+
+Encapsulation can be archived by restricting write access to a stored property with the private(set) keyword.
+
+\begin{lstlisting}[frame=none]
+private(set) var age = 55
+\end{lstlisting}
+
+This restricts write access to the current source file, or to the class if it is the only one in the source file.
+
+In case some computation is needed to update dependent values, Swift offers willSet and didSet observers that are executed right before and after a stored property is updated.
+
+\begin{lstlisting}[frame=none]
+var age = 55 {
+  didSet {
+  }
+  willSet {
+  }
+}
+\end{lstlisting}
+
+If a property is purely computed, it can be defined in a similar way. The setter is optional.
+
+\begin{lstlisting}[frame=none]
+var name:String = {
+  get {
+  }
+  set(newName) {
+  }
+}
+\end{lstlisting}
 
 \textbf{Exception Handling}
+
+
 
 \subsubsection{test}
 

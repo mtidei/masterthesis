@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.16)  6 JAN 2015 18:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.16)  8 JAN 2015 12:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -685,27 +685,44 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \NC@list=\toks32
 \extratabsurround=\skip67
 \backup@length=\skip68
-) (./thesis.aux
-(./htwg/cover.aux) (./htwg/title.aux) (./htwg/abstract.aux)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(./thesis.aux (./htwg/cover.aux) (./htwg/title.aux) (./htwg/abstract.aux)
 (./htwg/affidavit.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
@@ -733,17 +750,8 @@ Package caption Info: End \AtBeginDocument code.
 )
 \c@lstlisting=\count140
 \AtBeginShipoutBox=\box36
- (/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
-)
-Package color Info: Driver file: pdftex.def on input line 137.
-)
-Package hyperref Info: Link coloring ON on input line 40.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
+Package hyperref Info: Link coloring ON on input line 74.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -751,9 +759,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count141
 )
-LaTeX Info: Redefining \ref on input line 40.
-LaTeX Info: Redefining \pageref on input line 40.
-LaTeX Info: Redefining \nameref on input line 40.
+LaTeX Info: Redefining \ref on input line 74.
+LaTeX Info: Redefining \pageref on input line 74.
+LaTeX Info: Redefining \nameref on input line 74.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write3
@@ -883,76 +891,76 @@ ap-pli-ca-tions like weather
 [3
 
 ] [4] [5] [6]
-Overfull \hbox (4.23909pt too wide) in alignment at lines 131--133
+Overfull \hbox (4.23909pt too wide) in alignment at lines 133--135
  [] [] [] 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 144
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 146
 .
-LaTeX Font Info:    No file OMScmtt.fd. on input line 144.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 146.
 
 LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbackslash' on input line 144.
+(Font)              for symbol `textbackslash' on input line 146.
 
 
-Overfull \hbox (4.23909pt too wide) in alignment at lines 133--154
+Overfull \hbox (4.23909pt too wide) in alignment at lines 135--156
  [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 154
+Underfull \vbox (badness 10000) detected at line 156
  []
 
 
-Overfull \hbox (4.23909pt too wide) in alignment at lines 154--169
+Overfull \hbox (4.23909pt too wide) in alignment at lines 156--173
  [] [] [] 
  []
 
-[7] [8]
-Overfull \hbox (102.73845pt too wide) in paragraph at lines 182--183
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][] 
+[7] [8] [9]
+Overfull \hbox (8.23921pt too wide) in paragraph at lines 223--224
+[]\OT1/cmr/m/n/10.95 The first println state-ment out-puts 'Op-tional("Swift")'
+ be-cause the string value is wrapped
  []
 
-[9]) (./Appendices/AppendixA.tex [10]
+[10] [11]) (./Appendices/AppendixA.tex [12]
 Appendix A.
 ------------------------------------------------------------------------------
  A Appendix Title Here
 ------------------------------------------------------------------------------
-) [11
+) [13
 
 ]
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
 (./thesis.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 327.
- [12
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 362.
+ [14
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 327.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 362.
  (./thesis.aux (./htwg/cover.aux) (./htwg/title.aux)
 (./htwg/abstract.aux) (./htwg/affidavit.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 327.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 327.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 362.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 362.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: AE17FB22DEC20F91651F8C57E5FC6946;4454.
+(rerunfilecheck)             Checksum: C70A8B0AB1F4EB6847FF0097AFE50595;4530.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 327.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 362.
  ) 
 Here is how much of TeX's memory you used:
- 13444 strings out of 493117
- 186879 string characters out of 6135432
- 274883 words of memory out of 5000000
- 16612 multiletter control sequences out of 15000+600000
- 15461 words of font info for 58 fonts, out of 8000000 for 9000
+ 13983 strings out of 493117
+ 192852 string characters out of 6135432
+ 317602 words of memory out of 5000000
+ 17113 multiletter control sequences out of 15000+600000
+ 15293 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,12n,45p,947b,1034s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,12n,45p,947b,1857s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.32} has been referenced but does not ex
 ist, replaced by a fixed one
 
@@ -970,12 +978,11 @@ xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/tex
 live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
 ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texli
 ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texliv
-e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive
-/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on thesis.pdf (21 pages, 238497 bytes).
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on thesis.pdf (23 pages, 243297 bytes).
 PDF statistics:
- 346 PDF objects out of 1000 (max. 8388607)
- 302 compressed objects within 4 object streams
- 68 named destinations out of 1000 (max. 500000)
+ 394 PDF objects out of 1000 (max. 8388607)
+ 349 compressed objects within 4 object streams
+ 105 named destinations out of 1000 (max. 500000)
  238 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{4}
+\begin{thebibliography}{5}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -21,6 +21,10 @@ Bill Schilit, Norman Adams, and Roy Want.
 \bibitem[swi(2014)]{swift-book}
 \emph{The Swift Programming Language}.
 \newblock Swift Programming Series. Apple Inc., 1st edition, 2014.
+
+\bibitem[Macacek()]{scala-dsl-example}
+Jan Macacek.
+\newblock Type-safe dsl.
 
 \bibitem[Odersky et~al.(2010)Odersky, Spoon, and Venners]{scala-book}
 Martin Odersky, Lex Spoon, and Bill Venners.
