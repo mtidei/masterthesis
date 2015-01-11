@@ -7,13 +7,53 @@
 %----------------------------------------------------------------------------------------
 \section{What is Context-Aware Computing?}
 
-Since context-aware computing emerged as a subcategory of ubiquitous computing, the latter one is described fist.
-Ubiquitous computing means ...
-  
-
 The term "context-aware computing" was first used by B. Schilit et. al. 1994 in the paper "Context-Aware Computing Applications" \cite{Schilit94context-awarecomputing}. They introduce a this new kind of computing as a "new class of applications that are aware of the context in which they are run. Such context-aware systems adapts according to the location of use, the collection of nearby people, hosts, and accessible devices, as well as to changes to such things over time".
 
-They describe the following four categories of context-aware applications:
+\subsection{Definition of Context}
+
+Schilit defined context by enumeration of examples that are all related to location and proximity.
+
+Dey and Abowd provided a precise universal definition of context in their paper "Towards a Better Understanding of Context and Context-Awareness" published 1999 \cite{Abowd99}: "Context is any information that can be used to characterize the situation of an entity. An entity is a person, place, or object that is considered relevant to the interaction between a user and an application, including the user and applications themselves."
+
+While being precise, this definition is too general to get an idea of which kind of context information an application could use. So the following subchapter provides a wider list of context examples and a categorization.
+
+
+\subsection{Categories of Context}
+
+There are many different types of context: 
+
+\subsubsection*{Computing Context}
+
+Some examples are network connectivity, ommunication costs and bandwidth or available resources like printers, displays and input devices.
+
+\subsubsection*{User Context}
+
+\begin{itemize}
+\item The user's \emph{identity}, including his age, gender, education, profession, interests. In today's age of social media the user's connections to other people and their identity are important and widely available as well.
+\item The \emph{location} is the most obvious kind of user context. It can be subdivided in two different sub types of location: \\
+  Logical location, e.g. "at home" or "at work" or slightly different "in a library, restaurant, cinema"\\
+  Absolute location, e.g. "47\textdegree40'02.0"N 9\textdegree10'19.7"E" as geographic coordinates on earth or 2nd floor room 205 in the F-Building of HTWG Konstanz.
+\item The \emph{emotional state} indicating if the user is happy, angry, worried etc. At which level is the personal stress level?
+\item \emph{Fisical state}: Is the user rested or tired?
+\item The user's \emph{health state}, determined by measuring some vital parameters (e.g. hearth rate, blood pressure and oxygen saturation). Many  dedicated low-cost hardware items for this kind of measurements were released in 2014 or are announced for this year. 
+\item Information about other people or mobile devices nearby forms the \emph{co-location} context.
+\item The current \emph{activity}. For example walking, driving a car, riding a bicycle or jogging. Some of this activities need to be further specificated, e.g. jogging to practice sport or jogging for catching a train.
+\end{itemize}
+
+\subsubsection*{Time Context}
+
+The time context, such as the current time of the day, the day of the week, the current season or the full date. 
+
+\subsubsection*{Physical Context}
+
+Some examples for environment information are the current temperature, the weather, the intensity of ambient light, the noise level and even traffic condition.
+
+cf. \cite{distributed-cas}
+
+
+\subsection{Categories of Context-Aware Applications}
+
+Schilit and his co-authors describe the following four categories of context-aware applications:
 
 \begin{itemize}
 \item Proximate Selection
@@ -37,54 +77,23 @@ Context-triggered actions are applications that execute a defined action when a 
 
 \end{itemize}
 
+
+
+
 Obviously, nowadays there are many applications that fit in two or more categories. A modern smartphone based navigating system for example offers functions like "Take me to a gas station", displaying a list with the nearest one already preselected (proximate selection). When light conditions change, like when entering a tunnel or when it gets dark, the display is automatically dimmed. The pedestrian mode is an example for two categories: The device senses steps and switches automatically into pedestrian mode considering paths not accessible by car (automatic contextual reconfiguration) and offering commands like "Take me back to my parking lot" (contextual commands).
 
 
 
-There are many different types of Context: 
+\subsection{Ubiquitous Computing}
 
-\begin{itemize}
-\item Location
+The vision and research field of ubiquitous computing was coined 1991 by Mark Weiser of Xerox PARC in his article "The Computer for the 21st Century" \cite{weiserm1991}. 
+Weiser's starts his article with these words:
+"The most profound technologies are those that disappear. They weave themselves into the fabric of everyday life until they are indistinguishable from it."
 
-The Location is the most obvious kind of context in modern applications. It can be subdivided in two different sub types of location: 
+For computers that means beeing integrated in common objects of daily usage, supporting humans without demanding their full attention. \\
+As very good example for a technology that disappeared in the background he uses the vanishing of electric motors. At the beginning, big powerful engines powered a whole fabric, with axles and belts distributing the force to the single machines. Later each machine had its own motor and today several electric motors - miniaturized and bigger ones - are integrated into a single device. Often they work in the background letting us focus on the main task. Already in 1991, as he writes, a typical car had more than 20 motors to start the engine, lock and unlock the doors, clean the windshield, open and close the windows and so on. 
 
-\subitem Kind of Location
-
-For example "Home" or "At Work" or slightly different "In a Library" or "Inside a restaurant"
-
-\subitem Absolute Position
-
-For example "47.667230, 9.172134" as geographic coordinates on earth or 2nd floor room 205 in the F-Building of HTWG Konstanz.
-
-\item Time
-\subitem Season
-\subitem Daytime
-\subitem Date
-\item Activity
-
-E.g. Walking, Driving a Car, Jogging...
-\item Environment
-
-Some examples for environment information are the current temperature, the weather, the intensity of ambient light, the noise level.
-\end{itemize}
-
-A context aware application collects context information without explicitly asking the user for input. The goal should always be improving the user experience by providing the right information or taking the right actions at the right time without distracting or annoying the user. 
-Basic tasks like automatically dimming mobile phone displays are well-known automatically performed actions. Others like remembering the parking location without user interaction are new .
-
-By enhancing the sensing for further 
-
-\begin{itemize}
-\item Emotional State
-Is the user happy, angry, worried? At which level is the personal stress level?
-\item Fitness State
-Is the user rested or tired?
-\item Health State
-Are all vital parameters of the user inside reasonable limits?
-\end{itemize}
-
-% Picture?
-
-
+Although Weiser didn't use the term context-awareness, he already recognized the importance of the location context: "We have found two issues of crucial importance: location and scale. Little is more basic to human perception than physical juxtaposition, and so ubiquitous computers must know where they are. [...] If a computer merely knows what room it is in, it can adapt its behavior in significant ways without requiring even a hint of artificial intelligence.".
 
 \section{Sensors of Mobile Devices}
 
@@ -109,6 +118,8 @@ The proximity sensor typically measures the distance of the device's front to th
 The light sensor measures the intensity of the light. It is primarily used to adapt the screen brightness to the ambient light.
 
 \section{Localization Techniques}
+
+
 
 \section{Bluetooth Low Energy iBeacons}
 
@@ -176,7 +187,7 @@ The following section is an overview comparison of Scala and Swift features, cre
 
 In this section, the major differences between Scala and Swift that are encountered during the first Swift projects are described.
 
-\textbf{Implicit Type Conversions}
+\subsubsection{Implicit Type Conversions}
 
 In Swift, every type conversion has to be explicit. Even when using different numerical types inside an arithmetic expression, the conversion is not done automatically, in contrast to Scala and even Java. So this code yields a compile time error for example:
 
@@ -198,7 +209,7 @@ Although initially it can be a bit frustrating running into compile errors of th
 In contrast, Scala has a powerful implicit type conversion system. Combined with operator overloading it enables developers to create beautiful internal DSL (Domain Specific Languages) that read more like natural language. \footnote{A good example for using implicit conversion to build a DSL query language can be found at \cite{scala-dsl-example}}
 But, as M. Odersky rightly wrote in \cite[Chapter 6.13]{scala-book}, "... bear in mind that with power comes responsibility. If used unartfully, both operator methods and implicit conversions can give rise to client code that is hard to read and understand.".
 
-\textbf{Optionals}
+\subsubsection{Optionals}
 
 Variables are non nullable by default in Swift. So the following code will not compile:
 
@@ -243,11 +254,11 @@ In my opinion, the usage of optionals results in beeing more aware of the presen
 
 %TODO cite null pointer ideator
 
-\textbf{Getter and Setter}
+\subsubsection{Getter and Setter}
 
-Swift has a very well designed property access system, with a concise syntax due to built-in language support. 
+Swift has a well designed flexible property system, with a concise getter and setter syntax thanks to built-in language support. 
 
-It addresses the two main problems, encapsulation and dependency management, classical getter and setter methods solve, without the overhead of writing separate access methods for object properties.
+It addresses the two main problems, encapsulation and computing bound to accessing or mutating a property, classical getter and setter methods solve, without the overhead of writing separate accessing and mutating methods for an object's properties.
 
 Encapsulation can be archived by restricting write access to a stored property with the private(set) keyword.
 
@@ -255,9 +266,9 @@ Encapsulation can be archived by restricting write access to a stored property w
 private(set) var age = 55
 \end{lstlisting}
 
-This restricts write access to the current source file, or to the class if it is the only one in the source file.
+This restricts write access to the current source file in Swift\footnote{It is still possible to restrict the access to instances of the class by using a separate file for the class definition.}.
 
-In case some computation is needed to update dependent values, Swift offers willSet and didSet observers that are executed right before and after a stored property is updated.
+In case some computation is needed to update dependent values, Swift offers the willSet and didSet observers that are executed right before and after a stored property is mutated.
 
 \begin{lstlisting}[frame=none]
 var age = 55 {
@@ -268,7 +279,7 @@ var age = 55 {
 }
 \end{lstlisting}
 
-If a property is purely computed, it can be defined in a similar way. The setter is optional.
+If a property is purely computed, it can be defined in a similar way.
 
 \begin{lstlisting}[frame=none]
 var name:String = {
@@ -279,11 +290,46 @@ var name:String = {
 }
 \end{lstlisting}
 
-\textbf{Exception Handling}
+The setter is optional. Nothing changes for the calls for accessing and mutating that property: obj.name = "newName" executes the set block, obj.name the get block.
+
+\subsubsection{Exception Handling}
+
+The exception concept is completely missing in Swift. Unfortunately, there is no official explanation from Swift's designers for this decision.
+
+Using Swift's tuples it is possible to return multiple return values, for example an optional return value paired with an optional error object (cf. \citep{swift-error-handling}):
+\begin{lstlisting}[frame=none]
+func doSomething(param: String) -> (return: String?, error: NSError?)
+\end{lstlisting}
+
+Another option to consider is creating an enumeration with a success and a error member.
+
+\begin{lstlisting}[frame=none]
+enum Result {
+    case Success(res:Int)
+    case Error(msg:String)
+}
+
+func next() -> Result {
+    return Result.Success(res:3)
+}
+
+switch next() {
+case .Error(let msg):
+    println("Something went wrong: " + msg)
+case .Success(let res):
+    println("OK: " + String(res))
+}\end{lstlisting}
+
+These alternatives misses the exceptions ability to retract some levels of the call stack and retry without explicitly passing an error object up the call chain.
+%TODO Erfahrungen Fehlerbehandlung
+
+\subsubsection{Summary}
+
+Swift is currently the most modern programming language available for a mobile platform. It is a great step forward compared with it's predecessor Objective C. 
+Althoung it's expressive and concise syntax and it's Playground and REPL (Read-Eval-Print-Loop) feature, Swift remains a compiled language. Like Objective C, it is compiled into machine code by the LLVM compiler, which proved to be very fast. 
 
 
-
-\subsubsection{test}
+%TODO Parallel execution
 
 \section{iOS and Cocoa Touch}
 

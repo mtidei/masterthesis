@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{8}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -17,6 +17,26 @@ Bill Schilit, Norman Adams, and Roy Want.
 \newblock Context-aware computing applications.
 \newblock In \emph{In Proceedings of the Workshop on Mobile Computing Systems
   and Applications}, pages 85--90. IEEE Computer Society, 1994.
+
+\bibitem[Abowd and Dey(1999)]{Abowd99}
+Gregory~D. Abowd and Anind~K. Dey.
+\newblock Towards a better understanding of context and context-awareness.
+\newblock In \emph{Proceedings of the 1st International Symposium on Handheld
+  and Ubiquitous Computing}, HUC '99, pages 304--307, London, UK, UK, 1999.
+  Springer-Verlag.
+\newblock ISBN 3-540-66550-1.
+\newblock URL \url{http://dl.acm.org/citation.cfm?id=647985.743843}.
+
+\bibitem[Paulo and Pedro(2014)]{distributed-cas}
+Ferreira Paulo and Alves Pedro.
+\newblock \emph{Distributed Context-Aware Systems}.
+\newblock Springer-Verlag, 2014.
+
+\bibitem[Weiser(1991)]{weiserm1991}
+Mark Weiser.
+\newblock The computer for the 21st century.
+\newblock \emph{Scientific American}, 265\penalty0 (3):\penalty0 66--75,
+  September 1991.
 
 \bibitem[swi(2014)]{swift-book}
 \emph{The Swift Programming Language}.
