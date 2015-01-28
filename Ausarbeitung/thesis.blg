@@ -1,56 +1,17 @@
-This is BibTeX, Version 0.99d (TeX Live 2014)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: thesis.aux
-A level-1 auxiliary file: htwg/cover.aux
-A level-1 auxiliary file: htwg/title.aux
-A level-1 auxiliary file: htwg/abstract.aux
-A level-1 auxiliary file: htwg/affidavit.aux
-The style file: unsrtnat.bst
-Database file #1: Bibliography.bib
-Warning--entry type for "scala-dsl-example" isn't style-file defined
---line 28 of file Bibliography.bib
-Warning--I didn't find a database entry for "swift-error-handling"
-Warning--empty author and editor in swift-book
-Warning--empty year in scala-dsl-example
-You've used 8 entries,
-            2481 wiz_defined-function locations,
-            608 strings with 5652 characters,
-and the built_in function-call counts, 2867 in all, are:
-= -- 260
-> -- 101
-< -- 7
-+ -- 44
-- -- 28
-* -- 186
-:= -- 429
-add.period$ -- 28
-call.type$ -- 8
-change.case$ -- 15
-chr.to.int$ -- 8
-cite$ -- 11
-duplicate$ -- 171
-empty$ -- 290
-format.name$ -- 41
-if$ -- 641
-int.to.chr$ -- 1
-int.to.str$ -- 9
-missing$ -- 10
-newline$ -- 49
-num.names$ -- 21
-pop$ -- 80
-preamble$ -- 1
-purify$ -- 8
-quote$ -- 0
-skip$ -- 108
-stack$ -- 0
-substring$ -- 92
-swap$ -- 34
-text.length$ -- 2
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 44
-warning$ -- 2
-while$ -- 22
-width$ -- 0
-write$ -- 116
-(There were 4 warnings)
+[0] Config.pm:318> INFO - This is Biber 1.8
+[0] Config.pm:321> INFO - Logfile is 'thesis.blg'
+[59] biber-darwin:275> INFO - === Mon Jan 26, 2015, 17:29:46
+[59] Biber.pm:333> INFO - Reading 'thesis.bcf'
+[119] Biber.pm:630> INFO - Found 11 citekeys in bib section 0
+[137] Biber.pm:3053> INFO - Processing section 0
+[154] Biber.pm:3190> INFO - Looking for bibtex format file 'Bibliography.bib' for section 0
+[157] bibtex.pm:937> INFO - Decoding LaTeX character macros into UTF-8
+[159] bibtex.pm:812> INFO - Found BibTeX data source 'Bibliography.bib'
+[175] Utils.pm:169> WARN - I didn't find a database entry for 'swift-error-handling' (section 0)
+[175] Utils.pm:169> WARN - I didn't find a database entry for 'Internet-couchbase' (section 0)
+[212] Biber.pm:2939> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[212] Biber.pm:2945> INFO - Sorting 'entry' list 'nyt' keys
+[212] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+[231] bbl.pm:482> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
+[232] bbl.pm:555> INFO - Output to thesis.bbl
+[233] Biber.pm:105> INFO - WARNINGS: 2

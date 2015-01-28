@@ -11,7 +11,9 @@
 
 Mobile Devices are rapidly evolving to very powerful personal devices full of sensors that provide several kind of context information, combined with great computing power in an hand held device. \\
 This level of computing power was reserved for stationary desktop computers a few years ago, or to room filling supercomputers some decades ago.
-At the same time, the devices are spreading out to more and more people. 
+At the same time, the devices are spreading out to more and more people.
+
+Various sensors for measuring the have been miniaturized 
 
 This development empowers a new kind of computing to find it's way out of research laboratories, where such systems ran on special hardware in artificial environments, into our daily lives: \cite[cf.][]{age-of-context}
 \emph{context-aware computing}. 
@@ -23,11 +25,13 @@ This thesis is about designing and implementing a context-aware mobile system fo
 
 The goal is to design a flexible software platform that is easily adaptable to fit different exhibitions and runs on commodity hardware. 
 
+Several analytic functions 
+
 The system consists of two main parts:
 
-The first one is a kind of a content management system that allows to define all relevant textual and audio information describing the exhibitions areas and single exhibits using a web interface.
+The first one is a backend system that allows to define all relevant textual and audio information describing the exhibitions areas and single exhibits using a web interface and to process and visualize collected data.
 
-The second one is the application running on the mobile device of the visitor. The goal is to provide relevant information at the right time to the visitor, thus enhancing his experience.
+The second one is the application running on the mobile device of the visitor. The goal is to provide relevant information at the right time to the visitor, thus enhancing his experience, and to collect anonymized sensor data for later analytics.
 
 \section{Motivation}
 

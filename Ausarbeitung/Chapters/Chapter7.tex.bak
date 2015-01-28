@@ -1,0 +1,13 @@
+% Chapter 7
+
+\chapter{Conclusion} % Main chapter title
+
+\label{conclusion} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+
+\lhead{Chapter 7. \emph{Conclusion}} % This is for the header on each page - perhaps a shortened title
+
+%----------------------------------------------------------------------------------------
+
+\section{Contribution}
+
+\section{Future Work}

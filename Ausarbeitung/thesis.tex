@@ -27,17 +27,50 @@
 
 \documentclass[11pt, oneside]{Thesis} % The default font size and one-sided printing (no margin offsets)
 
-\graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
+\graphicspath{{Pictures/},{Figures/}} % Specifies the directory where pictures are stored
 
-\usepackage[square, numbers, comma, sort&compress]{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
+%\usepackage[square, authoryear, comma, sort&compress]{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
+%\def\citeAuthNumYr#1{[\citeauthor{#1}, \citep{#1}, \citeyear{#1}]}
+
+\usepackage[style=alphabetic,sorting=nyt,maxalphanames=1,doi=false]{biblatex}
+\addbibresource{Bibliography.bib}
+
+\renewcommand*{\labelalphaothers}{}
+
+\DeclareLabelalphaTemplate{
+  \labelelement{
+    \field[final]{shorthand}
+    \field{labelname}
+    \field{label}
+  }
+  \labelelement{
+    \literal{,\addhighpenspace}
+  }
+  \labelelement{
+    \field{year}
+  }
+}
+
+\setlength{\bibitemsep}{\baselineskip}
+
+% Zeilenabstand auf 1.5 setzen
+%\linespread{1.0}
+
 \hypersetup{urlcolor=blue, colorlinks=true} % Colors hyperlinks in blue - change to black if annoying
 \title{\ttitle} % Defines the thesis title - don't touch this
 
+\usepackage[T1]{fontenc}
 \usepackage{longtable}
 \usepackage{array}
 \usepackage{xcolor}
 \usepackage{textcomp}
+\usepackage{tikz}
+\usepackage{tikz-uml}
+\usepackage{graphicx}
+\usepackage{float}
 \newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\tikzumlset{fill package=gray!5}
 
 % Listings configuration for Swift
 \lstdefinelanguage{swift}
@@ -321,13 +354,16 @@ Lorem ipsum dolor
 % Include the chapters of the thesis as separate files from the Chapters folder
 % Uncomment the lines as you write the chapters
 
+% line spacing
+\setstretch{1.3}
+
 \input{Chapters/Chapter1}
 \input{Chapters/Chapter2} 
-%\input{Chapters/Chapter3}
-%\input{Chapters/Chapter4} 
-%\input{Chapters/Chapter5} 
-%\input{Chapters/Chapter6} 
-%\input{Chapters/Chapter7} 
+\input{Chapters/Chapter3}
+\input{Chapters/Chapter4}
+\input{Chapters/Chapter5} 
+\input{Chapters/Chapter6} 
+\input{Chapters/Chapter7} 
 
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - APPENDICES
@@ -354,12 +390,16 @@ Lorem ipsum dolor
 
 \label{Bibliography}
 
-\lhead{\emph{Bibliography}} % Change the page header to say "Bibliography"
+%\lhead{\emph{Bibliography}} % Change the page header to say "Bibliography"
 
-\bibliographystyle{unsrtnat} % Use the "unsrtnat" BibTeX style for formatting the Bibliography
+% natbib
+%\bibliographystyle{unsrtnat} % Use the "unsrtnat" BibTeX style for formatting the Bibliography
+%\bibliography{Bibliography} % The references (bibliography) information are stored in the file named "Bibliography.bib"
 
-\bibliography{Bibliography} % The references (bibliography) information are stored in the file named "Bibliography.bib"
-
+% biblatex
+\printbibheading
+\printbibliography[nottype=url,heading=subbibliography,title={Books and Papers}]
+\printbibliography[type=url,heading=subbibliography,title={Web Sources}]
 
 \end{document}
   

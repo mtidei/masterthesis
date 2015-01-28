@@ -1,0 +1,72 @@
+% Chapter 3
+
+\chapter{System Overview} % Main chapter title
+
+\label{systemoverview} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+
+\lhead{Chapter 3. \emph{System Overview}} % This is for the header on each page - perhaps a shortened title
+
+%----------------------------------------------------------------------------------------
+
+\section{Introduction}
+
+The Context-Aware Guide (subsequently called "CA Guide") needs to be defined to fit indoor and outdoor exhibitions, like classical museums, parks and gardens. 
+The basic functionality must be accessible even by persons not familiar with mobile technology. The context awareness techniques can help avoid big parts of explicit user input.
+
+The following Image shows the complete system, consisting of a museum guide frontend running on a mobile device, a backend for the configuration of the guide and analytic function and a database server.
+
+Image Guide Frontend, Backend and Database Server
+
+Image Mockup CA Guide 
+
+Image A Backend Screen Mockup
+
+\section{Data Structure}
+
+\subsection{Exhibition Modelling}
+
+A single exhibition is modeled in the JSON data format. Compared to XML, JSON is more readable and easier to produce without dedicated tools in a simple text editor.
+
+The entities needed for modelling an exhibition are:
+
+Image entyty relationship diagram
+
+With a normal relational database, pretty much of the entities would be saved in separate tables using primary keys and foreign keys to represent the relationships between the tables.
+
+In a document-oriented database the whole exhibition can be stored in an aggregated way. 
+
+\begin{lstlisting}
+key: "exhibition-CXN01"
+value: {
+ "type":"exhibition",
+ "city":"Konstanz",
+ "pois": [{
+	 "name":"Dom", 
+	 "locationDefinition": {
+	 	"type": "circle",
+	 	"location": [15.0020312,2.3434322],
+	 	"radius": 30,
+	 	"floor": 1
+	 }, 
+	 "text":"", 
+	 "images":[], 
+	 "audio":{
+	 	"level1":
+	 	"level2":
+	 	"level3":
+	 }, 
+	 "videos":[]},]
+}
+\end{lstlisting}
+
+A JSON Schema is used for asserting a valid structure of a JSON file, similar to a DTD (Data Type Definition) in XML (http://json-schema.org).
+
+\subsection{Sensor Data}
+
+Sensor data is saved to the Couchbase database to allow replaying it for development, testing, presentations and for big data analytics presented in the system's web backend. 
+
+The single measurements can be very high frequent, for example in case of accelerometer data, that is updated every 5 millisecons. New beacon measurements are available every second. Events on a higher logical level, like "entering region a", will occur much less frequent.
+
+T
+
+

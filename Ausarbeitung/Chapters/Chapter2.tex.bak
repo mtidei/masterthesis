@@ -1,8 +1,8 @@
 % Chapter 2
+%TODO
+\chapter{Theoretical Background and Fundamentals}
 
-\chapter{Theoretical Background}
-
-\lhead{Chapter 2. \emph{Theoretical Background}} % This is for the header on each page - perhaps a shortened title
+\lhead{Chapter 2. \emph{Theoretical Background and Fundamentals}} % This is for the header on each page - perhaps a shortened title
 
 %----------------------------------------------------------------------------------------
 \section{What is Context-Aware Computing?}
@@ -296,7 +296,7 @@ The setter is optional. Nothing changes for the calls for accessing and mutating
 
 The exception concept is completely missing in Swift. Unfortunately, there is no official explanation from Swift's designers for this decision.
 
-Using Swift's tuples it is possible to return multiple return values, for example an optional return value paired with an optional error object (cf. \citep{swift-error-handling}):
+Using Swift's tuples it is possible to return multiple return values, for example an optional return value paired with an optional error object (cf. \cite{swift-error-handling}):
 \begin{lstlisting}[frame=none]
 func doSomething(param: String) -> (return: String?, error: NSError?)
 \end{lstlisting}
@@ -326,8 +326,7 @@ These alternatives misses the exceptions ability to retract some levels of the c
 \subsubsection{Summary}
 
 Swift is currently the most modern programming language available for a mobile platform. It is a great step forward compared with it's predecessor Objective C. 
-Althoung it's expressive and concise syntax and it's Playground and REPL (Read-Eval-Print-Loop) feature, Swift remains a compiled language. Like Objective C, it is compiled into machine code by the LLVM compiler, which proved to be very fast. 
-
+Although it's expressive and concise syntax and it's Playground and REPL (Read-Eval-Print-Loop) feature, Swift remains a compiled language. Like Objective C, it is compiled into machine code by the LLVM compiler, which proved to be very fast.
 
 %TODO Parallel execution
 
@@ -335,3 +334,23 @@ Althoung it's expressive and concise syntax and it's Playground and REPL (Read-E
 
 iOS Cocoa Touch Framework 
 Developing with XCode
+
+\section{Couchbase Server}
+
+Couchbase is a modern JSON-based NoSQL database, available as an open-source community edition used in this thesis.\cite{Internet-couchbase} While JSON was initially born as "Javascript Object Notation" for data exchange between web / application servers and the javascript web gui, today it is used in more and more products independently from javascript. It's simplicity, readability and compactness helped to repress the comparatively cumbersome XML in many areas. Especially document-oriented databases like Couchbase use the JSON notation for storing the structured data of it's documents.
+
+Couchbase offers a specially sleek mobile version - called "Couchbase Mobile" or "Couchbase Lite" - for all major mobile platforms, and so of course for iOS, too. Since especially mobile devices cannot rely on an uninterrupted networking connection, the mobile version a good choice for a network independent local cache of the application data. With it's synchronization functionality, the local mobile database can be automatically synchronized with a database server. Every time a network connection is available, the local database is updated with changes on the server, and local changes made during the offline time are propagated to the server.
+
+To connect the mobile version to a regular couchbase server, a sync gateway has to be set up:
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=0.25\textheight]{couchbase-lite}
+\caption{Couchbase Lite and Sync Gateways. Adapted from \cite{couchbase-lite}}
+\end{figure}
+
+While traditional relational database management systems (RDBMS) are typically hard to scale out, Couchbase offers a built-in distributed cache concept that can easily be scaled on more servers without modifying the application.
+
+Queries are performed using the map reduce paradigm, allowing heavy parallelisation of 
+
+This enables couchbase to perform computation and storage heavy big data analytics. 

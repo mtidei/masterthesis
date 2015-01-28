@@ -1,55 +1,237 @@
-\begin{thebibliography}{8}
-\providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{\texttt{#1}}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi: #1}\else
-  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
 
-\bibitem[Scoble and Israel(2013)]{age-of-context}
-Robert Scoble and Shel Israel.
-\newblock \emph{Age of Context: Mobile, Sensors, Data and the Future of
-  Privacy}.
-\newblock Patrick Brewster Press, 1st edition, 2013.
 
-\bibitem[Schilit et~al.(1994)Schilit, Adams, and
-  Want]{Schilit94context-awarecomputing}
-Bill Schilit, Norman Adams, and Roy Want.
-\newblock Context-aware computing applications.
-\newblock In \emph{In Proceedings of the Workshop on Mobile Computing Systems
-  and Applications}, pages 85--90. IEEE Computer Society, 1994.
+\refsection{0}
+  \sortlist{entry}{nyt}
+    \entry{Abowd99}{inproceedings}{}
+      \name{labelname}{2}{}{%
+        {{hash=8eee84dec587775cce8155547fff708e}{Abowd}{A\bibinitperiod}{Gregory\bibnamedelima D.}{G\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=34144296094bdbd95537c64aceb332b9}{Dey}{D\bibinitperiod}{Anind\bibnamedelima K.}{A\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=8eee84dec587775cce8155547fff708e}{Abowd}{A\bibinitperiod}{Gregory\bibnamedelima D.}{G\bibinitperiod\bibinitdelim D\bibinitperiod}{}{}{}{}}%
+        {{hash=34144296094bdbd95537c64aceb332b9}{Dey}{D\bibinitperiod}{Anind\bibnamedelima K.}{A\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Karlsruhe, Germany}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag}%
+      }
+      \strng{namehash}{5c4a4ca0b242bb1a6cf3cd48a3a96e4a}
+      \strng{fullhash}{5c4a4ca0b242bb1a6cf3cd48a3a96e4a}
+      \field{labelalpha}{Abowd,\addhighpenspace1999}
+      \field{sortinit}{A}
+      \field{labeltitle}{Towards a Better Understanding of Context and Context-Awareness}
+      \field{booktitle}{Proceedings of the 1st International Symposium on Handheld and Ubiquitous Computing}
+      \field{isbn}{3-540-66550-1}
+      \field{series}{HUC '99}
+      \field{title}{Towards a Better Understanding of Context and Context-Awareness}
+      \field{year}{1999}
+      \field{pages}{304\bibrangedash 307}
+      \keyw{context aware computing}
+    \endentry
+    \entry{swift-book}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=9f6290f4436e5a2351f12e03b6433c3c}{Apple}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9f6290f4436e5a2351f12e03b6433c3c}{Apple}{A\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Apple Inc.}%
+      }
+      \strng{namehash}{9f6290f4436e5a2351f12e03b6433c3c}
+      \strng{fullhash}{9f6290f4436e5a2351f12e03b6433c3c}
+      \field{labelalpha}{Apple,\addhighpenspace2014}
+      \field{sortinit}{A}
+      \field{labeltitle}{The Swift Programming Language}
+      \field{edition}{1st}
+      \field{series}{Swift Programming Series}
+      \field{title}{The Swift Programming Language}
+      \field{year}{2014}
+      \keyw{swift}
+    \endentry
+    \entry{couchbase-lite}{url}{}
+      \name{labelname}{1}{}{%
+        {{hash=7dd3b0205c0cae0eb0b77da34529a5c5}{Couchbase}{C\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=7dd3b0205c0cae0eb0b77da34529a5c5}{Couchbase}{C\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{7dd3b0205c0cae0eb0b77da34529a5c5}
+      \strng{fullhash}{7dd3b0205c0cae0eb0b77da34529a5c5}
+      \field{labelalpha}{Couchbase}
+      \field{sortinit}{C}
+      \field{labeltitle}{Couchbase Mobile NoSQL Database}
+      \field{shorthand}{Couchbase}
+      \field{title}{Couchbase Mobile NoSQL Database}
+      \field{urlday}{26}
+      \field{urlmonth}{01}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://www.couchbase.com/nosql-databases/couchbase-mobile
+      \endverb
+      \keyw{couchbase}
+    \endentry
+    \entry{scala-dsl-example}{url}{}
+      \name{labelname}{1}{}{%
+        {{hash=10e008604c95de7bade2003b0bfc2563}{Macacek}{M\bibinitperiod}{Jan}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=10e008604c95de7bade2003b0bfc2563}{Macacek}{M\bibinitperiod}{Jan}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{10e008604c95de7bade2003b0bfc2563}
+      \strng{fullhash}{10e008604c95de7bade2003b0bfc2563}
+      \field{labelalpha}{Macacek,\addhighpenspace2011}
+      \field{sortinit}{M}
+      \field{labeltitle}{Type-safe DSL}
+      \field{title}{Type-safe DSL}
+      \field{urlday}{05}
+      \field{urlmonth}{01}
+      \field{urlyear}{2015}
+      \field{year}{2011}
+      \verb{url}
+      \verb http://www.cakesolutions.net/teamblogs/2011/12/10/type-safe-dsl
+      \endverb
+      \keyw{scala}
+    \endentry
+    \entry{scala-book}{book}{}
+      \name{labelname}{3}{}{%
+        {{hash=887f509975b0ec9ebba9dfae96d0c454}{Odersky}{O\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=6ebdee3333bf85e58c1722ec97f04374}{Spoon}{S\bibinitperiod}{Lex}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=4f73d3c9fa69ceb9612bb63bdb7f5db5}{Venners}{V\bibinitperiod}{Bill}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=887f509975b0ec9ebba9dfae96d0c454}{Odersky}{O\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=6ebdee3333bf85e58c1722ec97f04374}{Spoon}{S\bibinitperiod}{Lex}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=4f73d3c9fa69ceb9612bb63bdb7f5db5}{Venners}{V\bibinitperiod}{Bill}{B\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {USA}%
+      }
+      \list{publisher}{1}{%
+        {Artima Incorporation}%
+      }
+      \strng{namehash}{eff3537bbf7066162eef3ecdbb645557}
+      \strng{fullhash}{eff3537bbf7066162eef3ecdbb645557}
+      \field{labelalpha}{Odersky,\addhighpenspace2010}
+      \field{sortinit}{O}
+      \field{labeltitle}{Programming in Scala: A Comprehensive Step-by-step Guide}
+      \field{edition}{2nd}
+      \field{isbn}{0981531601}
+      \field{title}{Programming in Scala: A Comprehensive Step-by-step Guide}
+      \field{year}{2010}
+      \keyw{scala}
+    \endentry
+    \entry{distributed-cas}{book}{}
+      \name{labelname}{2}{}{%
+        {{hash=1dbc6a3b8a68259520fd043d6450744e}{Paulo}{P\bibinitperiod}{Ferreira}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=d1773bf0185e2e9b221b12bc46a9afd2}{Pedro}{P\bibinitperiod}{Alves}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=1dbc6a3b8a68259520fd043d6450744e}{Paulo}{P\bibinitperiod}{Ferreira}{F\bibinitperiod}{}{}{}{}}%
+        {{hash=d1773bf0185e2e9b221b12bc46a9afd2}{Pedro}{P\bibinitperiod}{Alves}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag}%
+      }
+      \strng{namehash}{db1fac896325ea53fb80331a0b0670bb}
+      \strng{fullhash}{db1fac896325ea53fb80331a0b0670bb}
+      \field{labelalpha}{Paulo,\addhighpenspace2014}
+      \field{sortinit}{P}
+      \field{labeltitle}{Distributed Context-Aware Systems}
+      \field{title}{Distributed Context-Aware Systems}
+      \field{year}{2014}
+      \keyw{context aware computing}
+    \endentry
+    \entry{Schilit94context-awarecomputing}{inproceedings}{}
+      \name{labelname}{3}{}{%
+        {{hash=0064c0d5f0c500bdea952ce41a07a6f2}{Schilit}{S\bibinitperiod}{Bill}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=587ccb72c6cee47c378536560a1608ec}{Adams}{A\bibinitperiod}{Norman}{N\bibinitperiod}{}{}{}{}}%
+        {{hash=a8d1741b2a936d877c8c234b91045a40}{Want}{W\bibinitperiod}{Roy}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=0064c0d5f0c500bdea952ce41a07a6f2}{Schilit}{S\bibinitperiod}{Bill}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=587ccb72c6cee47c378536560a1608ec}{Adams}{A\bibinitperiod}{Norman}{N\bibinitperiod}{}{}{}{}}%
+        {{hash=a8d1741b2a936d877c8c234b91045a40}{Want}{W\bibinitperiod}{Roy}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Computer Society}%
+      }
+      \strng{namehash}{b5a674a8f42f612ae6654c61fb5e9377}
+      \strng{fullhash}{b5a674a8f42f612ae6654c61fb5e9377}
+      \field{labelalpha}{Schilit,\addhighpenspace1994}
+      \field{sortinit}{S}
+      \field{labeltitle}{Context-Aware Computing Applications}
+      \field{booktitle}{In Proceedings of the Workshop on Mobile Computing Systems and Applications}
+      \field{title}{Context-Aware Computing Applications}
+      \field{year}{1994}
+      \field{pages}{85\bibrangedash 90}
+      \keyw{context aware computing}
+    \endentry
+    \entry{age-of-context}{book}{}
+      \name{labelname}{2}{}{%
+        {{hash=dc5fb8d37649e6958ad3c4d79a521075}{Scoble}{S\bibinitperiod}{Robert}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=727722ab0a946ff291af28f9032fa350}{Israel}{I\bibinitperiod}{Shel}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=dc5fb8d37649e6958ad3c4d79a521075}{Scoble}{S\bibinitperiod}{Robert}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=727722ab0a946ff291af28f9032fa350}{Israel}{I\bibinitperiod}{Shel}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Patrick Brewster Press}%
+      }
+      \strng{namehash}{bd3745ed13121260d4df62852a88820c}
+      \strng{fullhash}{bd3745ed13121260d4df62852a88820c}
+      \field{labelalpha}{Scoble,\addhighpenspace2013}
+      \field{sortinit}{S}
+      \field{labeltitle}{Age of Context: Mobile, Sensors, Data and the Future of Privacy}
+      \field{edition}{1st}
+      \field{title}{Age of Context: Mobile, Sensors, Data and the Future of Privacy}
+      \field{year}{2013}
+      \keyw{context aware computing,big data,sensors}
+    \endentry
+    \entry{weiserm1991}{article}{}
+      \name{labelname}{1}{}{%
+        {{hash=9a4cd1345f5dc5a1be20fa1032d65d9f}{Weiser}{W\bibinitperiod}{Mark}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=9a4cd1345f5dc5a1be20fa1032d65d9f}{Weiser}{W\bibinitperiod}{Mark}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9a4cd1345f5dc5a1be20fa1032d65d9f}
+      \strng{fullhash}{9a4cd1345f5dc5a1be20fa1032d65d9f}
+      \field{labelalpha}{Weiser,\addhighpenspace1991}
+      \field{sortinit}{W}
+      \field{labeltitle}{The computer for the 21st century}
+      \field{journaltitle}{Scientific American}
+      \field{month}{09}
+      \field{number}{3}
+      \field{title}{The computer for the 21st century}
+      \field{volume}{265}
+      \field{year}{1991}
+      \field{pages}{66\bibrangedash 75}
+      \keyw{pervasive computing}
+    \endentry
+  \endsortlist
+  \missing{swift-error-handling}
+  \missing{Internet-couchbase}
+\endrefsection
+\endinput
 
-\bibitem[Abowd and Dey(1999)]{Abowd99}
-Gregory~D. Abowd and Anind~K. Dey.
-\newblock Towards a better understanding of context and context-awareness.
-\newblock In \emph{Proceedings of the 1st International Symposium on Handheld
-  and Ubiquitous Computing}, HUC '99, pages 304--307, London, UK, UK, 1999.
-  Springer-Verlag.
-\newblock ISBN 3-540-66550-1.
-\newblock URL \url{http://dl.acm.org/citation.cfm?id=647985.743843}.
-
-\bibitem[Paulo and Pedro(2014)]{distributed-cas}
-Ferreira Paulo and Alves Pedro.
-\newblock \emph{Distributed Context-Aware Systems}.
-\newblock Springer-Verlag, 2014.
-
-\bibitem[Weiser(1991)]{weiserm1991}
-Mark Weiser.
-\newblock The computer for the 21st century.
-\newblock \emph{Scientific American}, 265\penalty0 (3):\penalty0 66--75,
-  September 1991.
-
-\bibitem[swi(2014)]{swift-book}
-\emph{The Swift Programming Language}.
-\newblock Swift Programming Series. Apple Inc., 1st edition, 2014.
-
-\bibitem[Macacek()]{scala-dsl-example}
-Jan Macacek.
-\newblock Type-safe dsl.
-
-\bibitem[Odersky et~al.(2010)Odersky, Spoon, and Venners]{scala-book}
-Martin Odersky, Lex Spoon, and Bill Venners.
-\newblock \emph{Programming in Scala: A Comprehensive Step-by-step Guide}.
-\newblock Artima Incorporation, USA, 2nd edition, 2010.
-\newblock ISBN 0981531601, 9780981531601.
-
-\end{thebibliography}
