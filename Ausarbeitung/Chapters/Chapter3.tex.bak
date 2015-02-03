@@ -13,9 +13,13 @@
 The Context-Aware Guide (subsequently called "CA Guide") needs to be defined to fit indoor and outdoor exhibitions, like classical museums, parks and gardens. 
 The basic functionality must be accessible even by persons not familiar with mobile technology. The context awareness techniques can help avoid big parts of explicit user input.
 
-The following Image shows the complete system, consisting of a museum guide frontend running on a mobile device, a backend for the configuration of the guide and analytic function and a database server.
+The following figure shows an overview of the complete system, consisting of a museum guide frontend running on a mobile device, a backend for the configuration of the guide and analytic function and a database server.
 
-Image Guide Frontend, Backend and Database Server
+\begin{figure}[H]
+\centering
+\includegraphics[height=0.8\textwidth]{system-overview}
+\caption{CA Guite Architecture Overview}
+\end{figure}
 
 Image Mockup CA Guide 
 
@@ -63,10 +67,41 @@ A JSON Schema is used for asserting a valid structure of a JSON file, similar to
 
 \subsection{Sensor Data}
 
-Sensor data is saved to the Couchbase database to allow replaying it for development, testing, presentations and for big data analytics presented in the system's web backend. 
+Sensor data is saved to the Couchbase database to allow replaying it for development, testing, presentations and for analytics presented in the system's web backend. 
 
-The single measurements can be very high frequent, for example in case of accelerometer data, that is updated every 5 millisecons. New beacon measurements are available every second. Events on a higher logical level, like "entering region a", will occur much less frequent.
+The single measurements can be very high frequent, for example in case of accelerometer data, that is updated every 5 millisecons. New beacon measurements are available every second. Events on a higher logical level, like "entering region a", will occur less frequently.
 
-T
+\begin{lstlisting}[basicstyle=\footnotesize]
+key: SENSORTRACE-CXN01
+value: {
+  "date": "2015-02-12",
+  "time": "20:15",
+  "accelerometer": [
+    {"timestamp": 12345678.35, "data": [1.235, 0.364, 0.021]},
+    {"timestamp": 12345678.40, "data": [1.217, 0.378, 0.009]},
+    ...
+  ],
+  "gyroscope": [
+    {"timestamp": 12345678.35, "data": [1.235, 0.364, 0.021]},
+    {"timestamp": 12345678.40, "data": [1.217, 0.378, 0.009]},
+    ...
+  ],
+  "magnetometer": [
+    {"timestamp": 12345678.35, "data": [1.235, 0.364, 0.021]},
+    {"timestamp": 12345678.40, "data": [1.217, 0.378, 0.009]},
+    ...
+  ],
+  "beacons": [
+    {"timestamp": 12345679.05, "data": [["A3F3", -51],["85B7", -68]]},
+    {"timestamp": 12345680.05, "data": [["A3F3", -51],["85B7", -68]]},
+    ...
+  ],
+  "gps": [
+    {"timestamp": 12345679.35, "data": [1.44, 10.021]},
+    {"timestamp": 12345680.36, "data": [1.44, 10.009]},
+    ...
+  ],
+}
+\end{lstlisting}
 
 

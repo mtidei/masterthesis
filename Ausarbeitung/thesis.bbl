@@ -68,17 +68,49 @@
       \field{year}{2014}
       \keyw{swift}
     \endentry
+    \entry{MapReduceArticle}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=4aecfb0cc2e1e3b7899129fa2a94e2b8}{Dean}{D\bibinitperiod}{Jeffrey}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=193bcec5240237591ad8fb697869f013}{Ghemawat}{G\bibinitperiod}{Sanjay}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=4aecfb0cc2e1e3b7899129fa2a94e2b8}{Dean}{D\bibinitperiod}{Jeffrey}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=193bcec5240237591ad8fb697869f013}{Ghemawat}{G\bibinitperiod}{Sanjay}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{59b423e9fed33260f87a089f738c1beb}
+      \strng{fullhash}{59b423e9fed33260f87a089f738c1beb}
+      \field{labelalpha}{Dean,\addhighpenspace2008}
+      \field{sortinit}{D}
+      \field{labeltitle}{MapReduce: Simplified Data Processing on Large Clusters}
+      \field{issn}{0001-0782}
+      \field{journaltitle}{Commun. ACM}
+      \field{month}{01}
+      \field{number}{1}
+      \field{title}{MapReduce: Simplified Data Processing on Large Clusters}
+      \field{volume}{51}
+      \field{year}{2008}
+      \field{pages}{107\bibrangedash 113}
+      \verb{doi}
+      \verb 10.1145/1327452.1327492
+      \endverb
+    \endentry
     \entry{couchbase-lite}{url}{}
       \name{labelname}{1}{}{%
-        {{hash=7dd3b0205c0cae0eb0b77da34529a5c5}{Couchbase}{C\bibinitperiod}{}{}{}{}{}{}}%
+        {{hash=7cf9877ab551434818b87a774a1d0c19}{Inc.}{I\bibinitperiod}{Couchbase}{C\bibinitperiod}{}{}{}{}}%
       }
       \name{author}{1}{}{%
-        {{hash=7dd3b0205c0cae0eb0b77da34529a5c5}{Couchbase}{C\bibinitperiod}{}{}{}{}{}{}}%
+        {{hash=7cf9877ab551434818b87a774a1d0c19}{Inc.}{I\bibinitperiod}{Couchbase}{C\bibinitperiod}{}{}{}{}}%
       }
-      \strng{namehash}{7dd3b0205c0cae0eb0b77da34529a5c5}
-      \strng{fullhash}{7dd3b0205c0cae0eb0b77da34529a5c5}
+      \strng{namehash}{7cf9877ab551434818b87a774a1d0c19}
+      \strng{fullhash}{7cf9877ab551434818b87a774a1d0c19}
       \field{labelalpha}{Couchbase}
-      \field{sortinit}{C}
+      \field{sortinit}{I}
       \field{labeltitle}{Couchbase Mobile NoSQL Database}
       \field{shorthand}{Couchbase}
       \field{title}{Couchbase Mobile NoSQL Database}

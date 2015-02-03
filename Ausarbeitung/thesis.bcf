@@ -1978,6 +1978,7 @@
     <bcf:citekey order="11">Internet-couchbase</bcf:citekey>
     <bcf:citekey order="12">couchbase-lite</bcf:citekey>
     <bcf:citekey order="13">couchbase-lite</bcf:citekey>
+    <bcf:citekey order="14">MapReduceArticle</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="nyt">
   <bcf:sorting>

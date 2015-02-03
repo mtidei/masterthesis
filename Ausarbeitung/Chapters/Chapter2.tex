@@ -325,8 +325,9 @@ These alternatives misses the exceptions ability to retract some levels of the c
 
 \subsubsection{Summary}
 
-Swift is currently the most modern programming language available for a mobile platform. It is a great step forward compared with it's predecessor Objective C. 
-Although it's expressive and concise syntax and it's Playground and REPL (Read-Eval-Print-Loop) feature, Swift remains a compiled language. Like Objective C, it is compiled into machine code by the LLVM compiler, which proved to be very fast.
+Swift is currently the most modern programming language available for any mobile platform. Although it's expressive and concise syntax and it's Playground and REPL (Read-Eval-Print-Loop) feature, Swift remains a compiled language. Like Objective C, it is compiled into machine code by the LLVM compiler, which proved to be very fast. Being a new language, the tooling is not yet very stable.\footnote{At the time of writing, the XCode IDE doesn't support any refactoring in swift. The compiler isn't fully finished (a few language elements cause a "Not yet implemented" error), some error messages are cryptic and misleading, the context assistance doesn't always work and the editor can get stuck after some editing with phantom errors that are hard to remove.}
+
+Despite of the problems in this early stage, Swift is - in my opinion - a great Language and a big step forward compared with it's predecessor Objective C. It will likely become even better as time passes and the language and tooling matures. 
 
 %TODO Parallel execution
 
@@ -337,7 +338,7 @@ Developing with XCode
 
 \section{Couchbase Server}
 
-Couchbase is a modern JSON-based NoSQL database, available as an open-source community edition used in this thesis.\cite{Internet-couchbase} While JSON was initially born as "Javascript Object Notation" for data exchange between web / application servers and the javascript web gui, today it is used in more and more products independently from javascript. It's simplicity, readability and compactness helped to repress the comparatively cumbersome XML in many areas. Especially document-oriented databases like Couchbase use the JSON notation for storing the structured data of it's documents.
+Couchbase\cite{Internet-couchbase} is a modern JSON-based NoSQL database, available as an open-source community edition used in this thesis. While JSON was initially born as "Javascript Object Notation" for data exchange between web / application servers and the javascript web gui, today it is used in more and more products independently from javascript. It's simplicity, readability and compactness helped to repress the comparatively cumbersome XML in many areas. Especially document-oriented databases like Couchbase use the JSON notation for storing the structured data of it's documents.
 
 Couchbase offers a specially sleek mobile version - called "Couchbase Mobile" or "Couchbase Lite" - for all major mobile platforms, and so of course for iOS, too. Since especially mobile devices cannot rely on an uninterrupted networking connection, the mobile version a good choice for a network independent local cache of the application data. With it's synchronization functionality, the local mobile database can be automatically synchronized with a database server. Every time a network connection is available, the local database is updated with changes on the server, and local changes made during the offline time are propagated to the server.
 
@@ -349,8 +350,8 @@ To connect the mobile version to a regular couchbase server, a sync gateway has 
 \caption{Couchbase Lite and Sync Gateways. Adapted from \cite{couchbase-lite}}
 \end{figure}
 
-While traditional relational database management systems (RDBMS) are typically hard to scale out, Couchbase offers a built-in distributed cache concept that can easily be scaled on more servers without modifying the application.
+While traditional relational database management systems (RDBMS) are typically hard to scale out\footnote{also "Horizontal Scaling" - dividing a database over several servers after reaching the limit of upgrading a single server with more powerful hardware (vertical scaling)}, Couchbase offers a built-in distributed cache concept that can easily be scaled on more servers without modifying the application.
 
-Queries are performed using the map reduce paradigm, allowing heavy parallelisation of 
+Queries are performed using the map reduce programming model originally developed by Google Engineers, allowing massive parallel execution (cf. \cite{MapReduceArticle}). 
 
 This enables couchbase to perform computation and storage heavy big data analytics. 

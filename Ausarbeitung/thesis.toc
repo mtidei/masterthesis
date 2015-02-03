@@ -72,46 +72,48 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.5.3.5}Summary}{13}{subsubsection.103}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}iOS and Cocoa Touch}{14}{section.104}
+\contentsline {section}{\numberline {2.6}iOS and Cocoa Touch}{14}{section.105}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Couchbase Server}{14}{section.105}
+\contentsline {section}{\numberline {2.7}Couchbase Server}{14}{section.106}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}System Overview}{16}{chapter.107}
+\contentsline {chapter}{\numberline {3}System Overview}{16}{chapter.109}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Introduction}{16}{section.108}
+\contentsline {section}{\numberline {3.1}Introduction}{16}{section.110}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Data Structure}{16}{section.109}
+\contentsline {section}{\numberline {3.2}Data Structure}{17}{section.112}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Exhibition Modelling}{16}{subsection.110}
+\contentsline {subsection}{\numberline {3.2.1}Exhibition Modelling}{17}{subsection.113}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Sensor Data}{17}{subsection.133}
+\contentsline {subsection}{\numberline {3.2.2}Sensor Data}{18}{subsection.136}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}CA Guide Frontend}{18}{chapter.134}
+\contentsline {chapter}{\numberline {4}CA Guide Mobile Application}{20}{chapter.168}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Architecture}{18}{section.135}
+\contentsline {section}{\numberline {4.1}Target Platform}{20}{section.169}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Sensors Layers}{20}{section.140}
+\contentsline {section}{\numberline {4.2}Architecture}{20}{section.170}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Application Logic}{20}{section.141}
+\contentsline {section}{\numberline {4.3}Sensors Layers}{23}{section.175}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Presentation Layer}{21}{section.142}
+\contentsline {section}{\numberline {4.4}Application Logic}{24}{section.176}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}CA Guide Backend}{22}{chapter.143}
+\contentsline {section}{\numberline {4.5}Presentation Layer}{24}{section.177}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Graphical Editor}{22}{section.144}
+\contentsline {chapter}{\numberline {5}CA Guide Backend}{25}{chapter.178}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}System Review}{23}{chapter.145}
+\contentsline {section}{\numberline {5.1}Graphical Editor}{25}{section.179}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusion}{24}{chapter.146}
+\contentsline {chapter}{\numberline {6}System Review}{26}{chapter.180}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Contribution}{24}{section.147}
+\contentsline {chapter}{\numberline {7}Conclusion}{27}{chapter.181}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Future Work}{24}{section.148}
+\contentsline {section}{\numberline {7.1}Contribution}{27}{section.182}
 \defcounter {refsection}{0}\relax 
-\vspace {2em}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendix Title Here}{25}{appendix.149}
+\contentsline {section}{\numberline {7.2}Future Work}{27}{section.183}
 \defcounter {refsection}{0}\relax 
 \vspace {2em}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{26}{dummy.150}
+\contentsline {chapter}{\numberline {A}Appendix Title Here}{28}{appendix.184}
+\defcounter {refsection}{0}\relax 
+\vspace {2em}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{29}{dummy.185}
