@@ -13,7 +13,9 @@
 The Context-Aware Guide (subsequently called "CA Guide") needs to be defined to fit indoor and outdoor exhibitions, like classical museums, parks and gardens. 
 The basic functionality must be accessible even by persons not familiar with mobile technology. The context awareness techniques can help avoid big parts of explicit user input.
 
-The following figure shows an overview of the complete system, consisting of a museum guide frontend running on a mobile device, a backend for the configuration of the guide and analytic function and a database server.
+The following figure shows an overview of the complete system, consisting of a museum guide front-end running on a mobile device, a back-end for the configuration of the guide and performing analytic functions. A database server is accessed by both system parts and represents the communication basis - there is no direct communication between font and back end. All data is exchanged over the database, enabling asynchronous communication.
+
+As database server Couchbase was choosen due to it's automatic synchronization capabilities, it's mobile version and it's ability to scale out without completely redesigning the way the database is accessed by the application.\footnote{After actually having reached the limits of scalabity of a single classical relational database server of a commercial project and painfully distributing the database on several servers of the productive system, the idea of an easy scale out using a document based database and map-reduce queries seemed even more ingenious to me.} 
 
 \begin{figure}[H]
 \centering
@@ -69,7 +71,7 @@ A JSON Schema is used for asserting a valid structure of a JSON file, similar to
 
 Sensor data is saved to the Couchbase database to allow replaying it for development, testing, presentations and for analytics presented in the system's web backend. 
 
-The single measurements can be very high frequent, for example in case of accelerometer data, that is updated every 5 millisecons. New beacon measurements are available every second. Events on a higher logical level, like "entering region a", will occur less frequently.
+The single measurements can be very high frequent, for example in case of accelerometer data, that is updated every 10 millisecons. New beacon measurements are available every second. Events on a higher logical level, like "entering region a", will occur less frequently.
 
 \begin{lstlisting}[basicstyle=\footnotesize]
 key: SENSORTRACE-CXN01

@@ -1,16 +1,32 @@
 % Chapter 5
 
-\chapter{CA Guide Backend} % Main chapter title
+\chapter{CA Guide Back End} % Main chapter title
 
-\label{systemarc} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+\label{backend} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
-\lhead{Chapter 5. \emph{CA Guide Backend}} % This is for the header on each page - perhaps a shortened title
+\lhead{Chapter 5. \emph{CA Guide Back End}} % This is for the header on each page - perhaps a shortened title
 
 %----------------------------------------------------------------------------------------
 
+\section{Introduction and Requirements}
 
+The CA Guide back end is meant to be used by the park or museum staff responsible for designing and optimizing the visiting experience. In contrast to the front end, the user interface can be more complex requiring an introductory training and support. Of course, the usability deserves special attention in spite of the training, as it has a major influence on the frequency a software is used, the attitude towards it and so the success of the whole product. %TODO Citation
 
+There are two main tasks accomplished with the CA Guide back end:
 
+\begin{itemize}
+\item Design of the Park/Museum
+\item Analytics
+\end{itemize}
+%TODO Heat Map Mockup
+
+\section{Target Platform}
+
+The back end user interface has to run in a web browser with the data hold on database servers. This has several advantages: Users can start immediately to work with the product without installing any client. With the project data in a database  in the cloud, they can work on the same project from different locations using several different computers without manually setting up a synchronization infrastructure. Computation expensive analytic functions can be performed directly on the database or web/application servers and only the results are transfered to the client, enabling it's usage on commodity hardware.
+
+By allowing collaborative editing, the museum staff can easily be supported remotely in real time without having to be on site. 
+
+Scala is used as programming language for the back end, as it is a very promising  functional language. The Scala Play framework is used to be run in a browser.
 
 \section{Graphical Editor}
 
