@@ -96,6 +96,18 @@
 	Series = {Swift Programming Series},
 	Title = {The Swift Programming Language},
 	Year = {2014}}
+	
+@book{swift-objc-book,
+    Author = {Apple},
+	Date-Added = {2015-02-22},
+	Edition = {1st},
+	Keywords = {swift, objective-c},
+	Publisher = {Apple Inc.},
+	Rating = {5},
+	Read = {1},
+	Series = {Swift Programming Series},
+	Title = {Using Swift with Cocoa and Objective-C},
+	Year = {2014}}
 
 @book{scala-book,
 	Address = {USA},
@@ -171,3 +183,36 @@
  publisher = {ACM},
  address = {New York, NY, USA},
 } 
+
+@book{gof,
+ author = {Gamma, Erich and Helm, Richard and Johnson, Ralph and Vlissides, John},
+ title = {Design Patterns: Elements of Reusable Object-oriented Software},
+ year = {1995},
+ isbn = {0-201-63361-2},
+ publisher = {Addison-Wesley Longman Publishing Co., Inc.},
+ address = {Boston, MA, USA},
+} 
+
+@url {GCD-Reference,
+ title = {Grand Central Dispatch (GCD) Reference},
+ author = {Apple},
+ url = {https://developer.apple.com/library/mac/documentation/Performance/Reference/GCD_libdispatch_Ref/index.html},
+ urldate = {2015-02-18},
+ shorthand = {GCD-Reference},
+}
+
+@book {ScalaDesignPatterns,
+author = {Hunt, John},
+title = {Scala Design Patterns: Patterns for Practical Reuse and Design},
+address = {Cham},
+year = {2013},
+publisher = {Springer Berlin Heidelberg},
+keywords = {Computer science. Software engineering. Computer Science},
+pages = {Online-Ressource (XXII, 327 p. 90 illus., 49 illus. in color, online resource)},
+URL = {http://nbn-resolving.de/urn/resolver.pl?urn=10.1007/978-3-319-02192-8},
+URL = {http://dx.doi.org/10.1007/978-3-319-02192-8},
+URL = {http://dx.doi.org/10.1007/978-3-319-02192-8},
+type = {Text (nur für elektronische Ressourcen)},
+ISBN = {978-331-90219-2-8},
+ISBN = {978-331-90219-1-1 (Druckausgabe)},
+}

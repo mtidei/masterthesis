@@ -4,21 +4,23 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Couchbase Lite and Sync Gateways. Adapted from \cite {couchbase-lite}\relax }}{15}{figure.caption.107}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Couchbase Lite and Sync Gateways. Adapted from \cite {couchbase-lite}\relax }}{15}{figure.caption.113}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces CA Guite Architecture Overview\relax }}{17}{figure.caption.112}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces CA Guite Architecture Overview\relax }}{18}{figure.caption.118}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Layer Model of the Museum Guide Application\relax }}{21}{figure.caption.173}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Layer Model of the Museum Guide Application\relax }}{22}{figure.caption.180}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Layer Model with virtual sensors\relax }}{21}{figure.caption.174}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Layer model with virtual sensors\relax }}{23}{figure.caption.181}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Data Flow between the lower Layers\relax }}{22}{figure.caption.175}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Data flow between the lower layers of the Sensorbase framework\relax }}{24}{figure.caption.182}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Simplified Class Diagram for Sensor Data Processing\relax }}{23}{figure.caption.176}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Sequence Diagram for the Sensor Layers\relax }}{25}{figure.caption.183}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Simplified Class Diagram for Sensor Data Processing\relax }}{26}{figure.caption.184}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

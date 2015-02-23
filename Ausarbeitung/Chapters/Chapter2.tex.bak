@@ -323,11 +323,36 @@ case .Success(let res):
 These alternatives misses the exceptions ability to retract some levels of the call stack and retry without explicitly passing an error object up the call chain.
 %TODO Erfahrungen Fehlerbehandlung
 
+\subsubsection{The Legacy of Objective-C}
+
+The hardest part of learning a new language is not the grammar itself, but getting familiar with the underlying standard library and special APIs for the myriad of tasks a platform has to be capable to handle nowadays.
+Swift uses all the existing Objective-C libraries, which are dynamically translated to Swift using a set of rules to improve the method naming.
+
+For example, Objective-C initializers are mapped to Swift by slicing off the init or initWith part of the first parameter name. So
+
+\begin{lstlisting}[frame=none]
+UITableView *myTableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
+\end{lstlisting}
+becomes
+\begin{lstlisting}[frame=none]
+let myTableView: UITableView = UITableView(frame: CGRectZero, style: .Grouped)
+\end{lstlisting}
+in Swift (cf. \cite{swift-objc-book}).
+
+For several tasks it is necessary to mark an own class or protocol with the "@objc" attribute\footnote{Attributes are the counterpart of annotations in the Java world.}, that makes it available in Objective-C code. 
+
+An example: Objective-C APIs sometimes use selectors, which are strings identifying a certain callback method by its method name and its named parameters that will be called on the passed object.
+When an API is used that expects a selector as parameter, the @objc attribute is needed on the passed object's class, so that that the library can find and call the method, otherwise at runtime a fatal error occurs stating no method with that name can be found.
+This is a clear limitation of that automatic translation of old APIs. In my opinion, it would be much safer to rewrite this APIs in Swift and replace all selectors with function parameters or closures. This way, a misspelled method name is recognized at compile time.
+
+Because of the usage of old Objective-C standard libraries, learning Swift automatically means - at least to a certain degree - learning Objective-C, too. 
+
 \subsubsection{Summary}
 
 Swift is currently the most modern programming language available for any mobile platform. Although it's expressive and concise syntax and it's Playground and REPL (Read-Eval-Print-Loop) feature, Swift remains a compiled language. Like Objective C, it is compiled into machine code by the LLVM compiler, which proved to be very fast. Being a new language, the tooling is not yet very stable.\footnote{At the time of writing, the XCode IDE doesn't support any refactoring in swift. The compiler isn't fully finished (a few language elements cause a "Not yet implemented" error), some error messages are cryptic and misleading, the context assistance doesn't always work and the editor can get stuck after some editing with phantom errors that are hard to remove.}
 
 Despite of the problems in this early stage, Swift is - in my opinion - a great Language and a big step forward compared with it's predecessor Objective C. It will likely become even better as time passes and the language and tooling matures. 
+
 
 %TODO Parallel execution
 

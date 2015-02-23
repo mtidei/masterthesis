@@ -70,56 +70,64 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.5.3.4}Exception Handling}{13}{subsubsection.84}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.5.3.5}Summary}{13}{subsubsection.103}
+\contentsline {subsubsection}{\numberline {2.5.3.5}The Legacy of Objective-C}{13}{subsubsection.103}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}iOS and Cocoa Touch}{14}{section.105}
+\contentsline {subsubsection}{\numberline {2.5.3.6}Summary}{14}{subsubsection.109}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Couchbase Server}{14}{section.106}
+\contentsline {section}{\numberline {2.6}iOS and Cocoa Touch}{15}{section.111}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}System Overview}{16}{chapter.109}
+\contentsline {section}{\numberline {2.7}Couchbase Server}{15}{section.112}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Introduction}{16}{section.110}
+\contentsline {chapter}{\numberline {3}System Overview}{17}{chapter.115}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Data Structure}{17}{section.113}
+\contentsline {section}{\numberline {3.1}Introduction}{17}{section.116}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Exhibition Modelling}{17}{subsection.114}
+\contentsline {section}{\numberline {3.2}Data Structure}{18}{section.119}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Sensor Data}{18}{subsection.137}
+\contentsline {subsection}{\numberline {3.2.1}Exhibition Modelling}{18}{subsection.120}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}CA Guide Mobile Application}{20}{chapter.169}
+\contentsline {subsection}{\numberline {3.2.2}Sensor Data}{19}{subsection.143}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Requirements}{20}{section.170}
+\contentsline {section}{\numberline {3.3}Setting up the Couchbase Infrastructure}{20}{section.175}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Target Platform}{20}{section.171}
+\contentsline {chapter}{\numberline {4}CA Guide Mobile Application}{21}{chapter.176}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Architecture}{20}{section.172}
+\contentsline {section}{\numberline {4.1}Requirements}{21}{section.177}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Sensors Layers}{23}{section.177}
+\contentsline {section}{\numberline {4.2}Target Platform}{21}{section.178}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Application Logic}{24}{section.178}
+\contentsline {section}{\numberline {4.3}Architecture}{21}{section.179}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Presentation Layer}{24}{section.179}
+\contentsline {subsection}{\numberline {4.3.1}Setup of Couchbase Server and Sync Gateway}{26}{subsection.185}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}CA Guide Back End}{25}{chapter.180}
+\contentsline {section}{\numberline {4.4}Sensors Layers}{26}{section.186}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Introduction and Requirements}{25}{section.181}
+\contentsline {section}{\numberline {4.5}Application Logic}{27}{section.187}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Target Platform}{25}{section.182}
+\contentsline {section}{\numberline {4.6}Presentation Layer}{27}{section.188}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Graphical Editor}{26}{section.183}
+\contentsline {chapter}{\numberline {5}CA Guide Back End}{28}{chapter.189}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}System Review}{27}{chapter.184}
+\contentsline {section}{\numberline {5.1}Introduction and Requirements}{28}{section.190}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusion}{28}{chapter.185}
+\contentsline {section}{\numberline {5.2}Target Platform}{28}{section.191}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Contribution}{28}{section.186}
+\contentsline {section}{\numberline {5.3}Interaction with Couchbase Sync Gateway}{29}{section.192}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Future Work}{28}{section.187}
+\contentsline {section}{\numberline {5.4}Graphical Editor}{29}{section.193}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}System Review}{30}{chapter.194}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Conclusion}{31}{chapter.195}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Contribution}{31}{section.196}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Future Work}{31}{section.197}
 \defcounter {refsection}{0}\relax 
 \vspace {2em}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendix Title Here}{29}{appendix.188}
+\contentsline {chapter}{\numberline {A}Appendix Title Here}{32}{appendix.198}
 \defcounter {refsection}{0}\relax 
 \vspace {2em}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{30}{dummy.189}
+\contentsline {chapter}{Bibliography}{33}{dummy.199}

@@ -1975,10 +1975,13 @@
     <bcf:citekey order="8">scala-dsl-example</bcf:citekey>
     <bcf:citekey order="9">scala-book</bcf:citekey>
     <bcf:citekey order="10">swift-error-handling</bcf:citekey>
-    <bcf:citekey order="11">Internet-couchbase</bcf:citekey>
-    <bcf:citekey order="12">couchbase-lite</bcf:citekey>
+    <bcf:citekey order="11">swift-objc-book</bcf:citekey>
+    <bcf:citekey order="12">Internet-couchbase</bcf:citekey>
     <bcf:citekey order="13">couchbase-lite</bcf:citekey>
-    <bcf:citekey order="14">MapReduceArticle</bcf:citekey>
+    <bcf:citekey order="14">couchbase-lite</bcf:citekey>
+    <bcf:citekey order="15">MapReduceArticle</bcf:citekey>
+    <bcf:citekey order="16">gof</bcf:citekey>
+    <bcf:citekey order="17">GCD-Reference</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="nyt">
   <bcf:sorting>

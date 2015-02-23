@@ -27,25 +27,35 @@ The application is separated in 5 different layers.
 \caption{Layer Model of the Museum Guide Application}
 \end{figure}
 
-A fundamental requirement for the CA Guide frontend, the mobile application, is the ability to automatically test the single layers using recorded sensor data and comparing it with it's expected result.
+A fundamental requirement for the CA Guide front end, from a developer point of view, is the ability to record and replay recorded sensor readings of all accessed sensors and to automatically test the single layers using recorded sensor data and comparing it with it's expected result.
 
-To achieve this level of testability, virtual sensors are introduced at three different levels of abstraction:
+To achieve this goal, virtual sensors are introduced at three different levels of abstraction inside the sensor data processing foundation that provides the context information for the application.
  
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{layers-guide-refined-app.png}
-\caption{Layer Model with virtual sensors}
+\caption{Layer model with virtual sensors}
 \end{figure}
 
-The following figure visualizes the different kind of data that is handled in every different layer, taking the accelerometer data processed by pedometer and statistics algorithms as an example. The frequency of events passed to the next layer decreases from real-time data (100 updates per second), demanding very fast algorithms, to some seconds or minutes.
+These three layers are important enough the deserve a name, so this foundation framework is called "Sensorbase" from now on. With a focus on clean and usable design it can evolve to a 
+
+The following figure visualizes the different kind of data that is handled in every different layer, taking the accelerometer data processed by pedometer and statistics algorithms as an example. 
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{layers-app-dataflow-accelerometer.png}
-\caption{Data Flow between the lower Layers}
+\caption{Data flow between the lower layers of the Sensorbase framework}
 \end{figure}
 
 The pedometer algorithm in the low-level sensor data processing layer receives raw accelerometer data as input. It analyzes the data, detects single steps and passes them to the upper layer, the high-level sensor data processing. Here the single steps are aggregated to periods of slow and fast walking and walking statistics are updated.
+
+The frequency of events passed to the next layer decreases from real-time data (100 updates per second), demanding very fast algorithms, to some seconds or minutes.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{layers-app-dataflow-accelerometer.png}
+\caption{Sequence Diagram for the Sensor Layers}
+\end{figure}
 
 Beside enabling automated unit tests at different abstraction levels, this layered virtual sensor concept has various other benefits:
 
@@ -64,14 +74,19 @@ Beside enabling automated unit tests at different abstraction levels, this layer
 \end{figure}
 
 Mock: useful for Testing the underlying layer,
-Adapter
+Adapter for iOS Sensor API,
+The Sensorbase class is a singleton and acts as facade for the whole framework. It provides a single interface to the set of interfaces of the sensorbase subsystem. Knowing which subsystem class is responsible for which call, it delegates client requests to the appropriate subsystem object (cf. \cite{gof}).
 
+\subsection{Setup of Couchbase Server and Sync Gateway}
 
 \section{Sensors Layers}
 
 Sensor data is saved to couchbase database.
 Later access for replay (development), testing and presentations.
 The backend can access this saved data for later analysis.
+
+Sensorbase debug view.
+\cite{GCD-Reference}
 
 \section{Application Logic}
 
