@@ -172,6 +172,42 @@
       \field{title}{Design Patterns: Elements of Reusable Object-oriented Software}
       \field{year}{1995}
     \endentry
+    \entry{geoid}{url}{}
+      \field{labelalpha}{Geoid-Grace}
+      \field{sortinit}{G}
+      \field{labeltitle}{GRACE - Gravity Recovery and Climate Experiment}
+      \field{shorthand}{Geoid-Grace}
+      \field{title}{GRACE - Gravity Recovery and Climate Experiment}
+      \field{urlday}{23}
+      \field{urlmonth}{02}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://www.csr.utexas.edu/grace/gravity/gravity_definition.html
+      \endverb
+    \endentry
+    \entry{play}{book}{}
+      \name{labelname}{3}{}{%
+        {{hash=bdc68aa7b26dfbabf2194f665d9a16e3}{Hilton}{H\bibinitperiod}{Peter}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=93ac0a5efb09265f94330b21e26ffbda}{Bakker}{B\bibinitperiod}{Erik}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=c44da533060e4591f678c2d067a939d5}{Canedo}{C\bibinitperiod}{Francisco}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=bdc68aa7b26dfbabf2194f665d9a16e3}{Hilton}{H\bibinitperiod}{Peter}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=93ac0a5efb09265f94330b21e26ffbda}{Bakker}{B\bibinitperiod}{Erik}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=c44da533060e4591f678c2d067a939d5}{Canedo}{C\bibinitperiod}{Francisco}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Manning Publications}%
+      }
+      \strng{namehash}{f5058f59ae2ba28010535725d2c2dedc}
+      \strng{fullhash}{f5058f59ae2ba28010535725d2c2dedc}
+      \field{labelalpha}{Hilton,\addhighpenspace2014}
+      \field{sortinit}{H}
+      \field{labeltitle}{{Play for Scala: Covers Play 2}}
+      \field{isbn}{1617290793}
+      \field{title}{{Play for Scala: Covers Play 2}}
+      \field{year}{2014}
+    \endentry
     \entry{couchbase-lite}{url}{}
       \name{labelname}{1}{}{%
         {{hash=7cf9877ab551434818b87a774a1d0c19}{Inc.}{I\bibinitperiod}{Couchbase}{C\bibinitperiod}{}{}{}{}}%
@@ -215,6 +251,27 @@
       \verb http://www.cakesolutions.net/teamblogs/2011/12/10/type-safe-dsl
       \endverb
       \keyw{scala}
+    \endentry
+    \entry{nasageoid}{url}{}
+      \name{labelname}{1}{}{%
+        {{hash=1f99771bc3e23e6097509a331544ab65}{NASA}{N\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=1f99771bc3e23e6097509a331544ab65}{NASA}{N\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{fullhash}{1f99771bc3e23e6097509a331544ab65}
+      \field{labelalpha}{NASA-Geoid}
+      \field{sortinit}{N}
+      \field{labeltitle}{The NASA GSFC and NIMA Joint Geopotential Model}
+      \field{shorthand}{NASA-Geoid}
+      \field{title}{The NASA GSFC and NIMA Joint Geopotential Model}
+      \field{urlday}{23}
+      \field{urlmonth}{02}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://cddis.nasa.gov/926/egm96/egm96.html
+      \endverb
     \endentry
     \entry{scala-book}{book}{}
       \name{labelname}{3}{}{%

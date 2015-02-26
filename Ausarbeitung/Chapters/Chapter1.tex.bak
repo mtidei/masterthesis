@@ -33,20 +33,23 @@ The first one is a backend system that allows to define all relevant textual and
 
 The second one is the application running on the mobile device of the visitor. The goal is to provide relevant information at the right time to the visitor, thus enhancing his experience, and to collect anonymized sensor data for later analytics.
 
+This thesis is also an experiment about moving on from established languages and platforms to emerging ones: From C-like languages and Java to Swift and Scala, from relational databases to NoSQL, from the Java web architecture to Play, from NFC to Bluetooth low energy beacons.
+
 \section{Motivation}
 
-This work is a basis for the first product of the start-up contexagon GmbH in Kreuzlingen, Switzerland. The company was founded in September 2014 by the author, Maurizio Tidei, and Sascha P. Lorenz \footnote{S. P. Lorenz is currently writing his Master Thesis on Big Data Processing, e.g. for analyzing visitor interests} after several conversations with museum directors in the area of the Lake of Constance in Summer 2014, which expressed interest in such a solution and encouraged us in pursuing the development of an affordable system based on commodity hardware and a highly configurable software platform.
+This work is part of the foundation for the first product of the start-up contexagon GmbH in Kreuzlingen, Switzerland. The company was founded in September 2014 by the author, Maurizio Tidei, and Sascha Lorenz \footnote{S. Lorenz is currently writing his Master Thesis on Big Data Processing with Apache Spark, e.g. for analyzing visitor interests} after several conversations with museum directors in the tourist region of the Lake Constance in Summer 2014, who expressed interest in such a solution and encouraged us in pursuing the development of an affordable system based on commodity hardware and a highly configurable software platform.
+
+The first project is a context-aware guide for the World War I exhibition at the Schloss Arenenberg in Salenstein, that is scheduled for August 2015. Contexagon will realize the technical part of the exposition in cooperation with Steiner Sarnen Schweiz, a company designing and realizing exhibitions and other visitor attractions since 1997.
 
 \section{The Approach}
 
-Since the location context is key for the system that has to be designed, first, different methods for providing the location context are evaluated (Chapter 2.1). 
+Chapter 2 handles the theoretical background and fundamentals of this work. It starts with a definition, categorization and the history of context-aware computing.
+Since the location context is key for the system that has to be designed, different methods for providing and defining the location context are evaluated. For the evaluation of some new technologies, two technology prototypes are written and described in this chapter, too.
 
-Chapter 2.2 describes the chosen programming languages and tools.
+The system overall architecture and design will then be discussed in Chapter 3.
 
-Out of the possible context providing methods, the best fitting ones are tested in several technology prototypes (Chapter 3).
+In Chapter 4, the design and implementation of the front end, the guide as mobile application written in Swift, is described.
 
-The system design will be discussed in Chapter 4.
-
-The first results using the application in a real-life scenario in the "Schloss Arenenberg" Park and World War I exposition are presented in Chapter 5.
+Chapters 5 addresses the system's back end used for modeling the indoor or outdoor site, e.g. an exhibition or park guide, and for running analytics on anonymous visitor movement paths and feedback for the optimization of visitor flows and visitor experience.
 
 Chapter 6 handles the conclusion and future work. 

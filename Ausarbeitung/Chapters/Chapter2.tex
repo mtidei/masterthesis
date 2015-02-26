@@ -120,6 +120,48 @@ The light sensor measures the intensity of the light. It is primarily used to ad
 \section{Localization Techniques}
 
 
+\section{Geographic Coordinates}
+
+\subsection{Introduction}
+
+Since we need to work with gps data and model outdoor sites like parks, it is fundamental to understand how geographic coordinate systems work and which problems we may encounter.
+
+\subsection{Standards}
+
+There are many different systems for specifying a precise point on the Earth's surface and describing them all would go far beyond this thesis. The main problem is that the world has a complex shape. Even ignoring tides and winds the sea level does not fit an ellipsoid due to gravity anomalies over the Earth's surface. The surface that most closely approximates sea level is the geoid. 
+
+But for performance and storage reasons an ellipsoid is used in many applications including GPS. One widely used standard is the WGS (World Geodetic System) defining a coordinate system and an ellipsoid. The most recent revision is WGS 84, which is exactly what GPS uses and what is used in this work. The ellipsoid can be 106 meters above and 85 meters below the geoid (cf. \cite{geoid}). The following diagram shows the difference in meters between the geoid and the ellipsoid.
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=0.22\textheight]{earths_geoidII}
+\caption{Difference in meters between the geoid and the ellipsoid \cite{nasageoid}}
+\end{figure}
+
+The city of Konstanz, for example, is 46.62 meters above the ellipsoid.
+
+\subsection{WGS84 Coordinates}
+A point on Earth's surface is defined by a kartesian coordinate pair consisting of the latitude, that specifies the north-south position and the longitude for the east-west position. 
+
+%IMG
+
+For this work, the degree and decimal fraction representation was selected.
+
+The maximum resolution using 6 fractional digits depends on the position on Earth. In Konstanz, the one degree of longitude equals
+% http://en.wikipedia.org/wiki/Longitude#Length_of_a_degree_of_longitude
+% lat 11cm
+% long 8cm
+
+Google and Apple Maps
+The maps images at the closer zoom levels are in most cases taken by a camera mounted on a plane. This camera often does not look perpendicular to the ground but with a gentle angle, so that you can see the building facades.
+While this results in a nice isometric-like perspective, it introduces a problem one has to be aware of: Higher parts of the image like higher floors or small hills appear shifted to a certain direction.
+
+%TODO Image
+
+An example: To check the consistency of Google and Apple maps, I initially used the roof window of the office in which the biggest part of this thesis was written. The coordinates of the center of his window on both maps showed a notable discrepancy of several meters. The cause is the different camera angle of the two pictures. 
+Measuring the discrepancy using a prominent ground object like the marked lighting, the two map solutions 
+
+
 
 \section{Bluetooth Low Energy iBeacons}
 

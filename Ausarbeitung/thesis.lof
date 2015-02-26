@@ -4,23 +4,25 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Couchbase Lite and Sync Gateways. Adapted from \cite {couchbase-lite}\relax }}{15}{figure.caption.113}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Difference in meters between the geoid and the ellipsoid \cite {nasageoid}\relax }}{9}{figure.caption.37}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Couchbase Lite and Sync Gateways. Adapted from \cite {couchbase-lite}\relax }}{18}{figure.caption.118}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces CA Guite Architecture Overview\relax }}{18}{figure.caption.118}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces CA Guite Architecture Overview\relax }}{20}{figure.caption.123}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Layer Model of the Museum Guide Application\relax }}{22}{figure.caption.180}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Layer Model of the Museum Guide Application\relax }}{24}{figure.caption.185}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Layer model with virtual sensors\relax }}{23}{figure.caption.181}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Layer model with virtual sensors\relax }}{25}{figure.caption.186}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Data flow between the lower layers of the Sensorbase framework\relax }}{24}{figure.caption.182}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Data flow between the lower layers of the Sensorbase framework\relax }}{26}{figure.caption.187}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Sequence Diagram for the Sensor Layers\relax }}{25}{figure.caption.183}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Sequence Diagram for the Sensor Layers\relax }}{27}{figure.caption.188}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Simplified Class Diagram for Sensor Data Processing\relax }}{26}{figure.caption.184}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Simplified Class Diagram for Sensor Data Processing\relax }}{28}{figure.caption.189}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
