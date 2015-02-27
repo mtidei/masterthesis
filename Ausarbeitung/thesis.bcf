@@ -1984,8 +1984,9 @@
     <bcf:citekey order="18">couchbase-lite</bcf:citekey>
     <bcf:citekey order="19">couchbase-lite</bcf:citekey>
     <bcf:citekey order="20">MapReduceArticle</bcf:citekey>
-    <bcf:citekey order="21">gof</bcf:citekey>
-    <bcf:citekey order="22">GCD-Reference</bcf:citekey>
+    <bcf:citekey order="21">typesafeact</bcf:citekey>
+    <bcf:citekey order="22">gof</bcf:citekey>
+    <bcf:citekey order="23">GCD-Reference</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="nyt">
   <bcf:sorting>

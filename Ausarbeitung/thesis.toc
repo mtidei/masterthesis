@@ -86,56 +86,58 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.8}Couchbase Server}{17}{section.117}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}System Overview}{19}{chapter.120}
+\contentsline {section}{\numberline {2.9}Typesafe reactive platform}{18}{section.120}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Introduction}{19}{section.121}
+\contentsline {chapter}{\numberline {3}System Overview}{19}{chapter.121}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Data Structure}{20}{section.124}
+\contentsline {section}{\numberline {3.1}Introduction}{19}{section.122}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Exhibition Modelling}{20}{subsection.125}
+\contentsline {section}{\numberline {3.2}Data Structure}{20}{section.125}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Sensor Data}{21}{subsection.148}
+\contentsline {subsection}{\numberline {3.2.1}Exhibition Modelling}{20}{subsection.126}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Setting up the Couchbase Infrastructure}{22}{section.180}
+\contentsline {subsection}{\numberline {3.2.2}Sensor Data}{21}{subsection.149}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}CA Guide Mobile Application}{23}{chapter.181}
+\contentsline {section}{\numberline {3.3}Setting up the Couchbase Infrastructure}{22}{section.181}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Requirements}{23}{section.182}
+\contentsline {chapter}{\numberline {4}CA Guide Mobile Application}{23}{chapter.182}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Target Platform}{23}{section.183}
+\contentsline {section}{\numberline {4.1}Requirements}{23}{section.183}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Architecture}{23}{section.184}
+\contentsline {section}{\numberline {4.2}Target Platform}{23}{section.184}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Setup of Couchbase Server and Sync Gateway}{28}{subsection.190}
+\contentsline {section}{\numberline {4.3}Architecture}{23}{section.185}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Sensors Layers}{28}{section.191}
+\contentsline {subsection}{\numberline {4.3.1}Setup of Couchbase Server and Sync Gateway}{28}{subsection.191}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Application Logic}{29}{section.192}
+\contentsline {section}{\numberline {4.4}Sensors Layers}{28}{section.192}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Presentation Layer}{29}{section.193}
+\contentsline {section}{\numberline {4.5}Application Logic}{29}{section.193}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}CA Guide Back End}{30}{chapter.194}
+\contentsline {section}{\numberline {4.6}Presentation Layer}{29}{section.194}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Introduction and Requirements}{30}{section.195}
+\contentsline {chapter}{\numberline {5}CA Guide Back End}{30}{chapter.195}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Target Platform}{30}{section.196}
+\contentsline {section}{\numberline {5.1}Introduction and Requirements}{30}{section.196}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Interaction with Couchbase Sync Gateway}{31}{section.197}
+\contentsline {section}{\numberline {5.2}Target Platform}{30}{section.197}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Graphical Editor}{31}{section.198}
+\contentsline {section}{\numberline {5.3}Interaction with Couchbase Sync Gateway}{31}{section.198}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}System Review}{32}{chapter.199}
+\contentsline {section}{\numberline {5.4}Graphical Editor}{31}{section.199}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusion}{33}{chapter.200}
+\contentsline {chapter}{\numberline {6}System Review}{32}{chapter.200}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Contribution}{33}{section.201}
+\contentsline {chapter}{\numberline {7}Conclusion}{33}{chapter.201}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Future Work}{33}{section.202}
+\contentsline {section}{\numberline {7.1}Contribution}{33}{section.202}
 \defcounter {refsection}{0}\relax 
-\vspace {2em}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Appendix Title Here}{34}{appendix.203}
+\contentsline {section}{\numberline {7.2}Future Work}{33}{section.203}
 \defcounter {refsection}{0}\relax 
 \vspace {2em}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{35}{dummy.204}
+\contentsline {chapter}{\numberline {A}Appendix Title Here}{34}{appendix.204}
+\defcounter {refsection}{0}\relax 
+\vspace {2em}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{35}{dummy.205}

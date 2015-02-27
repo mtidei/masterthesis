@@ -240,3 +240,12 @@ ISBN = {978-331-90219-1-1 (Druckausgabe)},
     %url = {http://www.worldcat.org/isbn/1617290793},
     year = {2014}
 }
+
+
+@url {typesafeact,
+ title = {Typesafe Activator, What *is* it?},
+ author = {Dick Wall},
+ url = {https://typesafe.com/blog/typesafe-activator-what-is-it},
+ urldate = {2015-02-26},
+ shorthand = {Typesafe-Activator}
+}

@@ -369,6 +369,27 @@
       \field{year}{2013}
       \keyw{context aware computing,big data,sensors}
     \endentry
+    \entry{typesafeact}{url}{}
+      \name{labelname}{1}{}{%
+        {{hash=8c0ae5fd696874da262d05cfb26c114c}{Wall}{W\bibinitperiod}{Dick}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=8c0ae5fd696874da262d05cfb26c114c}{Wall}{W\bibinitperiod}{Dick}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{8c0ae5fd696874da262d05cfb26c114c}
+      \strng{fullhash}{8c0ae5fd696874da262d05cfb26c114c}
+      \field{labelalpha}{Typesafe-Activator}
+      \field{sortinit}{W}
+      \field{labeltitle}{Typesafe Activator, What *is* it?}
+      \field{shorthand}{Typesafe-Activator}
+      \field{title}{Typesafe Activator, What *is* it?}
+      \field{urlday}{23}
+      \field{urlmonth}{02}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb https://typesafe.com/blog/typesafe-activator-what-is-it
+      \endverb
+    \endentry
     \entry{weiserm1991}{article}{}
       \name{labelname}{1}{}{%
         {{hash=9a4cd1345f5dc5a1be20fa1032d65d9f}{Weiser}{W\bibinitperiod}{Mark}{M\bibinitperiod}{}{}{}{}}%
