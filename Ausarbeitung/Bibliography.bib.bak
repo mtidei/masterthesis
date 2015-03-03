@@ -7,17 +7,6 @@
 %% Saved with string encoding Unicode (UTF-8) 
 
 
-
-@url{couchbase-lite,
-	Author = {Couchbase Inc.},
-	shorthand = {Couchbase},
-	Date-Added = {2015-01-26 11:44:16 +0000},
-	Date-Modified = {2015-01-26 12:15:10 +0000},
-	Keywords = {couchbase},
-	Urldate = {2015-01-26},
-	Title = {Couchbase Mobile NoSQL Database},
-	Url = {http://www.couchbase.com/nosql-databases/couchbase-mobile}}
-
 @article{weiserm1991,
 	Author = {Weiser, Mark},
 	Citeulike-Article-Id = {960996},
@@ -153,19 +142,6 @@
 	Year = {1994},
 	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QJS4uLy4uLy4uL0Rvd25sb2Fkcy9zY2hpbGl0LW1jc2E5NC5wZGbSFwsYGVdOUy5kYXRhTxEBnAAAAAABnAACAAAMTWFjaW50b3NoIEhEAAAAAAAAAAAAAAAAAAAAz9RG5kgrAAAAEGK7EnNjaGlsaXQtbWNzYTk0LnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABYXoXQumVMAAAAAAAAAAAAAwACAAAJIAAAAAAAAAAAAAAAAAAAAAlEb3dubG9hZHMAABAACAAAz9QqxgAAABEACAAA0LpXPAAAAAEADAAQYrsAEFktAAJm+QACAEBNYWNpbnRvc2ggSEQ6VXNlcnM6AG1hdXJpemlvdGlkZWk6AERvd25sb2FkczoAc2NoaWxpdC1tY3NhOTQucGRmAA4AJgASAHMAYwBoAGkAbABpAHQALQBtAGMAcwBhADkANAAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAMFVzZXJzL21hdXJpemlvdGlkZWkvRG93bmxvYWRzL3NjaGlsaXQtbWNzYTk0LnBkZgATAAEvAAAVAAIAFP//AACABtIbHB0eWiRjbGFzc25hbWVYJGNsYXNzZXNdTlNNdXRhYmxlRGF0YaMdHyBWTlNEYXRhWE5TT2JqZWN00hscIiNcTlNEaWN0aW9uYXJ5oiIgXxAPTlNLZXllZEFyY2hpdmVy0SYnVHJvb3SAAQAIABEAGgAjAC0AMgA3AEAARgBNAFUAYABnAGoAbABuAHEAcwB1AHcAhACOALYAuwDDAmMCZQJqAnUCfgKMApAClwKgAqUCsgK1AscCygLPAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAtE=}}
 
-@url{scala-dsl-example,
-	Author = {Macacek, Jan},
-	Date-Added = {2015-01-07 15:57:02 +0000},
-	Date-Modified = {2015-01-07 15:59:00 +0000},
-	Keywords = {scala},
-	Lastchecked = {7.1.2015},
-	Title = {Type-safe DSL},
-	Url = {http://www.cakesolutions.net/teamblogs/2011/12/10/type-safe-dsl},
-	Urldate = {2015-01-05},
-	Year = {2011},
-	Bdsk-Url-1 = {http://www.cakesolutions.net/teamblogs/2011/12/10/type-safe-dsl}
-}
-
 @article{MapReduceArticle,
  author = {Dean, Jeffrey and Ghemawat, Sanjay},
  title = {MapReduce: Simplified Data Processing on Large Clusters},
@@ -193,14 +169,6 @@
  address = {Boston, MA, USA},
 } 
 
-@url {GCD-Reference,
- title = {Grand Central Dispatch (GCD) Reference},
- author = {Apple},
- url = {https://developer.apple.com/library/mac/documentation/Performance/Reference/GCD_libdispatch_Ref/index.html},
- urldate = {2015-02-18},
- shorthand = {GCD-Reference},
-}
-
 @book {ScalaDesignPatterns,
 author = {Hunt, John},
 title = {Scala Design Patterns: Patterns for Practical Reuse and Design},
@@ -215,6 +183,36 @@ URL = {http://dx.doi.org/10.1007/978-3-319-02192-8},
 type = {Text (nur für elektronische Ressourcen)},
 ISBN = {978-331-90219-2-8},
 ISBN = {978-331-90219-1-1 (Druckausgabe)},
+}
+
+@book{play,
+    author = {Hilton, Peter and Bakker, Erik and Canedo, Francisco},
+    isbn = {1617290793},
+    publisher = {Manning Publications},
+    title = {{Play for Scala: Covers Play 2}},
+    %url = {http://www.worldcat.org/isbn/1617290793},
+    year = {2014}
+}
+
+@url{scala-dsl-example,
+	Author = {Macacek, Jan},
+	Date-Added = {2015-01-07 15:57:02 +0000},
+	Date-Modified = {2015-01-07 15:59:00 +0000},
+	Keywords = {scala},
+	Lastchecked = {7.1.2015},
+	Title = {Type-safe DSL},
+	Url = {http://www.cakesolutions.net/teamblogs/2011/12/10/type-safe-dsl},
+	Urldate = {2015-01-05},
+	Year = {2011},
+	Bdsk-Url-1 = {http://www.cakesolutions.net/teamblogs/2011/12/10/type-safe-dsl}
+}
+
+@url {GCD-Reference,
+ title = {Grand Central Dispatch (GCD) Reference},
+ author = {Apple},
+ url = {https://developer.apple.com/library/mac/documentation/Performance/Reference/GCD_libdispatch_Ref/index.html},
+ urldate = {2015-02-18},
+ shorthand = {GCD-Reference},
 }
 
 @url {geoid,
@@ -232,15 +230,16 @@ ISBN = {978-331-90219-1-1 (Druckausgabe)},
  shorthand = {NASA-Geoid}
 }
 
-@book{play,
-    author = {Hilton, Peter and Bakker, Erik and Canedo, Francisco},
-    isbn = {1617290793},
-    publisher = {Manning Publications},
-    title = {{Play for Scala: Covers Play 2}},
-    %url = {http://www.worldcat.org/isbn/1617290793},
-    year = {2014}
+@url{couchbase-lite,
+	Author = {Couchbase Inc.},
+	shorthand = {Couchbase},
+	Date-Added = {2015-01-26 11:44:16 +0000},
+	Date-Modified = {2015-01-26 12:15:10 +0000},
+	Keywords = {couchbase},
+	Urldate = {2015-01-26},
+	Title = {Couchbase Mobile NoSQL Database},
+	Url = {http://www.couchbase.com/nosql-databases/couchbase-mobile}
 }
-
 
 @url {typesafeact,
  title = {Typesafe Activator, What *is* it?},
@@ -248,4 +247,21 @@ ISBN = {978-331-90219-1-1 (Druckausgabe)},
  url = {https://typesafe.com/blog/typesafe-activator-what-is-it},
  urldate = {2015-02-26},
  shorthand = {Typesafe-Activator}
+}
+
+@url {reactivemanifesto,
+title = {The Reactive Manifesto 2.0},
+author = {Bonér, Jonas and Farley, Dave and Thompson, Martin and Kuhn, Roland},
+url = {http://typesafe.com/blog/reactive-manifesto-20},
+url2 = {http://www.reactivemanifesto.org},
+urldate = {2015-03-02},
+shorthand = {React-Manifesto}
+}
+
+@url {reactivecouchbase,
+title = {Reactive Couchbase},
+author = {Ancelin, Mathieu and contributors},
+url = {http://reactivecouchbase.org},
+urldate = {2015-03-02},
+shorthand = {React-Couchbase}
 }

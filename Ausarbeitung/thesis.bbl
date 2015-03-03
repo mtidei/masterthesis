@@ -47,6 +47,27 @@
       \field{pages}{304\bibrangedash 307}
       \keyw{context aware computing}
     \endentry
+    \entry{steinersarnen}{url}{}
+      \name{labelname}{1}{}{%
+        {{hash=34da33d99754cbd2a2826cc228870cb3}{AG}{A\bibinitperiod}{Steiner\bibnamedelimb Sarnen\bibnamedelima Schweiz}{S\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=34da33d99754cbd2a2826cc228870cb3}{AG}{A\bibinitperiod}{Steiner\bibnamedelimb Sarnen\bibnamedelima Schweiz}{S\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{34da33d99754cbd2a2826cc228870cb3}
+      \strng{fullhash}{34da33d99754cbd2a2826cc228870cb3}
+      \field{labelalpha}{Steiner-Sarnen}
+      \field{sortinit}{A}
+      \field{labeltitle}{The Company Steiner Sarnen Schweiz AG}
+      \field{shorthand}{Steiner-Sarnen}
+      \field{title}{The Company Steiner Sarnen Schweiz AG}
+      \field{urlday}{03}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://www.steinersarnen.ch
+      \endverb
+    \endentry
     \entry{GCD-Reference}{url}{}
       \name{labelname}{1}{}{%
         {{hash=9f6290f4436e5a2351f12e03b6433c3c}{Apple}{A\bibinitperiod}{}{}{}{}{}{}}%
@@ -111,6 +132,33 @@
       \field{title}{Using Swift with Cocoa and Objective-C}
       \field{year}{2014}
       \keyw{swift,objective-c}
+    \endentry
+    \entry{reactivemanifesto}{url}{}
+      \name{labelname}{4}{}{%
+        {{hash=17202869a2e7a20e35fc75944c1f2067}{Bonér}{B\bibinitperiod}{Jonas}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=c85da4dce09baf3bc145adb33b20ebf9}{Farley}{F\bibinitperiod}{Dave}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=cbda8221269684b8322c40a50842c859}{Thompson}{T\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=5874c3ac25a57d1817298f76e9f8e880}{Kuhn}{K\bibinitperiod}{Roland}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=17202869a2e7a20e35fc75944c1f2067}{Bonér}{B\bibinitperiod}{Jonas}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=c85da4dce09baf3bc145adb33b20ebf9}{Farley}{F\bibinitperiod}{Dave}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=cbda8221269684b8322c40a50842c859}{Thompson}{T\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=5874c3ac25a57d1817298f76e9f8e880}{Kuhn}{K\bibinitperiod}{Roland}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{3290881ca46c22fb8d9b8a9edb4377fa}
+      \strng{fullhash}{4310955500e00cc56e617522d994289e}
+      \field{labelalpha}{React-Manifesto}
+      \field{sortinit}{B}
+      \field{labeltitle}{The Reactive Manifesto 2.0}
+      \field{shorthand}{React-Manifesto}
+      \field{title}{The Reactive Manifesto 2.0}
+      \field{urlday}{02}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://typesafe.com/blog/reactive-manifesto-20
+      \endverb
     \endentry
     \entry{MapReduceArticle}{article}{}
       \name{labelname}{2}{}{%
@@ -184,29 +232,6 @@
       \verb{url}
       \verb http://www.csr.utexas.edu/grace/gravity/gravity_definition.html
       \endverb
-    \endentry
-    \entry{play}{book}{}
-      \name{labelname}{3}{}{%
-        {{hash=bdc68aa7b26dfbabf2194f665d9a16e3}{Hilton}{H\bibinitperiod}{Peter}{P\bibinitperiod}{}{}{}{}}%
-        {{hash=93ac0a5efb09265f94330b21e26ffbda}{Bakker}{B\bibinitperiod}{Erik}{E\bibinitperiod}{}{}{}{}}%
-        {{hash=c44da533060e4591f678c2d067a939d5}{Canedo}{C\bibinitperiod}{Francisco}{F\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{3}{}{%
-        {{hash=bdc68aa7b26dfbabf2194f665d9a16e3}{Hilton}{H\bibinitperiod}{Peter}{P\bibinitperiod}{}{}{}{}}%
-        {{hash=93ac0a5efb09265f94330b21e26ffbda}{Bakker}{B\bibinitperiod}{Erik}{E\bibinitperiod}{}{}{}{}}%
-        {{hash=c44da533060e4591f678c2d067a939d5}{Canedo}{C\bibinitperiod}{Francisco}{F\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {Manning Publications}%
-      }
-      \strng{namehash}{f5058f59ae2ba28010535725d2c2dedc}
-      \strng{fullhash}{f5058f59ae2ba28010535725d2c2dedc}
-      \field{labelalpha}{Hilton,\addhighpenspace2014}
-      \field{sortinit}{H}
-      \field{labeltitle}{{Play for Scala: Covers Play 2}}
-      \field{isbn}{1617290793}
-      \field{title}{{Play for Scala: Covers Play 2}}
-      \field{year}{2014}
     \endentry
     \entry{couchbase-lite}{url}{}
       \name{labelname}{1}{}{%
@@ -383,7 +408,7 @@
       \field{labeltitle}{Typesafe Activator, What *is* it?}
       \field{shorthand}{Typesafe-Activator}
       \field{title}{Typesafe Activator, What *is* it?}
-      \field{urlday}{23}
+      \field{urlday}{26}
       \field{urlmonth}{02}
       \field{urlyear}{2015}
       \verb{url}
@@ -413,6 +438,7 @@
     \endentry
   \endsortlist
   \missing{swift-error-handling}
+  \missing{play-book}
   \missing{Internet-couchbase}
 \endrefsection
 \endinput

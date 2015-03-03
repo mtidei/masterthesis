@@ -97,23 +97,23 @@ Although Weiser didn't use the term context-awareness, he already recognized the
 
 \section{Sensors of Mobile Devices}
 
-\subsection{Accelerometer}
+\subsection*{Accelerometer}
 
-\subsection{Gyroscope}
+\subsection*{Gyroscope}
 
 Pedometer ref.
 
-\subsection{Magnetometer}
+\subsection*{Magnetometer}
 
-\subsection{Barometer}
+\subsection*{Barometer}
 
 Some of the latest smartphones and tablets are equipped with a barometer for measuring the air pressure. This information combined with the current weather dependent ground pressure can be used to determine the current altitude or the floor of the building the device is in. 
 
-\subsection{Proximity Sensor}
+\subsection*{Proximity Sensor}
 
 The proximity sensor typically measures the distance of the device's front to the next object. It is used to turn off the display when holding a mobile phone at the ear or to determine if the phone is inside a pocket.
 
-\subsection{Light Sensor}
+\subsection*{Light Sensor}
 
 The light sensor measures the intensity of the light. It is primarily used to adapt the screen brightness to the ambient light.
 
@@ -194,6 +194,7 @@ The following section is an overview comparison of Scala and Swift features, cre
 \hline Closures & \yes & \yes \\
 \hline Curried functions & \yes & \yes \\
 \hline Operator functions & \yes & \yes \\
+\hline Named parameters * & \yes & \yes As fixed part of the method's signature \\
 \hline Optionals * & via \smalltt{Option[T]} class & widely used, dedicated Syntax\\
 \hline Switch with pattern matching & \yes & \yes \\
 \hline String interpolation & \yes \newline \smalltt{"Hello \$nameVar"} & \yes \newline \smalltt{"Hello \textbackslash(nameVar)"} \\
@@ -365,6 +366,8 @@ case .Success(let res):
 These alternatives misses the exceptions ability to retract some levels of the call stack and retry without explicitly passing an error object up the call chain.
 %TODO Erfahrungen Fehlerbehandlung
 
+\subsubsection{Named Parameters}
+
 \subsubsection{The Legacy of Objective-C}
 
 The hardest part of learning a new language is not the grammar itself, but getting familiar with the underlying standard library and special APIs for the myriad of tasks a platform has to be capable to handle nowadays.
@@ -414,7 +417,7 @@ To connect the mobile version to a regular couchbase server, a sync gateway has 
 \begin{figure}[H]
 \centering
 \includegraphics[height=0.25\textheight]{couchbase-lite}
-\caption{Couchbase Lite and Sync Gateways. Adapted from \cite{couchbase-lite}}
+\caption{Couchbase Lite and Sync Gateways. From \cite{couchbase-lite}}
 \end{figure}
 
 While traditional relational database management systems (RDBMS) are typically hard to scale out\footnote{also "Horizontal Scaling" - dividing a database over several servers after reaching the limit of upgrading a single server with more powerful hardware (vertical scaling)}, Couchbase offers a built-in distributed cache concept that can easily be scaled on more servers without modifying the application.
@@ -423,6 +426,46 @@ Queries are performed using the map reduce programming model originally develope
 
 This enables couchbase to perform computation and storage heavy big data analytics.
 
-\section{Typesafe reactive platform}
 
-Typesafe activator \cite{typesafeact}
+\section{Typesafe Reactive Platform}
+
+\subsection{Overview}
+
+In 2013, Typesafe Inc. launched the "Reactive Manifesto", that was updated in September 2014 to the Version 2.0 \cite{reactivemanifesto}. The core message is as follows: "We believe that a coherent approach to systems architecture is needed, and we believe that all necessary aspects are already recognised individually: we want systems that are Responsive, Resilient, Elastic and Message Driven. We call these Reactive Systems."
+
+The Typesafe Reactive Platform consists of the Play web framework, the Akka message driven runtime and the Scala programming language. It focuses on providing the tools needed to build highly responsive applications, that not only are easy to scale, but even able to increase and decrease the allocated resources at runtime to handle varying workload (thus be "elastic") and stay responsive even in case of failure (what is called to be "resilient").
+
+Since it's publication, the manifesto and the platform gained rising attention. In my opinion, this platform has a high potential of getting the de facto standard of how modern software systems are developed during the next decade.
+
+The Typesafe Reactive Platform is used in this thesis for building the backend part of the system, as Scala application with a Play web gui and an NoSQL Couchbase driver based on Akka, that will be introduced later. %TODO in Chapter xy
+
+\subsection{Activator Tool}
+
+Typesafe Activator is a dependency manager and build tool for the reactive platform built upon sbt (Simple Build Tool, sometimes Scala Build Tool). So it completely replaces sbt, understanding all commands formerly issued to sbt. In the Play framework, it replaces the Play command, which also was a wrapper around sbt. (cf. \cite{typesafeact}). It comes with an optional browser based ui for quickly creating some sample projects and an inspection feature for monitoring Play requests and akka actors. 
+
+\subsection{Play Web Framework}
+
+
+The Play Web Framework v1.0 was released on 19th October 2009. For version 2.0, released in March 2012, it was completely rewritten in Scala.
+Although inspired by popular high-productivity web frameworks like Ruby on Rails or Groovy on Grails, it comes with full type safety typical for Scala but missed in the other frameworks.
+
+Play is a full-stack web framework.
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=0.25\textheight]{play-stack}
+\caption{The Play framework stack. From \cite{play-book}.}
+\end{figure}
+
+The key features that make Play are:
+ 
+\begin{itemize}
+\item Integrated HTTP Server ("JBoss Netty")
+\item RESTful web services API 
+\item Type-safe templates for defining the html user interface
+\item Central mapping from HTTP requests, including type-safe parameters, to the corresponding Scala controller method
+\item Integrated build system that automatically rebuilds when the page is reloaded in the browser.
+\item Ability to test the web application without a browser or even a running web server and call controller methods or render templates directly from a Scala REPL with the pre-loaded project 
+\item Support for AJAX, Comet and WebSockets
+%TODO
+\end{itemize}

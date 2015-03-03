@@ -1966,27 +1966,31 @@
     <bcf:datasource type="file" datatype="bibtex">Bibliography.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">play</bcf:citekey>
-    <bcf:citekey order="4">age-of-context</bcf:citekey>
-    <bcf:citekey order="5">Schilit94context-awarecomputing</bcf:citekey>
-    <bcf:citekey order="6">Abowd99</bcf:citekey>
-    <bcf:citekey order="7">distributed-cas</bcf:citekey>
-    <bcf:citekey order="8">weiserm1991</bcf:citekey>
-    <bcf:citekey order="9">geoid</bcf:citekey>
-    <bcf:citekey order="10">nasageoid</bcf:citekey>
-    <bcf:citekey order="11">nasageoid</bcf:citekey>
-    <bcf:citekey order="12">swift-book</bcf:citekey>
-    <bcf:citekey order="13">scala-dsl-example</bcf:citekey>
-    <bcf:citekey order="14">scala-book</bcf:citekey>
-    <bcf:citekey order="15">swift-error-handling</bcf:citekey>
-    <bcf:citekey order="16">swift-objc-book</bcf:citekey>
-    <bcf:citekey order="17">Internet-couchbase</bcf:citekey>
-    <bcf:citekey order="18">couchbase-lite</bcf:citekey>
-    <bcf:citekey order="19">couchbase-lite</bcf:citekey>
-    <bcf:citekey order="20">MapReduceArticle</bcf:citekey>
-    <bcf:citekey order="21">typesafeact</bcf:citekey>
-    <bcf:citekey order="22">gof</bcf:citekey>
-    <bcf:citekey order="23">GCD-Reference</bcf:citekey>
+    <bcf:citekey order="1">play-book</bcf:citekey>
+    <bcf:citekey order="5">age-of-context</bcf:citekey>
+    <bcf:citekey order="6">steinersarnen</bcf:citekey>
+    <bcf:citekey order="7">Schilit94context-awarecomputing</bcf:citekey>
+    <bcf:citekey order="8">Abowd99</bcf:citekey>
+    <bcf:citekey order="9">distributed-cas</bcf:citekey>
+    <bcf:citekey order="10">weiserm1991</bcf:citekey>
+    <bcf:citekey order="11">geoid</bcf:citekey>
+    <bcf:citekey order="12">nasageoid</bcf:citekey>
+    <bcf:citekey order="13">nasageoid</bcf:citekey>
+    <bcf:citekey order="14">swift-book</bcf:citekey>
+    <bcf:citekey order="15">scala-dsl-example</bcf:citekey>
+    <bcf:citekey order="16">scala-book</bcf:citekey>
+    <bcf:citekey order="17">swift-error-handling</bcf:citekey>
+    <bcf:citekey order="18">swift-objc-book</bcf:citekey>
+    <bcf:citekey order="19">Internet-couchbase</bcf:citekey>
+    <bcf:citekey order="20">couchbase-lite</bcf:citekey>
+    <bcf:citekey order="21">couchbase-lite</bcf:citekey>
+    <bcf:citekey order="22">MapReduceArticle</bcf:citekey>
+    <bcf:citekey order="23">reactivemanifesto</bcf:citekey>
+    <bcf:citekey order="24">typesafeact</bcf:citekey>
+    <bcf:citekey order="25">play-book</bcf:citekey>
+    <bcf:citekey order="26">play-book</bcf:citekey>
+    <bcf:citekey order="27">gof</bcf:citekey>
+    <bcf:citekey order="28">GCD-Reference</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="nyt">
   <bcf:sorting>

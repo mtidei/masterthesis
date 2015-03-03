@@ -8,17 +8,23 @@
 
 %----------------------------------------------------------------------------------------
 
-\section{Requirements}
+\section{Goal}
 
-The CA Guide mobile application has to display or play defined content when a specific context state is reached. Examples for entering defined geographical regions and other C. 
+The CA Guide mobile application has to display predefined textual descriptions of sites areas, show images and play audio files when a specific context state is reached. The trigger will often be entering a specified area at a moderate pace that signals the visitor is interested and not only passing by to reach another place. But also leaving an area can be of interest, for example to indicate single subareas that were missed. Even offering a coffee break discount coupon on the display after the visitor made 5000 steps through the park or exhibition is imaginable.
+
+An essential aspect is the ability to record and replay the data coming from all accessed sensors. That's the only way to effectively develop a context-sensitive application and so special attention has to be given to this part of the system.
 
 \section{Target Platform}
 
-The target mobile plattform for the CA Guide frontend application is iOS 8.1. The targeted mobile device is an iPad mini with GPS sensor. This device was choosen for it's compact size and light weight, while still offering much more screen size than a normal smartphone, which is advantageous for displaying images and text in a size that is more comfortable to read.
+The target mobile plattform for the CA Guide frontend application is iOS 8.1. The targeted mobile device is an iPad mini 2 with GPS sensor. This device was choosen for it's compact size and light weight, while still offering much more screen size than a normal smartphone, which is advantageous for displaying images and text in a size that is more comfortable to read.
+
+\section{Development Platform}
+
+This mobile application is written in Swift 1.2 using the native Apple XCode IDE in Version 6.3, which at the time of writing is still in beta status.
 
 \section{Architecture}
 
-The application is separated in 5 different layers.
+For a clean The application is separated in 5 different layers.
 
 %TODO Figure without data
 \begin{figure}[H]

@@ -39,17 +39,17 @@ This thesis is also an experiment about moving on from established languages and
 
 This work is part of the foundation for the first product of the start-up contexagon GmbH in Kreuzlingen, Switzerland. The company was founded in September 2014 by the author, Maurizio Tidei, and Sascha Lorenz \footnote{S. Lorenz is currently writing his Master Thesis on Big Data Processing with Apache Spark, e.g. for analyzing visitor interests} after several conversations with museum directors in the tourist region of the Lake Constance in Summer 2014, who expressed interest in such a solution and encouraged us in pursuing the development of an affordable system based on commodity hardware and a highly configurable software platform.
 
-The first project is a context-aware guide for the World War I exhibition at the Schloss Arenenberg in Salenstein, that is scheduled for August 2015. Contexagon will realize the technical part of the exposition in cooperation with Steiner Sarnen Schweiz, a company designing and realizing exhibitions and other visitor attractions since 1997.
+The first project is a context-aware guide for the World War I exhibition at the Schloss Arenenberg in Salenstein, that is scheduled for August 2015. Contexagon will realize the technical part of the exposition in cooperation with Steiner Sarnen Schweiz AG \cite{steinersarnen}, a company designing and realizing exhibitions and other visitor attractions since 1997 mainly in Switzerland and Germany, but also  .
 
 \section{The Approach}
 
 Chapter 2 handles the theoretical background and fundamentals of this work. It starts with a definition, categorization and the history of context-aware computing.
 Since the location context is key for the system that has to be designed, different methods for providing and defining the location context are evaluated. For the evaluation of some new technologies, two technology prototypes are written and described in this chapter, too.
 
-The system overall architecture and design will then be discussed in Chapter 3.
+The context-aware guide system overall architecture and design will then be discussed in Chapter 3.
 
-In Chapter 4, the design and implementation of the front end, the guide as mobile application written in Swift, is described.
+In Chapter 4, the design and implementation of the front end, the guide's mobile application written in Swift, is described.
 
-Chapters 5 addresses the system's back end used for modeling the indoor or outdoor site, e.g. an exhibition or park guide, and for running analytics on anonymous visitor movement paths and feedback for the optimization of visitor flows and visitor experience.
+Chapters 5 addresses the system's back end used for modeling the indoor or outdoor site, e.g. an exhibition or park guide, and for running analytics on anonymous visitor movement paths and feedback for the optimization of visitor flows and visitor experience. This part of the system is designed as a web application in Scala and Play, with Couchbase NoSQL 
 
 Chapter 6 handles the conclusion and future work. 
