@@ -347,6 +347,29 @@
       \field{year}{2014}
       \keyw{context aware computing}
     \endentry
+    \entry{nosqldistilled}{book}{}
+      \name{labelname}{2}{}{%
+        {{hash=94353e6506a6847b1978acce69d8a55e}{Sadalage}{S\bibinitperiod}{Pramod\bibnamedelima J.}{P\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=312ac886938a9b2be4f8eb607567fe4c}{Fowler}{F\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=94353e6506a6847b1978acce69d8a55e}{Sadalage}{S\bibinitperiod}{Pramod\bibnamedelima J.}{P\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=312ac886938a9b2be4f8eb607567fe4c}{Fowler}{F\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley Professional}%
+      }
+      \strng{namehash}{e02fb4e65ccc5004d22cd0d91983a913}
+      \strng{fullhash}{e02fb4e65ccc5004d22cd0d91983a913}
+      \field{labelalpha}{Sadalage,\addhighpenspace2013}
+      \field{sortinit}{S}
+      \field{labeltitle}{NoSQL Distilled: A Brief Guide to the Emerging World of Polyglot Persistence}
+      \field{edition}{1st}
+      \field{isbn}{0-321-82662-0}
+      \field{note}{Third printing}
+      \field{title}{NoSQL Distilled: A Brief Guide to the Emerging World of Polyglot Persistence}
+      \field{year}{2013}
+    \endentry
     \entry{Schilit94context-awarecomputing}{inproceedings}{}
       \name{labelname}{3}{}{%
         {{hash=0064c0d5f0c500bdea952ce41a07a6f2}{Schilit}{S\bibinitperiod}{Bill}{B\bibinitperiod}{}{}{}{}}%

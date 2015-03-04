@@ -406,13 +406,33 @@ Despite of the problems in this early stage, Swift is - in my opinion - a great 
 iOS Cocoa Touch Framework 
 Developing with XCode
 
-\section{Couchbase Server}
+\section{Couchbase NoSQL Database}
+
+
+\subsection{What is a NoSQL Database?}
+
+For a long time, designing the persistence layer of a system meant deciding which relational database to use. Former alternative approaches like object oriented databases failed to establish themselves. 
+However, during the last few years, more and more companies and projects are rely on a new kind of database system: NoSQL.
+
+Unfortunately, no precise definition exists for a NoSQL database system. In their Book "NoSQL Distilled" \cite{nosqldistilled}, which provides a good and concise introduction to NoSQL, P. Sadalage and M. Fowler try to provide five common characteristics of NoSQL databases:
+
+\begin{itemize}
+\item Not using the relational model
+\item Running well on clusters
+\item Open-source
+\item Built for the 21st century web estates
+\item Schemaless
+\end{itemize}
+
+As they emphasize in their book, they think relational databases will not disappear. But the innovation is seeing relational databases as an option among others, and choosing the one that best fits a project.\footnote{Sometimes that even means choosing different database types for several parts of a single system - what is called polyglot persistence.} 
+
+\subsection{Couchbase}
 
 Couchbase\cite{Internet-couchbase} is a modern JSON-based NoSQL database, available as an open-source community edition used in this thesis. While JSON was initially born as "Javascript Object Notation" for data exchange between web / application servers and the javascript web gui, today it is used in more and more products independently from javascript. It's simplicity, readability and compactness helped to repress the comparatively cumbersome XML in many areas. Especially document-oriented databases like Couchbase use the JSON notation for storing the structured data of it's documents.
 
 Couchbase offers a specially sleek mobile version - called "Couchbase Mobile" or "Couchbase Lite" - for all major mobile platforms, and so of course for iOS, too. Since especially mobile devices cannot rely on an uninterrupted networking connection, the mobile version a good choice for a network independent local cache of the application data. With it's synchronization functionality, the local mobile database can be automatically synchronized with a database server. Every time a network connection is available, the local database is updated with changes on the server, and local changes made during the offline time are propagated to the server.
 
-To connect the mobile version to a regular couchbase server, a sync gateway has to be set up:
+To connect the mobile version to a regular Couchbase server, a sync gateway has to be set up:
 
 \begin{figure}[H]
 \centering
@@ -422,9 +442,9 @@ To connect the mobile version to a regular couchbase server, a sync gateway has 
 
 While traditional relational database management systems (RDBMS) are typically hard to scale out\footnote{also "Horizontal Scaling" - dividing a database over several servers after reaching the limit of upgrading a single server with more powerful hardware (vertical scaling)}, Couchbase offers a built-in distributed cache concept that can easily be scaled on more servers without modifying the application.
 
-Queries are performed using the map reduce programming model originally developed by Google Engineers, allowing massive parallel execution (cf. \cite{MapReduceArticle}). 
+Queries are performed using the map reduce programming model originally developed by Google Engineers, allowing massive parallel execution (cf. \cite{MapReduceArticle}). This enables couchbase to perform computation and storage heavy big data analytics.
 
-This enables couchbase to perform computation and storage heavy big data analytics.
+Couchbase was chosen for this work for it's mobile variant, it's synchronization abilities over several databases and it's JSON-based documents that are a good fit for the web back end and are easy to read and create manually.
 
 
 \section{Typesafe Reactive Platform}

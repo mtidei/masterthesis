@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.16)  3 MAR 2015 13:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.16)  4 MAR 2015 19:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1715,7 +1715,7 @@ Package biblatex Info: Reference segment=0 on input line 108.
 \openout2 = `htwg/cover.aux'.
 
  (./htwg/cover.tex
-<htwg/htwg-logo.pdf, id=296, 1597.97pt x 174.6525pt>
+<htwg/htwg-logo.pdf, id=304, 1597.97pt x 174.6525pt>
 File: htwg/htwg-logo.pdf Graphic file (type pdf)
  <use htwg/htwg-logo.pdf>
 Package pdftex.def Info: htwg/htwg-logo.pdf used on input line 7.
@@ -1795,11 +1795,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--21
 (./thesis.toc [6
 
 
-])
+] [7])
 \tf@toc=\write7
 \openout7 = `thesis.toc'.
 
- [7]
+ [8]
 ------------------------------------------------------------------------------
  List of Figures
 ------------------------------------------------------------------------------
@@ -1807,14 +1807,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--21
 \tf@lof=\write8
 \openout8 = `thesis.lof'.
 
- [8
+ [9
 
 
 ]
 ------------------------------------------------------------------------------
  Abbreviations
 ------------------------------------------------------------------------------
-[9
+[10
 
 
 
@@ -1840,7 +1840,7 @@ Overfull \hbox (3.28644pt too wide) in paragraph at lines 61--63
 p-pli-ca-tions like weather
  []
 
-[6] [7] [8] <Figures/earths_geoidII.png, id=518, 744.7825pt x 469.755pt>
+[6] [7] [8] <Figures/earths_geoidII.png, id=533, 744.7825pt x 469.755pt>
 File: Figures/earths_geoidII.png Graphic file (type png)
 
 <use Figures/earths_geoidII.png>
@@ -1876,105 +1876,105 @@ be-cause the string value is wrapped
  []
 
 [14] [15] [16] [17]
-<Pictures/couchbase-lite.png, id=645, 421.575pt x 306.54526pt>
+<Pictures/couchbase-lite.png, id=661, 421.575pt x 306.54526pt>
 File: Pictures/couchbase-lite.png Graphic file (type png)
 
 <use Pictures/couchbase-lite.png>
-Package pdftex.def Info: Pictures/couchbase-lite.png used on input line 419.
+Package pdftex.def Info: Pictures/couchbase-lite.png used on input line 439.
 (pdftex.def)             Requested size: 235.50787pt x 171.24327pt.
- [18 <./Pictures/couchbase-lite.png>]
-<Pictures/play-stack.png, id=660, 781.92125pt x 343.2825pt>
+ [18] [19 <./Pictures/couchbase-lite.png>]
+<Pictures/play-stack.png, id=683, 781.92125pt x 343.2825pt>
 File: Pictures/play-stack.png Graphic file (type png)
 
 <use Pictures/play-stack.png>
-Package pdftex.def Info: Pictures/play-stack.png used on input line 456.
+Package pdftex.def Info: Pictures/play-stack.png used on input line 476.
 (pdftex.def)             Requested size: 390.0529pt x 171.24327pt.
- [19]) (./Chapters/Chapter3.tex [20 <./Pictures/play-stack.png>]
+ [20]) (./Chapters/Chapter3.tex [21 <./Pictures/play-stack.png>]
 Chapter 3.
 ------------------------------------------------------------------------------
  3 System Overview
 ------------------------------------------------------------------------------
-<Figures/system-overview.png, id=673, 658.3797pt x 612.1269pt>
+<Figures/system-overview.png, id=696, 658.3797pt x 612.1269pt>
 File: Figures/system-overview.png Graphic file (type png)
 
 <use Figures/system-overview.png>
 Package pdftex.def Info: Figures/system-overview.png used on input line 22.
 (pdftex.def)             Requested size: 359.20663pt x 333.97972pt.
- [21
+ [22
 
-] [22 <./Figures/system-overview.png>]
-[23]) (./Chapters/Chapter4.tex [24]
+] [23 <./Figures/system-overview.png>]
+[24]) (./Chapters/Chapter4.tex [25]
 Chapter 4.
 ------------------------------------------------------------------------------
  4 CA Guide Mobile Application
 ------------------------------------------------------------------------------
-[25
+[26
 
-] <Figures/layers-guide-app.png, id=752, 964.5636pt x 575.0283pt>
+] <Figures/layers-guide-app.png, id=775, 964.5636pt x 575.0283pt>
 File: Figures/layers-guide-app.png Graphic file (type png)
 
 <use Figures/layers-guide-app.png>
 Package pdftex.def Info: Figures/layers-guide-app.png used on input line 32.
 (pdftex.def)             Requested size: 375.7232pt x 223.98813pt.
 
-<Figures/layers-guide-refined-app.png, id=753, 827.9733pt x 606.1044pt>
+<Figures/layers-guide-refined-app.png, id=776, 827.9733pt x 606.1044pt>
 File: Figures/layers-guide-refined-app.png Graphic file (type png)
 
 <use Figures/layers-guide-refined-app.png>
 Package pdftex.def Info: Figures/layers-guide-refined-app.png used on input lin
 e 42.
 (pdftex.def)             Requested size: 375.7232pt x 275.03806pt.
- [26 <./Figures/layers-guide-app.png>]
-<Figures/layers-app-dataflow-accelerometer.png, id=759, 827.9733pt x 593.0958pt
+ [27 <./Figures/layers-guide-app.png>]
+<Figures/layers-app-dataflow-accelerometer.png, id=782, 827.9733pt x 593.0958pt
 >
 File: Figures/layers-app-dataflow-accelerometer.png Graphic file (type png)
  <use Figures/layers-app-dataflow-accelerometer.png>
 Package pdftex.def Info: Figures/layers-app-dataflow-accelerometer.png used on 
 input line 52.
 (pdftex.def)             Requested size: 375.7232pt x 269.13501pt.
- [27 <./Figures/layers-guide-refined-app.png>]
+ [28 <./Figures/layers-guide-refined-app.png>]
 File: Figures/layers-app-dataflow-accelerometer.png Graphic file (type png)
  <use Figures/layers-app-dataflow-accelerometer.png>
 Package pdftex.def Info: Figures/layers-app-dataflow-accelerometer.png used on 
 input line 62.
 (pdftex.def)             Requested size: 375.7232pt x 269.13501pt.
 
-[28 <./Figures/layers-app-dataflow-accelerometer.png>]
-<Figures/class-diagram-guide-app.png, id=771, 1089.8316pt x 1005.5166pt>
+[29 <./Figures/layers-app-dataflow-accelerometer.png>]
+<Figures/class-diagram-guide-app.png, id=793, 1089.8316pt x 1005.5166pt>
 File: Figures/class-diagram-guide-app.png Graphic file (type png)
 
 <use Figures/class-diagram-guide-app.png>
 Package pdftex.def Info: Figures/class-diagram-guide-app.png used on input line
  78.
 (pdftex.def)             Requested size: 417.47307pt x 385.16887pt.
- [29] [30 <./Figures/class-diagram-guide-app.png>]) (./Chapters/Chapter5.tex [3
-1]
+ [30] [31 <./Figures/class-diagram-guide-app.png>]) (./Chapters/Chapter5.tex [3
+2]
 Chapter 5.
 ------------------------------------------------------------------------------
  5 CA Guide Back End
 ------------------------------------------------------------------------------
-[32
+[33
 
-]) (./Chapters/Chapter6.tex [33]
+]) (./Chapters/Chapter6.tex [34]
 Chapter 6.
 ------------------------------------------------------------------------------
  6 System Review
 ------------------------------------------------------------------------------
-) (./Chapters/Chapter7.tex [34
+) (./Chapters/Chapter7.tex [35
 
 ]
 Chapter 7.
 ------------------------------------------------------------------------------
  7 Conclusion
 ------------------------------------------------------------------------------
-) (./Appendices/AppendixA.tex [35
+) (./Appendices/AppendixA.tex [36
 
 ]
 Appendix A.
 ------------------------------------------------------------------------------
  A JSON Site Modelling File
 ------------------------------------------------------------------------------
-) [36
+) [37
 
 ]
 ------------------------------------------------------------------------------
@@ -1986,7 +1986,7 @@ Overfull \hbox (0.72232pt too wide) in paragraph at lines 407--407
 ied Data
  []
 
-[37
+[38
 
 
 ]
@@ -2056,29 +2056,30 @@ Overfull \hbox (21.94913pt too wide) in paragraph at lines 408--408
 Package biblatex Warning: No driver for entry type 'url'.
 (biblatex)                Using fallback driver on input line 408.
 
+[39]
 
 Package biblatex Warning: No driver for entry type 'url'.
 (biblatex)                Using fallback driver on input line 408.
 
-[38] [39]
+[40]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 410.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 410.
- (./thesis.aux (./htwg/cover.aux) (./htwg/title.aux)
-(./htwg/abstract.aux) (./htwg/affidavit.aux))
+ (./thesis.aux (./htwg/cover.aux) (./htwg/title.aux) (./htwg/abstract.aux)
+(./htwg/affidavit.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 410.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 410.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 830AA7F1AD2B4848E45BAE99506DBBB9;11571.
+(rerunfilecheck)             Checksum: FF7441F1E18C683C93F4FEC2A402E9C3;11982.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 410.
  ) 
 Here is how much of TeX's memory you used:
- 33419 strings out of 493117
- 614114 string characters out of 6135432
- 1126801 words of memory out of 5000000
- 35961 multiletter control sequences out of 15000+600000
+ 33428 strings out of 493117
+ 614247 string characters out of 6135432
+ 1126819 words of memory out of 5000000
+ 35964 multiletter control sequences out of 15000+600000
  29515 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,12n,84p,947b,1932s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2112,10 +2113,10 @@ ts/type1/public/cm-super/sfti1440.pfb></usr/local/texlive/2014/texmf-dist/fonts
 /type1/public/cm-super/sfti2074.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
 ype1/public/cm-super/sftt1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
 e1/public/cm-super/sftt1095.pfb>
-Output written on thesis.pdf (49 pages, 2502979 bytes).
+Output written on thesis.pdf (51 pages, 2508031 bytes).
 PDF statistics:
- 981 PDF objects out of 1000 (max. 8388607)
- 861 compressed objects within 9 object streams
- 282 named destinations out of 1000 (max. 500000)
- 682 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1004 PDF objects out of 1200 (max. 8388607)
+ 882 compressed objects within 9 object streams
+ 288 named destinations out of 1000 (max. 500000)
+ 698 words of extra memory for PDF output out of 10000 (max. 10000000)
 

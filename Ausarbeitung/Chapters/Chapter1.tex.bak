@@ -39,7 +39,7 @@ This thesis is also an experiment about moving on from established languages and
 
 This work is part of the foundation for the first product of the start-up contexagon GmbH in Kreuzlingen, Switzerland. The company was founded in September 2014 by the author, Maurizio Tidei, and Sascha Lorenz \footnote{S. Lorenz is currently writing his Master Thesis on Big Data Processing with Apache Spark, e.g. for analyzing visitor interests} after several conversations with museum directors in the tourist region of the Lake Constance in Summer 2014, who expressed interest in such a solution and encouraged us in pursuing the development of an affordable system based on commodity hardware and a highly configurable software platform.
 
-The first project is a context-aware guide for the World War I exhibition at the Schloss Arenenberg in Salenstein, that is scheduled for August 2015. Contexagon will realize the technical part of the exposition in cooperation with Steiner Sarnen Schweiz AG \cite{steinersarnen}, a company designing and realizing exhibitions and other visitor attractions since 1997 mainly in Switzerland and Germany, but also  .
+The first project is a context-aware guide for the World War I exhibition at the Schloss Arenenberg in Salenstein, that is scheduled for August 2015. Contexagon will realize the technical part of the exposition in cooperation with Steiner Sarnen Schweiz AG , a company designing and realizing exhibitions and other visitor attractions since 1997 mainly in Switzerland, Germany, Austria and Italy \cite{steinersarnen}.
 
 \section{The Approach}
 

@@ -1981,16 +1981,17 @@
     <bcf:citekey order="16">scala-book</bcf:citekey>
     <bcf:citekey order="17">swift-error-handling</bcf:citekey>
     <bcf:citekey order="18">swift-objc-book</bcf:citekey>
-    <bcf:citekey order="19">Internet-couchbase</bcf:citekey>
-    <bcf:citekey order="20">couchbase-lite</bcf:citekey>
+    <bcf:citekey order="19">nosqldistilled</bcf:citekey>
+    <bcf:citekey order="20">Internet-couchbase</bcf:citekey>
     <bcf:citekey order="21">couchbase-lite</bcf:citekey>
-    <bcf:citekey order="22">MapReduceArticle</bcf:citekey>
-    <bcf:citekey order="23">reactivemanifesto</bcf:citekey>
-    <bcf:citekey order="24">typesafeact</bcf:citekey>
-    <bcf:citekey order="25">play-book</bcf:citekey>
+    <bcf:citekey order="22">couchbase-lite</bcf:citekey>
+    <bcf:citekey order="23">MapReduceArticle</bcf:citekey>
+    <bcf:citekey order="24">reactivemanifesto</bcf:citekey>
+    <bcf:citekey order="25">typesafeact</bcf:citekey>
     <bcf:citekey order="26">play-book</bcf:citekey>
-    <bcf:citekey order="27">gof</bcf:citekey>
-    <bcf:citekey order="28">GCD-Reference</bcf:citekey>
+    <bcf:citekey order="27">play-book</bcf:citekey>
+    <bcf:citekey order="28">gof</bcf:citekey>
+    <bcf:citekey order="29">GCD-Reference</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="nyt">
   <bcf:sorting>

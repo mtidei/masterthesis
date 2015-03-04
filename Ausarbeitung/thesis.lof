@@ -6,25 +6,25 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Difference in meters between the geoid and the ellipsoid \cite {nasageoid}\relax }}{9}{figure.caption.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Couchbase Lite and Sync Gateways. From \cite {couchbase-lite}\relax }}{18}{figure.caption.119}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Couchbase Lite and Sync Gateways. From \cite {couchbase-lite}\relax }}{19}{figure.caption.122}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces The Play framework stack. From \cite {play-book}.\relax }}{20}{figure.caption.125}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces CA Guite Architecture Overview\relax }}{22}{figure.caption.129}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces The Play framework stack. From \cite {play-book}.\relax }}{21}{figure.caption.128}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Layer Model of the Museum Guide Application\relax }}{26}{figure.caption.192}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces CA Guite Architecture Overview\relax }}{23}{figure.caption.132}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Layer model with virtual sensors\relax }}{27}{figure.caption.193}
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Data flow between the lower layers of the Sensorbase framework\relax }}{28}{figure.caption.194}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Layer Model of the Museum Guide Application\relax }}{27}{figure.caption.195}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Sequence Diagram for the Sensor Layers\relax }}{29}{figure.caption.195}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Layer model with virtual sensors\relax }}{28}{figure.caption.196}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Simplified Class Diagram for Sensor Data Processing\relax }}{30}{figure.caption.196}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Data flow between the lower layers of the Sensorbase framework\relax }}{29}{figure.caption.197}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Sequence Diagram for the Sensor Layers\relax }}{30}{figure.caption.198}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Simplified Class Diagram for Sensor Data Processing\relax }}{31}{figure.caption.199}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
