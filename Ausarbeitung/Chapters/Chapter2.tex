@@ -453,11 +453,11 @@ Couchbase was chosen for this work for it's mobile variant, it's synchronization
 
 In 2013, Typesafe Inc. launched the "Reactive Manifesto", that was updated in September 2014 to the Version 2.0 \cite{reactivemanifesto}. The core message is as follows: "We believe that a coherent approach to systems architecture is needed, and we believe that all necessary aspects are already recognised individually: we want systems that are Responsive, Resilient, Elastic and Message Driven. We call these Reactive Systems."
 
-The Typesafe Reactive Platform consists of the Play web framework, the Akka message driven runtime and the Scala programming language. It focuses on providing the tools needed to build highly responsive applications, that not only are easy to scale, but even able to increase and decrease the allocated resources at runtime to handle varying workload (thus be "elastic") and stay responsive even in case of failure (what is called to be "resilient").
+The Typesafe Reactive Platform consists of the Play web framework, the Akka message driven runtime, the Activator build tool and of course the Scala programming language. It focuses on providing the tools needed to build highly responsive applications, that not only are easy to scale, but even able to increase and decrease the allocated resources at runtime to handle varying workload (thus be "elastic") and stay responsive even in case of failure (what is called to be "resilient").
 
-Since it's publication, the manifesto and the platform gained rising attention. In my opinion, this platform has a high potential of getting the de facto standard of how modern software systems are developed during the next decade.
+Since it's publication, the manifesto and the platform gained rising attention. In my opinion, this platform has a high potential of getting the de facto standard for the development of how modern software systems, including web applications and web services, during the next years.
 
-The Typesafe Reactive Platform is used in this thesis for building the backend part of the system, as Scala application with a Play web gui and an NoSQL Couchbase driver based on Akka, that will be introduced later. %TODO in Chapter xy
+The Typesafe Reactive Platform is used in this thesis for building the back end part of the system, as Scala application with a Play web gui and an NoSQL Couchbase driver based on Akka, that will be introduced later. %TODO in Chapter xy
 
 \subsection{Activator Tool}
 
@@ -474,18 +474,21 @@ Play is a full-stack web framework.
 \begin{figure}[H]
 \centering
 \includegraphics[height=0.25\textheight]{play-stack}
-\caption{The Play framework stack. From \cite{play-book}.}
+\caption{The Play framework stack. From \cite{play-book} with kind permission.}
 \end{figure}
 
-The key features that make Play are:
+The key features that make Play a high-productivity web framework are:
  
 \begin{itemize}
 \item Integrated HTTP Server ("JBoss Netty")
 \item RESTful web services API 
 \item Type-safe templates for defining the html user interface
 \item Central mapping from HTTP requests, including type-safe parameters, to the corresponding Scala controller method
-\item Integrated build system that automatically rebuilds when the page is reloaded in the browser.
+\item Integrated build system that automatically rebuilds when the page is reloaded in the browser
 \item Ability to test the web application without a browser or even a running web server and call controller methods or render templates directly from a Scala REPL with the pre-loaded project 
 \item Support for AJAX, Comet and WebSockets
+\item JSON mapping
 %TODO
 \end{itemize}
+
+The Play framework is not the only Scala based web framework. According to Typesafe's CTO, they decided to integrate it in it's Platform instead of Lift or similar frameworks because it is completely written in Scala, uses Akka for asynchronous processing, providing a good concurrency handling, has the better type-safety even in html templates, and because it was the one with the greater momentum at the time the choice was made \cite[cf.][]{playdecision}.

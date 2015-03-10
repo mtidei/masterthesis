@@ -133,6 +133,27 @@
       \field{year}{2014}
       \keyw{swift,objective-c}
     \endentry
+    \entry{playdecision}{url}{}
+      \name{labelname}{1}{}{%
+        {{hash=17202869a2e7a20e35fc75944c1f2067}{Bonér}{B\bibinitperiod}{Jonas}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=17202869a2e7a20e35fc75944c1f2067}{Bonér}{B\bibinitperiod}{Jonas}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{17202869a2e7a20e35fc75944c1f2067}
+      \strng{fullhash}{17202869a2e7a20e35fc75944c1f2067}
+      \field{labelalpha}{Play-Decision}
+      \field{sortinit}{B}
+      \field{labeltitle}{Why did Typesafe select Play for their stack instead of Lift?}
+      \field{shorthand}{Play-Decision}
+      \field{title}{Why did Typesafe select Play for their stack instead of Lift?}
+      \field{urlday}{09}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://www.quora.com/Why-did-Typesafe-select-Play-for-their-stack-instead-of-Lift
+      \endverb
+    \endentry
     \entry{reactivemanifesto}{url}{}
       \name{labelname}{4}{}{%
         {{hash=17202869a2e7a20e35fc75944c1f2067}{Bonér}{B\bibinitperiod}{Jonas}{J\bibinitperiod}{}{}{}{}}%
@@ -192,6 +213,29 @@
       \verb 10.1145/1327452.1327492
       \endverb
     \endentry
+    \entry{cocoapods}{url}{}
+      \name{labelname}{2}{}{%
+        {{hash=1bf6d44483aa3651108378d1167ba391}{Durán}{D\bibinitperiod}{Eloy}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=a8b2e39951bba535f313f563f6abaef6}{contributors}{c\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=1bf6d44483aa3651108378d1167ba391}{Durán}{D\bibinitperiod}{Eloy}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=a8b2e39951bba535f313f563f6abaef6}{contributors}{c\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{52f6c8a392c579f32f733b33eefe90a1}
+      \strng{fullhash}{52f6c8a392c579f32f733b33eefe90a1}
+      \field{labelalpha}{CocoaPods}
+      \field{sortinit}{D}
+      \field{labeltitle}{The CocoaPods open source dependency manager for iOS and OSX projects}
+      \field{shorthand}{CocoaPods}
+      \field{title}{The CocoaPods open source dependency manager for iOS and OSX projects}
+      \field{urlday}{10}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://cocoapods.org/
+      \endverb
+    \endentry
     \entry{gof}{book}{}
       \name{labelname}{4}{}{%
         {{hash=abd927bf30d6566be0ac66a66e893fdd}{Gamma}{G\bibinitperiod}{Erich}{E\bibinitperiod}{}{}{}{}}%
@@ -231,6 +275,96 @@
       \field{urlyear}{2015}
       \verb{url}
       \verb http://www.csr.utexas.edu/grace/gravity/gravity_definition.html
+      \endverb
+    \endentry
+    \entry{cocoalumberjack}{url}{}
+      \name{labelname}{2}{}{%
+        {{hash=673915447d8b18591728c009ab3db10a}{Hanson}{H\bibinitperiod}{Robbie}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=a8b2e39951bba535f313f563f6abaef6}{contributors}{c\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=673915447d8b18591728c009ab3db10a}{Hanson}{H\bibinitperiod}{Robbie}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=a8b2e39951bba535f313f563f6abaef6}{contributors}{c\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{c3547d9c50402112258006112d146576}
+      \strng{fullhash}{c3547d9c50402112258006112d146576}
+      \field{labelalpha}{CocoaLumberjack}
+      \field{sortinit}{H}
+      \field{labeltitle}{A fast \& simple, yet powerful \& flexible logging framework for Mac and iOS}
+      \field{shorthand}{CocoaLumberjack}
+      \field{title}{A fast \& simple, yet powerful \& flexible logging framework for Mac and iOS}
+      \field{urlday}{10}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb https://github.com/CocoaLumberjack/CocoaLumberjack
+      \endverb
+    \endentry
+    \entry{clperf}{url}{}
+      \name{labelname}{2}{}{%
+        {{hash=673915447d8b18591728c009ab3db10a}{Hanson}{H\bibinitperiod}{Robbie}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=a8b2e39951bba535f313f563f6abaef6}{contributors}{c\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=673915447d8b18591728c009ab3db10a}{Hanson}{H\bibinitperiod}{Robbie}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=a8b2e39951bba535f313f563f6abaef6}{contributors}{c\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{c3547d9c50402112258006112d146576}
+      \strng{fullhash}{c3547d9c50402112258006112d146576}
+      \field{labelalpha}{CL-Benchmarks}
+      \field{sortinit}{H}
+      \field{labeltitle}{CocoaLumberjack Analysis of Performance with Benchmarks}
+      \field{shorthand}{CL-Benchmarks}
+      \field{title}{CocoaLumberjack Analysis of Performance with Benchmarks}
+      \field{urlday}{10}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb https://github.com/CocoaLumberjack/CocoaLumberjack/blob/master/Documentation/Performance.md
+      \endverb
+    \endentry
+    \entry{play-book}{book}{}
+      \name{labelname}{3}{}{%
+        {{hash=bdc68aa7b26dfbabf2194f665d9a16e3}{Hilton}{H\bibinitperiod}{Peter}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=93ac0a5efb09265f94330b21e26ffbda}{Bakker}{B\bibinitperiod}{Erik}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=c44da533060e4591f678c2d067a939d5}{Canedo}{C\bibinitperiod}{Francisco}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=bdc68aa7b26dfbabf2194f665d9a16e3}{Hilton}{H\bibinitperiod}{Peter}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=93ac0a5efb09265f94330b21e26ffbda}{Bakker}{B\bibinitperiod}{Erik}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=c44da533060e4591f678c2d067a939d5}{Canedo}{C\bibinitperiod}{Francisco}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Manning Publications}%
+      }
+      \strng{namehash}{f5058f59ae2ba28010535725d2c2dedc}
+      \strng{fullhash}{f5058f59ae2ba28010535725d2c2dedc}
+      \field{labelalpha}{Hilton,\addhighpenspace2014}
+      \field{sortinit}{H}
+      \field{labeltitle}{{Play for Scala: Covers Play 2}}
+      \field{isbn}{1617290793}
+      \field{title}{{Play for Scala: Covers Play 2}}
+      \field{year}{2014}
+    \endentry
+    \entry{xcodebeta}{url}{}
+      \name{labelname}{1}{}{%
+        {{hash=bf6560f00cbeba2f0a8edc79c6a9690d}{Inc.}{I\bibinitperiod}{Apple}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=bf6560f00cbeba2f0a8edc79c6a9690d}{Inc.}{I\bibinitperiod}{Apple}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{bf6560f00cbeba2f0a8edc79c6a9690d}
+      \strng{fullhash}{bf6560f00cbeba2f0a8edc79c6a9690d}
+      \field{labelalpha}{Xcode-beta}
+      \field{sortinit}{I}
+      \field{labeltitle}{Xcode download page, containing pre-release versions}
+      \field{shorthand}{Xcode-beta}
+      \field{title}{Xcode download page, containing pre-release versions}
+      \field{urlday}{10}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb https://developer.apple.com/xcode/downloads/
       \endverb
     \endentry
     \entry{couchbase-lite}{url}{}
@@ -417,6 +551,29 @@
       \field{year}{2013}
       \keyw{context aware computing,big data,sensors}
     \endentry
+    \entry{coreplot}{url}{}
+      \name{labelname}{2}{}{%
+        {{hash=790bfc8993988728d098227636f94f30}{Skroch}{S\bibinitperiod}{Eric}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=a8b2e39951bba535f313f563f6abaef6}{contributors}{c\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=790bfc8993988728d098227636f94f30}{Skroch}{S\bibinitperiod}{Eric}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=a8b2e39951bba535f313f563f6abaef6}{contributors}{c\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{0d4dde7dfa8489564a659b6d6292b8ba}
+      \strng{fullhash}{0d4dde7dfa8489564a659b6d6292b8ba}
+      \field{labelalpha}{Core-Plot}
+      \field{sortinit}{S}
+      \field{labeltitle}{The Core Plot open source plotting framework}
+      \field{shorthand}{Core-Plot}
+      \field{title}{The Core Plot open source plotting framework}
+      \field{urlday}{10}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb https://github.com/core-plot/core-plot
+      \endverb
+    \endentry
     \entry{typesafeact}{url}{}
       \name{labelname}{1}{}{%
         {{hash=8c0ae5fd696874da262d05cfb26c114c}{Wall}{W\bibinitperiod}{Dick}{D\bibinitperiod}{}{}{}{}}%
@@ -461,7 +618,6 @@
     \endentry
   \endsortlist
   \missing{swift-error-handling}
-  \missing{play-book}
   \missing{Internet-couchbase}
 \endrefsection
 \endinput

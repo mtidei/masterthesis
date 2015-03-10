@@ -8,19 +8,46 @@
 
 %----------------------------------------------------------------------------------------
 
-\section{Goal}
+\section{Introduction and Goal}
 
 The CA Guide mobile application has to display predefined textual descriptions of sites areas, show images and play audio files when a specific context state is reached. The trigger will often be entering a specified area at a moderate pace that signals the visitor is interested and not only passing by to reach another place. But also leaving an area can be of interest, for example to indicate single subareas that were missed. Even offering a coffee break discount coupon on the display after the visitor made 5000 steps through the park or exhibition is imaginable.
 
 An essential aspect is the ability to record and replay the data coming from all accessed sensors. That's the only way to effectively develop a context-sensitive application and so special attention has to be given to this part of the system.
 
-\section{Target Platform}
+\section{The Target Platform}
 
-The target mobile plattform for the CA Guide frontend application is iOS 8.1. The targeted mobile device is an iPad mini 2 with GPS sensor. This device was choosen for it's compact size and light weight, while still offering much more screen size than a normal smartphone, which is advantageous for displaying images and text in a size that is more comfortable to read.
+The target mobile platform for the CA Guide front end application is iOS 8.1. The targeted mobile device is an iPad mini 2 with GPS sensor. This device was chosen for it's compact size and light weight, while still offering much more screen size than a normal smartphone, which is advantageous for displaying images and text in a size that is more comfortable to read.
 
-\section{Development Platform}
+\section{Setting Up the Development Platform}
 
-This mobile application is written in Swift 1.2 using the native Apple XCode IDE in Version 6.3, which at the time of writing is still in beta status.
+This mobile application is written in Swift 1.2 using the native Apple XCode IDE in version 6.3, which at the time of writing is still in beta status\footnote{In fact, the last "stable" version 6.1, which I used for several weeks before, crashed too quite often with the Message so I decided to use the newest beta IDE version, that proved not to be more buggy than the release version while offering the newest Swift Compiler with several optimizations in compile and runtime performance.}. It can be downloaded at \cite{xcodebeta}.
+
+
+For logging purposes, CocoaLumberjack \cite{cocoalumberjack}
+was used. In contrast to the logging system shipped with the iOS SDK, it offers several logging levels and has a much greater performance \cite{clperf}. 
+This is especially important when logging low level functions like the one handling accelerometer updates every 10ms.
+
+To add extensions like CocoaLumberjack to the project, the dependency management system CocoaPods \cite{cocoapods}
+was used. It creates a XCode Workspace containing the own project paired with a managed CocoaPods project containing all the extra libraries. The wanted libraries are specified in a file named "Podfile", where you define the ids and the desired version for each build target. 
+
+\begin{lstlisting}[caption={The CocoaPods file of the CA Guide front end XCode project},basicstyle=\small\ttfamily,language=c,aboveskip=15pt]
+target 'Guide' do
+   pod 'CocoaLumberjack', '2.0.0-beta'
+   pod 'couchbase-lite-ios', '~> 1.0'
+   pod 'CorePlot', :git => 'https://github.com/core-plot/core-plot.git', :branch => 'release-2.0'
+end
+
+target 'GuideTests' do
+   pod 'CocoaLumberjack', '2.0.0-beta'
+   pod 'couchbase-lite-ios', '~> 1.0'
+end
+\end{lstlisting}
+
+
+Libraries not available in the public CocoaPods repository can be added defining a custom git url and branch, as was done for Core Plot \cite{coreplot}, an open source plotting framework used for plotting beacon signal strength on debug screens. 
+
+Because at the time of writing many modules are written in Objective-C, a so-called bridging header file
+has to be added manually to the own Swift project to expose the Ojective-C headers to the Swift compiler and let it automatically create a Swift API that can be used in the own Swift code \cite[p. 71, chapter "Importing Objective-C into Swift"]{swift-objc-book}.
 
 \section{Architecture}
 

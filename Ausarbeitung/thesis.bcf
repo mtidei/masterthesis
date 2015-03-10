@@ -1990,8 +1990,15 @@
     <bcf:citekey order="25">typesafeact</bcf:citekey>
     <bcf:citekey order="26">play-book</bcf:citekey>
     <bcf:citekey order="27">play-book</bcf:citekey>
-    <bcf:citekey order="28">gof</bcf:citekey>
-    <bcf:citekey order="29">GCD-Reference</bcf:citekey>
+    <bcf:citekey order="28">playdecision</bcf:citekey>
+    <bcf:citekey order="29">xcodebeta</bcf:citekey>
+    <bcf:citekey order="30">cocoalumberjack</bcf:citekey>
+    <bcf:citekey order="31">clperf</bcf:citekey>
+    <bcf:citekey order="32">cocoapods</bcf:citekey>
+    <bcf:citekey order="33">coreplot</bcf:citekey>
+    <bcf:citekey order="34">swift-objc-book</bcf:citekey>
+    <bcf:citekey order="35">gof</bcf:citekey>
+    <bcf:citekey order="36">GCD-Reference</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="nyt">
   <bcf:sorting>

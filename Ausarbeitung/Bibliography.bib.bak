@@ -185,7 +185,7 @@ ISBN = {978-331-90219-2-8},
 ISBN = {978-331-90219-1-1 (Druckausgabe)},
 }
 
-@book{play,
+@book{play-book,
     author = {Hilton, Peter and Bakker, Erik and Canedo, Francisco},
     isbn = {1617290793},
     publisher = {Manning Publications},
@@ -193,6 +193,17 @@ ISBN = {978-331-90219-1-1 (Druckausgabe)},
     %url = {http://www.worldcat.org/isbn/1617290793},
     year = {2014}
 }
+
+
+@book{nosqldistilled,
+ author = {Sadalage, Pramod J. and Fowler, Martin},
+ title = {NoSQL Distilled: A Brief Guide to the Emerging World of Polyglot Persistence},
+ year = {2013},
+ isbn = {0-321-82662-0},
+ edition = {1st},
+ note = {Third printing},
+ publisher = {Addison-Wesley Professional},
+} 
 
 @url{scala-dsl-example,
 	Author = {Macacek, Jan},
@@ -264,4 +275,20 @@ author = {Ancelin, Mathieu and contributors},
 url = {http://reactivecouchbase.org},
 urldate = {2015-03-02},
 shorthand = {React-Couchbase}
+}
+
+@url {steinersarnen,
+title = {The Company Steiner Sarnen Schweiz AG},
+author = {Steiner Sarnen Schweiz AG},
+url = {http://www.steinersarnen.ch},
+urldate = {2015-03-03},
+shorthand = {Steiner-Sarnen}
+}
+
+@url {playdecision,
+title = {Why did Typesafe select Play for their stack instead of Lift?},
+author = {Jonas Bonér},
+url = {http://www.quora.com/Why-did-Typesafe-select-Play-for-their-stack-instead-of-Lift},
+urldate = {2015-03-09},
+shorthand = {Play-Decision}
 }
