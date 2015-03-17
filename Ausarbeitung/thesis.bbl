@@ -133,6 +133,50 @@
       \field{year}{2014}
       \keyw{swift,objective-c}
     \endentry
+    \entry{coffeescript}{url}{}
+      \name{labelname}{2}{}{%
+        {{hash=72eca2a1f02eafce82954fc5148b50c7}{Ashkenas}{A\bibinitperiod}{Jeremy}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=a8b2e39951bba535f313f563f6abaef6}{contributors}{c\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=72eca2a1f02eafce82954fc5148b50c7}{Ashkenas}{A\bibinitperiod}{Jeremy}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=a8b2e39951bba535f313f563f6abaef6}{contributors}{c\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{86d679b52a24bc450649d889350ee3a7}
+      \strng{fullhash}{86d679b52a24bc450649d889350ee3a7}
+      \field{labelalpha}{CoffeeScript}
+      \field{sortinit}{A}
+      \field{labeltitle}{CoffeeScript Homepage}
+      \field{shorthand}{CoffeeScript}
+      \field{title}{CoffeeScript Homepage}
+      \field{urlday}{17}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://coffeescript.org
+      \endverb
+    \endentry
+    \entry{scalajs-interview}{url}{}
+      \name{labelname}{1}{}{%
+        {{hash=61ad0d2e5f25b6ccb676a82e70286647}{Bentley}{B\bibinitperiod}{Elliot}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=61ad0d2e5f25b6ccb676a82e70286647}{Bentley}{B\bibinitperiod}{Elliot}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{61ad0d2e5f25b6ccb676a82e70286647}
+      \strng{fullhash}{61ad0d2e5f25b6ccb676a82e70286647}
+      \field{labelalpha}{Interview-Doeraene}
+      \field{sortinit}{B}
+      \field{labeltitle}{Scaling from the back to the frontend - Interview: Compiling Scala to JavaScript with Scala.js}
+      \field{shorthand}{Interview-Doeraene}
+      \field{title}{Scaling from the back to the frontend - Interview: Compiling Scala to JavaScript with Scala.js}
+      \field{urlday}{17}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://jaxenter.com/interview-compiling-scala-to-javascript-with-scala-js-107247.html
+      \endverb
+    \endentry
     \entry{playdecision}{url}{}
       \name{labelname}{1}{}{%
         {{hash=17202869a2e7a20e35fc75944c1f2067}{Bonér}{B\bibinitperiod}{Jonas}{J\bibinitperiod}{}{}{}{}}%
@@ -213,6 +257,48 @@
       \verb 10.1145/1327452.1327492
       \endverb
     \endentry
+    \entry{scalajs06}{url}{}
+      \name{labelname}{1}{}{%
+        {{hash=b8752adb4b3bac87121dcb60def76939}{Doeraene}{D\bibinitperiod}{Sébastien}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=b8752adb4b3bac87121dcb60def76939}{Doeraene}{D\bibinitperiod}{Sébastien}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b8752adb4b3bac87121dcb60def76939}
+      \strng{fullhash}{b8752adb4b3bac87121dcb60def76939}
+      \field{labelalpha}{Scala.js-0.6}
+      \field{sortinit}{D}
+      \field{labeltitle}{Scala.js no longer experimental}
+      \field{shorthand}{Scala.js-0.6}
+      \field{title}{Scala.js no longer experimental}
+      \field{urlday}{14}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://www.scala-lang.org/news/2015/02/05/scala-js-no-longer-experimental.html
+      \endverb
+    \endentry
+    \entry{scalajs}{url}{}
+      \name{labelname}{1}{}{%
+        {{hash=b8752adb4b3bac87121dcb60def76939}{Doeraene}{D\bibinitperiod}{Sébastien}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=b8752adb4b3bac87121dcb60def76939}{Doeraene}{D\bibinitperiod}{Sébastien}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b8752adb4b3bac87121dcb60def76939}
+      \strng{fullhash}{b8752adb4b3bac87121dcb60def76939}
+      \field{labelalpha}{Scala.js}
+      \field{sortinit}{D}
+      \field{labeltitle}{Scala.js - the Scala to JavaScript compiler}
+      \field{shorthand}{Scala.js}
+      \field{title}{Scala.js - the Scala to JavaScript compiler}
+      \field{urlday}{17}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://www.scala-js.org
+      \endverb
+    \endentry
     \entry{cocoapods}{url}{}
       \name{labelname}{2}{}{%
         {{hash=1bf6d44483aa3651108378d1167ba391}{Durán}{D\bibinitperiod}{Eloy}{E\bibinitperiod}{}{}{}{}}%
@@ -275,6 +361,37 @@
       \field{urlyear}{2015}
       \verb{url}
       \verb http://www.csr.utexas.edu/grace/gravity/gravity_definition.html
+      \endverb
+    \endentry
+    \entry{scala-futures}{url}{}
+      \name{labelname}{6}{}{%
+        {{hash=6987cf8ce0f10540abc8b54a10c06420}{Haller}{H\bibinitperiod}{Philipp}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=b1339a8ef6cec3089ab99a2d2c07d27f}{Prokopec}{P\bibinitperiod}{Aleksandar}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=96ae9b28f8b338ad60ac4f2297960539}{Miller}{M\bibinitperiod}{Heather}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=541f9975681430a3711c50884d7d6551}{Klang}{K\bibinitperiod}{Viktor}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=5874c3ac25a57d1817298f76e9f8e880}{Kuhn}{K\bibinitperiod}{Roland}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=bd57e0e563b16603aaf6c42fc7f8cec3}{Jovanovic}{J\bibinitperiod}{Vojin}{V\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{6}{}{%
+        {{hash=6987cf8ce0f10540abc8b54a10c06420}{Haller}{H\bibinitperiod}{Philipp}{P\bibinitperiod}{}{}{}{}}%
+        {{hash=b1339a8ef6cec3089ab99a2d2c07d27f}{Prokopec}{P\bibinitperiod}{Aleksandar}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=96ae9b28f8b338ad60ac4f2297960539}{Miller}{M\bibinitperiod}{Heather}{H\bibinitperiod}{}{}{}{}}%
+        {{hash=541f9975681430a3711c50884d7d6551}{Klang}{K\bibinitperiod}{Viktor}{V\bibinitperiod}{}{}{}{}}%
+        {{hash=5874c3ac25a57d1817298f76e9f8e880}{Kuhn}{K\bibinitperiod}{Roland}{R\bibinitperiod}{}{}{}{}}%
+        {{hash=bd57e0e563b16603aaf6c42fc7f8cec3}{Jovanovic}{J\bibinitperiod}{Vojin}{V\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{33650e9f900176ead5c4e78a2fe4f60d}
+      \strng{fullhash}{6948f8ac87b7bad7143fa8fc8e11267f}
+      \field{labelalpha}{Scala-Futures}
+      \field{sortinit}{H}
+      \field{labeltitle}{Scala Documentation - Futures and Promises}
+      \field{shorthand}{Scala-Futures}
+      \field{title}{Scala Documentation - Futures and Promises}
+      \field{urlday}{11}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://docs.scala-lang.org/overviews/core/futures.html
       \endverb
     \endentry
     \entry{cocoalumberjack}{url}{}
@@ -376,10 +493,10 @@
       }
       \strng{namehash}{7cf9877ab551434818b87a774a1d0c19}
       \strng{fullhash}{7cf9877ab551434818b87a774a1d0c19}
-      \field{labelalpha}{Couchbase}
+      \field{labelalpha}{Couchbase-Mobile}
       \field{sortinit}{I}
       \field{labeltitle}{Couchbase Mobile NoSQL Database}
-      \field{shorthand}{Couchbase}
+      \field{shorthand}{Couchbase-Mobile}
       \field{title}{Couchbase Mobile NoSQL Database}
       \field{urlday}{26}
       \field{urlmonth}{01}
@@ -388,6 +505,51 @@
       \verb http://www.couchbase.com/nosql-databases/couchbase-mobile
       \endverb
       \keyw{couchbase}
+    \endentry
+    \entry{couchbase}{url}{}
+      \name{labelname}{1}{}{%
+        {{hash=7cf9877ab551434818b87a774a1d0c19}{Inc.}{I\bibinitperiod}{Couchbase}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=7cf9877ab551434818b87a774a1d0c19}{Inc.}{I\bibinitperiod}{Couchbase}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{7cf9877ab551434818b87a774a1d0c19}
+      \strng{fullhash}{7cf9877ab551434818b87a774a1d0c19}
+      \field{labelalpha}{Couchbase}
+      \field{sortinit}{I}
+      \field{labeltitle}{Couchbase NoSQL Database Server}
+      \field{shorthand}{Couchbase}
+      \field{title}{Couchbase NoSQL Database Server}
+      \field{urlday}{11}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://www.couchbase.com/nosql-databases/couchbase-server
+      \endverb
+      \keyw{couchbase}
+    \endentry
+    \entry{typescript}{url}{}
+      \name{labelname}{2}{}{%
+        {{hash=4c56d77fdbe3b7f17139031932e00b8f}{Inc.}{I\bibinitperiod}{Microsoft}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=a8b2e39951bba535f313f563f6abaef6}{contributors}{c\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=4c56d77fdbe3b7f17139031932e00b8f}{Inc.}{I\bibinitperiod}{Microsoft}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=a8b2e39951bba535f313f563f6abaef6}{contributors}{c\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{24d20cb10adaa07ee097642a526c0064}
+      \strng{fullhash}{24d20cb10adaa07ee097642a526c0064}
+      \field{labelalpha}{TypeScript}
+      \field{sortinit}{I}
+      \field{labeltitle}{The TypeScript Language}
+      \field{shorthand}{TypeScript}
+      \field{title}{The TypeScript Language}
+      \field{urlday}{12}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://www.typescriptlang.org
+      \endverb
     \endentry
     \entry{scala-dsl-example}{url}{}
       \name{labelname}{1}{}{%
@@ -398,9 +560,10 @@
       }
       \strng{namehash}{10e008604c95de7bade2003b0bfc2563}
       \strng{fullhash}{10e008604c95de7bade2003b0bfc2563}
-      \field{labelalpha}{Macacek,\addhighpenspace2011}
+      \field{labelalpha}{Scala-DSL-Example}
       \field{sortinit}{M}
       \field{labeltitle}{Type-safe DSL}
+      \field{shorthand}{Scala-DSL-Example}
       \field{title}{Type-safe DSL}
       \field{urlday}{05}
       \field{urlmonth}{01}
@@ -551,6 +714,28 @@
       \field{year}{2013}
       \keyw{context aware computing,big data,sensors}
     \endentry
+    \entry{interview-eich}{url}{}
+      \name{labelname}{1}{}{%
+        {{hash=2c8b9da4e951b9bddb8adae99ff74aa4}{Severance}{S\bibinitperiod}{Charles}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=2c8b9da4e951b9bddb8adae99ff74aa4}{Severance}{S\bibinitperiod}{Charles}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{2c8b9da4e951b9bddb8adae99ff74aa4}
+      \strng{fullhash}{2c8b9da4e951b9bddb8adae99ff74aa4}
+      \field{labelalpha}{Interview-Eich}
+      \field{sortinit}{S}
+      \field{labeltitle}{Interview with Brendan Eich, the creator of JavaScript}
+      \field{shorthand}{Interview-Eich}
+      \field{title}{Interview with Brendan Eich, the creator of JavaScript}
+      \field{urlday}{17}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \field{year}{2012}
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=IPxQ9kEaF8c&feature=youtu.be
+      \endverb
+    \endentry
     \entry{coreplot}{url}{}
       \name{labelname}{2}{}{%
         {{hash=790bfc8993988728d098227636f94f30}{Skroch}{S\bibinitperiod}{Eric}{E\bibinitperiod}{}{}{}{}}%
@@ -616,9 +801,31 @@
       \field{pages}{66\bibrangedash 75}
       \keyw{pervasive computing}
     \endentry
+    \entry{typescript-repo}{url}{}
+      \name{labelname}{2}{}{%
+        {{hash=c65fccf8f1e5e8c80faef6d7b6e5b976}{Yankov}{Y\bibinitperiod}{Boris}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=928f63606fb3c8b6991cde45a198f2fd}{contricutors}{c\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=c65fccf8f1e5e8c80faef6d7b6e5b976}{Yankov}{Y\bibinitperiod}{Boris}{B\bibinitperiod}{}{}{}{}}%
+        {{hash=928f63606fb3c8b6991cde45a198f2fd}{contricutors}{c\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{0779357115e3aa8e76c61d7af3fbc31c}
+      \strng{fullhash}{0779357115e3aa8e76c61d7af3fbc31c}
+      \field{labelalpha}{TS-TypeRepository}
+      \field{sortinit}{Y}
+      \field{labeltitle}{DefinitelyTyped - Repository for TypeScript type definitions}
+      \field{shorthand}{TS-TypeRepository}
+      \field{title}{DefinitelyTyped - Repository for TypeScript type definitions}
+      \field{urlday}{12}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://definitelytyped.org
+      \endverb
+    \endentry
   \endsortlist
   \missing{swift-error-handling}
-  \missing{Internet-couchbase}
 \endrefsection
 \endinput
 

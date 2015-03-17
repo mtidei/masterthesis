@@ -8,6 +8,25 @@
 
 %----------------------------------------------------------------------------------------
 
-\section{Contribution}
+\section{Summary}
+
+\subsection{The CA Guide}
+
+\subsection{Swift and Scala}
+
+In my opinion, the quality and the success of a programming language is tightly coupled with it's standard library. Currently, Scala has the better libraries, being better composed allowing to find familiar concepts and elements learned before and reused as part of other concepts. %Stimmig und rund, in sich stimmig, "expressive" wort für idomatic, feeling
+%TODO Examples: Partial Functions in Future's methods, in Actors
+
+
+For Swift, I hope Apple will redesign all libraries and APIs and implement them natively in Swift soon. 
+
+Despite that, Swift, CocoaTouch and iOS is one of the best platforms available for mobile development, with a superior runtime performance providing an excellent, highly responsive UI experience. %kein ruckeln
+
+XCode has a long way to go before beeing really stable and providing all the features a modern IDE needs like Swift refactoring support and code navigation, but I think Apple engineers are working on archiving this goal.
 
 \section{Future Work}
+
+WWI Indoor Exhibition at Schloss Arenenberg
+Guide for the Schlosspark Arenenberg
+Guide for popular bike and tracking routes in the region of the lake of constance
+Virtual Geocaching

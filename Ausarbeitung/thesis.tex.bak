@@ -237,7 +237,7 @@
 \textit{\Large ``Moving on is hard, but inevitable if you don't want to be the next COBOL programmer."}
 
 \begin{flushright}
-\small Taken from the preface to "Play for Scala" written by P.Hilton, E.Bakker, F.Canedo \cite{play-book}
+\small From the preface to "Play for Scala" written by P.Hilton, E.Bakker, F.Canedo \cite{play-book}
 \end{flushright}
 
 \vfill\vfill\vfill\vfill\vfill\vfill\null % Add some space at the bottom to position the quote just right
@@ -396,7 +396,7 @@ Lorem ipsum dolor
 
 \label{Bibliography}
 
-%\lhead{\emph{Bibliography}} % Change the page header to say "Bibliography"
+\lhead{\emph{Bibliography}} % Change the page header to say "Bibliography"
 
 % natbib
 %\bibliographystyle{unsrtnat} % Use the "unsrtnat" BibTeX style for formatting the Bibliography

@@ -241,9 +241,18 @@ ISBN = {978-331-90219-1-1 (Druckausgabe)},
  shorthand = {NASA-Geoid}
 }
 
-@url{couchbase-lite,
+@url{couchbase,
 	Author = {Couchbase Inc.},
 	shorthand = {Couchbase},
+	Keywords = {couchbase},
+	Urldate = {2015-03-11},
+	Title = {Couchbase NoSQL Database Server},
+	Url = {http://www.couchbase.com/nosql-databases/couchbase-server}
+}
+
+@url{couchbase-lite,
+	Author = {Couchbase Inc.},
+	shorthand = {Couchbase-Mobile},
 	Date-Added = {2015-01-26 11:44:16 +0000},
 	Date-Modified = {2015-01-26 12:15:10 +0000},
 	Keywords = {couchbase},
@@ -292,3 +301,106 @@ url = {http://www.quora.com/Why-did-Typesafe-select-Play-for-their-stack-instead
 urldate = {2015-03-09},
 shorthand = {Play-Decision}
 }
+
+@url {coreplot,
+title = {The Core Plot open source plotting framework},
+author = {Eric Skroch and contributors},
+url = {https://github.com/core-plot/core-plot},
+urldate = {2015-03-10},
+shorthand = {Core-Plot}
+}
+
+@url {cocoapods,
+title = {The CocoaPods open source dependency manager for iOS and OSX projects},
+author = {Eloy Durán and contributors},
+url = {http://cocoapods.org/},
+urldate = {2015-03-10},
+shorthand = {CocoaPods}
+}
+
+@url {cocoalumberjack,
+title = {A fast \& simple, yet powerful \& flexible logging framework for Mac and iOS},
+author = {Robbie Hanson and contributors},
+url = {https://github.com/CocoaLumberjack/CocoaLumberjack},
+urldate = {2015-03-10},
+shorthand = {CocoaLumberjack}
+}
+
+@url {clperf,
+title = {CocoaLumberjack Analysis of Performance with Benchmarks},
+author = {Robbie Hanson and contributors},
+url = {https://github.com/CocoaLumberjack/CocoaLumberjack/blob/master/Documentation/Performance.md},
+urldate = {2015-03-10},
+shorthand = {CL-Benchmarks}
+}
+
+@url {xcodebeta,
+title = {Xcode download page, containing pre-release versions},
+author = {Apple Inc.},
+url = {https://developer.apple.com/xcode/downloads/},
+urldate = {2015-03-10},
+shorthand = {Xcode-beta}
+}
+
+@url {scala-futures,
+title = {Scala Documentation - Futures and Promises},
+author = {Philipp Haller and Aleksandar Prokopec and Heather Miller and Viktor Klang and Roland Kuhn and Vojin Jovanovic},
+url = {http://docs.scala-lang.org/overviews/core/futures.html},
+urldate = {2015-03-11},
+shorthand = {Scala-Futures}
+}
+
+%TODO
+@url {scalajs,
+title = {Scala.js the Scala to JavaScript compiler},
+author = {Sébastien Doeraene},
+url = {http://www.scala-js.org},
+urldate = {2015-03-14},
+shorthand = {Scala.js}
+}
+
+%TODO
+@url {scalajs06,
+title = {Scala.js no longer experimental},
+author = {Sébastien Doeraene},
+url = {http://www.scala-lang.org/news/2015/02/05/scala-js-no-longer-experimental.html},
+urldate = {2015-03-14},
+shorthand = {Scala.js-0.6}
+}
+
+%TODO
+@url {upickle ,
+title = {µPickle, a lightweight serialization library for Scala and Scala.js},
+author = {Li Haoyi},
+url = {https://github.com/lihaoyi/upickle},
+urldate = {2015-03-15},
+shorthand = {µPickle}
+}
+
+@url {interview-eich,
+title = {Interview with Brendan Eich, the creator of JavaScript},
+author = {Charles Severance},
+url = {https://www.youtube.com/watch?v=IPxQ9kEaF8c&feature=youtu.be
+},
+urldate = {2015-03-17},
+shorthand = {Eich, 2012},
+year = {2012}
+}
+
+@url {coffeescript,
+title = {CoffeeScript Homepage},
+author = {Jeremy Ashkenas and contributors},
+url = {http://coffeescript.org},
+urldate = {2015-03-17},
+shorthand = {CoffeeScript},
+}
+
+
+@url {key,
+title = {},
+author = {},
+url = {},
+urldate = {2015-03-14},
+shorthand = {}
+}
+

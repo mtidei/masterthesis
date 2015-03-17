@@ -1982,7 +1982,7 @@
     <bcf:citekey order="17">swift-error-handling</bcf:citekey>
     <bcf:citekey order="18">swift-objc-book</bcf:citekey>
     <bcf:citekey order="19">nosqldistilled</bcf:citekey>
-    <bcf:citekey order="20">Internet-couchbase</bcf:citekey>
+    <bcf:citekey order="20">couchbase</bcf:citekey>
     <bcf:citekey order="21">couchbase-lite</bcf:citekey>
     <bcf:citekey order="22">couchbase-lite</bcf:citekey>
     <bcf:citekey order="23">MapReduceArticle</bcf:citekey>
@@ -1999,6 +1999,15 @@
     <bcf:citekey order="34">swift-objc-book</bcf:citekey>
     <bcf:citekey order="35">gof</bcf:citekey>
     <bcf:citekey order="36">GCD-Reference</bcf:citekey>
+    <bcf:citekey order="37">interview-eich</bcf:citekey>
+    <bcf:citekey order="38">coffeescript</bcf:citekey>
+    <bcf:citekey order="39">typescript</bcf:citekey>
+    <bcf:citekey order="40">typescript-repo</bcf:citekey>
+    <bcf:citekey order="41">scalajs</bcf:citekey>
+    <bcf:citekey order="42">scalajs-interview</bcf:citekey>
+    <bcf:citekey order="43">scalajs06</bcf:citekey>
+    <bcf:citekey order="44">scala-book</bcf:citekey>
+    <bcf:citekey order="45">scala-futures</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="nyt">
   <bcf:sorting>
