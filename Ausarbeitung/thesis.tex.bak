@@ -68,6 +68,7 @@
 \usepackage{tikz-uml}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{enumitem}  
 \newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
 
 \tikzumlset{fill package=gray!5}

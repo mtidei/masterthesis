@@ -16,10 +16,9 @@ There are two main tasks accomplished with the CA Guide back end:
 
 \begin{itemize}
 \item Modeling the outdoor or indoor site by defining areas on a map or floor plan and adding content that later will be presented on the mobile device when entering this area. Especially for indoor sites, single Bluetooth beacons with their identifying numbers and positions must be added to the plan to enable the mobile device to locate itself.
-\item Analytic functions for understanding how the visitors move trough the exhibition and thus allowing to optimize it, similar to the way the behavior of website visitors is tracked and used to optimize the web presence\footnote{Of course, the privacy of the visitor has to be respected at any time. The data must only be collected anonymously and with the permission of the visitor.}.
+\item Analytic functions for understanding how the visitors move trough the exhibition and thus allowing to optimize it, similar to the way the behavior of website visitors is tracked and used to optimize the web presence\footnote{Of course, the privacy of the visitor has to be respected at any time. The data must only be collected anonymously and respecting all local privacy and data protection regulations.}.
 \end{itemize}
 
-%TODO Mockups
 %TODO In Place editing
 
 \section{The Target Platform}
@@ -35,7 +34,7 @@ One of the main challenges developing for the web is the client/server code barr
 
 Modern web applications need to be highly responsive for providing a good user experience and thus be accepted by them. Operations like adding, editing or deleting entities have to be performed without having to do a full page reload to display some sort of HTML form and reloading the whole page again after the form was submitted to the server. This can be achieved using asynchronous calls to the server in the background, exchanging only the needed data with the server and refreshing just the needed part of the HTML DOM. Many operations like resorting a table can even be performed completely in the browser without even performing a server request.
 
-This technique is commonly known as AJAX (Asynchronuous JavaScript and XML) and inside this acronym's phrase one can already spot the main problem. While AJAX gained popularity during the last years, it leveraged the massive use of JavaScript, a dynamically typed scripting language originally not designed for big projects. In fact, JavaScript was developed in 1995 by Brendan Eich in ten days for the Netscape browser, which is an extremely short time despite Eich's big experience in building languages \cite{interview-eich}. That led him to design the language to be malleable, and there are many libraries making programming in JavaScript a little less painful, without solving the problem of lacking static types.
+This technique is commonly known as AJAX (Asynchronuous JavaScript and XML) and inside this acronym's phrase one can already spot the main problem. While AJAX gained popularity during the last years, it leveraged the massive usage of JavaScript, a dynamically typed scripting language originally not designed for big projects. In fact, JavaScript\footnote{In the cited interview Eich says "The name is a total lie" - it was just a marketing decision. JavaScript has been standardized later by Ecma International to ECMAScript.} was developed in 1995 by Brendan Eich in ten days for the Netscape browser, which is an extremely short time despite Eich's big experience in building languages \cite{interview-eich}. That led him to design the language to be malleable, and there are many libraries making programming in JavaScript a little "less painful", without solving the problem of lacking static types and other flaws.
 
 So the two main problems to be solved are:
 
@@ -48,7 +47,7 @@ The next subsection focuses on different solution attempts.
 
 \subsection{Solution Attempts}
 
-\subsubsection*{Improved Javascript}
+\subsubsection{Improved Javascript}
 
 In the last years, several new scripting languages are emerging that compile to JavaScript. 
 
@@ -66,62 +65,125 @@ This screenshot demonstrates a TypeScript compilation error and an inferred nume
 
 While these solutions, and especially TypeScript, smooth out the main flaws of JavaScript and are being adopted by a rising number of developers, they do not solve the need to create redundancy in client/server web applications. So for this work, I continued to search for a solution to both problems.
 
-\subsubsection*{Unified Programming Language for Server and Client Code}
+\subsubsection{Unified Programming Language for Server and Client Code}
 
 There are several attempts to bring JavaScript on the server, and the most popular is Node.js, which was released in 2009. While there surely are some scenarios for server-side JavaScript like screen-capturing of rendered websites, in my opinion this is the wrong way of language unification. It brings the problems connected to JavaScript to the server side, where much better designed languages exist, like Scala. 
 
 The other way around would be the perfect solution: Using a rich and well engineered language to write server and client code. So after some research I found the Scala.js project \cite{scalajs}. It was started on February 2013 by Sébastien Doeraene, a member of the Scala team at LAMP (Programming Methods Laboratory at EPFL), after Martin Odersky suggested him to work on a JavaScript compiler \cite{scalajs-interview}.
 
+Scala.js ports most parts of Scala and it's standard library to the browser. So, among others, it is possible to use Collections, Classes, static Types and 
 %TODO most Scala features 
-%TODO cross compiling
+
+Beside avoiding to use ECMA Script directly, the big advantage of using Scala.js is beeing able to cross-compile parts of the same Scala code for both the server-side JVM and the browser-side ECMA Script engine. This helps reducing redundancy and is especially helpful for data transfer objects (DTO) representing entities of the respective domain, in the case of the CA Guide sites, areas and beacons, as we will see later.
 
 On 5th February 2015, at the time of this writing and exactly two years after this project was started, the release v0.6.0 was announced on the official Scala website and the experimental flag was removed, defining Scala.js "production-ready" \cite{scalajs06}.
 
-So I decided to try this very promising compiler for the Guide back end client-side code.
+So I decided to try this very promising compiler for the CA Guide back end.
 
 \section{Setting up the Development Platform}
 
-\subsection{Scala and Play}
+\subsection{Project Structure, Scala and Play}
 
-Scala is used as programming language for the back end, with Play web framework as a basis for developing a web application in Scala.
+Typesafe's Play web framework %TODO see section bla
+ is used as basis for developing the CA Guide back end. It is installed using the Activator tool, which acts as build tool and dependency manager.
+ 
+The project is configured according to the "Play! application with Scala.js" skeleton \cite{playscalajs} referenced on the Scala.js homepage, splitting it up into three subprojects:
 
-%less as css
+\begin{description}[leftmargin=!,labelwidth=\widthof{\bfseries editor-server}]
+\item[$\bullet$ editor-server] The Play project including server side Scala code and the typical Play application structure consisting of an app folder
+\item[$\bullet$ editor-client] Client only source code, the Scala.js project
+\item[$\bullet$ editor-shared] Shared Scala sources, accessible from both the client and server source code
+\end{description} 
+ 
+The project was imported in IntelliJ IDEA 14 as sbt project, which worked very well without major problems.
 
 \subsection{Adding Reactive Couchbase as Scala Database Driver}
 
-%build.sbt
-%connecting to couchbase database server (conf/applicatin.conf)
-%conf/play.plugins
+ReactiveCouchbase is an open-source database driver for connecting a Couchbase database to a Scala program \cite{reactivecouchbase}. Queries are performed using the elegant Scala Future paradigm, that will be discussed later in detail. For the integration with a Play application, a dedicated plugin is available.
 
-\subsection{Adding Scala.js for Web Client Code}
+Plugins can be added to Play by defining the name, version and if needed the repository url to the build.sbt file. This dependency has only to be added to the server project's dependencies.
 
-%Motivation for Typescript
+\begin{lstlisting}[caption={Adding ReactiveCouchbase to Play via build.sbt},basicstyle=\tiny\ttfamily,language=c,aboveskip=15pt]
+libraryDependencies += "org.reactivecouchbase" %% "reactivecouchbase-play" % "0.3"
+resolvers += "ReactiveCouchbase" at "https://raw.github.com/ReactiveCouchbase/repository/master/releases"
+\end{lstlisting}
+
+To activate the plugin, a line has to be added to conf/play.plugins, where the first element defines the activation order and the second denotes the plugin.
+
+\begin{lstlisting}[caption={Activating the plugins via play.plugins},basicstyle=\tiny\ttfamily,language=c,aboveskip=15pt]
+\small\ttfamily{400:org.reactivecouchbase.play.plugins.CouchbasePlugin}
+\end{lstlisting}
+
+Now the connection to a previously installed Couchbase Server has to be configured. A Couchbase bucket named "guide-editor" was created using the database's admin console.
+
+\begin{lstlisting}[caption={Attaching the driver to the local Couchbase Server},basicstyle=\tiny\ttfamily,language=c,aboveskip=15pt]
+couchbase {
+  buckets = [{
+    host="127.0.0.1"
+    port="8091"
+    base="pools"
+    bucket="guide-editor"
+    user="<user>"
+    pass="<pass>"
+    timeout="0"
+  }]
+}
+\end{lstlisting}
+
+\subsection{Adding µPickle as Lightweight Serialization Framework}
+
+
 
 \subsection{Adding Bootstrap as UI Framework}
 
+Bootstrap is a popular open source web UI library, started by two Twitter engineers in 2011 \cite{bootstrap}, providing a rich set of UI components like buttons, dropdowns, glyphs and modal dialogs. It consists of cascading style-sheets (css), fonts containing the glyphs for common actions and optional JavaScript extensions for programmed behavior.
 
-\section{Architecture}
+After adding the bootstrap.css to Play's folder "public/css" and the glyph fonts to the "public/fonts" folder of the Play application, the components can be used by creating HTML elements assigned to the desired css classes and matching the needed structure of the respective UI component.
+
+\subsection{Activating the Less Compiler}
+%less as css
+
+
+\section{Architecture and Design}
 
 \subsection{Overview}
 
 %Single page,  
 
-\subsection{The REST HTTP Interface}
+\subsection{The Controller}
+
+\subsubsection{Designing the REST HTTP Interface}
 
 %HTTP methods
 %Excerp routing file, reverse routing, single place of definition
 
-\subsection{Performing Database Queries using Scala Futures}
+\subsubsection{Controller Actions}
+
+
+\subsection{The Model}
+
+\subsubsection{Designing Classes to Cross-Compile}
+
+%ClassDTO + Class, implicit conversion to Class: val site:Site = siteDTO, site.save() 
+
+\subsubsection{Creating NoSQL Design Documents}
+
+\subsubsection{Accessing the Database using Scala Futures}
 
 The interface of the Reactive Couchbase Driver makes extensive use of Futures, a language feature introduced in Scala 2.10\footnote{The most recent Edition of \cite{scala-book} at the time of writing doesn't cover Scala 2.10. A more detailed description of Futures can be found in the Scala Online Documentation \cite{scala-futures}.}.
 
 In this section the Future concept is explained using a simple query which retrieves a list of all sites stored in the guide-editor Couchbase bucket.
 
 
+\subsection{The View}
 
+\subsubsection{Play HTML Templates}
 
+\subsubsection{Mockups}
 
+\subsubsection{The Client code in Scala.js}
 
-
+%Own MVC, the Model acts as a kind of local cache. Resorting, filtering
+%Controller generates call to the REST Interface
 
 

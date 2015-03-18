@@ -205,6 +205,17 @@ ISBN = {978-331-90219-1-1 (Druckausgabe)},
  publisher = {Addison-Wesley Professional},
 } 
 
+@book {js-goodparts,
+author = {Crockford, Douglas},
+title = {JavaScript:The Good Parts},
+year = {2008},
+publisher = {O'Reilly},
+keywords = {JavaScript},
+pages = {XIII, 163 S.},
+edition = {1st},
+ISBN = {978-3-89721-876-5},
+}
+
 @url{scala-dsl-example,
 	Author = {Macacek, Jan},
 	Date-Added = {2015-01-07 15:57:02 +0000},
@@ -215,7 +226,8 @@ ISBN = {978-331-90219-1-1 (Druckausgabe)},
 	Url = {http://www.cakesolutions.net/teamblogs/2011/12/10/type-safe-dsl},
 	Urldate = {2015-01-05},
 	Year = {2011},
-	Bdsk-Url-1 = {http://www.cakesolutions.net/teamblogs/2011/12/10/type-safe-dsl}
+	Bdsk-Url-1 = {http://www.cakesolutions.net/teamblogs/2011/12/10/type-safe-dsl},
+	shorthand = {Scala-DSL-Example}
 }
 
 @url {GCD-Reference,
@@ -350,16 +362,6 @@ urldate = {2015-03-11},
 shorthand = {Scala-Futures}
 }
 
-%TODO
-@url {scalajs,
-title = {Scala.js the Scala to JavaScript compiler},
-author = {Sébastien Doeraene},
-url = {http://www.scala-js.org},
-urldate = {2015-03-14},
-shorthand = {Scala.js}
-}
-
-%TODO
 @url {scalajs06,
 title = {Scala.js no longer experimental},
 author = {Sébastien Doeraene},
@@ -383,7 +385,7 @@ author = {Charles Severance},
 url = {https://www.youtube.com/watch?v=IPxQ9kEaF8c&feature=youtu.be
 },
 urldate = {2015-03-17},
-shorthand = {Eich, 2012},
+shorthand = {Interview-Eich},
 year = {2012}
 }
 
@@ -395,6 +397,55 @@ urldate = {2015-03-17},
 shorthand = {CoffeeScript},
 }
 
+@url {typescript,
+title = {The TypeScript Language},
+author = {Microsoft Inc. and contributors},
+url = {http://www.typescriptlang.org},
+urldate = {2015-03-12},
+shorthand = {TypeScript}
+}
+
+@url {typescript-repo,
+title = {DefinitelyTyped - Repository for TypeScript type definitions},
+author = {Boris Yankov and contricutors},
+url = {http://definitelytyped.org},
+urldate = {2015-03-12},
+shorthand = {TS-TypeRepository}
+}
+
+@url {scalajs-interview,
+title = {Scaling from the back to the frontend - Interview: Compiling Scala to JavaScript with Scala.js},
+author = {Elliot Bentley},
+url = {http://jaxenter.com/interview-compiling-scala-to-javascript-with-scala-js-107247.html},
+urldate = {2015-03-17},
+shorthand = {Interview-Doeraene}
+}
+
+@url {scalajs,
+title = {Scala.js - the Scala to JavaScript compiler},
+author = {Sébastien Doeraene},
+url = {http://www.scala-js.org},
+urldate = {2015-03-17},
+shorthand = {Scala.js}
+}
+
+@url {playscalajs,
+title = {Play with Scala.js},
+author = {Vincent Munier},
+url = {https://github.com/vmunier/play-with-scalajs-example},
+urldate = {2015-03-17},
+shorthand = {Scala.js-Crosscompiling}
+}
+
+@url {bootstrap,
+title = {Bootstrap from Twitter},
+author = {Mark Otto},
+url = {https://blog.twitter.com/2011/bootstrap-twitter},
+urldate = {2015-03-14},
+year = {2011}
+shorthand = {Bootstrap}
+}
+
 
 @url {key,
 title = {},
@@ -404,3 +455,4 @@ urldate = {2015-03-14},
 shorthand = {}
 }
 
+%http://www.javaworld.com/article/2604122/scripting-jvm-languages/scala-founder-language-due-for-fundamental-rethink.html

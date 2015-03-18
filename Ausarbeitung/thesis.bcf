@@ -2006,8 +2006,11 @@
     <bcf:citekey order="41">scalajs</bcf:citekey>
     <bcf:citekey order="42">scalajs-interview</bcf:citekey>
     <bcf:citekey order="43">scalajs06</bcf:citekey>
-    <bcf:citekey order="44">scala-book</bcf:citekey>
-    <bcf:citekey order="45">scala-futures</bcf:citekey>
+    <bcf:citekey order="44">playscalajs</bcf:citekey>
+    <bcf:citekey order="45">reactivecouchbase</bcf:citekey>
+    <bcf:citekey order="46">bootstrap</bcf:citekey>
+    <bcf:citekey order="47">scala-book</bcf:citekey>
+    <bcf:citekey order="48">scala-futures</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="nyt">
   <bcf:sorting>

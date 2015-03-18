@@ -68,6 +68,29 @@
       \verb http://www.steinersarnen.ch
       \endverb
     \endentry
+    \entry{reactivecouchbase}{url}{}
+      \name{labelname}{2}{}{%
+        {{hash=63bfb6c5be1fd0cdb804e699182270f9}{Ancelin}{A\bibinitperiod}{Mathieu}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=a8b2e39951bba535f313f563f6abaef6}{contributors}{c\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=63bfb6c5be1fd0cdb804e699182270f9}{Ancelin}{A\bibinitperiod}{Mathieu}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=a8b2e39951bba535f313f563f6abaef6}{contributors}{c\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{008b921359c32924c33b300791fe9bc7}
+      \strng{fullhash}{008b921359c32924c33b300791fe9bc7}
+      \field{labelalpha}{React-Couchbase}
+      \field{sortinit}{A}
+      \field{labeltitle}{Reactive Couchbase}
+      \field{shorthand}{React-Couchbase}
+      \field{title}{Reactive Couchbase}
+      \field{urlday}{02}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://reactivecouchbase.org
+      \endverb
+    \endentry
     \entry{GCD-Reference}{url}{}
       \name{labelname}{1}{}{%
         {{hash=9f6290f4436e5a2351f12e03b6433c3c}{Apple}{A\bibinitperiod}{}{}{}{}{}{}}%
@@ -574,6 +597,27 @@
       \endverb
       \keyw{scala}
     \endentry
+    \entry{playscalajs}{url}{}
+      \name{labelname}{1}{}{%
+        {{hash=60754e86b5c950773caa01812a51305e}{Munier}{M\bibinitperiod}{Vincent}{V\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=60754e86b5c950773caa01812a51305e}{Munier}{M\bibinitperiod}{Vincent}{V\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{60754e86b5c950773caa01812a51305e}
+      \strng{fullhash}{60754e86b5c950773caa01812a51305e}
+      \field{labelalpha}{Scala.js-Crosscompiling}
+      \field{sortinit}{M}
+      \field{labeltitle}{Play with Scala.js}
+      \field{shorthand}{Scala.js-Crosscompiling}
+      \field{title}{Play with Scala.js}
+      \field{urlday}{17}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb https://github.com/vmunier/play-with-scalajs-example
+      \endverb
+    \endentry
     \entry{nasageoid}{url}{}
       \name{labelname}{1}{}{%
         {{hash=1f99771bc3e23e6097509a331544ab65}{NASA}{N\bibinitperiod}{}{}{}{}{}{}}%
@@ -622,6 +666,28 @@
       \field{title}{Programming in Scala: A Comprehensive Step-by-step Guide}
       \field{year}{2010}
       \keyw{scala}
+    \endentry
+    \entry{bootstrap}{url}{}
+      \name{labelname}{1}{}{%
+        {{hash=66045c5f9b2a3e66f2672562ccd09cd6}{Otto}{O\bibinitperiod}{Mark}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=66045c5f9b2a3e66f2672562ccd09cd6}{Otto}{O\bibinitperiod}{Mark}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{66045c5f9b2a3e66f2672562ccd09cd6}
+      \strng{fullhash}{66045c5f9b2a3e66f2672562ccd09cd6}
+      \field{labelalpha}{Bootstrap}
+      \field{sortinit}{O}
+      \field{labeltitle}{Bootstrap from Twitter}
+      \field{shorthand}{Bootstrap}
+      \field{title}{Bootstrap from Twitter}
+      \field{urlday}{14}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \field{year}{2011}
+      \verb{url}
+      \verb https://blog.twitter.com/2011/bootstrap-twitter
+      \endverb
     \endentry
     \entry{distributed-cas}{book}{}
       \name{labelname}{2}{}{%
