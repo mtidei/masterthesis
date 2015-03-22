@@ -4,31 +4,37 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Difference in meters between the geoid and the ellipsoid \cite {nasageoid}\relax }}{9}{figure.caption.37}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Difference in meters between the geoid and the ellipsoid \cite {nasageoid}\relax }}{10}{figure.caption.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Couchbase Lite and Sync Gateways. From \cite {couchbase-lite}\relax }}{19}{figure.caption.122}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces View angle error on Google (left) and Apple (right) maps\relax }}{12}{figure.caption.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces The Play framework stack. From \cite {play-book} with kind permission.\relax }}{21}{figure.caption.128}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces The main screen of the iBeacon prototype\relax }}{13}{figure.caption.49}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.4}{\ignorespaces The iBeacon detail screens, including statistics\relax }}{14}{figure.caption.50}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces CA Guite Architecture Overview\relax }}{23}{figure.caption.132}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Couchbase Lite and Sync Gateways. From \cite {couchbase-lite}\relax }}{23}{figure.caption.134}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Layer Model of the Museum Guide Application\relax }}{28}{figure.caption.207}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Layer model with virtual sensors\relax }}{29}{figure.caption.208}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Data flow between the lower layers of the Sensorbase framework\relax }}{30}{figure.caption.209}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Sequence Diagram for the Sensor Layers\relax }}{31}{figure.caption.210}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Simplified Class Diagram for Sensor Data Processing\relax }}{32}{figure.caption.211}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces The Play framework stack. From \cite {play-book} with kind permission.\relax }}{25}{figure.caption.140}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces TypeScript in IntelliJ IDEA\relax }}{37}{figure.caption.225}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces CA Guite Architecture Overview\relax }}{27}{figure.caption.144}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Layer Model of the Museum Guide Application\relax }}{32}{figure.caption.219}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Layer model with virtual sensors\relax }}{33}{figure.caption.220}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Data flow between the lower layers of the Sensorbase framework\relax }}{34}{figure.caption.221}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Sequence Diagram for the Sensor Layers\relax }}{35}{figure.caption.222}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Simplified Class Diagram for Sensor Data Processing\relax }}{36}{figure.caption.223}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces TypeScript in IntelliJ IDEA\relax }}{41}{figure.caption.237}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

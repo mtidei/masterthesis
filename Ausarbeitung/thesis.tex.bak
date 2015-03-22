@@ -69,6 +69,7 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{enumitem}  
+\usepackage{amsmath}
 \newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
 
 \tikzumlset{fill package=gray!5}
@@ -128,7 +129,7 @@
 \hypersetup{pdfkeywords=\keywordnames}
 
 % HTWG
-\newcommand{\thema}{Context-Aware Museum Guide for Mobile Devices}
+\newcommand{\thema}{Design and Implementation of a Platform for Context-Aware Mobile Guides}
 \newcommand{\schlagworte}{Contextual Computing, Indoor Navigation, Scala, Swift}
 \newcommand{\zusammenfassung}{Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.}
 \newcommand{\ausgabedatum}{16.10.2014}

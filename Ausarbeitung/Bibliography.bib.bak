@@ -442,11 +442,32 @@ title = {Bootstrap from Twitter},
 author = {Mark Otto},
 url = {https://blog.twitter.com/2011/bootstrap-twitter},
 urldate = {2015-03-14},
-year = {2011}
+year = {2011},
 shorthand = {Bootstrap}
 }
 
+@url {upickle,
+title = {µPickle - a lightweight serialization library for Scala},
+author = {Li Haoyi},
+url = {https://github.com/lihaoyi/upickle},
+urldate = {2015-03-20},
+shorthand = {µPickle}
+}
 
+@url {ble,
+title = {Technical Information - The Low Energy Technology Behind Bluetooth Smart},
+author = {Bluetooth Special Interest Group},
+url = {http://www.bluetooth.com/Pages/low-energy-tech-info.aspx},
+urldate = {2015-03-20},
+shorthand = {BLE}
+}
+@url {key,
+title = {},
+author = {},
+url = {},
+urldate = {2015-03-14},
+shorthand = {}
+}
 @url {key,
 title = {},
 author = {},

@@ -386,6 +386,27 @@
       \verb http://www.csr.utexas.edu/grace/gravity/gravity_definition.html
       \endverb
     \endentry
+    \entry{ble}{url}{}
+      \name{labelname}{1}{}{%
+        {{hash=7ee8ab00c494bdd01e40813ba06c4a7c}{Group}{G\bibinitperiod}{Bluetooth\bibnamedelimb Special\bibnamedelima Interest}{B\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim I\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=7ee8ab00c494bdd01e40813ba06c4a7c}{Group}{G\bibinitperiod}{Bluetooth\bibnamedelimb Special\bibnamedelima Interest}{B\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim I\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{7ee8ab00c494bdd01e40813ba06c4a7c}
+      \strng{fullhash}{7ee8ab00c494bdd01e40813ba06c4a7c}
+      \field{labelalpha}{BLE}
+      \field{sortinit}{G}
+      \field{labeltitle}{Technical Information - The Low Energy Technology Behind Bluetooth Smart}
+      \field{shorthand}{BLE}
+      \field{title}{Technical Information - The Low Energy Technology Behind Bluetooth Smart}
+      \field{urlday}{20}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://www.bluetooth.com/Pages/low-energy-tech-info.aspx
+      \endverb
+    \endentry
     \entry{scala-futures}{url}{}
       \name{labelname}{6}{}{%
         {{hash=6987cf8ce0f10540abc8b54a10c06420}{Haller}{H\bibinitperiod}{Philipp}{P\bibinitperiod}{}{}{}{}}%
@@ -461,6 +482,27 @@
       \field{urlyear}{2015}
       \verb{url}
       \verb https://github.com/CocoaLumberjack/CocoaLumberjack/blob/master/Documentation/Performance.md
+      \endverb
+    \endentry
+    \entry{upickle}{url}{}
+      \name{labelname}{1}{}{%
+        {{hash=5871df02418b571fa89639db706a66e9}{Haoyi}{H\bibinitperiod}{Li}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=5871df02418b571fa89639db706a66e9}{Haoyi}{H\bibinitperiod}{Li}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{5871df02418b571fa89639db706a66e9}
+      \strng{fullhash}{5871df02418b571fa89639db706a66e9}
+      \field{labelalpha}{µPickle}
+      \field{sortinit}{H}
+      \field{labeltitle}{µPickle, a lightweight serialization library for Scala and Scala.js}
+      \field{shorthand}{µPickle}
+      \field{title}{µPickle, a lightweight serialization library for Scala and Scala.js}
+      \field{urlday}{15}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb https://github.com/lihaoyi/upickle
       \endverb
     \endentry
     \entry{play-book}{book}{}
@@ -639,6 +681,30 @@
       \verb http://cddis.nasa.gov/926/egm96/egm96.html
       \endverb
     \endentry
+    \entry{ellipsoid}{book}{}
+      \name{labelname}{3}{}{%
+        {{hash=df19854ea078a59ce2a431dff0987886}{Noureldin}{N\bibinitperiod}{Aboelmagd}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=00f6a55c3d0beeef94c2c0c8bcad87dd}{Karamat}{K\bibinitperiod}{Tashfeen\bibnamedelima B.}{T\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+        {{hash=23a24054b99534197c52e8da813b91c3}{Georgy}{G\bibinitperiod}{Jacques}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=df19854ea078a59ce2a431dff0987886}{Noureldin}{N\bibinitperiod}{Aboelmagd}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=00f6a55c3d0beeef94c2c0c8bcad87dd}{Karamat}{K\bibinitperiod}{Tashfeen\bibnamedelima B.}{T\bibinitperiod\bibinitdelim B\bibinitperiod}{}{}{}{}}%
+        {{hash=23a24054b99534197c52e8da813b91c3}{Georgy}{G\bibinitperiod}{Jacques}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{5aee630b1757de484ee4043599b84d50}
+      \strng{fullhash}{5aee630b1757de484ee4043599b84d50}
+      \field{labelalpha}{Noureldin,\addhighpenspace2013}
+      \field{sortinit}{N}
+      \field{labeltitle}{Fundamentals of Inertial Navigation, Satellite-based Positioning and their Integration}
+      \field{edition}{1st}
+      \field{isbn}{978-3-642-30465-1}
+      \field{title}{Fundamentals of Inertial Navigation, Satellite-based Positioning and their Integration}
+      \field{year}{2013}
+    \endentry
     \entry{scala-book}{book}{}
       \name{labelname}{3}{}{%
         {{hash=887f509975b0ec9ebba9dfae96d0c454}{Odersky}{O\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
@@ -779,6 +845,29 @@
       \field{title}{Age of Context: Mobile, Sensors, Data and the Future of Privacy}
       \field{year}{2013}
       \keyw{context aware computing,big data,sensors}
+    \endentry
+    \entry{less}{url}{}
+      \name{labelname}{2}{}{%
+        {{hash=50a0ebf2706193684b568f205708951e}{Sellier}{S\bibinitperiod}{Alexis}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=a8b2e39951bba535f313f563f6abaef6}{contributors}{c\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=50a0ebf2706193684b568f205708951e}{Sellier}{S\bibinitperiod}{Alexis}{A\bibinitperiod}{}{}{}{}}%
+        {{hash=a8b2e39951bba535f313f563f6abaef6}{contributors}{c\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{b309875367982266b97b6c3707b3f256}
+      \strng{fullhash}{b309875367982266b97b6c3707b3f256}
+      \field{labelalpha}{less}
+      \field{sortinit}{S}
+      \field{labeltitle}{Less history}
+      \field{shorthand}{less}
+      \field{title}{Less history}
+      \field{urlday}{22}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://lesscss.org/about/#team
+      \endverb
     \endentry
     \entry{interview-eich}{url}{}
       \name{labelname}{1}{}{%

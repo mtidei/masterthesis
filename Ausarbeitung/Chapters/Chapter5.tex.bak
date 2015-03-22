@@ -71,10 +71,11 @@ There are several attempts to bring JavaScript on the server, and the most popul
 
 The other way around would be the perfect solution: Using a rich and well engineered language to write server and client code. So after some research I found the Scala.js project \cite{scalajs}. It was started on February 2013 by Sébastien Doeraene, a member of the Scala team at LAMP (Programming Methods Laboratory at EPFL), after Martin Odersky suggested him to work on a JavaScript compiler \cite{scalajs-interview}.
 
-Scala.js ports most parts of Scala and it's standard library to the browser. So, among others, it is possible to use Collections, Classes, static Types and 
-%TODO most Scala features 
+Scala.js ports most parts of Scala and it's standard library to the browser, compiling Scala to JavaScript or more precisely to ECMAScript 5.1. So, among others, it is possible to use Scala collections, classes and traits, types, pattern matching and even Futures for concurrent processing. 
 
-Beside avoiding to use ECMA Script directly, the big advantage of using Scala.js is beeing able to cross-compile parts of the same Scala code for both the server-side JVM and the browser-side ECMA Script engine. This helps reducing redundancy and is especially helpful for data transfer objects (DTO) representing entities of the respective domain, in the case of the CA Guide sites, areas and beacons, as we will see later.
+%TODO2 scala lib results in 32 mb ECMAScript, google compiler removing dead code <200kb, benchmarks
+
+Beside avoiding to use ECMAScript directly, the big advantage of using Scala.js is beeing able to cross-compile parts of the same Scala code for both the server-side JVM and the browser-side ECMAScript engine. This helps reducing redundancy and is especially helpful for data transfer objects (DTO) representing entities of the respective domain, in the case of the CA Guide sites, areas and beacons, as we will see later.
 
 On 5th February 2015, at the time of this writing and exactly two years after this project was started, the release v0.6.0 was announced on the official Scala website and the experimental flag was removed, defining Scala.js "production-ready" \cite{scalajs06}.
 
@@ -90,12 +91,14 @@ Typesafe's Play web framework %TODO see section bla
 The project is configured according to the "Play! application with Scala.js" skeleton \cite{playscalajs} referenced on the Scala.js homepage, splitting it up into three subprojects:
 
 \begin{description}[leftmargin=!,labelwidth=\widthof{\bfseries editor-server}]
-\item[$\bullet$ editor-server] The Play project including server side Scala code and the typical Play application structure consisting of an app folder
+\item[$\bullet$ editor-server] The Play project including server side Scala code and the typical Play application structure consisting of an app folder%TODO
 \item[$\bullet$ editor-client] Client only source code, the Scala.js project
 \item[$\bullet$ editor-shared] Shared Scala sources, accessible from both the client and server source code
 \end{description} 
  
-The project was imported in IntelliJ IDEA 14 as sbt project, which worked very well without major problems.
+The project was imported in IntelliJ IDEA 14 as sbt project, which worked very well without major problems. 
+
+Using the activator command in a shell, %TODO run - start webserver and rebuild on page refreh, test command executes the tests
 
 \subsection{Adding Reactive Couchbase as Scala Database Driver}
 
@@ -132,15 +135,33 @@ couchbase {
 
 \subsection{Adding µPickle as Lightweight Serialization Framework}
 
+µPickle (pronounced micro-Pickle) is a lightweight open source serialization/deserialization\footnote{serialization/deserialization is also called pickling/unpickling, explaining the framework's name} framework developed by Li Haoyi \cite{upickle}.
+It works on the server side JVM as well as in the Scala.js browser part, making it's a good fit for transferring objects between the client and the server in this project. This is achieved by avoiding reflection in favor of performance, depending on nothing but the standard library on the Scala.js part.
 
+For enabling it, a dependency has to be added to both the client and the server projects in the build.sbt file.
+
+\begin{lstlisting}[caption={Adding a dependency to the client and server project},basicstyle=\tiny\ttfamily,language=c,aboveskip=15pt]
+resolvers += "bintray/non" at "http://dl.bintray.com/non/maven"
+# client
+libraryDependencies += "com.lihaoyi" %%% "upickle" % "0.2.8"
+# server
+libraryDependencies += "com.lihaoyi" %% "upickle" % "0.2.8"
+\end{lstlisting}
+
+Note the new "\%\%\%" operator, which adds the Scala.js version to the artifact name to be retrieved, extending the regular sbt "\%\%" operator that adds the Scala version.
 
 \subsection{Adding Bootstrap as UI Framework}
 
-Bootstrap is a popular open source web UI library, started by two Twitter engineers in 2011 \cite{bootstrap}, providing a rich set of UI components like buttons, dropdowns, glyphs and modal dialogs. It consists of cascading style-sheets (css), fonts containing the glyphs for common actions and optional JavaScript extensions for adprogrammed behavior.
+Bootstrap is a popular open source web UI library, started by two Twitter engineers in 2011 \cite{bootstrap}, providing a rich set of UI components like buttons, dropdowns, glyphs and modal dialogs in the browser. It consists primarily of cascading style-sheets (css), a font containing the glyphs for common actions and optional JavaScript extensions for programmed behavior.
 
-After adding the bootstrap.css to Play's  folder "public/css" and the glyph fonts to the "public/fonts" folder of the Play application, the components can be used by creating HTML elements assigned to the desired css classes and with the needed structure of the respective UI component.
+After adding the bootstrap.css to Play's folder "public/css" and the glyph fonts to the "public/fonts" folder of the Play application, the components can be used by creating HTML elements assigned to the desired css classes and matching the needed structure of the respective UI component.
 
 \subsection{Activating the Less Compiler}
+
+Cascading style sheets are the common way to separate design and data of web sites and applications. Less is a meta language on top of css, Link
+evolution step of standard css files, adding missing concepts to write more concise and better readable css-code. It was started in 2009 as open-source project by Alexis Sellier \cite{less}.
+
+After enabling less, assets can be placed under assets/less and are automatically compiled to regular css files with the regular 'compile' command or when an automatic rebuild is triggered by a browser page refresh after changing a file.
 %less as css
 
 

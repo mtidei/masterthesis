@@ -1,10 +1,13 @@
 % Chapter 2
-%TODO
 \chapter{Theoretical Background and Fundamentals}
 
 \lhead{Chapter 2. \emph{Theoretical Background and Fundamentals}} % This is for the header on each page - perhaps a shortened title
 
 %----------------------------------------------------------------------------------------
+\section{Introduction}
+
+In this section, the main terms and used technologies are discussed. Several positioning principles and their suitability for providing the mobile guide's location context are described. As Swift is a very young language\footnote{Swift 1.0 was released on Sep 9, 2014} and thus merits closer consideration, a subchapter is dedicated to Swift and hot it compares to Scala. As preliminary work for the evaluation of the new proximity technology BLE (Bluetooth Low Energy) Beacons, a Swift-Prototype was implemented and is presented in this chapter, too.
+
 \section{What is Context-Aware Computing?}
 
 The term "context-aware computing" was first used by B. Schilit et. al. 1994 in the paper "Context-Aware Computing Applications" \cite{Schilit94context-awarecomputing}. They introduce a this new kind of computing as a "new class of applications that are aware of the context in which they are run. Such context-aware systems adapts according to the location of use, the collection of nearby people, hosts, and accessible devices, as well as to changes to such things over time".
@@ -97,6 +100,8 @@ Although Weiser didn't use the term context-awareness, he already recognized the
 
 \section{Sensors of Mobile Devices}
 
+\subsection{Introduction}
+
 \subsection*{Accelerometer}
 
 \subsection*{Gyroscope}
@@ -124,13 +129,13 @@ The light sensor measures the intensity of the light. It is primarily used to ad
 
 \subsection{Introduction}
 
-Since we need to work with gps data and model outdoor sites like parks, it is fundamental to understand how geographic coordinate systems work and which problems we may encounter.
+Since we need to work with GPS (Global Positioning System) data on the mobile front end and model outdoor sites like parks on the back end, it is fundamental to understand how the geographic coordinate system works and what kind of problems we may encounter.
 
 \subsection{Standards}
 
 There are many different systems for specifying a precise point on the Earth's surface and describing them all would go far beyond this thesis. The main problem is that the world has a complex shape. Even ignoring tides and winds the sea level does not fit an ellipsoid due to gravity anomalies over the Earth's surface. The surface that most closely approximates sea level is the geoid. 
 
-But for performance and storage reasons an ellipsoid is used in many applications including GPS. One widely used standard is the WGS (World Geodetic System) defining a coordinate system and an ellipsoid. The most recent revision is WGS 84, which is exactly what GPS uses and what is used in this work. The ellipsoid can be 106 meters above and 85 meters below the geoid (cf. \cite{geoid}). The following diagram shows the difference in meters between the geoid and the ellipsoid.
+But for performance and storage reasons an ellipsoid is used in many applications including GPS. One widely used standard is the WGS (World Geodetic System) defining a coordinate system and an ellipsoid. The most recent revision is WGS84, which is exactly what GPS uses and what is used in this work. The ellipsoid can be 106 meters above and 85 meters below the geoid (cf. \cite{geoid}). The following diagram shows the difference in meters between the geoid and the ellipsoid.
 
 \begin{figure}[H]
 \centering
@@ -141,31 +146,96 @@ But for performance and storage reasons an ellipsoid is used in many application
 The city of Konstanz, for example, is 46.62 meters above the ellipsoid.
 
 \subsection{WGS84 Coordinates}
-A point on Earth's surface is defined by a kartesian coordinate pair consisting of the latitude, that specifies the north-south position and the longitude for the east-west position. 
 
-%IMG
+A specific point on Earth's surface is defined by a Cartesian coordinate pair consisting of the latitude, that specifies the north-south position and the longitude for the east-west position. 
 
-For this work, the degree and decimal fraction representation was selected.
+The latitude is defined to be 0° at the equator and goes up to +90° at the geographic North Pole and down to -90° at the South Pole. The longitude, lacking a natural zero point, is measured relatively to the prime meridian, where the longitude is defined to be 0°. The prime meridian of WGS84 is the line of longitude on the geoid starting/ending at the geographic North/South Pole and passing trough a well defined point 102 meters to the east of the Royal Observatory, Greenwich, London. Eastwards the longitude goes up to 180°, to the west it goes down to -180°, meeting at the same meridian - the one opposite to the prime meridian. 
 
-The maximum resolution using 6 fractional digits depends on the position on Earth. In Konstanz, the one degree of longitude equals
-% http://en.wikipedia.org/wiki/Longitude#Length_of_a_degree_of_longitude
-% lat 11cm
-% long 8cm
+%\begin{figure}[H]
+%\centering
+%\includegraphics[height=0.15\textheight]{latitude_longitude}
+%\caption{Latitude and Longitude }
+%\end{figure}
+%Source: http://www.nma.gov.au/collections/collection_interactives/european_voyages/european_voyages_to_the_australian_continent/navigation/solving_the_longitude_puzzle
 
-Google and Apple Maps
-The maps images at the closer zoom levels are in most cases taken by a camera mounted on a plane. This camera often does not look perpendicular to the ground but with a gentle angle, so that you can see the building facades.
-While this results in a nice isometric-like perspective, it introduces a problem one has to be aware of: Higher parts of the image like higher floors or small hills appear shifted to a certain direction.
+For this work, longitude and latitude are represented by decimal fractions.
 
-%TODO Image
+The maximum resolution using 6 fractional digits depends on the position on Earth, more specific on the latitude, because all meridians converge at the poles. For the WGS84 ellipsoid, the formula 
 
-An example: To check the consistency of Google and Apple maps, I initially used the roof window of the office in which the biggest part of this thesis was written. The coordinates of the center of his window on both maps showed a notable discrepancy of several meters. The cause is the different camera angle of the two pictures. 
-Measuring the discrepancy using a prominent ground object like the marked lighting, the two map solutions 
+\[R_{\phi} = \frac{a \cos\phi}{(1-e^{2}\sin^{2}\phi )^{1/2}}\]
 
+can be used to calculate the radius of the circle of latitude at a given latitude \(\phi\) \cite{ellipsoid}. 
 
+The length of one degree of the circumference of that circle of latitude is then calculated with
+
+\[\delta_{\phi}^{1} = \frac{2\pi}{360} * R_{\phi}\]
+
+Solving with latitude \(\phi = 47,6°\) for Konstanz, equatorial radius \(a = 6,378,137.0 m\) and eccentricity \(e = 0,08181919\) as defined in WGS84, the solution is 75.200 km.
+
+So in Konstanz, 0,000001 degree of longitude corresponds to 7,52 cm. The biggest distance, and thus the lowest resolution, is on the equator, where it amounts to 11,13 cm.
+
+The distance of 0,000001 degree of latitude is almost constant at about 11,1 cm.
+
+\subsection{Using different Mapping Providers}
+
+One of the most well-known provider for maps is Google Maps, offering a web interface and an API for the integration in own web applications. For iOS development, the native solution is the Apple Map Kit framework, that uses the own Apple Maps service\footnote{Until iOS 5.1, Apple used the Google Maps service and the decided to start it's own competing product}.
+%TODO2 Source + apple maps had a bad start
+
+The maps images at the closer zoom levels are in most cases taken by a camera mounted on a plane. This camera often does not look perpendicular to the ground but with a gentle angle, so that you can see the building facades. %TODO Source
+While this results in a nice isometric-like perspective, it introduces a problem one has to be aware of: Higher parts of the image like higher floors or small hills appear shifted to a certain direction. 
+
+An example: To check the consistency of Google and Apple maps, I initially used the roof window of the office in which the biggest part of this thesis was written. The coordinates of this window on both maps showed a notable discrepancy of several meters. The cause is the different camera angle of the two pictures. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=0.22\textheight]{google-apple-maps}
+\caption{View angle error on Google (left) and Apple (right) maps}
+\end{figure}
+
+This results in a latitude shift from Google to Apple Maps of \(+3 * 10^{-6}\) degrees and a longitude shift of \(-4,1 * 10^{-5}\) degrees. Using the results of the previous section translates in a deviation to the nord of 0,33 m and a considerable deviation to the west of 3,08 meters.
+
+To exclude this view inclination error and get the pure ground coordinate discrepancy of the two mapping solutions, the coordinates of a small distinctive fixed ground object (the marked lighting pole) are measured in both mapping solutions.
+
+The measured pure deviation amounts to not negligible \(-1,4 * 10^{-5}\) degrees of longitude or 1,05 meters.
+
+It is important to keep in mind all this different kinds of errors discussed in this section during development and testing of the guide, to avoid searching for errors at the wrong place.
 
 \section{Bluetooth Low Energy iBeacons}
 
-Bluetooth Low Energy (BLE) is a standard %TODO year
+\subsection{What is an iBeacon?}
+
+On Mid 2013, Apple introduced iBeacons as new technology for adding location awareness to applications. iBeacons are little devices containig a power cell and a small logic board with a Bluetooth Low Energy (BLE) transmitter. BLE was introduced with Bluetooth 4.0 for applications with very contained power requirements that can be satisfied with 1 Mbps data transfer rates, co-existing with standard Bluetooth \cite{ble}.
+
+iBeacon devices broadcast BLE advertisement packets at an configurable time interval, mostly between 100 ms and 1 s, containing, in essence, a fixed preamble identifying the data as iBeacon advertisement, a set of three configurable device specific numbers and the measured RSSI (Received Signal Strength Indication) in dBm at 1m. The latter value is needed as reference for calculating a distance estimation using the current RSSI measured by the receiving device as input.
+
+Based on the configured advertisement interval and the broadcasting power, that influences the distance until which the beacon ca be detected, the battery is expected to last for up to two years.
+
+Apple provides only the specification and an API, but does not manufacture the devices itself. Instead, third-party supplies, among these a number of start-ups, began to ship iBeacons in 2014. For this thesis, different devices were ordered from estimote (New York, USA), kontakt.io (Kraków, Poland), BEACONinside (Berlin, Germany) and Accent Advanced Systems (Barcelona, Spain). This avoids the risk of concentrating on features or flaws of a specific device brand.
+
+\subsection{The iBeacon Prototype}
+
+\subsubsection{Design and Implementation}
+
+The main screen of the prototype provides an overview of all iBeacons in range. %TODO motivation, explanation
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=0.40\textheight]{proto1}
+\caption{The main screen of the iBeacon prototype}
+\end{figure}
+
+After selecting a beacon in the list, the beacon detail view opens showing the details and the single measurements for that beacon on the first screen and some statistics on the second screen.
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=0.40\textheight]{proto2}
+\includegraphics[height=0.40\textheight]{proto3}
+\caption{The iBeacon detail screens, including statistics}
+\end{figure}
+
+\subsubsection{Measurements and Insights}
+
+
 
 \section{Swift}
 
@@ -199,7 +269,7 @@ The following section is an overview comparison of Scala and Swift features, cre
 \hline Switch with pattern matching & \yes & \yes \\
 \hline String interpolation & \yes \newline \smalltt{"Hello \$nameVar"} & \yes \newline \smalltt{"Hello \textbackslash(nameVar)"} \\
 \hline Keyword for variable definition & var radius = 1 & var radius = 1 \\
-\hline Keyword for constant definition & let pi = 3.14 & val pi = 3.14 \\
+\hline Keyword for constant definition & val pi = 3.14 & let pi = 3.14 \\
 \hline Array literal & \smalltt{Array(1,2,3)} & \smalltt{[1,2,3]} \\
 \hline Map literal & \smalltt{Map(1->"a", 2->"b")} & \smalltt{[1:"a", 2:"b"]} \footnote{Maps are called dictionaries in Swift} \\
 \hline If condition must be boolean & \yes & \yes \\
@@ -394,7 +464,7 @@ Because of the usage of old Objective-C standard libraries, learning Swift autom
 
 \subsubsection{Summary}
 
-Swift is currently the most modern programming language available for any mobile platform. Although it's expressive and concise syntax and it's Playground and REPL (Read-Eval-Print-Loop) feature, Swift remains a compiled language. Like Objective C, it is compiled into machine code by the LLVM compiler, which proved to be very fast. Being a new language, the tooling is not yet very stable.\footnote{At the time of writing, the XCode IDE doesn't support any refactoring in swift. The compiler isn't fully finished (a few language elements cause a "Not yet implemented" error), some error messages are cryptic and misleading, the context assistance doesn't always work and the editor can get stuck after some editing with phantom errors that are hard to remove.}
+Swift is currently the most modern programming language available for any mobile platform. Although it's expressive and concise syntax and it's Playground and REPL (Read-Eval-Print-Loop) feature, Swift remains a compiled language. Like Objective C, it is compiled into machine code by the LLVM compiler, which proved to be very fast. Being a new language, the tooling is not yet very stable.\footnote{At the time of writing, the XCode IDE doesn't support any refactoring in Swift. The compiler isn't fully finished (a few language elements cause a "Not yet implemented" error), some error messages are cryptic and misleading, the context assistance doesn't always work and the editor can get stuck after some editing with phantom errors that are hard to remove.}
 
 Despite of the problems in this early stage, Swift is - in my opinion - a great Language and a big step forward compared with it's predecessor Objective C. It will likely become even better as time passes and the language and tooling matures. 
 

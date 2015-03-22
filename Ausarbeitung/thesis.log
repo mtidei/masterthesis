@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.16)  18 MAR 2015 15:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.16)  22 MAR 2015 15:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1618,30 +1618,30 @@ File: english.lbx 2013/11/25 v2.8a biblatex localization (PK/JW/AB)
 (./htwg/affidavit.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 109.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 109.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 110.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 110.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    ... okay on input line 110.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
@@ -1670,7 +1670,7 @@ Package caption Info: End \AtBeginDocument code.
 )
 \c@lstlisting=\count370
 \AtBeginShipoutBox=\box111
-Package hyperref Info: Link coloring ON on input line 109.
+Package hyperref Info: Link coloring ON on input line 110.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -1679,9 +1679,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count371
 )
-LaTeX Info: Redefining \ref on input line 109.
-LaTeX Info: Redefining \pageref on input line 109.
-LaTeX Info: Redefining \nameref on input line 109.
+LaTeX Info: Redefining \ref on input line 110.
+LaTeX Info: Redefining \pageref on input line 110.
+LaTeX Info: Redefining \nameref on input line 110.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write6
@@ -1703,13 +1703,13 @@ Package biblatex Warning: The following entry could not be found
 (biblatex)                LaTeX afterwards.
 
 )
-Package biblatex Info: Reference section=0 on input line 109.
-Package biblatex Info: Reference segment=0 on input line 109.
+Package biblatex Info: Reference section=0 on input line 110.
+Package biblatex Info: Reference segment=0 on input line 110.
  ABD: EveryShipout initializing macros
 \openout2 = `htwg/cover.aux'.
 
  (./htwg/cover.tex
-<htwg/htwg-logo.pdf, id=425, 1597.97pt x 174.6525pt>
+<htwg/htwg-logo.pdf, id=453, 1597.97pt x 174.6525pt>
 File: htwg/htwg-logo.pdf Graphic file (type pdf)
  <use htwg/htwg-logo.pdf>
 Package pdftex.def Info: htwg/htwg-logo.pdf used on input line 7.
@@ -1829,80 +1829,115 @@ Chapter 2.
 [4
 
 ] [5]
-Overfull \hbox (3.28644pt too wide) in paragraph at lines 61--63
+Overfull \hbox (3.28644pt too wide) in paragraph at lines 64--66
 \T1/cmr/m/n/10.95 Nowadays, we en-counter this be-hav-ior in many smart-phone a
 p-pli-ca-tions like weather
  []
 
-[6] [7] [8] <Figures/earths_geoidII.png, id=688, 744.7825pt x 469.755pt>
+[6] [7] [8] <Figures/earths_geoidII.png, id=729, 744.7825pt x 469.755pt>
 File: Figures/earths_geoidII.png Graphic file (type png)
 
 <use Figures/earths_geoidII.png>
-Package pdftex.def Info: Figures/earths_geoidII.png used on input line 137.
+Package pdftex.def Info: Figures/earths_geoidII.png used on input line 142.
 (pdftex.def)             Requested size: 238.91486pt x 150.6949pt.
- [9 <./Figures/earths_geoidII.png>] [10]
-Overfull \hbox (4.23909pt too wide) in alignment at lines 186--188
+ [9] [10 <./Figures/earths_geoidII.png>]
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 173.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 173.
+
+Missing character: There is no ° in font cmr10!
+<Pictures/google-apple-maps.png, id=754, 1625.07124pt x 624.3325pt>
+File: Pictures/google-apple-maps.png Graphic file (type png)
+
+<use Pictures/google-apple-maps.png>
+Package pdftex.def Info: Pictures/google-apple-maps.png used on input line 191.
+
+(pdftex.def)             Requested size: 392.23196pt x 150.6949pt.
+ [11] [12 <./Pictures/google-apple-maps.png>] <Pictures/proto1.png, id=767, 154
+1.76pt x 2055.68pt>
+File: Pictures/proto1.png Graphic file (type png)
+
+<use Pictures/proto1.png>
+Package pdftex.def Info: Pictures/proto1.png used on input line 223.
+(pdftex.def)             Requested size: 205.47026pt x 273.98505pt.
+ [13 <./Pictures/proto1.png>]
+<Pictures/proto2.png, id=772, 1541.76pt x 2055.68pt>
+File: Pictures/proto2.png Graphic file (type png)
+ <use Pictures/proto2.png>
+Package pdftex.def Info: Pictures/proto2.png used on input line 231.
+(pdftex.def)             Requested size: 205.47026pt x 273.98505pt.
+
+<Pictures/proto3.png, id=773, 1541.76pt x 2055.68pt>
+File: Pictures/proto3.png Graphic file (type png)
+ <use Pictures/proto3.png>
+Package pdftex.def Info: Pictures/proto3.png used on input line 232.
+(pdftex.def)             Requested size: 205.47026pt x 273.98505pt.
+
+[14 <./Pictures/proto2.png> <./Pictures/proto3.png>]
+Overfull \hbox (4.23909pt too wide) in alignment at lines 256--258
  [] [] [] 
  []
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 198.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 268.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-Overfull \hbox (4.23909pt too wide) in alignment at lines 188--209
+Overfull \hbox (4.23909pt too wide) in alignment at lines 258--279
  [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 209
+Underfull \vbox (badness 10000) detected at line 279
  []
 
 
-Overfull \hbox (4.23909pt too wide) in alignment at lines 209--227
+Overfull \hbox (4.23909pt too wide) in alignment at lines 279--297
  [] [] [] 
  []
 
-[11] [12] [13]
-Overfull \hbox (5.75223pt too wide) in paragraph at lines 277--278
+[15] [16]
+Overfull \hbox (5.75223pt too wide) in paragraph at lines 347--348
 []\T1/cmr/m/n/10.95 The first println state-ment out-puts 'Op-tional("Swift")' 
 be-cause the string value is wrapped
  []
 
-[14] [15] [16] [17]
-<Pictures/couchbase-lite.png, id=818, 421.575pt x 306.54526pt>
+[17] [18] [19] [20] [21]
+<Pictures/couchbase-lite.png, id=896, 421.575pt x 306.54526pt>
 File: Pictures/couchbase-lite.png Graphic file (type png)
 
 <use Pictures/couchbase-lite.png>
-Package pdftex.def Info: Pictures/couchbase-lite.png used on input line 439.
+Package pdftex.def Info: Pictures/couchbase-lite.png used on input line 509.
 (pdftex.def)             Requested size: 235.50787pt x 171.24327pt.
- [18] [19 <./Pictures/couchbase-lite.png>]
-<Pictures/play-stack.png, id=841, 781.92125pt x 343.2825pt>
+ [22] [23 <./Pictures/couchbase-lite.png>]
+<Pictures/play-stack.png, id=919, 781.92125pt x 343.2825pt>
 File: Pictures/play-stack.png Graphic file (type png)
 
 <use Pictures/play-stack.png>
-Package pdftex.def Info: Pictures/play-stack.png used on input line 476.
+Package pdftex.def Info: Pictures/play-stack.png used on input line 546.
 (pdftex.def)             Requested size: 390.0529pt x 171.24327pt.
- [20]) (./Chapters/Chapter3.tex [21 <./Pictures/play-stack.png>]
+ [24]) (./Chapters/Chapter3.tex [25 <./Pictures/play-stack.png>]
 Chapter 3.
 ------------------------------------------------------------------------------
  3 System Overview
 ------------------------------------------------------------------------------
-<Figures/system-overview.png, id=858, 658.3797pt x 612.1269pt>
+<Figures/system-overview.png, id=935, 658.3797pt x 612.1269pt>
 File: Figures/system-overview.png Graphic file (type png)
 
 <use Figures/system-overview.png>
 Package pdftex.def Info: Figures/system-overview.png used on input line 22.
 (pdftex.def)             Requested size: 359.20663pt x 333.97972pt.
- [22
+ [26
 
-] [23 <./Figures/system-overview.png>]
-[24]) (./Chapters/Chapter4.tex [25]
+] [27 <./Figures/system-overview.png>]
+[28]) (./Chapters/Chapter4.tex [29]
 Chapter 4.
 ------------------------------------------------------------------------------
  4 CA Guide Mobile Application
 ------------------------------------------------------------------------------
-[26
+[30
 
 ] (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
@@ -1910,118 +1945,118 @@ File: lstlang1.sty 2014/03/04 1.5c listings language file
 (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
 )
-<Figures/layers-guide-app.png, id=944, 964.5636pt x 575.0283pt>
+<Figures/layers-guide-app.png, id=1021, 964.5636pt x 575.0283pt>
 File: Figures/layers-guide-app.png Graphic file (type png)
 
 <use Figures/layers-guide-app.png>
 Package pdftex.def Info: Figures/layers-guide-app.png used on input line 59.
 (pdftex.def)             Requested size: 375.7232pt x 223.98813pt.
- [27]
-<Figures/layers-guide-refined-app.png, id=966, 827.9733pt x 606.1044pt>
+ [31]
+<Figures/layers-guide-refined-app.png, id=1043, 827.9733pt x 606.1044pt>
 File: Figures/layers-guide-refined-app.png Graphic file (type png)
 
 <use Figures/layers-guide-refined-app.png>
 Package pdftex.def Info: Figures/layers-guide-refined-app.png used on input lin
 e 69.
 (pdftex.def)             Requested size: 375.7232pt x 275.03806pt.
- [28 <./Figures/layers-guide-app.png>]
-<Figures/layers-app-dataflow-accelerometer.png, id=972, 827.9733pt x 593.0958pt
->
+ [32 <./Figures/layers-guide-app.png>]
+<Figures/layers-app-dataflow-accelerometer.png, id=1050, 827.9733pt x 593.0958p
+t>
 File: Figures/layers-app-dataflow-accelerometer.png Graphic file (type png)
  <use Figures/layers-app-dataflow-accelerometer.png>
 Package pdftex.def Info: Figures/layers-app-dataflow-accelerometer.png used on 
 input line 79.
 (pdftex.def)             Requested size: 375.7232pt x 269.13501pt.
- [29 <./Figures/layers-guide-refined-app.png>]
+ [33 <./Figures/layers-guide-refined-app.png>]
 File: Figures/layers-app-dataflow-accelerometer.png Graphic file (type png)
  <use Figures/layers-app-dataflow-accelerometer.png>
 Package pdftex.def Info: Figures/layers-app-dataflow-accelerometer.png used on 
 input line 89.
 (pdftex.def)             Requested size: 375.7232pt x 269.13501pt.
 
-[30 <./Figures/layers-app-dataflow-accelerometer.png>]
-<Figures/class-diagram-guide-app.png, id=983, 1089.8316pt x 1005.5166pt>
+[34 <./Figures/layers-app-dataflow-accelerometer.png>]
+<Figures/class-diagram-guide-app.png, id=1061, 1089.8316pt x 1005.5166pt>
 File: Figures/class-diagram-guide-app.png Graphic file (type png)
 
 <use Figures/class-diagram-guide-app.png>
 Package pdftex.def Info: Figures/class-diagram-guide-app.png used on input line
  105.
 (pdftex.def)             Requested size: 417.47307pt x 385.16887pt.
- [31] [32 <./Figures/class-diagram-guide-app.png>]) (./Chapters/Chapter5.tex [3
-3]
+ [35] [36 <./Figures/class-diagram-guide-app.png>]) (./Chapters/Chapter5.tex [3
+7]
 Chapter 5.
 ------------------------------------------------------------------------------
  5 CA Guide Back End
 ------------------------------------------------------------------------------
-[34
+[38
 
-] [35] <Pictures/typescript-idea.png, id=1020, 958.58125pt x 350.30875pt>
+] [39] <Pictures/typescript-idea.png, id=1097, 958.58125pt x 350.30875pt>
 File: Pictures/typescript-idea.png Graphic file (type png)
 
 <use Pictures/typescript-idea.png>
 Package pdftex.def Info: Pictures/typescript-idea.png used on input line 62.
 (pdftex.def)             Requested size: 375.7232pt x 137.30405pt.
- [36] [37 <./Pictures/typescript-idea.png>]
-Overfull \hbox (3.46877pt too wide) in paragraph at lines 102--103
+ [40] [41 <./Pictures/typescript-idea.png>]
+Overfull \hbox (3.46877pt too wide) in paragraph at lines 105--106
 \T1/cmr/m/n/10.95 ReactiveCouchbase is an open-source database driver for con-n
 ect-ing a Couch-base database
  []
 
-[38] [39]) (./Chapters/Chapter6.tex [40]
+[42] [43] [44]) (./Chapters/Chapter6.tex [45]
 Chapter 6.
 ------------------------------------------------------------------------------
  6 System Review
 ------------------------------------------------------------------------------
-) (./Chapters/Chapter7.tex [41
+) (./Chapters/Chapter7.tex [46
 
 ]
 Chapter 7.
 ------------------------------------------------------------------------------
  7 Conclusion
 ------------------------------------------------------------------------------
-) (./Appendices/AppendixA.tex [42
+) (./Appendices/AppendixA.tex [47
 
-] [43]
+] [48]
 Appendix A.
 ------------------------------------------------------------------------------
  A JSON Site Modelling File
 ------------------------------------------------------------------------------
-) [44
+) [49
 
 ]
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
 
-Overfull \hbox (11.27635pt too wide) in paragraph at lines 408--408
+Overfull \hbox (11.27635pt too wide) in paragraph at lines 409--409
 \T1/cmr/m/it/10.95 Ubiq-ui-tous Com-put-ing\T1/cmr/m/n/10.95 . HUC '99. Karl-sr
 uhe, Ger-many: Springer-
  []
 
 
-Overfull \hbox (31.70657pt too wide) in paragraph at lines 408--408
+Overfull \hbox (31.70657pt too wide) in paragraph at lines 409--409
 \T1/cmr/m/it/10.95 Scala: Cov-ers Play 2\T1/cmr/m/n/10.95 . Man-ning Pub-li-ca-
 tions, 2014. \T1/cmr/m/sc/10.95 isbn\T1/cmr/m/n/10.95 : 1617290793. 
  []
 
-[45
+[50
 
 
 ]
 
 Package biblatex Warning: No driver for entry type 'url'.
-(biblatex)                Using fallback driver on input line 409.
+(biblatex)                Using fallback driver on input line 410.
 
 
 Package biblatex Warning: No driver for entry type 'url'.
-(biblatex)                Using fallback driver on input line 409.
+(biblatex)                Using fallback driver on input line 410.
 
 
 Package biblatex Warning: No driver for entry type 'url'.
-(biblatex)                Using fallback driver on input line 409.
+(biblatex)                Using fallback driver on input line 410.
 
 
-Overfull \hbox (3.1031pt too wide) in paragraph at lines 409--409
+Overfull \hbox (3.1031pt too wide) in paragraph at lines 410--410
 []\T1/cmr/m/n/10.95 Apple. \T1/cmr/m/it/10.95 Grand Cen-tral Dis-patch (GCD) Re
 f-er-ence\T1/cmr/m/n/10.95 . \T1/cmr/m/sc/10.95 url\T1/cmr/m/n/10.95 : [][]$\T1
 /cmtt/m/n/10.95 https :
@@ -2029,27 +2064,27 @@ f-er-ence\T1/cmr/m/n/10.95 . \T1/cmr/m/sc/10.95 url\T1/cmr/m/n/10.95 : [][]$\T1
 
 
 Package biblatex Warning: No driver for entry type 'url'.
-(biblatex)                Using fallback driver on input line 409.
+(biblatex)                Using fallback driver on input line 410.
 
 
 Package biblatex Warning: No driver for entry type 'url'.
-(biblatex)                Using fallback driver on input line 409.
+(biblatex)                Using fallback driver on input line 410.
+
+[51]
+
+Package biblatex Warning: No driver for entry type 'url'.
+(biblatex)                Using fallback driver on input line 410.
 
 
 Package biblatex Warning: No driver for entry type 'url'.
-(biblatex)                Using fallback driver on input line 409.
-
-[46]
-
-Package biblatex Warning: No driver for entry type 'url'.
-(biblatex)                Using fallback driver on input line 409.
+(biblatex)                Using fallback driver on input line 410.
 
 
 Package biblatex Warning: No driver for entry type 'url'.
-(biblatex)                Using fallback driver on input line 409.
+(biblatex)                Using fallback driver on input line 410.
 
 
-Overfull \hbox (10.44646pt too wide) in paragraph at lines 409--409
+Overfull \hbox (10.44646pt too wide) in paragraph at lines 410--410
 []\T1/cmr/m/n/10.95 Sébastien Do-er-aene. \T1/cmr/m/it/10.95 Scala.js no longer
  ex-per-i-men-tal\T1/cmr/m/n/10.95 . \T1/cmr/m/sc/10.95 url\T1/cmr/m/n/10.95 : 
 [][]$\T1/cmtt/m/n/10.95 http :
@@ -2057,10 +2092,10 @@ Overfull \hbox (10.44646pt too wide) in paragraph at lines 409--409
 
 
 Package biblatex Warning: No driver for entry type 'url'.
-(biblatex)                Using fallback driver on input line 409.
+(biblatex)                Using fallback driver on input line 410.
 
 
-Overfull \hbox (8.56088pt too wide) in paragraph at lines 409--409
+Overfull \hbox (8.56088pt too wide) in paragraph at lines 410--410
 \T1/cmr/m/it/10.95 piler\T1/cmr/m/n/10.95 . \T1/cmr/m/sc/10.95 url\T1/cmr/m/n/1
 0.95 : [][]$\T1/cmtt/m/n/10.95 http : / / www . scala -[] js . org$[][] \T1/cmr
 /m/n/10.95 (vis-ited on 03/17/2015). 
@@ -2068,36 +2103,45 @@ Overfull \hbox (8.56088pt too wide) in paragraph at lines 409--409
 
 
 Package biblatex Warning: No driver for entry type 'url'.
-(biblatex)                Using fallback driver on input line 409.
+(biblatex)                Using fallback driver on input line 410.
 
 
 Package biblatex Warning: No driver for entry type 'url'.
-(biblatex)                Using fallback driver on input line 409.
+(biblatex)                Using fallback driver on input line 410.
 
 
 Package biblatex Warning: No driver for entry type 'url'.
-(biblatex)                Using fallback driver on input line 409.
+(biblatex)                Using fallback driver on input line 410.
 
 
-Overfull \hbox (16.60588pt too wide) in paragraph at lines 409--409
+Package biblatex Warning: No driver for entry type 'url'.
+(biblatex)                Using fallback driver on input line 410.
+
+
+Overfull \hbox (16.60588pt too wide) in paragraph at lines 410--410
 []\T1/cmr/m/n/10.95 Philipp Haller et al. \T1/cmr/m/it/10.95 Scala Doc-u-men-ta
 -tion - Fu-tures and Promises\T1/cmr/m/n/10.95 .
  []
 
 
 Package biblatex Warning: No driver for entry type 'url'.
-(biblatex)                Using fallback driver on input line 409.
+(biblatex)                Using fallback driver on input line 410.
+
+[52]
+
+Package biblatex Warning: No driver for entry type 'url'.
+(biblatex)                Using fallback driver on input line 410.
 
 
 Package biblatex Warning: No driver for entry type 'url'.
-(biblatex)                Using fallback driver on input line 409.
+(biblatex)                Using fallback driver on input line 410.
 
 
 Package biblatex Warning: No driver for entry type 'url'.
-(biblatex)                Using fallback driver on input line 409.
+(biblatex)                Using fallback driver on input line 410.
 
 
-Overfull \hbox (13.61339pt too wide) in paragraph at lines 409--409
+Overfull \hbox (13.61339pt too wide) in paragraph at lines 410--410
 \T1/cmr/m/it/10.95 sions\T1/cmr/m/n/10.95 . \T1/cmr/m/sc/10.95 url\T1/cmr/m/n/1
 0.95 : [][]$\T1/cmtt/m/n/10.95 https : / / developer . apple . com / xcode / do
 wnloads/$[][]
@@ -2105,22 +2149,21 @@ wnloads/$[][]
 
 
 Package biblatex Warning: No driver for entry type 'url'.
-(biblatex)                Using fallback driver on input line 409.
+(biblatex)                Using fallback driver on input line 410.
 
 
-Overfull \hbox (8.10732pt too wide) in paragraph at lines 409--409
+Overfull \hbox (8.10732pt too wide) in paragraph at lines 410--410
 []\T1/cmr/m/n/10.95 Couchbase Inc. \T1/cmr/m/it/10.95 Couch-base Mo-bile NoSQL 
 Database\T1/cmr/m/n/10.95 . \T1/cmr/m/sc/10.95 url\T1/cmr/m/n/10.95 : [][]$\T1/
 cmtt/m/n/10.95 http :
  []
 
-[47]
 
 Package biblatex Warning: No driver for entry type 'url'.
-(biblatex)                Using fallback driver on input line 409.
+(biblatex)                Using fallback driver on input line 410.
 
 
-Overfull \hbox (6.97562pt too wide) in paragraph at lines 409--409
+Overfull \hbox (6.97562pt too wide) in paragraph at lines 410--410
 []\T1/cmr/m/n/10.95 Couchbase Inc. \T1/cmr/m/it/10.95 Couch-base NoSQL Database
  Server\T1/cmr/m/n/10.95 . \T1/cmr/m/sc/10.95 url\T1/cmr/m/n/10.95 : [][]$\T1/c
 mtt/m/n/10.95 http :
@@ -2128,20 +2171,20 @@ mtt/m/n/10.95 http :
 
 
 Package biblatex Warning: No driver for entry type 'url'.
-(biblatex)                Using fallback driver on input line 409.
+(biblatex)                Using fallback driver on input line 410.
 
 
-Overfull \hbox (15.31427pt too wide) in paragraph at lines 409--409
+Overfull \hbox (15.31427pt too wide) in paragraph at lines 410--410
 \T1/cmr/m/sc/10.95 url\T1/cmr/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 http : / / ww
 w . typescriptlang . org$[][] \T1/cmr/m/n/10.95 (vis-ited on 03/12/2015). 
  []
 
 
 Package biblatex Warning: No driver for entry type 'url'.
-(biblatex)                Using fallback driver on input line 409.
+(biblatex)                Using fallback driver on input line 410.
 
 
-Overfull \hbox (43.8664pt too wide) in paragraph at lines 409--409
+Overfull \hbox (43.8664pt too wide) in paragraph at lines 410--410
 []\T1/cmr/m/n/10.95 Jan Macacek. \T1/cmr/m/it/10.95 Type-safe DSL\T1/cmr/m/n/10
 .95 . 2011. \T1/cmr/m/sc/10.95 url\T1/cmr/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 h
 ttp : / / www . cakesolutions .
@@ -2149,102 +2192,112 @@ ttp : / / www . cakesolutions .
 
 
 Package biblatex Warning: No driver for entry type 'url'.
-(biblatex)                Using fallback driver on input line 409.
+(biblatex)                Using fallback driver on input line 410.
 
 
 Package biblatex Warning: No driver for entry type 'url'.
-(biblatex)                Using fallback driver on input line 409.
+(biblatex)                Using fallback driver on input line 410.
 
 
-Overfull \hbox (5.4941pt too wide) in paragraph at lines 409--409
+Overfull \hbox (5.4941pt too wide) in paragraph at lines 410--410
 []\T1/cmr/m/n/10.95 NASA. \T1/cmr/m/it/10.95 The NASA GSFC and NIMA Joint Geopo
 -ten-tial Model\T1/cmr/m/n/10.95 .
  []
 
 
 Package biblatex Warning: No driver for entry type 'url'.
-(biblatex)                Using fallback driver on input line 409.
+(biblatex)                Using fallback driver on input line 410.
+
+[53]
+
+Package biblatex Warning: No driver for entry type 'url'.
+(biblatex)                Using fallback driver on input line 410.
 
 
 Package biblatex Warning: No driver for entry type 'url'.
-(biblatex)                Using fallback driver on input line 409.
+(biblatex)                Using fallback driver on input line 410.
 
 
 Package biblatex Warning: No driver for entry type 'url'.
-(biblatex)                Using fallback driver on input line 409.
+(biblatex)                Using fallback driver on input line 410.
 
 
 Package biblatex Warning: No driver for entry type 'url'.
-(biblatex)                Using fallback driver on input line 409.
+(biblatex)                Using fallback driver on input line 410.
 
 
 Package biblatex Warning: No driver for entry type 'url'.
-(biblatex)                Using fallback driver on input line 409.
+(biblatex)                Using fallback driver on input line 410.
 
 
-Overfull \hbox (11.12814pt too wide) in paragraph at lines 409--409
+Overfull \hbox (11.12814pt too wide) in paragraph at lines 410--410
 \T1/cmr/m/it/10.95 for Type-Script type def-i-ni-tions\T1/cmr/m/n/10.95 . \T1/c
 mr/m/sc/10.95 url\T1/cmr/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 http : / / definit
 elytyped .
  []
 
-[48] [49]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 411.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 411.
- (./thesis.aux (./htwg/cover.aux) (./htwg/title.aux)
-(./htwg/abstract.aux) (./htwg/affidavit.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 411.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 411.
+[54]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 412.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 412.
+ (./thesis.aux (./htwg/cover.aux) (./htwg/title.aux) (./htwg/abstract.aux)
+(./htwg/affidavit.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 412.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 412.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: AB48CDB4AE342B9258C7724A35784A6F;19042.
+(rerunfilecheck)             Checksum: FF98E2E5BE6A75315DBE389ACA3AD3A1;20496.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 411.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 412.
  ) 
 Here is how much of TeX's memory you used:
- 33997 strings out of 493117
- 623433 string characters out of 6135432
- 1133361 words of memory out of 5000000
- 36430 multiletter control sequences out of 15000+600000
- 29393 words of font info for 69 fonts, out of 8000000 for 9000
+ 34062 strings out of 493117
+ 624513 string characters out of 6135432
+ 1133398 words of memory out of 5000000
+ 36462 multiletter control sequences out of 15000+600000
+ 29774 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,12n,84p,994b,1932s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.45} has been referenced but does not ex
+ 55i,12n,84p,994b,1864s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.57} has been referenced but does not ex
 ist, replaced by a fixed one
 
-pdfTeX warning (dest): name{Hfootnote.44} has been referenced but does not exis
+pdfTeX warning (dest): name{Hfootnote.56} has been referenced but does not exis
 t, replaced by a fixed one
 
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/
-usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/
-local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/lo
-cal/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/loca
-l/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/
-texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/te
-xlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texl
-ive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texliv
-e/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/20
-14/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2014
-/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2014/tex
-mf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf
--dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/2014/texmf-d
-ist/fonts/type1/public/cm-super/sfss2074.pfb></usr/local/texlive/2014/texmf-dis
-t/fonts/type1/public/cm-super/sfss2488.pfb></usr/local/texlive/2014/texmf-dist/
-fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/fo
-nts/type1/public/cm-super/sfti1440.pfb></usr/local/texlive/2014/texmf-dist/font
-s/type1/public/cm-super/sfti2074.pfb></usr/local/texlive/2014/texmf-dist/fonts/
-type1/public/cm-super/sftt0800.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
-pe1/public/cm-super/sftt1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
-1/public/cm-super/sftt1095.pfb>
-Output written on thesis.pdf (60 pages, 2671856 bytes).
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{
+/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/
+2014/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2014
+/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2014/t
+exmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2014/texmf-d
+ist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2014/texmf-dis
+t/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2014/texmf-dist/
+fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2014/texmf-dist/fo
+nts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf-dist/font
+s/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/
+type1/public/cm-super/sfss2074.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
+pe1/public/cm-super/sfss2488.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
+1/public/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
+public/cm-super/sfti1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pu
+blic/cm-super/sfti2074.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publ
+ic/cm-super/sftt0800.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
+/cm-super/sftt1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/c
+m-super/sftt1095.pfb>
+Output written on thesis.pdf (65 pages, 5719831 bytes).
 PDF statistics:
- 1341 PDF objects out of 1440 (max. 8388607)
- 1202 compressed objects within 13 object streams
- 379 named destinations out of 1000 (max. 500000)
- 943 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1463 PDF objects out of 1728 (max. 8388607)
+ 1309 compressed objects within 14 object streams
+ 407 named destinations out of 1000 (max. 500000)
+ 1019 words of extra memory for PDF output out of 10000 (max. 10000000)
 
