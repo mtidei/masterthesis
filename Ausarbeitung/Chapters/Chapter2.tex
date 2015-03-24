@@ -27,7 +27,7 @@ There are many different types of context:
 
 \subsubsection*{Computing Context}
 
-Some examples are network connectivity, ommunication costs and bandwidth or available resources like printers, displays and input devices.
+Some examples are network connectivity, communication costs and bandwidth or available resources like printers, displays and input devices.
 
 \subsubsection*{User Context}
 
@@ -124,12 +124,76 @@ The light sensor measures the intensity of the light. It is primarily used to ad
 
 \section{Localization Techniques}
 
+\subsection{Introduction}
+
+As already emphasized, the location context is very important for many context-aware applications and especially for the visitor guide that will be designed and implemented during this work. 
+Therefore a short overview of available positioning techniques and their classification is provided and their applicability to this work discussed. 
+
+\subsection{Classification}
+
+According to (\cite{positioning}, cited by \cite[Ch. 1.1]{ellipsoid}) there are two main categories of positioning techniques, that can be further split up into seven different subcategories.
+
+\subsubsection{Techniques Using Relative Measurements}
+
+This techniques are also known as dead reckoning (DR), and they all need an initial position estimate.
+
+\subsubsection*{Odometry}
+
+By measuring the wheel rotations and the angle of the steer axis, the position is estimated. Due to wheel slippage and measurement errors, the position tends to drift away over time.
+
+\subsubsection*{Inertial Navigation}
+
+Using only inertial sensors (gyroscopes and accelerometers) to measure rotation rates and acceleration forces, the new heading can be estimated integrating the gyroscope data once and the new position integrating the acceleration data twice over time. Pure inertial navigation systems are self-contained and don't need external references.%TODO2 IMAGE
+
+Measurement and (numerical) integration errors accumulate very fast, especially for the position due to the double integration, requiring high precision sensors for decent results. With low cost sensors, as they are used today in many mobile devices, the position error grows unbound already after a very short period of time.
+
+\subsubsection{Techniques Using Absolute Measurements}
+
+\subsubsection*{Electronic Compasses}
+
+Electronic compasses are not a stand-alone positioning solution, but they provide heading measurement to the magnetic north pole. When the declination  angle (the angle between magnetic and geographic north pole) is known for a specific place on Earth, the actual north heading can be calculated. However, local magnetic fields can have a huge impact on the measurements. Near power lines and metallic structures like the structural steel beams in buildings have an impact on the measurement.
+
+\subsubsection*{Active Beacons}
+
+If the environment is already known and beacons are mounted on defined positions, the position of a moving platform can be determined either by triangulation, trilateration or fingerprinting algorithms. Triangulation involves measuring the angles at which at least two beacons are seen. For a trilateration algorithm, the position is calculated by measuring the distance to the beacons. Fingerprinting needs the preliminary creation of a database of measurements at different positions. The position is then estimated by choosing the position-measurement pair out of the database that best fits the current measurement.
+
+\subsubsection*{Global Navigation Satellite Systems}
+
+Abbreviated GNSS, the most well-known example is GPS (Global Positioning System). The receiver can calculate it's position by performing a trilateration. The input is the difference of the travel time of the different satellite's signals and their current location included in the signal. GPS provides good absolute localization for outdoor environments. Indoor, the signal is either very poor or not available at all. %TODO2 Define good with source
+
+\subsubsection*{Landmark Navigation}
+
+Similar to active beacons, this technique requires a well known environment with distinct natural or artificial fixed objects, whose position, exact size and shape must be well known in advance. Most landmark navigation systems are based on computer vision.
+
+\subsubsection*{Map-Based Positioning}
+
+With this technique, a local map is created using sensors like cameras and laser range finders and compared to global pre-stored map, e.g. a CAD model of the environment. If a part of the global map matches the local map, the position can be determined. 
+
+\subsection{Discussion}
+
+A robust and computationally not very expensive technique is needed to run on a battery driven mobile device. Furthermore, that technique must get along with the sensors currently offered by common mobile devices. This excludes map-based positioning and landmark navigation.  
+
+The third requirement is that the system has to work with an arbitrary held mobile device, even when it is inside a pocket.
+
+GPS is a good choice for outdoor positioning, being technically mature and widely available on mobile devices. 
+
+Although inertial navigation combined with human odometry is very promising for indoor navigation, they require the intertial measurement unit (IMU) to bee foot mounted. The reason is being able to reset the system and thus the drifting (set the current speed to zero), when the foot rests on the ground. 
+
+The authors of \cite{footslam} wrote "Projecting the improvements in microelectromechanical system (MEMS)-based inertial sensors to the next ten or even 20 years, it is foreseeable that FootSLAM will no longer require the inertial sensors to be mounted on the foot." Only then will the sensor quality probably be high enough to provide a position estimate of the same quality as today with a foot mounted IMU. 
+
+So this technique is not suitable for providing the location inside the guide, although sensing the steps and thus the pace of the visitor is a goal to keep in mind.
+
+The most promising technique for inexpensive indoor location are iBeacons (see Ch. \ref{ibeacons}), that fall into the category of active beacons. If the quality of the distance measurement has a contained error, a trilateration can provide the position when signals from two or more iBeacons are received. In this case the beacons could be placed independently from the can be placed at the corners of a room.
+Otherwise 
+
+% Outdoor GPS aided by beacons, Indoor Trilateration with iBeacons, Fallback Some sort of Proximity
+
 
 \section{Geographic Coordinates}
 
 \subsection{Introduction}
 
-Since we need to work with GPS (Global Positioning System) data on the mobile front end and model outdoor sites like parks on the back end, it is fundamental to understand how the geographic coordinate system works and what kind of problems we may encounter.
+Since we need to work with GPS data on the mobile front end and model outdoor sites like parks on the back end, it is fundamental to understand how the geographic coordinate system works and what kind of problems we may encounter.
 
 \subsection{Standards}
 
@@ -164,7 +228,7 @@ The maximum resolution using 6 fractional digits depends on the position on Eart
 
 \[R_{\phi} = \frac{a \cos\phi}{(1-e^{2}\sin^{2}\phi )^{1/2}}\]
 
-can be used to calculate the radius of the circle of latitude at a given latitude \(\phi\) \cite{ellipsoid}. 
+can be used to calculate the radius of the circle of latitude at a given latitude \(\phi\) \cite[cf.][Ch. 2.4]{ellipsoid}. 
 
 The length of one degree of the circumference of that circle of latitude is then calculated with
 
@@ -174,7 +238,7 @@ Solving with latitude \(\phi = 47,6°\) for Konstanz, equatorial radius \(a = 6,
 
 So in Konstanz, 0,000001 degree of longitude corresponds to 7,52 cm. The biggest distance, and thus the lowest resolution, is on the equator, where it amounts to 11,13 cm.
 
-The distance of 0,000001 degree of latitude is almost constant at about 11,1 cm.
+The distance of 0,000001 degree of latitude is almost constant at about 11,1 cm. %TODO2 More precise computation
 
 \subsection{Using different Mapping Providers}
 
@@ -194,13 +258,15 @@ An example: To check the consistency of Google and Apple maps, I initially used 
 
 This results in a latitude shift from Google to Apple Maps of \(+3 * 10^{-6}\) degrees and a longitude shift of \(-4,1 * 10^{-5}\) degrees. Using the results of the previous section translates in a deviation to the nord of 0,33 m and a considerable deviation to the west of 3,08 meters.
 
-To exclude this view inclination error and get the pure ground coordinate discrepancy of the two mapping solutions, the coordinates of a small distinctive fixed ground object (the marked lighting pole) are measured in both mapping solutions.
+To exclude this view inclination error and get the pure ground coordinate discrepancy of the two mapping solutions, the coordinates of a small distinctive fixed ground object (one of the white lighting poles on the borders of the path in the park) are measured in both mapping solutions.
 
 The measured pure deviation amounts to not negligible \(-1,4 * 10^{-5}\) degrees of longitude or 1,05 meters.
 
 It is important to keep in mind all this different kinds of errors discussed in this section during development and testing of the guide, to avoid searching for errors at the wrong place.
 
-\section{Bluetooth Low Energy iBeacons}
+\section{Bluetooth Low Energy Beacons - iBeacons}
+
+\label{ibeacons}
 
 \subsection{What is an iBeacon?}
 
@@ -293,6 +359,7 @@ The following section is an overview comparison of Scala and Swift features, cre
 \hline 
 
 %TODO static
+%TODO implicit returns, external parameter names, Generics, Futures
 
 \end{longtable}
 

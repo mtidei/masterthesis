@@ -91,6 +91,30 @@
       \verb http://reactivecouchbase.org
       \endverb
     \endentry
+    \entry{footslam}{article}{}
+      \name{labelname}{2}{}{%
+        {{hash=53097d70677a914a59b5b1f6a042e20e}{Angermann}{A\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=0d8e1738a662c5d0f3045a6dbf717c6a}{Robertson}{R\bibinitperiod}{Patrick}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=53097d70677a914a59b5b1f6a042e20e}{Angermann}{A\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=0d8e1738a662c5d0f3045a6dbf717c6a}{Robertson}{R\bibinitperiod}{Patrick}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{81d2f8e37e31eb2513b60e872c6a43f0}
+      \strng{fullhash}{81d2f8e37e31eb2513b60e872c6a43f0}
+      \field{labelalpha}{Angermann,\addhighpenspace2012}
+      \field{sortinit}{A}
+      \field{labeltitle}{FootSLAM: Pedestrian Simultaneous Localization and Mapping Without Exteroceptive Sensors - Hitchhiking on Human Perception and Cognition.}
+      \field{journaltitle}{Proceedings of the IEEE}
+      \field{number}{Centennial-Issue}
+      \field{title}{FootSLAM: Pedestrian Simultaneous Localization and Mapping Without Exteroceptive Sensors - Hitchhiking on Human Perception and Cognition.}
+      \field{volume}{100}
+      \field{year}{2012}
+      \field{pages}{1840\bibrangedash 1848}
+      \verb{url}
+      \verb http://dblp.uni-trier.de/db/journals/pieee/pieee100.html#AngermannR12
+      \endverb
+    \endentry
     \entry{GCD-Reference}{url}{}
       \name{labelname}{1}{}{%
         {{hash=9f6290f4436e5a2351f12e03b6433c3c}{Apple}{A\bibinitperiod}{}{}{}{}{}{}}%
@@ -247,6 +271,27 @@
       \verb{url}
       \verb http://typesafe.com/blog/reactive-manifesto-20
       \endverb
+    \endentry
+    \entry{positioning}{article}{}
+      \name{labelname}{4}{}{%
+        {{hash=4ecd7c21f2d918ac6a09d109e82f5177}{Borenstein}{B\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=428b31030d5f12a2e2423664a601f39b}{Everett}{E\bibinitperiod}{H.\bibnamedelimi R.}{H\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{hash=d4b0d2d38a7b3f90ba0f3ea175506902}{Feng}{F\bibinitperiod}{L.}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=244179252b966ebb7e64ebc5356c0a7c}{Wehe}{W\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{}{%
+        {{hash=4ecd7c21f2d918ac6a09d109e82f5177}{Borenstein}{B\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=428b31030d5f12a2e2423664a601f39b}{Everett}{E\bibinitperiod}{H.\bibnamedelimi R.}{H\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+        {{hash=d4b0d2d38a7b3f90ba0f3ea175506902}{Feng}{F\bibinitperiod}{L.}{L\bibinitperiod}{}{}{}{}}%
+        {{hash=244179252b966ebb7e64ebc5356c0a7c}{Wehe}{W\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{95badb7143221496df359031d4b622d9}
+      \strng{fullhash}{b011f5a795b117c90e1c7ece4f4eba5c}
+      \field{labelalpha}{Borenstein,\addhighpenspace1997}
+      \field{sortinit}{B}
+      \field{labeltitle}{Mobile Robot Positioning Sensors and Techniques}
+      \field{title}{Mobile Robot Positioning Sensors and Techniques}
+      \field{year}{1997}
     \endentry
     \entry{MapReduceArticle}{article}{}
       \name{labelname}{2}{}{%
