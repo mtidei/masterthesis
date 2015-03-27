@@ -1,7 +1,7 @@
 % Chapter 2
-\chapter{Theoretical Background and Fundamentals}
+\chapter{Theoretical Background, Fundamentals and Preliminary Work}
 
-\lhead{Chapter 2. \emph{Theoretical Background and Fundamentals}} % This is for the header on each page - perhaps a shortened title
+\lhead{Chapter 2. \emph{Theoretical Background, Fundamentals and Preliminary Work}} % This is for the header on each page - perhaps a shortened title
 
 %----------------------------------------------------------------------------------------
 \section{Introduction}
@@ -10,7 +10,7 @@ In this section, the main terms and used technologies are discussed. Several pos
 
 \section{What is Context-Aware Computing?}
 
-The term "context-aware computing" was first used by B. Schilit et. al. 1994 in the paper "Context-Aware Computing Applications" \cite{Schilit94context-awarecomputing}. They introduce a this new kind of computing as a "new class of applications that are aware of the context in which they are run. Such context-aware systems adapts according to the location of use, the collection of nearby people, hosts, and accessible devices, as well as to changes to such things over time".
+The term "context-aware computing" was first used by B. Schilit et. al. 1994 in the paper "Context-Aware Computing Applications" \cite{Schilit94context-awarecomputing}. They introduce this new kind of computing as a "new class of applications that are aware of the context in which they are run. Such context-aware systems adapt according to the location of use, the collection of nearby people, hosts, and accessible devices, as well as to changes to such things over time".
 
 \subsection{Definition of Context}
 
@@ -93,34 +93,89 @@ The vision and research field of ubiquitous computing was coined 1991 by Mark We
 Weiser's starts his article with these words:
 "The most profound technologies are those that disappear. They weave themselves into the fabric of everyday life until they are indistinguishable from it."
 
-For computers that means beeing integrated in common objects of daily usage, supporting humans without demanding their full attention. \\
+For computers, that means being integrated in common objects of daily usage, supporting humans without demanding their full attention. \\
 As an excellent example for a technology that disappeared in the background he uses the vanishing of electric motors. At the beginning, big powerful engines powered a whole fabric, with axles and belts distributing the force to the single machines and workplaces. Later, as motor engineering improved, each machine had its own motor and today several electric motors - miniaturized and bigger ones - are integrated into a single device. Often they work in the background letting us focus on the main task. Already in 1991, at the time of his writing, a typical car had more than 20 integrated motors, nowadays even more. They are used to start the engine, lock and unlock the doors, clean the windshield, open and close the windows, align the rear-view mirrors, adjust the seats by several axis and so on. 
 
 Although Weiser didn't use the term context-awareness, he already recognized the importance of the location context: "We have found two issues of crucial importance: location and scale. Little is more basic to human perception than physical juxtaposition, and so ubiquitous computers must know where they are. [...] If a computer merely knows what room it is in, it can adapt its behavior in significant ways without requiring even a hint of artificial intelligence.".
 
-\section{Sensors of Mobile Devices}
+\section{Sensors Integrated in Mobile Devices}
 
 \subsection{Introduction}
 
-\subsection*{Accelerometer}
+Every type of context information has one or more sensors as direct or indirect source. Thus, context-aware computing is only possible with high quality data provided by a variety of sensors.
 
-\subsection*{Gyroscope}
+\begin{figure}[H]
+\centering
+\includegraphics[height=0.20\textheight]{sensors-growth}
+\caption{Evolution of sensors \cite[Ch. 1]{sensors-book}}
+\end{figure}
 
-Pedometer ref.
+According to \cite{sensors-book}, sensors had a enormous growth over the last 30 years and, with accelerating improvement and deployment rates. The authors identify sensors as a technology nexus driven, inter alia, by public healthcare, sports and fitness, pervasive communications and the Internet of Things (IOT). In turn, sensors enable innovation in many sectors, so that one sector benefits of improvements made due the demands of another sector. 
 
-\subsection*{Magnetometer}
+In the next subsections, the major sensors present in mobile devices are presented.
 
-\subsection*{Barometer}
+\subsection{Micro-Electro-Mechanical Sensors}
 
-Some of the latest smartphones and tablets are equipped with a barometer for measuring the air pressure. This information combined with the current weather dependent ground pressure can be used to determine the current altitude or the floor of the building the device is in. 
+Micro-Electro-Mechanical Sensors (MEMS) are "three-dimensional, miniaturized mechanical and electrical structures, typically ranging from 1 to 100 µm" \cite[Ch. 2]{sensors-book}. They use a movable proof-mass that moves relatively to a frame, electrically measuring the deviation or bending. MEMS are widely used in the automotive industry, where they are part of several systems like the antilock braking system (ABS) or the electronic stability program (ESP). The recent development towards extremely compact, low-cost and power MEMS sensors led to a growing integration in consumer electronics devices like smartphones, tablets and game console controllers. 
 
-\subsection*{Proximity Sensor}
+
+\subsubsection*{Accelerometer}
+
+Motion sensing can be separated in five modes: 
+\begin{itemize}[noitemsep,nolistsep]
+ \item acceleration
+ \item vibration (periodic acceleration)
+ \item shock (instantaneous acceleration)
+ \item tilt (static acceleration)
+ \item rotation
+\end{itemize}
+
+An accelerometer can measure all of them except rotation.
+
+Combining the measurements for three orthogonal axis, a motion along any arbitrary path in a 3D-space can be reconstructed.
+
+There is one sensed acceleration component always present on Earth: The gravitational acceleration. Near the Earth's surface, this component can be approximated by \(9.81 \frac{m}{s^2}\). The direction of this component allows to deduce the attitude of the device in respect to the ground using the accelerometer.
+
+\subsubsection*{Gyroscope}
+
+MEMS Gyroscopes are able to measure rotatory motion without relying on rotating parts that would require bearings but using a vibrating proof-mass affected by Coriolis forces. 
+
+The following figure shows the three axis of a 3D gyroscope, as it is available in many mobile devices today.
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=0.20\textheight]{mems-rot}
+\caption{The rotation axes of a three dimensional MEMS Gyroscope}
+\end{figure}
+
+\subsubsection*{Barometer}
+
+Some of the latest smartphones and tablets are equipped with a MEMS barometer for measuring the air pressure. This information combined with the current weather dependent ground pressure can be used to determine the current altitude or the floor of the building the device is in. 
+
+\subsection{Other Sensors}
+
+\subsubsection*{GPS Sensor}
+
+A GPS Sensor is integrated in many of today's mobile devices. It is a standard part of almost every smartphone and an optional part of many tablets, often bound to a cellular connectivity module. For details on the accuracy, see \ref{gps-prec}.
+
+\subsubsection*{Magnetometer}
+
+The magnetometer acts mainly as digital compass.
+
+\subsubsection*{Proximity Sensor}
 
 The proximity sensor typically measures the distance of the device's front to the next object. It is used to turn off the display when holding a mobile phone at the ear or to determine if the phone is inside a pocket.
 
-\subsection*{Light Sensor}
+\subsubsection*{Light Sensor}
 
 The light sensor measures the intensity of the light. It is primarily used to adapt the screen brightness to the ambient light.
+
+\subsection{Conclusion}
+
+Sensors are evolving rapidly and there are already a broad spectrum integrated in common consumer products like smartphones and tablets. The better the quality of the sensors and the variety of measurable quantities, the more precise and sophisticated can context-sensitive software become.
+Sensor data from different sensors is often combined. For example, a magnetometer and gyroscope can be combined to a fast reacting improved electronic compass without drifting. %TODO Quelle
+
+In the next section addresses different localization techniques and discusses how they can be used for the guide system to be designed.  
 
 \section{Localization Techniques}
 
@@ -161,6 +216,10 @@ If the environment is already known and beacons are mounted on defined positions
 
 Abbreviated GNSS, the most well-known example is GPS (Global Positioning System). The receiver can calculate it's position by performing a trilateration. The input is the difference of the travel time of the different satellite's signals and their current location included in the signal. GPS provides good absolute localization for outdoor environments. Indoor, the signal is either very poor or not available at all. %TODO2 Define good with source
 
+\label{gps-prec}
+The GPS accuracy of current consumer tablets and smartphones was examined in \cite{gps-precision}. The authors compared measurements from six different smartphones and tablets with reference coordinates, both with static and moving devices. The average error in static measurements ranged from 2.18 to 4.18 meters with standard deviations of 0.82 to 2.17 meters. In case of moving devices, two devices had better results and four showed higher errors with average deviations ranging from 1.76 to 5.15 and standard deviations of 0.61 to 2.50 meters (ignoring one statistical outlier with an average error of 15.08 meters).
+
+
 \subsubsection*{Landmark Navigation}
 
 Similar to active beacons, this technique requires a well known environment with distinct natural or artificial fixed objects, whose position, exact size and shape must be well known in advance. Most landmark navigation systems are based on computer vision.
@@ -171,22 +230,61 @@ With this technique, a local map is created using sensors like cameras and laser
 
 \subsection{Discussion}
 
-A robust and computationally not very expensive technique is needed to run on a battery driven mobile device. Furthermore, that technique must get along with the sensors currently offered by common mobile devices. This excludes map-based positioning and landmark navigation.  
+A robust and computationally not very expensive technique is needed to efficiently use the limited battery power of mobile devices. Furthermore, that technique must be satisfied by the sensors currently available in common mobile devices alone.
 
-The third requirement is that the system has to work with an arbitrary held mobile device, even when it is inside a pocket.
+GPS is a good choice for outdoor positioning, being technically mature and widely available on mobile devices. The substantial power drain often associated to the activation of GPS in mobile devices is mostly caused by CPU-intensive navigation software and an active screen rather than the actual sensor.
 
-GPS is a good choice for outdoor positioning, being technically mature and widely available on mobile devices. 
+For indoor navigation, Map-based positioning and landmark navigation can be clearly excluded due to their demands.
 
-Although inertial navigation combined with human odometry is very promising for indoor navigation, they require the intertial measurement unit (IMU) to bee foot mounted. The reason is being able to reset the system and thus the drifting (set the current speed to zero), when the foot rests on the ground. 
+Although inertial navigation combined with human odometry is very promising, they require the inertial measurement unit (IMU) to bee foot mounted. The reason is being able to re-calibrate the system and thus the drifting (set the current speed to zero), every time one foot rests on the ground while walking \cite{footslam}. The authors are confident, that "projecting the improvements in microelectromechanical system (MEMS)-based inertial sensors to the next ten or even 20 years, it is foreseeable that FootSLAM will no longer require the inertial sensors to be mounted on the foot." Only then will the sensor quality probably be high enough to provide a position estimate with an arbitrarily hold smartphone comparable to the position estimate quality achieved today with a foot mounted IMU. 
 
-The authors of \cite{footslam} wrote "Projecting the improvements in microelectromechanical system (MEMS)-based inertial sensors to the next ten or even 20 years, it is foreseeable that FootSLAM will no longer require the inertial sensors to be mounted on the foot." Only then will the sensor quality probably be high enough to provide a position estimate of the same quality as today with a foot mounted IMU. 
+So this technique is currently not suitable for providing the location for the guide, although sensing the steps and thus the pace of the visitor is a goal to keep in mind.
 
-So this technique is not suitable for providing the location inside the guide, although sensing the steps and thus the pace of the visitor is a goal to keep in mind.
-
-The most promising technique for inexpensive indoor location are iBeacons (see Ch. \ref{ibeacons}), that fall into the category of active beacons. If the quality of the distance measurement has a contained error, a trilateration can provide the position when signals from two or more iBeacons are received. In this case the beacons could be placed independently from the can be placed at the corners of a room.
-Otherwise 
+The most promising technique for inexpensive indoor location are iBeacons (see Ch. \ref{ibeacons}), that fall into the category of active beacons. If the quality of the distance measurement has a limited error, a trilateration can provide the position when signals from two or more iBeacons are received. To determine the capabilities of iBeacons, a prototype will be implemented and described in Chapter \ref{prototype}.
+ 
 
 % Outdoor GPS aided by beacons, Indoor Trilateration with iBeacons, Fallback Some sort of Proximity
+
+\section{Bluetooth Low Energy Beacons - iBeacons}
+
+\label{ibeacons}
+
+\subsection{What is an iBeacon?}
+
+On Mid 2013, Apple introduced iBeacons as new technology for adding location awareness to applications. iBeacons are little devices containig a power cell and a small logic board with a Bluetooth Low Energy (BLE) transmitter. BLE was introduced with Bluetooth 4.0 for applications with very contained power requirements that can be satisfied with 1 Mbps data transfer rates, co-existing with standard Bluetooth \cite{ble}.
+
+iBeacon devices broadcast BLE advertisement packets at an configurable time interval, mostly between 100 ms and 1 s, containing, in essence, a fixed preamble identifying the data as iBeacon advertisement, a set of three configurable device specific numbers and the measured RSSI (Received Signal Strength Indication) in dBm at 1m. The latter value is needed as reference for calculating a distance estimation using the current RSSI measured by the receiving device as input.
+
+Based on the configured advertisement interval and the broadcasting power, that influences the distance until which the beacon ca be detected, the battery is expected to last for up to two years.
+
+Apple provides only the specification and an API, but does not manufacture the devices itself. Instead, third-party supplies, among these a number of start-ups, began to ship iBeacons in 2014. For this thesis, different devices were ordered from estimote (New York, USA), kontakt.io (Kraków, Poland), BEACONinside (Berlin, Germany) and Accent Advanced Systems (Barcelona, Spain). This avoids the risk of concentrating on features or flaws of a specific device brand.
+
+\subsection{The iBeacon Prototype}
+
+\label{prototype}
+
+\subsubsection{Design and Implementation}
+
+The main screen of the prototype provides an overview of all iBeacons in range. %TODO motivation, explanation
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=0.40\textheight]{proto1}
+\caption{The main screen of the iBeacon prototype}
+\end{figure}
+
+After selecting a beacon in the list, the beacon detail view opens showing the details and the single measurements for that beacon on the first screen and some statistics on the second screen.
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=0.40\textheight]{proto2}
+\includegraphics[height=0.40\textheight]{proto3}
+\caption{The iBeacon detail screens, including statistics}
+\end{figure}
+
+\subsubsection{Measurements and Insights}
+
+
 
 
 \section{Geographic Coordinates}
@@ -263,44 +361,6 @@ To exclude this view inclination error and get the pure ground coordinate discre
 The measured pure deviation amounts to not negligible \(-1,4 * 10^{-5}\) degrees of longitude or 1,05 meters.
 
 It is important to keep in mind all this different kinds of errors discussed in this section during development and testing of the guide, to avoid searching for errors at the wrong place.
-
-\section{Bluetooth Low Energy Beacons - iBeacons}
-
-\label{ibeacons}
-
-\subsection{What is an iBeacon?}
-
-On Mid 2013, Apple introduced iBeacons as new technology for adding location awareness to applications. iBeacons are little devices containig a power cell and a small logic board with a Bluetooth Low Energy (BLE) transmitter. BLE was introduced with Bluetooth 4.0 for applications with very contained power requirements that can be satisfied with 1 Mbps data transfer rates, co-existing with standard Bluetooth \cite{ble}.
-
-iBeacon devices broadcast BLE advertisement packets at an configurable time interval, mostly between 100 ms and 1 s, containing, in essence, a fixed preamble identifying the data as iBeacon advertisement, a set of three configurable device specific numbers and the measured RSSI (Received Signal Strength Indication) in dBm at 1m. The latter value is needed as reference for calculating a distance estimation using the current RSSI measured by the receiving device as input.
-
-Based on the configured advertisement interval and the broadcasting power, that influences the distance until which the beacon ca be detected, the battery is expected to last for up to two years.
-
-Apple provides only the specification and an API, but does not manufacture the devices itself. Instead, third-party supplies, among these a number of start-ups, began to ship iBeacons in 2014. For this thesis, different devices were ordered from estimote (New York, USA), kontakt.io (Kraków, Poland), BEACONinside (Berlin, Germany) and Accent Advanced Systems (Barcelona, Spain). This avoids the risk of concentrating on features or flaws of a specific device brand.
-
-\subsection{The iBeacon Prototype}
-
-\subsubsection{Design and Implementation}
-
-The main screen of the prototype provides an overview of all iBeacons in range. %TODO motivation, explanation
-
-\begin{figure}[H]
-\centering
-\includegraphics[height=0.40\textheight]{proto1}
-\caption{The main screen of the iBeacon prototype}
-\end{figure}
-
-After selecting a beacon in the list, the beacon detail view opens showing the details and the single measurements for that beacon on the first screen and some statistics on the second screen.
-
-\begin{figure}[H]
-\centering
-\includegraphics[height=0.40\textheight]{proto2}
-\includegraphics[height=0.40\textheight]{proto3}
-\caption{The iBeacon detail screens, including statistics}
-\end{figure}
-
-\subsubsection{Measurements and Insights}
-
 
 
 \section{Swift}

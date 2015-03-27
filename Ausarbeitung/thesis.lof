@@ -4,37 +4,41 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Difference in meters between the geoid and the ellipsoid \cite {nasageoid}\relax }}{13}{figure.caption.52}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Evolution of sensors \cite [Ch. 1]{sensors-book}\relax }}{8}{figure.caption.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces View angle error on Google (left) and Apple (right) maps\relax }}{15}{figure.caption.56}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces The rotation axes of a three dimensional MEMS Gyroscope\relax }}{10}{figure.caption.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces The main screen of the iBeacon prototype\relax }}{16}{figure.caption.61}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces The main screen of the iBeacon prototype\relax }}{16}{figure.caption.59}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces The iBeacon detail screens, including statistics\relax }}{17}{figure.caption.62}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces The iBeacon detail screens, including statistics\relax }}{16}{figure.caption.60}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Couchbase Lite and Sync Gateways. From \cite {couchbase-lite}\relax }}{26}{figure.caption.146}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Difference in meters between the geoid and the ellipsoid \cite {nasageoid}\relax }}{17}{figure.caption.65}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces The Play framework stack. From \cite {play-book} with kind permission.\relax }}{28}{figure.caption.152}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces View angle error on Google (left) and Apple (right) maps\relax }}{19}{figure.caption.69}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Couchbase Lite and Sync Gateways. From \cite {couchbase-lite}\relax }}{28}{figure.caption.152}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces CA Guite Architecture Overview\relax }}{30}{figure.caption.156}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Layer Model of the Museum Guide Application\relax }}{35}{figure.caption.231}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Layer model with virtual sensors\relax }}{36}{figure.caption.232}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Data flow between the lower layers of the Sensorbase framework\relax }}{37}{figure.caption.233}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Sequence Diagram for the Sensor Layers\relax }}{38}{figure.caption.234}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Simplified Class Diagram for Sensor Data Processing\relax }}{39}{figure.caption.235}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces The Play framework stack. From \cite {play-book} with kind permission.\relax }}{30}{figure.caption.158}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces TypeScript in IntelliJ IDEA\relax }}{44}{figure.caption.249}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces CA Guite Architecture Overview\relax }}{33}{figure.caption.162}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Layer Model of the Museum Guide Application\relax }}{38}{figure.caption.237}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Layer model with virtual sensors\relax }}{39}{figure.caption.238}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Data flow between the lower layers of the Sensorbase framework\relax }}{40}{figure.caption.239}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Sequence Diagram for the Sensor Layers\relax }}{41}{figure.caption.240}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Simplified Class Diagram for Sensor Data Processing\relax }}{42}{figure.caption.241}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces TypeScript in IntelliJ IDEA\relax }}{47}{figure.caption.255}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

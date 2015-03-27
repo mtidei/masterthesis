@@ -111,9 +111,6 @@
       \field{volume}{100}
       \field{year}{2012}
       \field{pages}{1840\bibrangedash 1848}
-      \verb{url}
-      \verb http://dblp.uni-trier.de/db/journals/pieee/pieee100.html#AngermannR12
-      \endverb
     \endentry
     \entry{GCD-Reference}{url}{}
       \name{labelname}{1}{}{%
@@ -684,6 +681,27 @@
       \endverb
       \keyw{scala}
     \endentry
+    \entry{sensors-book}{book}{}
+      \name{labelname}{2}{}{%
+        {{hash=8b701d31d10c16a8fa0b899e442bafd0}{McGrath}{M\bibinitperiod}{Michael\bibnamedelima J.}{M\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=742d555f326457cf3a52b91fe0fa6b9a}{Scanaill}{S\bibinitperiod}{Cliodhna\bibnamedelima Ní}{C\bibinitperiod\bibinitdelim N\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=8b701d31d10c16a8fa0b899e442bafd0}{McGrath}{M\bibinitperiod}{Michael\bibnamedelima J.}{M\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=742d555f326457cf3a52b91fe0fa6b9a}{Scanaill}{S\bibinitperiod}{Cliodhna\bibnamedelima Ní}{C\bibinitperiod\bibinitdelim N\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Apress}%
+      }
+      \strng{namehash}{547127806c997976ecd04d18ee4ae479}
+      \strng{fullhash}{547127806c997976ecd04d18ee4ae479}
+      \field{labelalpha}{McGrath,\addhighpenspace2013}
+      \field{sortinit}{M}
+      \field{labeltitle}{Sensor Technologies: Healthcare, Wellness and Environmental Applications}
+      \field{isbn}{978-1-4302-6013-4}
+      \field{title}{Sensor Technologies: Healthcare, Wellness and Environmental Applications}
+      \field{year}{2013}
+    \endentry
     \entry{playscalajs}{url}{}
       \name{labelname}{1}{}{%
         {{hash=60754e86b5c950773caa01812a51305e}{Munier}{M\bibinitperiod}{Vincent}{V\bibinitperiod}{}{}{}{}}%
@@ -704,6 +722,26 @@
       \verb{url}
       \verb https://github.com/vmunier/play-with-scalajs-example
       \endverb
+    \endentry
+    \entry{gps-precision}{inproceedings}{}
+      \name{labelname}{3}{}{%
+        {{hash=ef3536ee879e3c4a85ed626774795429}{Musulin}{M\bibinitperiod}{Ivo}{I\bibinitperiod}{}{}{}{}}%
+        {{hash=c3b4539df161d895fd73384d9de33bec}{Brčić}{B\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=cb98511ac4981bddc409c7f5eaa51128}{Kos}{K\bibinitperiod}{Serdjo}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{hash=ef3536ee879e3c4a85ed626774795429}{Musulin}{M\bibinitperiod}{Ivo}{I\bibinitperiod}{}{}{}{}}%
+        {{hash=c3b4539df161d895fd73384d9de33bec}{Brčić}{B\bibinitperiod}{David}{D\bibinitperiod}{}{}{}{}}%
+        {{hash=cb98511ac4981bddc409c7f5eaa51128}{Kos}{K\bibinitperiod}{Serdjo}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{85edff972d9451c076efa4cabad4e09d}
+      \strng{fullhash}{85edff972d9451c076efa4cabad4e09d}
+      \field{labelalpha}{Musulin,\addhighpenspace2014}
+      \field{sortinit}{M}
+      \field{labeltitle}{A Study of Smartphone Satellite Positioning Performance at Sea Using GPS and GLONASS Systems}
+      \field{booktitle}{In Proceedings of the 22nd International Symposium on Electronics in Transport (ISEP 2014)}
+      \field{title}{A Study of Smartphone Satellite Positioning Performance at Sea Using GPS and GLONASS Systems}
+      \field{year}{2014}
     \endentry
     \entry{nasageoid}{url}{}
       \name{labelname}{1}{}{%

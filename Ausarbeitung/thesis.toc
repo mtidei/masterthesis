@@ -24,7 +24,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.3}The Approach}{2}{section.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Theoretical Background and Fundamentals}{4}{chapter.16}
+\contentsline {chapter}{\numberline {2}Theoretical Background, Fundamentals and Preliminary Work}{4}{chapter.16}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Introduction}{4}{section.17}
 \defcounter {refsection}{0}\relax 
@@ -38,192 +38,198 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.4}Ubiquitous Computing}{7}{subsection.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Sensors of Mobile Devices}{8}{section.28}
+\contentsline {section}{\numberline {2.3}Sensors Integrated in Mobile Devices}{8}{section.28}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.1}Introduction}{8}{subsection.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Localization Techniques}{9}{section.36}
+\contentsline {subsection}{\numberline {2.3.2}Micro-Electro-Mechanical Sensors}{9}{subsection.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Introduction}{9}{subsection.37}
+\contentsline {subsection}{\numberline {2.3.3}Other Sensors}{10}{subsection.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}Classification}{9}{subsection.38}
+\contentsline {subsection}{\numberline {2.3.4}Conclusion}{11}{subsection.41}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.2.1}Techniques Using Relative Measurements}{9}{subsubsection.39}
+\contentsline {section}{\numberline {2.4}Localization Techniques}{11}{section.42}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.4.2.2}Techniques Using Absolute Measurements}{10}{subsubsection.42}
+\contentsline {subsection}{\numberline {2.4.1}Introduction}{11}{subsection.43}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.3}Discussion}{11}{subsection.48}
+\contentsline {subsection}{\numberline {2.4.2}Classification}{11}{subsection.44}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Geographic Coordinates}{12}{section.49}
+\contentsline {subsubsection}{\numberline {2.4.2.1}Techniques Using Relative Measurements}{12}{subsubsection.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.1}Introduction}{12}{subsection.50}
+\contentsline {subsubsection}{\numberline {2.4.2.2}Techniques Using Absolute Measurements}{12}{subsubsection.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.2}Standards}{12}{subsection.51}
+\contentsline {subsection}{\numberline {2.4.3}Discussion}{14}{subsection.54}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.3}WGS84 Coordinates}{13}{subsection.53}
+\contentsline {section}{\numberline {2.5}Bluetooth Low Energy Beacons - iBeacons}{14}{section.55}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.4}Using different Mapping Providers}{14}{subsection.54}
+\contentsline {subsection}{\numberline {2.5.1}What is an iBeacon?}{14}{subsection.56}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Bluetooth Low Energy Beacons - iBeacons}{15}{section.57}
+\contentsline {subsection}{\numberline {2.5.2}The iBeacon Prototype}{15}{subsection.57}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.1}What is an iBeacon?}{15}{subsection.58}
+\contentsline {subsubsection}{\numberline {2.5.2.1}Design and Implementation}{15}{subsubsection.58}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.6.2}The iBeacon Prototype}{16}{subsection.59}
+\contentsline {subsubsection}{\numberline {2.5.2.2}Measurements and Insights}{17}{subsubsection.61}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.6.2.1}Design and Implementation}{16}{subsubsection.60}
+\contentsline {section}{\numberline {2.6}Geographic Coordinates}{17}{section.62}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.6.2.2}Measurements and Insights}{17}{subsubsection.63}
+\contentsline {subsection}{\numberline {2.6.1}Introduction}{17}{subsection.63}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.7}Swift}{17}{section.64}
+\contentsline {subsection}{\numberline {2.6.2}Standards}{17}{subsection.64}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.1}What is Swift?}{17}{subsection.65}
+\contentsline {subsection}{\numberline {2.6.3}WGS84 Coordinates}{18}{subsection.66}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.2}Comparison Scala and Swift}{18}{subsection.66}
+\contentsline {subsection}{\numberline {2.6.4}Using different Mapping Providers}{19}{subsection.67}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.7.3}Major Differences to Scala}{19}{subsection.70}
+\contentsline {section}{\numberline {2.7}Swift}{20}{section.70}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.7.3.1}Implicit Type Conversions}{19}{subsubsection.71}
+\contentsline {subsection}{\numberline {2.7.1}What is Swift?}{20}{subsection.71}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.7.3.2}Optionals}{20}{subsubsection.80}
+\contentsline {subsection}{\numberline {2.7.2}Comparison Scala and Swift}{20}{subsection.72}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.7.3.3}Getter and Setter}{21}{subsubsection.95}
+\contentsline {subsection}{\numberline {2.7.3}Major Differences to Scala}{22}{subsection.76}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.7.3.4}Exception Handling}{22}{subsubsection.113}
+\contentsline {subsubsection}{\numberline {2.7.3.1}Implicit Type Conversions}{22}{subsubsection.77}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.7.3.5}Named Parameters}{23}{subsubsection.132}
+\contentsline {subsubsection}{\numberline {2.7.3.2}Optionals}{23}{subsubsection.86}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.7.3.6}The Legacy of Objective-C}{23}{subsubsection.133}
+\contentsline {subsubsection}{\numberline {2.7.3.3}Getter and Setter}{24}{subsubsection.101}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {2.7.3.7}Summary}{24}{subsubsection.139}
+\contentsline {subsubsection}{\numberline {2.7.3.4}Exception Handling}{25}{subsubsection.119}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.8}iOS and Cocoa Touch}{24}{section.141}
+\contentsline {subsubsection}{\numberline {2.7.3.5}Named Parameters}{25}{subsubsection.138}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.9}Couchbase NoSQL Database}{24}{section.142}
+\contentsline {subsubsection}{\numberline {2.7.3.6}The Legacy of Objective-C}{25}{subsubsection.139}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.1}What is a NoSQL Database?}{24}{subsection.143}
+\contentsline {subsubsection}{\numberline {2.7.3.7}Summary}{26}{subsubsection.145}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.9.2}Couchbase}{25}{subsection.145}
+\contentsline {section}{\numberline {2.8}iOS and Cocoa Touch}{27}{section.147}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.10}Typesafe Reactive Platform}{26}{section.148}
+\contentsline {section}{\numberline {2.9}Couchbase NoSQL Database}{27}{section.148}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.10.1}Overview}{26}{subsection.149}
+\contentsline {subsection}{\numberline {2.9.1}What is a NoSQL Database?}{27}{subsection.149}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.10.2}Activator Tool}{27}{subsection.150}
+\contentsline {subsection}{\numberline {2.9.2}Couchbase}{28}{subsection.151}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.10.3}Play Web Framework}{27}{subsection.151}
+\contentsline {section}{\numberline {2.10}Typesafe Reactive Platform}{29}{section.154}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}System Overview}{29}{chapter.153}
+\contentsline {subsection}{\numberline {2.10.1}Overview}{29}{subsection.155}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Introduction}{29}{section.154}
+\contentsline {subsection}{\numberline {2.10.2}Activator Tool}{29}{subsection.156}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Data Structure}{30}{section.157}
+\contentsline {subsection}{\numberline {2.10.3}Play Web Framework}{30}{subsection.157}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Exhibition Modelling}{30}{subsection.158}
+\contentsline {chapter}{\numberline {3}System Overview}{32}{chapter.159}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Sensor Data}{31}{subsection.181}
+\contentsline {section}{\numberline {3.1}Introduction}{32}{section.160}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Setting up the Couchbase Server Infrastructure}{32}{section.213}
+\contentsline {section}{\numberline {3.2}Data Structure}{33}{section.163}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}CA Guide Mobile Application}{33}{chapter.214}
+\contentsline {subsection}{\numberline {3.2.1}Exhibition Modelling}{33}{subsection.164}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Introduction and Goal}{33}{section.215}
+\contentsline {subsection}{\numberline {3.2.2}Sensor Data}{34}{subsection.187}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}The Target Platform}{33}{section.216}
+\contentsline {section}{\numberline {3.3}Setting up the Couchbase Server Infrastructure}{35}{section.219}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Setting Up the Development Platform}{34}{section.217}
+\contentsline {chapter}{\numberline {4}CA Guide Mobile Application}{36}{chapter.220}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Architecture}{35}{section.230}
+\contentsline {section}{\numberline {4.1}Introduction and Goal}{36}{section.221}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}Setup of Couchbase Server and Sync Gateway}{39}{subsection.236}
+\contentsline {section}{\numberline {4.2}The Target Platform}{36}{section.222}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Sensors Layers}{39}{section.237}
+\contentsline {section}{\numberline {4.3}Setting Up the Development Platform}{37}{section.223}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Application Logic}{40}{section.238}
+\contentsline {section}{\numberline {4.4}Architecture}{38}{section.236}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.7}Presentation Layer}{40}{section.239}
+\contentsline {subsection}{\numberline {4.4.1}Setup of Couchbase Server and Sync Gateway}{42}{subsection.242}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}CA Guide Back End}{41}{chapter.240}
+\contentsline {section}{\numberline {4.5}Sensors Layers}{42}{section.243}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Introduction}{41}{section.241}
+\contentsline {section}{\numberline {4.6}Application Logic}{43}{section.244}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}The Target Platform}{42}{section.243}
+\contentsline {section}{\numberline {4.7}Presentation Layer}{43}{section.245}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Architectural Decisions}{42}{section.244}
+\contentsline {chapter}{\numberline {5}CA Guide Back End}{44}{chapter.246}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}The Client and Server Code Gap}{42}{subsection.245}
+\contentsline {section}{\numberline {5.1}Introduction}{44}{section.247}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.2}Solution Attempts}{43}{subsection.247}
+\contentsline {section}{\numberline {5.2}The Target Platform}{45}{section.249}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.2.1}Improved Javascript}{43}{subsubsection.248}
+\contentsline {section}{\numberline {5.3}Architectural Decisions}{45}{section.250}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.3.2.2}Unified Programming Language for Server and Client Code}{44}{subsubsection.250}
+\contentsline {subsection}{\numberline {5.3.1}The Client and Server Code Gap}{45}{subsection.251}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Setting up the Development Platform}{45}{section.251}
+\contentsline {subsection}{\numberline {5.3.2}Solution Attempts}{46}{subsection.253}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.1}Project Structure, Scala and Play}{45}{subsection.252}
+\contentsline {subsubsection}{\numberline {5.3.2.1}Improved Javascript}{46}{subsubsection.254}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.2}Adding Reactive Couchbase as Scala Database Driver}{45}{subsection.253}
+\contentsline {subsubsection}{\numberline {5.3.2.2}Unified Programming Language for Server and Client Code}{47}{subsubsection.256}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.3}Adding \IeC {\textmu }Pickle as Lightweight Serialization Framework}{46}{subsection.271}
+\contentsline {section}{\numberline {5.4}Setting up the Development Platform}{48}{section.257}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.4}Adding Bootstrap as UI Framework}{47}{subsection.279}
+\contentsline {subsection}{\numberline {5.4.1}Project Structure, Scala and Play}{48}{subsection.258}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.5}Activating the Less Compiler}{47}{subsection.280}
+\contentsline {subsection}{\numberline {5.4.2}Adding Reactive Couchbase as Scala Database Driver}{48}{subsection.259}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Architecture and Design}{48}{section.281}
+\contentsline {subsection}{\numberline {5.4.3}Adding \IeC {\textmu }Pickle as Lightweight Serialization Framework}{49}{subsection.277}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.1}Overview}{48}{subsection.282}
+\contentsline {subsection}{\numberline {5.4.4}Adding Bootstrap as UI Framework}{50}{subsection.285}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.2}The Controller}{48}{subsection.283}
+\contentsline {subsection}{\numberline {5.4.5}Activating the Less Compiler}{50}{subsection.286}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.5.2.1}Designing the REST HTTP Interface}{48}{subsubsection.284}
+\contentsline {section}{\numberline {5.5}Architecture and Design}{51}{section.287}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.5.2.2}Controller Actions}{48}{subsubsection.285}
+\contentsline {subsection}{\numberline {5.5.1}Overview}{51}{subsection.288}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.3}The Model}{48}{subsection.286}
+\contentsline {subsection}{\numberline {5.5.2}The Controller}{51}{subsection.289}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.5.3.1}Designing Classes to Cross-Compile}{48}{subsubsection.287}
+\contentsline {subsubsection}{\numberline {5.5.2.1}Designing the REST HTTP Interface}{51}{subsubsection.290}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.5.3.2}Creating NoSQL Design Documents}{48}{subsubsection.288}
+\contentsline {subsubsection}{\numberline {5.5.2.2}Controller Actions}{51}{subsubsection.291}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.5.3.3}Accessing the Database using Scala Futures}{48}{subsubsection.289}
+\contentsline {subsection}{\numberline {5.5.3}The Model}{51}{subsection.292}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.4}The View}{48}{subsection.291}
+\contentsline {subsubsection}{\numberline {5.5.3.1}Designing Classes to Cross-Compile}{51}{subsubsection.293}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.5.4.1}Play HTML Templates}{48}{subsubsection.292}
+\contentsline {subsubsection}{\numberline {5.5.3.2}Creating NoSQL Design Documents}{51}{subsubsection.294}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.5.4.2}Mockups}{48}{subsubsection.293}
+\contentsline {subsubsection}{\numberline {5.5.3.3}Accessing the Database using Scala Futures}{51}{subsubsection.295}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.5.4.3}The Client code in Scala.js}{48}{subsubsection.294}
+\contentsline {subsection}{\numberline {5.5.4}The View}{51}{subsection.297}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}System Review}{49}{chapter.295}
+\contentsline {subsubsection}{\numberline {5.5.4.1}Play HTML Templates}{51}{subsubsection.298}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Introduction}{49}{section.296}
+\contentsline {subsubsection}{\numberline {5.5.4.2}Mockups}{51}{subsubsection.299}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Modelling the Tech Center}{49}{section.297}
+\contentsline {subsubsection}{\numberline {5.5.4.3}The Client code in Scala.js}{51}{subsubsection.300}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.1}Indoor Modelling}{49}{subsection.298}
+\contentsline {chapter}{\numberline {6}System Review}{52}{chapter.301}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.2}Outdoor Modelling}{49}{subsection.299}
+\contentsline {section}{\numberline {6.1}Introduction}{52}{section.302}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Testing the CA Guide Front End}{49}{section.300}
+\contentsline {section}{\numberline {6.2}Modelling the Tech Center}{52}{section.303}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Analytics with the CA Guide Back End}{49}{section.301}
+\contentsline {subsection}{\numberline {6.2.1}Indoor Modelling}{52}{subsection.304}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusion}{50}{chapter.302}
+\contentsline {subsection}{\numberline {6.2.2}Outdoor Modelling}{52}{subsection.305}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Summary}{50}{section.303}
+\contentsline {section}{\numberline {6.3}Testing the CA Guide Front End}{52}{section.306}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.1}The CA Guide}{50}{subsection.304}
+\contentsline {section}{\numberline {6.4}Analytics with the CA Guide Back End}{52}{section.307}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.2}Swift and Scala}{50}{subsection.305}
+\contentsline {chapter}{\numberline {7}Conclusion}{53}{chapter.308}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Future Work}{51}{section.306}
+\contentsline {section}{\numberline {7.1}Summary}{53}{section.309}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1.1}The CA Guide}{53}{subsection.310}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1.2}Swift and Scala}{53}{subsection.311}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Future Work}{54}{section.312}
 \defcounter {refsection}{0}\relax 
 \vspace {2em}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}JSON Site Modelling File}{52}{appendix.307}
+\contentsline {chapter}{\numberline {A}JSON Site Modelling File}{55}{appendix.313}
 \defcounter {refsection}{0}\relax 
 \vspace {2em}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{53}{dummy.308}
+\contentsline {chapter}{Bibliography}{56}{dummy.314}
