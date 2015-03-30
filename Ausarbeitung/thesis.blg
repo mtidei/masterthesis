@@ -1,17 +1,16 @@
 [0] Config.pm:318> INFO - This is Biber 1.8
 [0] Config.pm:321> INFO - Logfile is 'thesis.blg'
-[75] biber-darwin:275> INFO - === Fri Mar 27, 2015, 09:08:20
-[75] Biber.pm:333> INFO - Reading 'thesis.bcf'
-[149] Biber.pm:630> INFO - Found 47 citekeys in bib section 0
-[169] Biber.pm:3053> INFO - Processing section 0
-[189] Biber.pm:3190> INFO - Looking for bibtex format file 'Bibliography.bib' for section 0
-[195] bibtex.pm:937> INFO - Decoding LaTeX character macros into UTF-8
-[200] bibtex.pm:812> INFO - Found BibTeX data source 'Bibliography.bib'
-[205] Utils.pm:169> WARN - Duplicate entry key: 'upickle' in file 'Bibliography.bib', skipping ...
-[248] Utils.pm:169> WARN - I didn't find a database entry for 'swift-error-handling' (section 0)
-[359] Biber.pm:2939> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
-[359] Biber.pm:2945> INFO - Sorting 'entry' list 'nyt' keys
-[360] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_US.UTF-8'
-[518] bbl.pm:482> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
-[523] bbl.pm:555> INFO - Output to thesis.bbl
-[524] Biber.pm:105> INFO - WARNINGS: 2
+[63] biber-darwin:275> INFO - === Mon Mar 30, 2015, 15:22:00
+[63] Biber.pm:333> INFO - Reading 'thesis.bcf'
+[127] Biber.pm:630> INFO - Found 48 citekeys in bib section 0
+[150] Biber.pm:3053> INFO - Processing section 0
+[170] Biber.pm:3190> INFO - Looking for bibtex format file 'Bibliography.bib' for section 0
+[175] bibtex.pm:937> INFO - Decoding LaTeX character macros into UTF-8
+[182] bibtex.pm:812> INFO - Found BibTeX data source 'Bibliography.bib'
+[238] Utils.pm:169> WARN - I didn't find a database entry for 'swift-error-handling' (section 0)
+[361] Biber.pm:2939> INFO - Overriding locale 'en_US.UTF-8' default tailoring 'variable = shifted' with 'variable = non-ignorable'
+[361] Biber.pm:2945> INFO - Sorting 'entry' list 'nyt' keys
+[362] Biber.pm:2949> INFO - No sort tailoring available for locale 'en_US.UTF-8'
+[519] bbl.pm:482> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
+[525] bbl.pm:555> INFO - Output to thesis.bbl
+[525] Biber.pm:105> INFO - WARNINGS: 1

@@ -253,9 +253,9 @@ The most promising technique for inexpensive indoor location are iBeacons (see C
 
 On Mid 2013, Apple introduced iBeacons as new technology for adding location awareness to applications. iBeacons are little devices containig a power cell and a small logic board with a Bluetooth Low Energy (BLE) transmitter. BLE was introduced with Bluetooth 4.0 for applications with very contained power requirements that can be satisfied with 1 Mbps data transfer rates, co-existing with standard Bluetooth \cite{ble}.
 
-iBeacon devices broadcast BLE advertisement packets at an configurable time interval, mostly between 100 ms and 1 s, containing, in essence, a fixed preamble identifying the data as iBeacon advertisement, a set of three configurable device specific numbers and the measured RSSI (Received Signal Strength Indication) in dBm at 1m. The latter value is needed as reference for calculating a distance estimation using the current RSSI measured by the receiving device as input.
+iBeacon devices broadcast BLE advertisement packets at an configurable time interval (named "advertisement interval"), mostly between 100 ms and 1 s, containing, in essence, a fixed preamble identifying the data as iBeacon advertisement, a set of three configurable device specific numbers and the measured RSSI (Received Signal Strength Indication) in dBm at 1m. The latter value is needed as reference for calculating a distance estimation using the current RSSI measured by the receiving device as input.
 
-Based on the configured advertisement interval and the broadcasting power, that influences the distance until which the beacon ca be detected, the battery is expected to last for up to two years.
+Based on the configured advertisement interval and the broadcasting power, that influences the distance until which the beacon ca be detected, the battery is expected to last for up to two years. The broadcasting power determines the energy of the signal and thus the maximum distance until which it can be received.
 
 Apple provides only the specification and an API, but does not manufacture the devices itself. Instead, third-party supplies, among these a number of start-ups, began to ship iBeacons in 2014. For this thesis, different devices were ordered from estimote (New York, USA), kontakt.io (Kraków, Poland), BEACONinside (Berlin, Germany) and Accent Advanced Systems (Barcelona, Spain). This avoids the risk of concentrating on features or flaws of a specific device brand.
 
@@ -265,7 +265,9 @@ Apple provides only the specification and an API, but does not manufacture the d
 
 \subsubsection{Design and Implementation}
 
-The main screen of the prototype provides an overview of all iBeacons in range. %TODO motivation, explanation
+To familiarize with iBeacons and the whole iOS platform, an iBeacon prototype "Beacon Scanner" was implemented as preliminary work to the guide framework.
+
+The main screen of the prototype provides an overview of all iBeacons in range. %TODO2 explanation
 
 \begin{figure}[H]
 \centering
@@ -282,9 +284,85 @@ After selecting a beacon in the list, the beacon detail view opens showing the d
 \caption{The iBeacon detail screens, including statistics}
 \end{figure}
 
-\subsubsection{Measurements and Insights}
+\subsection{Experimental Determination of Trilateration Fitness of iBeacon Measurements}
 
+\subsubsection*{Introduction}
 
+Using the implemented iBeacon Scanner prototype, the quality of the distance measurement has to be determined in a series of measurements. The goal is being able to decide if a trilateration based on this technology can provide meaningful position for indoor guides.
+
+\subsubsection*{Experimental Setup}
+
+To collect iBeacon measurements at different distances, the floor is prepared with ten equidistant marks at 1-10 meter distance and additional two marks at 15 and 20 meters.
+
+Both the beacon and the measuring device, an iPad mini 2 with iOS 8.1 and the iBeacon Scanner prototype, are mounted on an tripod. There are no obstacles obstructing the line of sight between sender and receiver. The tripod with the beacon remains fixed, while the tablet's tripod is moved from floor mark to floor mark, starting at the 20 meter mark and finishing with the tablet and beacon touching. At each distance, the arithmetic mean of the measurements collected during 15 seconds is calculated. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=0.3\textheight]{experiment}
+\caption{The tripod mounted iPad headed towards the sending beacon}
+\end{figure}
+
+This procedure is repeated with three different beacons:
+
+\begin{itemize}
+\item estimote beacon with 100ms advertising interval and +4dBm (highest setting) broadcasting power setting
+\item kontakt.io beacon with 100ms advertising interval and -12dBm (medium) broadcasting power
+\item estimote beacon with 950ms advertising interval and -12dBm (medium) broadcasting power
+\end{itemize}
+
+\subsubsection*{Measurements}
+
+The following table contains all the measurements for the three different beacons. For each distance, the arithmetic mean of the measured distances along with the sample's standard deviation (\(\sigma\)) and the median of the proxymity class (Prox.). The unit is always meters for are distance related numbers. For the proximity class, 3 stands for far, 2 for near and 1 for immediate \cite{clproximity}. 
+
+\begin{table}[h]
+\begin{tabular}{l|rrr|rrr|rrr}
+              & \multicolumn{3}{l|}{estimote 100ms} & \multicolumn{3}{l|}{kontakt.io 100ms} & \multicolumn{3}{l}{estimote 950ms} \\ \hline
+Real Distance & Mean   & \(\sigma\)         & Prox.     & Mean   & \(\sigma\)          & Prox.      & Mean  & \(\sigma\)         & Prox.     \\ \hline
+20            & 13,29  & 1,01           & 3         & 5,10   & 0,38            & 3          & 3,16  & 0,00           & 3         \\
+15            & 7,65   & 0,91           & 3         & 4,94   & 0,22            & 3          & 2,89  & 0,19           & 2         \\
+10            & 11,65  & 1,00           & 3         & 3,18   & 0,09            & 3          & 2,27  & 0,18           & 2         \\
+9             & 7,64   & 0,13           & 3         & 1,94   & 0,06            & 2          & 1,64  & 0,18           & 2         \\
+8             & 7,77   & 0,72           & 3         & 2,82   & 0,16            & 3          & 2,91  & 0,08           & 2         \\
+7             & 9,13   & 1,85           & 3         & 2,36   & 0,03            & 3          & 2,51  & 0,03           & 2         \\
+6             & 11,95  & 1,18           & 3         & 2,10   & 0,04            & 2          & 1,50  & 0,19           & 2         \\
+5             & 5,11   & 0,52           & 3         & 2,06   & 0,04            & 2          & 1,14  & 0,14           & 2         \\
+4             & 3,05   & 0,17           & 3         & 1,83   & 0,10            & 2          & 0,68  & 0,12           & 2         \\
+3             & 2,68   & 0,25           & 3         & 2,02   & 0,06            & 3          & 0,67  & 0,06           & 2         \\
+2             & 2,20   & 0,21           & 3         & 0,90   & 0,01            & 2          & 0,86  & 0,16           & 2         \\
+1             & 1,44   & 0,17           & 2         & 1,04   & 0,04            & 2          & 0,11  & 0,02           & 1         \\
+0             & 0,07   & 0,03           & 1         & 0,40   & 0,02            & 2          & 0,04  & 0,01           & 1        
+\end{tabular}
+\end{table}
+
+Although iOS provides one data update per second, some of the 15 updates received during the 15 seconds can be null in case no signals were received. This occurs more often with higher advertisement interval or at greater distances.
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=0.18\textheight]{diagram-beacons-gaps}
+\caption{Beacon measurements with gaps at 15m distance}
+\end{figure}
+
+The following diagram visualizes the mean distance plotted for every beacon.
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=0.3\textheight]{diagram-beacons}
+\caption{Plot of the beacon distance measurements}
+\end{figure}
+
+\subsubsection*{Interpretation and Insights}
+
+The data shows that the distance measurements based on the received signal strength of BLE beacons do not match the real distance. The measured distance does not even decrease continuously with decreasing actual distance. Generally, the correlation of the measured value and the real distance is too weak to serve as a basis for a precise trilateration, despite perfect conditions. 
+
+Regarding other complications like the dependency of the RSSI to the orientation of the device and signals obstructed by the human body beacons can be regarded as definitively unsuited for trilateration based positioning.
+
+The proximity class does not show the desired 
+However, excluding the third (high advertisement interval) beacon, the measurements of distances up to two meters are lower than the ones at 3-25 meters. So we can deduce vicinity up to 2 meters to a beacon by setting a threshold that depends on the used beacon's configuration.
+
+Despite iBeacon trilateration is not possible, marking single areas of interest (e.g. rooms, showcases, pictures) using one or more low-cost beacons based on the area's size is a promising way for triggering guide actions indoors with a low error rate. 
+
+%no trilateration
+%use only some trigger distances for near and immediate class, according to deployed beacons, don't rely on the api vicinity classes
 
 
 \section{Geographic Coordinates}

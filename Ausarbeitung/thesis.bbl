@@ -537,10 +537,10 @@
       \strng{fullhash}{5871df02418b571fa89639db706a66e9}
       \field{labelalpha}{µPickle}
       \field{sortinit}{H}
-      \field{labeltitle}{µPickle, a lightweight serialization library for Scala and Scala.js}
+      \field{labeltitle}{µPickle - a lightweight serialization library for Scala}
       \field{shorthand}{µPickle}
-      \field{title}{µPickle, a lightweight serialization library for Scala and Scala.js}
-      \field{urlday}{15}
+      \field{title}{µPickle - a lightweight serialization library for Scala}
+      \field{urlday}{20}
       \field{urlmonth}{03}
       \field{urlyear}{2015}
       \verb{url}
@@ -569,6 +569,27 @@
       \field{isbn}{1617290793}
       \field{title}{{Play for Scala: Covers Play 2}}
       \field{year}{2014}
+    \endentry
+    \entry{clproximity}{url}{}
+      \name{labelname}{1}{}{%
+        {{hash=bf6560f00cbeba2f0a8edc79c6a9690d}{Inc.}{I\bibinitperiod}{Apple}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=bf6560f00cbeba2f0a8edc79c6a9690d}{Inc.}{I\bibinitperiod}{Apple}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{bf6560f00cbeba2f0a8edc79c6a9690d}
+      \strng{fullhash}{bf6560f00cbeba2f0a8edc79c6a9690d}
+      \field{labelalpha}{Proximity}
+      \field{sortinit}{I}
+      \field{labeltitle}{CLBeacon Class Reference: CLProximity enumeration}
+      \field{shorthand}{Proximity}
+      \field{title}{CLBeacon Class Reference: CLProximity enumeration}
+      \field{urlday}{30}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb https://developer.apple.com/library/prerelease/ios/documentation/CoreLocation/Reference/CLBeacon_class/index.html#//apple_ref/c/tdef/CLProximity
+      \endverb
     \endentry
     \entry{xcodebeta}{url}{}
       \name{labelname}{1}{}{%

@@ -254,7 +254,7 @@ ISBN = {978-3-89721-876-5},
   year = 2012
 }
 
-@inproceedings{gps-prec,
+@inproceedings{gps-precision,
     author = {Ivo Musulin and David Brčić and Serdjo Kos},
     title = {A Study of Smartphone Satellite Positioning Performance at Sea Using GPS and GLONASS Systems},
     year = {2014},
@@ -416,14 +416,6 @@ urldate = {2015-03-14},
 shorthand = {Scala.js-0.6}
 }
 
-%TODO
-@url {upickle ,
-title = {µPickle, a lightweight serialization library for Scala and Scala.js},
-author = {Li Haoyi},
-url = {https://github.com/lihaoyi/upickle},
-urldate = {2015-03-15},
-shorthand = {µPickle}
-}
 
 @url {interview-eich,
 title = {Interview with Brendan Eich, the creator of JavaScript},
@@ -514,6 +506,15 @@ author = {Alexis Sellier and contributors},
 url = {http://lesscss.org/about/#team},
 urldate = {2015-03-22},
 shorthand = {less}
+}
+
+@url {clproximity,
+title = {CLBeacon Class Reference: CLProximity enumeration},
+author = {Apple Inc.},
+url = {https://developer.apple.com/library/prerelease/ios/documentation/CoreLocation/Reference/CLBeacon_class/index.html#//apple_ref/c/tdef/CLProximity
+},
+urldate = {2015-03-30},
+shorthand = {Proximity}
 }
 
 

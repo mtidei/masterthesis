@@ -12,33 +12,39 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.4}{\ignorespaces The iBeacon detail screens, including statistics\relax }}{16}{figure.caption.60}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Difference in meters between the geoid and the ellipsoid \cite {nasageoid}\relax }}{17}{figure.caption.65}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces The tripod mounted iPad headed towards the sending beacon\relax }}{17}{figure.caption.64}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces View angle error on Google (left) and Apple (right) maps\relax }}{19}{figure.caption.69}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Beacon measurements with gaps at 15m distance\relax }}{18}{figure.caption.67}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Couchbase Lite and Sync Gateways. From \cite {couchbase-lite}\relax }}{28}{figure.caption.152}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Plot of the beacon distance measurements\relax }}{19}{figure.caption.68}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.8}{\ignorespaces The Play framework stack. From \cite {play-book} with kind permission.\relax }}{30}{figure.caption.158}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Difference in meters between the geoid and the ellipsoid \cite {nasageoid}\relax }}{20}{figure.caption.73}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.9}{\ignorespaces View angle error on Google (left) and Apple (right) maps\relax }}{22}{figure.caption.77}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces CA Guite Architecture Overview\relax }}{33}{figure.caption.162}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Couchbase Lite and Sync Gateways. From \cite {couchbase-lite}\relax }}{31}{figure.caption.160}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Layer Model of the Museum Guide Application\relax }}{38}{figure.caption.237}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Layer model with virtual sensors\relax }}{39}{figure.caption.238}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Data flow between the lower layers of the Sensorbase framework\relax }}{40}{figure.caption.239}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Sequence Diagram for the Sensor Layers\relax }}{41}{figure.caption.240}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Simplified Class Diagram for Sensor Data Processing\relax }}{42}{figure.caption.241}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces The Play framework stack. From \cite {play-book} with kind permission.\relax }}{33}{figure.caption.166}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces TypeScript in IntelliJ IDEA\relax }}{47}{figure.caption.255}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces CA Guite Architecture Overview\relax }}{36}{figure.caption.170}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Layer Model of the Museum Guide Application\relax }}{41}{figure.caption.245}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Layer model with virtual sensors\relax }}{42}{figure.caption.246}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Data flow between the lower layers of the Sensorbase framework\relax }}{43}{figure.caption.247}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Sequence Diagram for the Sensor Layers\relax }}{44}{figure.caption.248}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Simplified Class Diagram for Sensor Data Processing\relax }}{45}{figure.caption.249}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces TypeScript in IntelliJ IDEA\relax }}{50}{figure.caption.263}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
