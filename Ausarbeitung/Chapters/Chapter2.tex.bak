@@ -350,26 +350,22 @@ The following diagram visualizes the mean distance plotted for every beacon.
 \caption{Plot of the beacon distance measurements}
 \end{figure}
 
-\subsubsection*{Interpretation and Insights}
+\subsubsection*{Insights and Conclusion}
 
 The data shows that the distance measurements based on the received signal strength of BLE beacons do not match the real distance. The measured distance does not even decrease continuously with decreasing actual distance. Generally, the correlation of the measured value and the real distance is too weak to serve as a basis for a precise trilateration, despite perfect conditions. 
 
 Regarding other complications like the dependency of the RSSI to the orientation of the device and signals obstructed by the human body beacons can be regarded as definitively unsuited for trilateration based positioning.
 
-The proximity class does not show the desired 
-However, excluding the third (high advertisement interval) beacon, the measurements of distances up to two meters are lower than the ones at 3-25 meters. So we can deduce vicinity up to 2 meters to a beacon by setting a threshold that depends on the used beacon's configuration.
+The proximity class is not consistent with all beacon configurations, neither. However, excluding the third (high advertisement interval) beacon, the measurements of distances up to two meters are lower than the ones at 3-25 meters. So we can deduce vicinity up to 2 meters to a beacon by setting a known threshold that depends on the used beacon's configuration.
 
 Despite iBeacon trilateration is not possible, marking single areas of interest (e.g. rooms, showcases, pictures) using one or more low-cost beacons based on the area's size is a promising way for triggering guide actions indoors with a low error rate. 
-
-%no trilateration
-%use only some trigger distances for near and immediate class, according to deployed beacons, don't rely on the api vicinity classes
 
 
 \section{Geographic Coordinates}
 
 \subsection{Introduction}
 
-Since we need to work with GPS data on the mobile front end and model outdoor sites like parks on the back end, it is fundamental to understand how the geographic coordinate system works and what kind of problems we may encounter.
+Since we need to work with GPS coordinates on the mobile front end and use geographic coordinates to model sites on the back end, it is fundamental to understand how the geographic coordinate system works and what kind of problems we may encounter.
 
 \subsection{Standards}
 
@@ -699,7 +695,7 @@ Unfortunately, no precise definition exists for a NoSQL database system. In thei
 \item Schemaless
 \end{itemize}
 
-As they emphasize in their book, they think relational databases will not disappear. But the innovation is seeing relational databases as an option among others, and choosing the one that best fits a project.\footnote{Sometimes that even means choosing different database types for several parts of a single system - what is called polyglot persistence.} 
+The authors think relational databases will not disappear. But the innovation is seeing relational databases as an option among others, and choosing the one that best fits a project.\footnote{Sometimes that even means choosing different database types for several parts of a single system - what is called polyglot persistence.} 
 
 \subsection{Couchbase}
 

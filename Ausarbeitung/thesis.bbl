@@ -387,6 +387,28 @@
       \verb http://cocoapods.org/
       \endverb
     \endentry
+    \entry{domaindriven}{book}{}
+      \name{labelname}{1}{}{%
+        {{hash=a0a1e71392fc13041b04f743c6727ca2}{Evans}{E\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=a0a1e71392fc13041b04f743c6727ca2}{Evans}{E\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Boston, MA, USA}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley Longman Publishing Co., Inc.}%
+      }
+      \strng{namehash}{a0a1e71392fc13041b04f743c6727ca2}
+      \strng{fullhash}{a0a1e71392fc13041b04f743c6727ca2}
+      \field{labelalpha}{Evans,\addhighpenspace2003}
+      \field{sortinit}{E}
+      \field{labeltitle}{Domain-Driven Design: Tacking Complexity In the Heart of Software}
+      \field{isbn}{0321125215}
+      \field{title}{Domain-Driven Design: Tacking Complexity In the Heart of Software}
+      \field{year}{2003}
+    \endentry
     \entry{gof}{book}{}
       \name{labelname}{4}{}{%
         {{hash=abd927bf30d6566be0ac66a66e893fdd}{Gamma}{G\bibinitperiod}{Erich}{E\bibinitperiod}{}{}{}{}}%

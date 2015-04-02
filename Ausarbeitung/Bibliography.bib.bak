@@ -221,7 +221,7 @@ ISBN = {978-331-90219-1-1 (Druckausgabe)},
  publisher = {Addison-Wesley Professional},
 } 
 
-@book {js-goodparts,
+@book{js-goodparts,
 author = {Crockford, Douglas},
 title = {JavaScript:The Good Parts},
 year = {2008},
@@ -231,6 +231,15 @@ pages = {XIII, 163 S.},
 edition = {1st},
 ISBN = {978-3-89721-876-5},
 }
+
+@book{domaindriven,
+ author = {Evans},
+ title = {Domain-Driven Design: Tacking Complexity In the Heart of Software},
+ year = {2003},
+ isbn = {0321125215},
+ publisher = {Addison-Wesley Longman Publishing Co., Inc.},
+ address = {Boston, MA, USA},
+} 
 
 @article{positioning,
     author = {J. Borenstein and H. R. Everett and L. Feng and D. Wehe},
