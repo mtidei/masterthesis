@@ -48,66 +48,100 @@ A site is composed of several areas, geographically delimited by a list of coord
 An area has a textual description and optionally (even though in productive systems very likely) up to three audio files containing explanations as voice recordings and other fitting audio material. These three files reflect a rising level of detail. 
 Furthermore, several images and videos can be added to the area.
 
-With a normal relational database, pretty much of the entities would be saved in separate tables in a normalized way using primary and foreign keys to represent the relationships between the tables. In case of the one to many relation between an area and it's images, the usual way is to define a separate table "Image" and to store the image or an url beside the areas id they belong to.
+With a normal relational database, pretty much of the entities would be saved in separate tables in a normalized way using primary and foreign keys to represent the relationships between the tables. In case of the one to many relation between an area and it's images, the usual way is to define a separate table "Image" and to store a title and the image or an url beside the areas id they belong to.
 
-With a document-oriented database, data is commonly stored in a more aggregated way. In contrast to the records of a relational database's, records of document-oriented database have a more complex structure allowing lists and nesting. In \cite{nosqldistilled}, the authors suggest the term "aggregate" for these records. They adopted this term from \cite{domaindriven} "Domain-Driven Design". An aggregate is a set of objects used together. That means they are loaded and saved to the database as a unit and they determine the unit to be locked for the management of consistency.  
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{relational-db-1n}
+\caption{A 1:n relationship in a classical relational database}
+\end{figure}
 
-As is often the case, there is not only one right solution. The precise level of aggregation depends mainly on how the data will be accessed later. 
+With a document-oriented database, data is commonly stored in a more aggregated way. In contrast to the records of a relational database, records of document-oriented database have a more complex structure allowing lists and nesting. In \cite{nosqldistilled}, the authors suggest the term "aggregate" for these type of records. They adopted this term from \cite{domaindriven} "Domain-Driven Design". An aggregate is a set of objects used together. That means they are loaded and saved to the database as a unit and they determine the unit to be locked for the management of consistency.  
+
+So the precise level of aggregation depends mainly on how the data will be accessed later, and as is often the case, there is not only one right solution. 
 
 From a site modeling point of view at the back-end, single areas and single beacons can be viewed as aggregates, allowing more granular modifications and enabling collaborative editing of a single site.
-From a front-end point of view, a whole site definition can be regarded an aggregate. During initialization, the whole site is read with all areas and beacons. This can be done with a single database query. On the mobile device, sites are only read and never modified.
- 
+From a front-end point of view, a whole site definition can be regarded an aggregate. During initialization, the whole site is read with all areas and beacons. This can be done with a single database query. On the mobile device, sites are only read and never modified, so that there is no problem with a bigger aggregate that has to be locked.
 
-The following JSON-document shows a simplified site aggregate containing one area and one beacon.
+Since having a working copy of a site for modeling in the back-end that is not deployed to the mobile devices until it is marked as finished has many benefits, I decided to take a hybrid solution. On the back-end, a site is modeled with finer- grained aggregates having separate documents for sites, areas and beacons. These aggregates lies in a separate modeling database (or bucket, as they are called in Couchbase) that is not synchronized with the mobile devices.
+
+At the point a the model is marked as finished, all these documents are merged into one big site aggregate, containing all the data. This document is written to the shared database and is automatically synchronized with the mobile databases as soon as they have networking connectivity. 
+
+The site model can the be refined and edited at the back-end without compromising the deployed version. For productive usage, an additional shared testing database synchronized only with a testing mobile device would be necessary. The site aggregate could first be written to this database for testing before deploying it to the rest of the mobile devices. This functionality can be added at a later stage and is out of scope of this thesis.
+ 
+The following JSON-document shows a simplified site aggregate containing one area with the simplest possible polygon and one beacon, to get an idea of the structure.
 
 \begin{lstlisting}
-key: "site-CXN01"
+key: "Site-CXN01"
 value: {
  "type":"city",
  "name":"Konstanz",
  "description":"",
  "areas": [{
-     "id":"area-51",
-     "type":"area",
-	 "name":"Konstanz Cathedral", 
-	 "description":"A historical building in Konstanz, ...",
-	 "locationDefinition": {
-	 	"type": "polygon",
-	 	"coordinates": [{"lat":47.663093, "lon":9.176371},{"lat":47.663336, "lon":9.175215},{"lat":47.663673, "lon":9.176075}],
-	 	"floor": 1
-	 }, 
-	 "images":["cathedral-panorama.png","cathedral-north-west.png"], 
+   "id":"area-51",
+   "type":"area",
+   "name":"Konstanz Cathedral", 
+   "description":"A historical building in Konstanz, ...",
+   "locationDefinition": {
+	 "type": "polygon",
+	 "coordinates": [
+	   {"lat":47.663093, "lon":9.176371},
+	   {"lat":47.663336, "lon":9.175215},
+	   {"lat":47.663673, "lon":9.176075}]}, 
+	 "images":["cathedral-panorama.png","cathedral-nw.png"], 
 	 "audio":{
-	 	"level1": "cathedral-1.mp3",
-	 	"level2": "cathedral-2.mp3",
-	 	"level3": "cathedral-3.mp3"
-	 }, 
+	   "level1": "cathedral-1.mp3",
+	   "level2": "cathedral-2.mp3",
+	   "level3": "cathedral-3.mp3"}, 
 	 "videos":[]}],
-  "beacons":  [{
-  	"id":"beacon-42",
-  	"uuid":"F7826DA6-4FA2-4E98-8024-BC5B71E0893E",
-  	"major":"40231",
-  	"minor":"203",
-  	"coordinates": {"lat":47.663278, "lon":9.176214}
-  }]
+ "beacons": [{
+   "id":"beacon-42",
+   "uuid":"F7826DA6-4FA2-4E98-8024-BC5B71E0893E",
+   "major":"40231",
+   "minor":"203",
+   "coordinates": {"lat":47.663278, "lon":9.176214}}]
 }
 \end{lstlisting}
 
-Although NoSQL databases are schema-less, it's important to keep in mind that there still is an implicit data structure the application relies on. The risk of malformed data ca be handled with automated tests. In case of manually produced JSON documents, a JSON Schema can be used for asserting a valid structure of a JSON file, similar to a DTD (Data Type Definition) in XML (http://json-schema.org).
+The binary data of images, audio files and videos can be stored outside of the document, maintaining only a reference to them inside the document (in this sample, a file name was used to represent a reference). Storing binary data outside of the document avoids wasting storage capacity due to inflation of data represented in a base64-encoded way and reduces the parsing time of the document.
+For this purpose, Couchbase offers the concept of attachments, that can be associated to a document but are stored separately in a binary way. Another advantage is a higher efficiency of the replication, since attachments are not retransferred when the associated document was changed but only on real modifications of the attachment itself \cite{cbattachment}.
+
+Although NoSQL databases are often referred to as being schema-less, it's important to keep in mind that there still is an implicit schema: the data structure the application relies on. The risk of malformed data can be handled with automated tests. Especially in case of manually produced JSON documents or JSON data coming from a foreign system, a JSON schema can be used for asserting a valid structure of a JSON file, similar to a DTD (Data Type Definition) in XML (http://json-schema.org).
 
 \subsection{Sensor Data}
 
-Sensor data is saved to the Couchbase database to allow replaying it for development, testing, presentations and for analytics presented in the system's web backend. 
+Sensor data measurements is saved to the Couchbase database to allow replaying it for development, testing, presentations and for analytics presented in the system's web back-end. Thus, the producer and consumer of the data is switched here, having the data produced inside the front-end, written into mobile database and later synchronized over the network with the Couchbase database for enabling read-only access by the back-end.  
 
-The single measurements can be very high frequent, for example in case of accelerometer data, that is updated every 10 millisecons. New beacon measurements are available every second. Events on a higher logical level, like "entering region a", will occur less frequently.
+\begin{figure}[H]
+\centering
+\includegraphics[height=0.5\textwidth]{data-model-trace}
+\caption{Data model of a sensor trace}
+\end{figure}
+
+The single measurements can be very high frequent, for example in case of accelerometer data, that is updated every 10 milliseconds. Updates on beacon measurements and GPS measurements are typically available every second. Events on a higher logical level, like "entering region a", will occur much less frequently.
+
+The two use cases are recording data for development and testing and recording visitor movements for analytics.
+Low level testing sensor traces, containing 100 measurements per second for each sensor, will only be recorded over a limited time period for testing and profiling algorithms. 
+The recording duration for analytic purposes during an actual visit can extend to hours, but at the same time only higher level data is recorded and thus the data amount grow much slower. Therefore, saving a trace into a single aggregate is considered feasible for both use cases.
+
+The following listing shows an exemplary trace as JSON document.
 
 \begin{lstlisting}[basicstyle=\footnotesize]
-key: SENSORTRACE-CXN01
+key: Sensortrace-CXN01
 value: {
   "date": "2015-02-12",
-  "time": "20:15",
+  "timestamp": 12345678.35,
+  "site": "Site-CXN01",
+  "data": [
+    {"type":"accelerometer", "timestamp": 12345678.350, "data": [1.235, 0.364, 0.021]},
+    {"type":"gyroscope", 
+    {"type":"gps", 
+    {"type":"beacons", 
+    
+    
+  ]
   "accelerometer": [
-    {"timestamp": 12345678.35, "data": [1.235, 0.364, 0.021]},
+    {"timestamp": , "data": [1.235, 0.364, 0.021]},
     {"timestamp": 12345678.40, "data": [1.217, 0.378, 0.009]},
     ...
   ],
@@ -128,7 +162,7 @@ value: {
   ],
   "gps": [
     {"timestamp": 12345679.35, "data": [1.44, 10.021]},
-    {"timestamp": 12345680.36, "data": [1.44, 10.009]},
+    {"timestamp": 12345680.36, "data": [47.663278, 10.009]},
     ...
   ],
 }

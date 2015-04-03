@@ -527,6 +527,15 @@ shorthand = {Proximity}
 }
 
 
+@url {cbattachment,
+title = {Attachment | Couchbase - Mobile Developers},
+author = {Couchbase Inc.},
+url = {http://developer.couchbase.com/mobile/develop/guides/couchbase-lite/native-api/attachment/index.html},
+urldate = {2015-02-04},
+shorthand = {Attachment}
+}
+
+
 @url {key,
 title = {},
 author = {},

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.16)  2 APR 2015 19:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.16)  3 APR 2015 19:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1834,14 +1834,14 @@ Overfull \hbox (3.28644pt too wide) in paragraph at lines 64--66
 p-pli-ca-tions like weather
  []
 
-[6] [7] <Figures/sensors-growth.png, id=774, 655.44875pt x 451.6875pt>
+[6] [7] <Figures/sensors-growth.png, id=776, 655.44875pt x 451.6875pt>
 File: Figures/sensors-growth.png Graphic file (type png)
 
 <use Figures/sensors-growth.png>
 Package pdftex.def Info: Figures/sensors-growth.png used on input line 109.
 (pdftex.def)             Requested size: 198.79642pt x 136.99252pt.
  [8 <./Figures/sensors-growth.png>] [9]
-<Figures/mems-rot.png, id=794, 915.42pt x 666.49pt>
+<Figures/mems-rot.png, id=796, 915.42pt x 666.49pt>
 File: Figures/mems-rot.png Graphic file (type png)
  <use Figures/mems-rot.png>
 Package pdftex.def Info: Figures/mems-rot.png used on input line 147.
@@ -1853,34 +1853,34 @@ Overfull \hbox (7.16238pt too wide) in paragraph at lines 220--221
 phones was ex-am-ined in [[][]Musulin,
  []
 
-[13] [14] <Pictures/proto1.png, id=845, 1541.76pt x 2055.68pt>
+[13] [14] <Pictures/proto1.png, id=847, 1541.76pt x 2055.68pt>
 File: Pictures/proto1.png Graphic file (type png)
 
 <use Pictures/proto1.png>
 Package pdftex.def Info: Pictures/proto1.png used on input line 274.
 (pdftex.def)             Requested size: 205.47026pt x 273.98505pt.
  [15]
-<Pictures/proto2.png, id=851, 1541.76pt x 2055.68pt>
+<Pictures/proto2.png, id=853, 1541.76pt x 2055.68pt>
 File: Pictures/proto2.png Graphic file (type png)
  <use Pictures/proto2.png>
 Package pdftex.def Info: Pictures/proto2.png used on input line 282.
 (pdftex.def)             Requested size: 205.47026pt x 273.98505pt.
 
-<Pictures/proto3.png, id=852, 1541.76pt x 2055.68pt>
+<Pictures/proto3.png, id=854, 1541.76pt x 2055.68pt>
 File: Pictures/proto3.png Graphic file (type png)
  <use Pictures/proto3.png>
 Package pdftex.def Info: Pictures/proto3.png used on input line 283.
 (pdftex.def)             Requested size: 205.47026pt x 273.98505pt.
 
 [16 <./Pictures/proto1.png> <./Pictures/proto2.png> <./Pictures/proto3.png>]
-<Pictures/experiment.png, id=857, 1029.0445pt x 1502.0115pt>
+<Pictures/experiment.png, id=859, 1029.0445pt x 1502.0115pt>
 File: Pictures/experiment.png Graphic file (type png)
 
 <use Pictures/experiment.png>
 Package pdftex.def Info: Pictures/experiment.png used on input line 301.
 (pdftex.def)             Requested size: 140.78354pt x 205.494pt.
  [17 <./Pictures/experiment.png>]
-<Figures/diagram-beacons-gaps.png, id=866, 960.58875pt x 421.575pt>
+<Figures/diagram-beacons-gaps.png, id=868, 960.58875pt x 421.575pt>
 File: Figures/diagram-beacons-gaps.png Graphic file (type png)
 
 <use Figures/diagram-beacons-gaps.png>
@@ -1888,7 +1888,7 @@ Package pdftex.def Info: Figures/diagram-beacons-gaps.png used on input line 34
 1.
 (pdftex.def)             Requested size: 280.92343pt x 123.29013pt.
 
-<Figures/diagram-beacons.png, id=867, 982.67125pt x 567.11874pt>
+<Figures/diagram-beacons.png, id=869, 982.67125pt x 567.11874pt>
 File: Figures/diagram-beacons.png Graphic file (type png)
 
 <use Figures/diagram-beacons.png>
@@ -1896,7 +1896,7 @@ Package pdftex.def Info: Figures/diagram-beacons.png used on input line 349.
 (pdftex.def)             Requested size: 356.07051pt x 205.494pt.
  [18 <./Figures/diagram-beacons-gaps.png>]
 [19 <./Figures/diagram-beacons.png>]
-<Figures/earths_geoidII.png, id=883, 744.7825pt x 469.755pt>
+<Figures/earths_geoidII.png, id=885, 744.7825pt x 469.755pt>
 File: Figures/earths_geoidII.png Graphic file (type png)
 
 <use Figures/earths_geoidII.png>
@@ -1910,7 +1910,7 @@ LaTeX Warning: Command \textdegree invalid in math mode on input line 409.
 LaTeX Warning: Command \textdegree invalid in math mode on input line 409.
 
 Missing character: There is no ° in font cmr10!
-[21] <Pictures/google-apple-maps.png, id=901, 1625.07124pt x 624.3325pt>
+[21] <Pictures/google-apple-maps.png, id=903, 1625.07124pt x 624.3325pt>
 File: Pictures/google-apple-maps.png Graphic file (type png)
 
 <use Pictures/google-apple-maps.png>
@@ -1947,14 +1947,14 @@ be-cause the string value is wrapped
  []
 
 [26] [27] [28] [29] [30]
-<Pictures/couchbase-lite.png, id=1030, 421.575pt x 306.54526pt>
+<Pictures/couchbase-lite.png, id=1032, 421.575pt x 306.54526pt>
 File: Pictures/couchbase-lite.png Graphic file (type png)
 
 <use Pictures/couchbase-lite.png>
 Package pdftex.def Info: Pictures/couchbase-lite.png used on input line 710.
 (pdftex.def)             Requested size: 235.50787pt x 171.24327pt.
  [31 <./Pictures/couchbase-lite.png>] [32]
-<Pictures/play-stack.png, id=1052, 781.92125pt x 343.2825pt>
+<Pictures/play-stack.png, id=1054, 781.92125pt x 343.2825pt>
 File: Pictures/play-stack.png Graphic file (type png)
 
 <use Pictures/play-stack.png>
@@ -1966,7 +1966,7 @@ Chapter 3.
 ------------------------------------------------------------------------------
  3 System Overview
 ------------------------------------------------------------------------------
-<Figures/system-overview.png, id=1068, 658.3797pt x 612.1269pt>
+<Figures/system-overview.png, id=1070, 658.3797pt x 612.1269pt>
 File: Figures/system-overview.png Graphic file (type png)
 
 <use Figures/system-overview.png>
@@ -1975,19 +1975,34 @@ Package pdftex.def Info: Figures/system-overview.png used on input line 24.
  [35
 
 ]
-<Figures/data-model-site.png, id=1074, 599.1183pt x 322.0833pt>
+<Figures/data-model-site.png, id=1076, 599.1183pt x 322.0833pt>
 File: Figures/data-model-site.png Graphic file (type png)
 
 <use Figures/data-model-site.png>
 Package pdftex.def Info: Figures/data-model-site.png used on input line 43.
 (pdftex.def)             Requested size: 388.27956pt x 208.73653pt.
- [36 <./Figures/system-overview.png>] [37 <./Figures/data-model-site.png>] [38]
- [39]) (./Chapters/Chapter4.tex [40]
+ [36 <./Figures/system-overview.png>]
+<Figures/relational-db-1n.png, id=1083, 654.2844pt x 181.6386pt>
+File: Figures/relational-db-1n.png Graphic file (type png)
+
+<use Figures/relational-db-1n.png>
+Package pdftex.def Info: Figures/relational-db-1n.png used on input line 55.
+(pdftex.def)             Requested size: 292.22987pt x 81.12685pt.
+ [37 <./Figures/data-model-site.png> <./Figures/relational-db-1n.png>] [38] [39
+]
+<Figures/data-model-trace.png, id=1135, 479.6319pt x 409.2891pt>
+File: Figures/data-model-trace.png Graphic file (type png)
+
+<use Figures/data-model-trace.png>
+Package pdftex.def Info: Figures/data-model-trace.png used on input line 117.
+(pdftex.def)             Requested size: 244.60902pt x 208.73653pt.
+ [40 <./Figures/data-model-trace.png>])
+(./Chapters/Chapter4.tex [41] [42]
 Chapter 4.
 ------------------------------------------------------------------------------
  4 CA Guide Mobile Application
 ------------------------------------------------------------------------------
-[41
+[43
 
 ] (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
@@ -1995,83 +2010,83 @@ File: lstlang1.sty 2014/03/04 1.5c listings language file
 (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
 )
-<Figures/layers-guide-app.png, id=1181, 964.5636pt x 575.0283pt>
+<Figures/layers-guide-app.png, id=1207, 964.5636pt x 575.0283pt>
 File: Figures/layers-guide-app.png Graphic file (type png)
 
 <use Figures/layers-guide-app.png>
 Package pdftex.def Info: Figures/layers-guide-app.png used on input line 59.
 (pdftex.def)             Requested size: 375.7232pt x 223.98813pt.
- [42]
-<Figures/layers-guide-refined-app.png, id=1204, 827.9733pt x 606.1044pt>
+ [44]
+<Figures/layers-guide-refined-app.png, id=1231, 827.9733pt x 606.1044pt>
 File: Figures/layers-guide-refined-app.png Graphic file (type png)
 
 <use Figures/layers-guide-refined-app.png>
 Package pdftex.def Info: Figures/layers-guide-refined-app.png used on input lin
 e 69.
 (pdftex.def)             Requested size: 375.7232pt x 275.03806pt.
- [43 <./Figures/layers-guide-app.png>]
-<Figures/layers-app-dataflow-accelerometer.png, id=1211, 827.9733pt x 593.0958p
+ [45 <./Figures/layers-guide-app.png>]
+<Figures/layers-app-dataflow-accelerometer.png, id=1239, 827.9733pt x 593.0958p
 t>
 File: Figures/layers-app-dataflow-accelerometer.png Graphic file (type png)
  <use Figures/layers-app-dataflow-accelerometer.png>
 Package pdftex.def Info: Figures/layers-app-dataflow-accelerometer.png used on 
 input line 79.
 (pdftex.def)             Requested size: 375.7232pt x 269.13501pt.
- [44 <./Figures/layers-guide-refined-app.png>]
+ [46 <./Figures/layers-guide-refined-app.png>]
 File: Figures/layers-app-dataflow-accelerometer.png Graphic file (type png)
  <use Figures/layers-app-dataflow-accelerometer.png>
 Package pdftex.def Info: Figures/layers-app-dataflow-accelerometer.png used on 
 input line 89.
 (pdftex.def)             Requested size: 375.7232pt x 269.13501pt.
 
-[45 <./Figures/layers-app-dataflow-accelerometer.png>]
-<Figures/class-diagram-guide-app.png, id=1223, 1089.8316pt x 1005.5166pt>
+[47 <./Figures/layers-app-dataflow-accelerometer.png>]
+<Figures/class-diagram-guide-app.png, id=1252, 1089.8316pt x 1005.5166pt>
 File: Figures/class-diagram-guide-app.png Graphic file (type png)
 
 <use Figures/class-diagram-guide-app.png>
 Package pdftex.def Info: Figures/class-diagram-guide-app.png used on input line
  105.
 (pdftex.def)             Requested size: 417.47307pt x 385.16887pt.
- [46] [47 <./Figures/class-diagram-guide-app.png>]) (./Chapters/Chapter5.tex [4
-8]
+ [48] [49 <./Figures/class-diagram-guide-app.png>]) (./Chapters/Chapter5.tex [5
+0]
 Chapter 5.
 ------------------------------------------------------------------------------
  5 CA Guide Back End
 ------------------------------------------------------------------------------
-[49
+[51
 
-] [50] <Pictures/typescript-idea.png, id=1266, 958.58125pt x 350.30875pt>
+] [52] <Pictures/typescript-idea.png, id=1299, 958.58125pt x 350.30875pt>
 File: Pictures/typescript-idea.png Graphic file (type png)
 
 <use Pictures/typescript-idea.png>
 Package pdftex.def Info: Pictures/typescript-idea.png used on input line 62.
 (pdftex.def)             Requested size: 375.7232pt x 137.30405pt.
- [51] [52 <./Pictures/typescript-idea.png>]
+ [53] [54 <./Pictures/typescript-idea.png>]
 Overfull \hbox (3.46877pt too wide) in paragraph at lines 105--106
 \T1/cmr/m/n/10.95 ReactiveCouchbase is an open-source database driver for con-n
 ect-ing a Couch-base database
  []
 
-[53] [54] [55]) (./Chapters/Chapter6.tex [56]
+[55] [56] [57]) (./Chapters/Chapter6.tex [58]
 Chapter 6.
 ------------------------------------------------------------------------------
  6 System Review
 ------------------------------------------------------------------------------
-) (./Chapters/Chapter7.tex [57
+) (./Chapters/Chapter7.tex [59
 
 ]
 Chapter 7.
 ------------------------------------------------------------------------------
  7 Conclusion
 ------------------------------------------------------------------------------
-) (./Appendices/AppendixA.tex [58
+) (./Appendices/AppendixA.tex [60
 
-] [59]
+] [61]
 Appendix A.
 ------------------------------------------------------------------------------
  A JSON Site Modelling File
 ------------------------------------------------------------------------------
-) [60
+) [62
 
 ]
 ------------------------------------------------------------------------------
@@ -2089,7 +2104,7 @@ Overfull \hbox (12.22305pt too wide) in paragraph at lines 409--409
 es-
  []
 
-[61
+[63
 
 
 ]
@@ -2098,7 +2113,7 @@ Overfull \hbox (31.70657pt too wide) in paragraph at lines 409--409
 tions, 2014. \T1/cmr/m/sc/10.95 isbn\T1/cmr/m/n/10.95 : 1617290793. 
  []
 
-[62]
+[64]
 
 Package biblatex Warning: No driver for entry type 'url'.
 (biblatex)                Using fallback driver on input line 410.
@@ -2145,7 +2160,7 @@ Overfull \hbox (10.44646pt too wide) in paragraph at lines 410--410
 [][]$\T1/cmtt/m/n/10.95 http :
  []
 
-[63]
+[65]
 
 Package biblatex Warning: No driver for entry type 'url'.
 (biblatex)                Using fallback driver on input line 410.
@@ -2201,7 +2216,7 @@ Overfull \hbox (4.9514pt too wide) in paragraph at lines 410--410
 /
  []
 
-[64]
+[66]
 
 Package biblatex Warning: No driver for entry type 'url'.
 (biblatex)                Using fallback driver on input line 410.
@@ -2212,6 +2227,10 @@ Overfull \hbox (13.61339pt too wide) in paragraph at lines 410--410
 0.95 : [][]$\T1/cmtt/m/n/10.95 https : / / developer . apple . com / xcode / do
 wnloads/$[][]
  []
+
+
+Package biblatex Warning: No driver for entry type 'url'.
+(biblatex)                Using fallback driver on input line 410.
 
 
 Package biblatex Warning: No driver for entry type 'url'.
@@ -2282,11 +2301,11 @@ Package biblatex Warning: No driver for entry type 'url'.
 Package biblatex Warning: No driver for entry type 'url'.
 (biblatex)                Using fallback driver on input line 410.
 
+[67]
 
 Package biblatex Warning: No driver for entry type 'url'.
 (biblatex)                Using fallback driver on input line 410.
 
-[65]
 
 Package biblatex Warning: No driver for entry type 'url'.
 (biblatex)                Using fallback driver on input line 410.
@@ -2302,7 +2321,7 @@ mr/m/sc/10.95 url\T1/cmr/m/n/10.95 : [][]$\T1/cmtt/m/n/10.95 http : / / definit
 elytyped .
  []
 
-[66]
+[68]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 412.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 412.
  (./thesis.aux (./htwg/cover.aux) (./htwg/title.aux) (./htwg/abstract.aux)
@@ -2316,8 +2335,8 @@ Package rerunfilecheck Warning: File `thesis.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: AC2912E627BBD1046B77702CC4C5F8B2;22533
-(rerunfilecheck)             After:  8C9AE42249098351BDFE2608879A299E;22533.
+(rerunfilecheck)             Before: 8C9AE42249098351BDFE2608879A299E;22533
+(rerunfilecheck)             After:  832BA261BC3176047EF109F55FE60DD4;22533.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
@@ -2327,129 +2346,180 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 412.
  ) 
 Here is how much of TeX's memory you used:
- 34211 strings out of 493117
- 627056 string characters out of 6135432
- 1150663 words of memory out of 5000000
- 36508 multiletter control sequences out of 15000+600000
+ 34254 strings out of 493117
+ 627839 string characters out of 6135432
+ 1173676 words of memory out of 5000000
+ 36517 multiletter control sequences out of 15000+600000
  29774 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,12n,84p,994b,1226s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,12n,84p,994b,1862s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.83} has been referenced but does not ex
 ist, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.82} has been referenced but does not exis
 t, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.273} has been referenced but does no
+pdfTeX warning (dest): name{figure.caption.274} has been referenced but does no
 t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.255} has been referenced but does no
+pdfTeX warning (dest): name{figure.caption.260} has been referenced but does no
 t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{dummy.332} has been referenced but does not exist, 
+pdfTeX warning (dest): name{figure.caption.259} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.258} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.257} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.256} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{dummy.333} has been referenced but does not exist, 
 replaced by a fixed one
 
-pdfTeX warning (dest): name{appendix.331} has been referenced but does not exis
+pdfTeX warning (dest): name{appendix.332} has been referenced but does not exis
 t, replaced by a fixed one
 
-pdfTeX warning (dest): name{section.330} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.328} has been referenced but does not ex
+pdfTeX warning (dest): name{subsection.330} has been referenced but does not ex
 ist, replaced by a fixed one
 
-pdfTeX warning (dest): name{section.327} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.326} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.324} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.322} has been referenced but does not ex
+pdfTeX warning (dest): name{subsection.329} has been referenced but does not ex
 ist, replaced by a fixed one
 
-pdfTeX warning (dest): name{section.320} has been referenced but does not exist
+pdfTeX warning (dest): name{section.328} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{chapter.319} has been referenced but does not exist
+pdfTeX warning (dest): name{chapter.327} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{subsubsection.316} has been referenced but does not
+pdfTeX warning (dest): name{section.326} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.325} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.324} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.323} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.322} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.321} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.320} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.318} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.315} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.311} has been referenced but does not
+pdfTeX warning (dest): name{subsubsection.317} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.310} has been referenced but does not ex
+pdfTeX warning (dest): name{subsection.316} has been referenced but does not ex
 ist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsubsection.308} has been referenced but does not
+pdfTeX warning (dest): name{subsubsection.314} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.306} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.305} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.303} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.295} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.276} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.275} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.274} has been referenced but does not
+pdfTeX warning (dest): name{subsubsection.313} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsubsection.272} has been referenced but does not
+pdfTeX warning (dest): name{subsubsection.312} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.271} has been referenced but does not ex
+pdfTeX warning (dest): name{subsection.311} has been referenced but does not ex
 ist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsection.269} has been referenced but does not ex
+pdfTeX warning (dest): name{subsubsection.310} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.309} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.308} has been referenced but does not ex
 ist, replaced by a fixed one
 
-pdfTeX warning (dest): name{section.267} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.265} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.264} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.261} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.260} has been referenced but does not ex
+pdfTeX warning (dest): name{subsection.307} has been referenced but does not ex
 ist, replaced by a fixed one
 
-pdfTeX warning (dest): name{section.254} has been referenced but does not exist
+pdfTeX warning (dest): name{section.306} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{section.239} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter.238} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.237} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.205} has been referenced but does not ex
+pdfTeX warning (dest): name{subsection.305} has been referenced but does not ex
 ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.304} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.296} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.278} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.277} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.275} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.273} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.272} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.270} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.269} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.268} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.266} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.265} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.264} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.263} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.262} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.261} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.255} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.242} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.241} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.240} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.239} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.238} has been referenced but does not exist
+, replaced by a fixed one
 
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{
 /usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</u
@@ -2482,10 +2552,10 @@ c/cm-super/sfti2074.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/
 cm-super/sftt0800.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm
 -super/sftt1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-s
 uper/sftt1095.pfb>
-Output written on thesis.pdf (77 pages, 16561148 bytes).
+Output written on thesis.pdf (79 pages, 17011477 bytes).
 PDF statistics:
- 1689 PDF objects out of 1728 (max. 8388607)
- 1508 compressed objects within 16 object streams
- 499 named destinations out of 1000 (max. 500000)
- 1113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1741 PDF objects out of 2073 (max. 8388607)
+ 1554 compressed objects within 16 object streams
+ 529 named destinations out of 1000 (max. 500000)
+ 1123 words of extra memory for PDF output out of 10000 (max. 10000000)
 

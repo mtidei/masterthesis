@@ -634,6 +634,27 @@
       \verb https://developer.apple.com/xcode/downloads/
       \endverb
     \endentry
+    \entry{cbattachment}{url}{}
+      \name{labelname}{1}{}{%
+        {{hash=7cf9877ab551434818b87a774a1d0c19}{Inc.}{I\bibinitperiod}{Couchbase}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=7cf9877ab551434818b87a774a1d0c19}{Inc.}{I\bibinitperiod}{Couchbase}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{7cf9877ab551434818b87a774a1d0c19}
+      \strng{fullhash}{7cf9877ab551434818b87a774a1d0c19}
+      \field{labelalpha}{Attachment}
+      \field{sortinit}{I}
+      \field{labeltitle}{Attachment | Couchbase - Mobile Developers}
+      \field{shorthand}{Attachment}
+      \field{title}{Attachment | Couchbase - Mobile Developers}
+      \field{urlday}{04}
+      \field{urlmonth}{02}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://developer.couchbase.com/mobile/develop/guides/couchbase-lite/native-api/attachment/index.html
+      \endverb
+    \endentry
     \entry{couchbase-lite}{url}{}
       \name{labelname}{1}{}{%
         {{hash=7cf9877ab551434818b87a774a1d0c19}{Inc.}{I\bibinitperiod}{Couchbase}{C\bibinitperiod}{}{}{}{}}%
