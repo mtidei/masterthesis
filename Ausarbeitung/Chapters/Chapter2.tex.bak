@@ -754,12 +754,12 @@ The key features that make Play a high-productivity web framework are:
 \item Integrated HTTP Server ("JBoss Netty")
 \item RESTful web services API 
 \item Type-safe templates for defining the html user interface
-\item Central mapping from HTTP requests, including type-safe parameters, to the corresponding Scala controller method
+\item Central mapping from HTTP requests, including type-safe parameters, to the corresponding Scala controller method using a routing configuration file
 \item Integrated build system that automatically rebuilds when the page is reloaded in the browser
 \item Ability to test the web application without a browser or even a running web server and call controller methods or render templates directly from a Scala REPL with the pre-loaded project 
 \item Support for AJAX, Comet and WebSockets
-\item JSON mapping
+\item JSON to/from Scala Objects mapping
 %TODO
 \end{itemize}
 
-The Play framework is not the only Scala based web framework. According to Typesafe's CTO, they decided to integrate it in it's Platform instead of Lift or similar frameworks because it is completely written in Scala, uses Akka for asynchronous processing, providing a good concurrency handling, has the better type-safety even in html templates, and because it was the one with the greater momentum at the time the choice was made \cite[cf.][]{playdecision}.
+The Play framework is not the only Scala based web framework. According to Typesafe's CTO, they decided to integrate it in it's Platform instead of Lift or similar frameworks because it is completely written in Scala, uses Akka for asynchronous processing, providing a good concurrency handling, has the better type-safety even in html templates, and because it was the one with the greater momentum in terms of ther number of open source projects using it and related discussions in the web etc., at the time the choice was made \cite[cf.][]{playdecision}.

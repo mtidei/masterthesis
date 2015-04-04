@@ -86,7 +86,7 @@ The frequency of events passed to the next layer decreases from real-time data (
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{layers-app-dataflow-accelerometer.png}
+\includegraphics[width=1.0\textwidth]{sequence-diagram-sensorbase}
 \caption{Sequence Diagram for the Sensor Layers}
 \end{figure}
 
@@ -99,7 +99,6 @@ Beside enabling automated unit tests at different abstraction levels, this layer
 \end{itemize}
 
 
-
 \begin{figure}[H]
 \centering
 \includegraphics[width=1.0\textwidth]{class-diagram-guide-app.png}
@@ -110,7 +109,6 @@ Mock: useful for Testing the underlying layer,
 Adapter for iOS Sensor API,
 The Sensorbase class is a singleton and acts as facade for the whole framework. It provides a single interface to the set of interfaces of the sensorbase subsystem. Knowing which subsystem class is responsible for which call, it delegates client requests to the appropriate subsystem object (cf. \cite{gof}).
 
-\subsection{Setup of Couchbase Server and Sync Gateway}
 
 \section{Sensors Layers}
 

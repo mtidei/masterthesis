@@ -17,7 +17,7 @@ This thesis, however, focuses on the technical foundation of the whole system, a
 
 The following figure shows a high level view of the complete system, consisting of the visitor guide front-end running on a mobile device, a back-end for the modelling the guide and performing analytic functions. The database server is accessed by both system parts and represents the communication basis - there is no direct communication between font and back end. All data is exchanged over the database, enabling asynchronous communication.
 
-As database server Couchbase was chosen due to it's automatic synchronization capabilities, it's mobile version and it's ability to scale out without completely redesigning the way the database is accessed by the application.\footnote{After actually having reached the limits of scalabity of a single classical relational database server of a commercial project and painfully distributing the database on several servers of the productive system, the idea of an easy scale out using a NoSql database and map-reduce queries seemed even more ingenious to me.} 
+As database server Couchbase was chosen due to it's automatic synchronization capabilities, it's mobile version and it's ability to scale out without completely redesigning the way the database is accessed by the application.\footnote{After actually having reached the limits of scalability of a single classical relational database server in a commercial project and painfully distributing the database on several servers of the productive system, the idea of an easy scale out using a NoSql database cluster and map-reduce queries seems very attractive to me.} 
 
 \begin{figure}[H]
 \centering
@@ -63,7 +63,7 @@ So the precise level of aggregation depends mainly on how the data will be acces
 From a site modeling point of view at the back-end, single areas and single beacons can be viewed as aggregates, allowing more granular modifications and enabling collaborative editing of a single site.
 From a front-end point of view, a whole site definition can be regarded an aggregate. During initialization, the whole site is read with all areas and beacons. This can be done with a single database query. On the mobile device, sites are only read and never modified, so that there is no problem with a bigger aggregate that has to be locked.
 
-Since having a working copy of a site for modeling in the back-end that is not deployed to the mobile devices until it is marked as finished has many benefits, I decided to take a hybrid solution. On the back-end, a site is modeled with finer- grained aggregates having separate documents for sites, areas and beacons. These aggregates lies in a separate modeling database (or bucket, as they are called in Couchbase) that is not synchronized with the mobile devices.
+Since having a working copy of a site for modeling in the back-end that is not deployed to the mobile devices until it is marked as finished is desirable, I decided to take a hybrid solution. On the back-end, a site is modeled with finer-grained aggregates having separate documents for sites, areas and beacons. These aggregates lies in a separate modeling database (or bucket, as they are called in Couchbase) that is not synchronized with the mobile devices.
 
 At the point a the model is marked as finished, all these documents are merged into one big site aggregate, containing all the data. This document is written to the shared database and is automatically synchronized with the mobile databases as soon as they have networking connectivity. 
 
@@ -71,7 +71,7 @@ The site model can the be refined and edited at the back-end without compromisin
  
 The following JSON-document shows a simplified site aggregate containing one area with the simplest possible polygon and one beacon, to get an idea of the structure.
 
-\begin{lstlisting}
+\begin{lstlisting}[basicstyle=\footnotesize,caption=An exemplary site aggregate in JSON representation]
 key: "Site-CXN01"
 value: {
  "type":"city",
@@ -124,57 +124,60 @@ The two use cases are recording data for development and testing and recording v
 Low level testing sensor traces, containing 100 measurements per second for each sensor, will only be recorded over a limited time period for testing and profiling algorithms. 
 The recording duration for analytic purposes during an actual visit can extend to hours, but at the same time only higher level data is recorded and thus the data amount grow much slower. Therefore, saving a trace into a single aggregate is considered feasible for both use cases.
 
-The following listing shows an exemplary trace as JSON document.
+The following listing shows a trace as JSON document with an exemplary sensor data measurement for each type.
 
-\begin{lstlisting}[basicstyle=\footnotesize]
+\begin{lstlisting}[basicstyle=\footnotesize,caption=An exemplary trace aggregate in JSON representation]
 key: Sensortrace-CXN01
 value: {
-  "date": "2015-02-12",
+  "type": "trace",
   "timestamp": 12345678.35,
   "site": "Site-CXN01",
   "data": [
-    {"type":"accelerometer", "timestamp": 12345678.350, "data": [1.235, 0.364, 0.021]},
-    {"type":"gyroscope", 
-    {"type":"gps", 
-    {"type":"beacons", 
-    
-    
+    {"type":"accelerometer", "timestamp": 12345678.350, 
+      "data": [1.235, 0.364, 0.021]},
+    {"type":"gyroscope", "timestamp": 12345678.360, 
+      "data": [0.031, 0.005, 0.207]},
+    {"type":"gps", "timestamp": 12345678.495, "data": {
+      "latitude":47.652712, "longitude":9.168142, "altitude":404.90, 
+      "vertAccuracy":65, "horizAccuracy":10}
+    {"type":"beacons", "timestamp": 12345678.782, "data": [
+      {"uuid":"B9407F30-..6D", "major":14185, "minor":2, 
+      	"proximity":1, "rssi":-67, "distance":0.53},
+      {"uuid":"B9407F30-..6D", "major":14185, "minor":3, 
+      	"proximity":2, "rssi":-77, "distance":4.53}    
+    ]}
   ]
-  "accelerometer": [
-    {"timestamp": , "data": [1.235, 0.364, 0.021]},
-    {"timestamp": 12345678.40, "data": [1.217, 0.378, 0.009]},
-    ...
-  ],
-  "gyroscope": [
-    {"timestamp": 12345678.35, "data": [1.235, 0.364, 0.021]},
-    {"timestamp": 12345678.40, "data": [1.217, 0.378, 0.009]},
-    ...
-  ],
-  "magnetometer": [
-    {"timestamp": 12345678.35, "data": [1.235, 0.364, 0.021]},
-    {"timestamp": 12345678.40, "data": [1.217, 0.378, 0.009]},
-    ...
-  ],
-  "beacons": [
-    {"timestamp": 12345679.05, "data": [["A3F3", -51],["85B7", -68]]},
-    {"timestamp": 12345680.05, "data": [["A3F3", -51],["85B7", -68]]},
-    ...
-  ],
-  "gps": [
-    {"timestamp": 12345679.35, "data": [1.44, 10.021]},
-    {"timestamp": 12345680.36, "data": [47.663278, 10.009]},
-    ...
-  ],
 }
 \end{lstlisting}
 
 
 \section{Setting up the Couchbase Server Infrastructure}
 
-Couchbase Server
-Admin Port
+After locally installing Couchbase Server, a web based admin console is accessible at http://localhost:8091. It offers an overview of the system status, performance details and several administration tasks. In case of having several servers attached, the whole cluster can be managed and analyzed over this web application.
 
-Couchbase Sync Gateway
-config.json
+For the guide platform, two Couchbase buckets are created: "guide" is the shared database and "guide-editor" the back-end only one. The following picture shows two screen shots of the cluster overview page and the data buckets page with our buckets.
 
-%Backend has two databases, work in progress in couchbase NoSQL, aggregates site area beacon, site aggregate published over sync-gateway
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{screen-cbadmin}
+\caption{The Couchbase Server management console}
+\end{figure}
+
+For the automatic synchronization of the shared bucket between the server and the mobile devices, a "Couchbase Sync Gateway" has to be installed and configured via a json file, where primarily the database server url, the users and the shared bucket are defined.
+
+\begin{lstlisting}[basicstyle=\footnotesize,caption=Connecting the Sync Gateway to the Couchbase Server]
+"log": ["HTTP+"],
+"databases": {
+  "guide": {
+    "server": "http://localhost:8091",
+    "bucket": "guide",
+    "users": {
+      "GUEST": {"disabled": false, "admin_channels": ["*"] }
+    }
+  }
+}
+\end{lstlisting}
+
+After creating this file and a management bucket named "sync\_gateway" on the server, the gateway can be started and exposes a REST sync API at port 4984 and an admin API at port 4985. A rudimentary synchronization gateway web gui is also available at "localhost:4985/admin/db/guide".
+
+For the shared bucket, all communication has to pass over this synchronization gateway, avoiding to communicate directly to the actual database server. The gateway keeps track of the documents revisions with the management bucket and by adding a management property called "\_sync" to each document, used to save the revision number and other internal version control data. 
