@@ -51,38 +51,40 @@ has to be added manually to the own Swift project to expose the Ojective-C heade
 
 \section{Architecture}
 
-For a clean The application is separated in 5 different layers.
+Below the presentation layer and the application logic, a clean sensor data processing foundation that provides the context information for the application has to be designed. This foundation is divided in three logical layers. At the bottom are the sensor data sources, consisting of the iOS sensor APIs and virtual sensors. As processing of sensor data is best done in several steps, as we will see in this chapter, two layers of sensor data processing are added, the first for low-level  algorithms called at higher frequency and the second for higher level ones, performing more computation-intensive tasks at a lower frequency.  
 
-%TODO Figure without data
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.9\textwidth]{layers-guide-app.png}
-\caption{Layer Model of the Museum Guide Application}
+\includegraphics[width=0.7\textwidth]{layers-guide-app.png}
+\caption{Layer model of the guide front-end}
 \end{figure}
 
-A fundamental requirement for the CA Guide front end, from a developer point of view, is the ability to record and replay recorded sensor readings of all accessed sensors and to automatically test the single layers using recorded sensor data and comparing it with it's expected result.
-
-To achieve this goal, virtual sensors are introduced at three different levels of abstraction inside the sensor data processing foundation that provides the context information for the application.
+A fundamental requirement for the guide front-end, from a developer point of view, is the ability to record and replay recorded sensor readings of all accessed sensors and to automatically test single processing steps using recorded sensor data for comparing it with it's expected result.
+To achieve this goal, virtual sensors are introduced at three different levels of abstraction inside the lower layers as depicted by the following figure.
  
+ %TODO Beacons to HL, rest to App Logic
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{layers-guide-refined-app.png}
 \caption{Layer model with virtual sensors}
-\end{figure}
+\end{figure} 
 
-These three layers are important enough the deserve a name, so this foundation framework is called "Sensorbase" from now on. With a focus on clean and usable design it can evolve to a 
+A virtual sensor delivers the same kind of data the processing algorithm of the corresponding layer would output, loading a previously recorded trace from the database. 
+Also depicted are the external input data coming from the JSON site aggregate, containing the positions of all beacons with combined with their advertising data, the area geographic definitions and and the guide resources. The high-level sensor data processing layer uses the beacon related data for indoor positioning.
 
-The following figure visualizes the different kind of data that is handled in every different layer, taking the accelerometer data processed by pedometer and statistics algorithms as an example. 
+Figure~\ref{fig:dataflow} visualizes the different kind of data that is handled in every different layer, taking the accelerometer data processed by pedometer and statistics algorithms as an example. 
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.9\textwidth]{layers-app-dataflow-accelerometer.png}
 \caption{Data flow between the lower layers of the Sensorbase framework}
+\label{fig:dataflow}
 \end{figure}
 
-The pedometer algorithm in the low-level sensor data processing layer receives raw accelerometer data as input. It analyzes the data, detects single steps and passes them to the upper layer, the high-level sensor data processing. Here the single steps are aggregated to periods of slow and fast walking and walking statistics are updated.
+The pedometer algorithm in the low-level sensor data processing layer receives raw accelerometer data as input. It analyzes the data, detects single steps and passes them to the upper layer, the high-level sensor data processing. Here the single steps are aggregated to periods of slow and fast walking and walking statistics are updated.\\
+For most types of sensor data and information to be extracted, a processing approach using algorithms split in two layers can be found. For the rest the second layer could be omitted without affecting the other sensors. All the sensors implemented for this thesis use the two step processing approach.
 
-The frequency of events passed to the next layer decreases from real-time data (100 updates per second), demanding very fast algorithms, to some seconds or minutes.
+The frequency of events passed to the next layer decreases from real-time (100 updates per second), demanding very fast algorithms, to some seconds or minutes. The following sequence diagram visualizes the decreasing frequency of updates from the lowest to the highest sensor related layer.
 
 \begin{figure}[H]
 \centering
@@ -94,9 +96,12 @@ Beside enabling automated unit tests at different abstraction levels, this layer
 
 \begin{itemize}
 \item During development, a simulation of walking through a park or museum is possible, for manually testing not only algorithms of the lower layers, but also elements of the uppermost layer like different screen transitions or other UI behavior.
-\item For demonstration the guide to customers or prospects a walk through a park can be simulated at the desk on a real device running the guide, beeing much more intuitive than showing only screen shots.
-\item With an own class in the Sensor APIs layer acting as an adapter to the iOS APIs it is easier to migrate the algorithms to a different mobile platform, by rewriting this adapter class for the target platforms Sensor API and automatically translating the other sources that have no dependencies to the platform.
+\item For demonstrating the guide to customers or prospects, a walk through a park or museum can be simulated at the desk on a real device running the guide, beeing much more intuitive than showing only screen shots.
+\item With an own class in the sensor data sources layer acting as an adapter to the iOS APIs it is easier to migrate the algorithms to a different mobile platform, by rewriting this adapter class for the target platforms sensor API and automatically translating the other sources that have no dependencies to the platform.
 \end{itemize}
+
+With the last point in mind, the value classes holding sensor data were only used in the lowest layer and converted to own iOS independent classes for further processing.
+
 
 
 \begin{figure}[H]
@@ -119,7 +124,95 @@ The backend can access this saved data for later analysis.
 Sensorbase debug view.
 \cite{GCD-Reference}
 
+\subsection{Querying the Mobile NoSQL Database}
+\label{sec:nosql-query}
+
+When the key of the document to retrieve is known, the JSON document can be retrieved by simply using a getter function on the database object. All other queries are performed quite differently from standard databases. 
+
+In the debug view, for example, a list of all recorded trace documents has to be displayed to allow the user selecting a trace for replaying it.
+To perform this query in Couchbase Mobile and Swift, first a named view has to be created. A Couchbase view follows the map/reduce paradigm and thus a map and an optional reduce function have to be defined. 
+
+In the current implementation of the Couchbase driver, the map function is defined using an Objective-C block that is automatically imported as Swift closure. That closure will be called internally on every document with the document itself and an emit function as parameters. The emit function can be called 0..* times for a single document with a key and value parameter. 
+
+\begin{lstlisting}[basicstyle=\footnotesize,caption=The map function of the traces view]
+// Setup the views
+let tracesView = self.database.viewNamed(self.tracesViewName)
+tracesView.setMapBlock({ (doc, emit) in
+  if let timestamp = doc["timestamp"] as? String {
+    if let site = doc["site"] as? String {
+      if let data = doc["data"] as? [AnyObject] {
+        emit([site, timestamp, data.count], doc["_id"])
+      }
+    }
+  }
+}, version: "3")
+\end{lstlisting}
+
+Being a very young language, new versions of Swift were released during this work. So one improvement of Swift 1.2, released on 9th February 2015 \cite{swift-1-2}, was allowing multiple optional value bindings inside a single if statement, avoiding deeper nesting levels seen above. 
+
+\begin{lstlisting}[basicstyle=\footnotesize,caption=The map function avoiding nesting with Swift 1.2,language=Swift]
+// Setup the views, Swift v1.2
+let tracesView = self.database.viewNamed(self.tracesViewName)
+tracesView.setMapBlock({ (doc, emit) in
+  if let timestamp = doc["timestamp"] as? String, 
+    site = doc["site"] as? String, 
+    data = doc["data"] as? [AnyObject] {
+      emit([site, timestamp, data.count], doc["_id"])
+  }
+}, version: "3")
+\end{lstlisting}
+
+The key can be a single value or a list of values, as seen here, useful for later querying using start and end barriers on single elements of the key list, as shown later. The emitted key for the sites view is built with the site's id, the timestamp of the trace and the number of measurements inside the document. 
+
+The view can be thought of as an index in a conventional database - not a query. Couchbase uses the view definition with it's map and reduce function to create it's internal indices. Once created, the view can then be used to instantiate a query, configure it and retrieve the desired data.
+
+For example, to create a query returning only sensor traces for the site "Site-CXN01" that were created after 1st January 2015 (1420070400 as Unix timestamp) using the previously defined sites view, the startKey and endKey properties can be defined the following way.
+
+\begin{lstlisting}[basicstyle=\footnotesize,caption=Setting up the NoSQL query,language=Swift,label=lst:nosql-query]
+let tracesView = database.viewNamed(tracesViewName)
+let query = tracesView.createQuery()
+query.startKey = ["Site-CXN01",1420070400]
+query.endKey   = ["Site-CXN01",[:]]
+\end{lstlisting}       
+
+The empty dictionary used as second element of the end key is Couchbase value sorted always at the end and the preferred way to define an upper bound greater than all existing elements.
+
+A single view can be queried by defining a coherent range of the ordered keys. While it is possible to limit the timestamp value inside a single site with this view, to select a timestamp range with arbitrary sites a new view has to be defined, emitting the timestamp as first key element.
+
+The reason is Couchbase organizes it's data holding a sorted index of the emitted keys. For multi-element keys, they are sorted primarily by the first key element, then by the second and so on.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{couchbase-query}
+\caption{Couchbase limits for querying views}
+\label{fig:couchbase-query}
+\end{figure}
+
+Figure~\ref{fig:couchbase-query} visualized the index with a simplified key consisting of two elements: the site id and the timestamp. The first query is equivalent to the on of listing~\ref{lst:nosql-query}. Selecting only timestamps >= 20 for arbitrary sites would result in the scattered ranges pictured by query two. Therefore query 2 cannot be expressed by defining a start and end key on this view.
+
+That's the price to pay for the focus on high performance and the automatic scaling capabilities of Couchbase and similar NoSQL databases. Although, compared with the benefits, this extra work seems reasonable.
+
+Finally, running the query is similar to known relational database drivers. 
+
+\begin{lstlisting}[basicstyle=\footnotesize,caption=Performing the NoSQL query,language=Swift]
+var error: NSError?
+let result = query.run(&error)
+var found = false
+while let row = result?.nextRow() {
+   // do something with the row
+}
+\end{lstlisting}
+
+
 \section{Application Logic}
+
+For this work, the application logic on top of the sensor layers focuses on computing the area that contains the position obtained by the lower layer. This is done using computational geometry algorithms described in  %TODO
+
+
+
+For the final product, the guide has to keep track of the audio files already played and decide if it is appropriate to play the lower levels of detail based on the current walking speed and the size of the area.
+
+If so and some other rules apply, the content is presented to the user in the appropriate way.
 
 If not walking fast load and play current content.
 
@@ -127,6 +220,33 @@ If display is on show actions that user has to opt in, if display is off play au
 
 \section{Presentation Layer}
 
-Mockups
-XCode Storyboard
-Final App Screenshots
+%TODO2 Study with parallax
+
+The full design of the front-end GUI is out of scope of this thesis, which limits the presentation layer to the debugging dashboard.
+This view shows processed and unprocessed sensor data of different layers, and contains controls for loading and saving sensor traces. Even after adding the end-user GUI, this debugging dashboard will remain in the application for development and testing.
+
+A mockup of the debugging dashboard was designed using the tool "Balsamiq Mockups" \cite{balsamiq}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=0.4\textheight]{mockup-guide-debug}
+\caption{A mockup of the debug dashboard}
+\label{fig:couchbase-query}
+\end{figure}
+
+On the top, the raw accelerometer data is depicted in a chart with the acceleration force on it's vertical axis and the time on it's horizontal axis. Below, a graph shows vertical peaks every time a step is detected. The statistics of the third layer are visible as text showing the walking speed and the cumulated steps.
+The beacon info section consists of a list of all currently sensed beacons with their properties. Beside, a GPS section shows all GPS related data. The resulting position is additionally shown on a map using a blue circle, with an optional red circle for the pure GPS position and accuracy, depicted as radius of the circle. On the bottom of the screen, a toolbar contains all controls needed for managing the sensor traces. The load trace action has to show a list of all traces (cf. section~\ref{sec:nosql-query}) and loads the selected trace.
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=0.4\textheight]{screen-debug-view}
+\caption{Screenshot of the debug dashboard running on an iPad}
+\label{fig:couchbase-query}
+\end{figure}
+
+\section{Summary}
+
+We now have a mobile system capable of processing sensor readings in several layers and recording and replaying them at a desired level of detail. 
+The system loads sites defined as JSON document and uses the beacons definitions to locate itself when GPS signal is missing or not accurate. Based on the current position and the loaded area definitions, the current area is computed and the content loaded.
+
+The next chapter handles the design and implementation of the second part of the framework: The back end serving as site modeling and analytics tool.

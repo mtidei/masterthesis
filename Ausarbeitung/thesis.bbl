@@ -613,6 +613,27 @@
       \verb https://developer.apple.com/library/prerelease/ios/documentation/CoreLocation/Reference/CLBeacon_class/index.html#//apple_ref/c/tdef/CLProximity
       \endverb
     \endentry
+    \entry{swift-1-2}{url}{}
+      \name{labelname}{1}{}{%
+        {{hash=bf6560f00cbeba2f0a8edc79c6a9690d}{Inc.}{I\bibinitperiod}{Apple}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=bf6560f00cbeba2f0a8edc79c6a9690d}{Inc.}{I\bibinitperiod}{Apple}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{bf6560f00cbeba2f0a8edc79c6a9690d}
+      \strng{fullhash}{bf6560f00cbeba2f0a8edc79c6a9690d}
+      \field{labelalpha}{Swift-1.2}
+      \field{sortinit}{I}
+      \field{labeltitle}{Swift 1.2 improvements}
+      \field{shorthand}{Swift-1.2}
+      \field{title}{Swift 1.2 improvements}
+      \field{urlday}{14}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb https://developer.apple.com/swift/blog/?id=22
+      \endverb
+    \endentry
     \entry{xcodebeta}{url}{}
       \name{labelname}{1}{}{%
         {{hash=bf6560f00cbeba2f0a8edc79c6a9690d}{Inc.}{I\bibinitperiod}{Apple}{A\bibinitperiod}{}{}{}{}}%

@@ -40,7 +40,7 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Layer Model of the Museum Guide Application\relax }}{45}{figure.caption.260}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Layer model of the guide front-end\relax }}{45}{figure.caption.260}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Layer model with virtual sensors\relax }}{46}{figure.caption.261}
 \defcounter {refsection}{0}\relax 
@@ -50,9 +50,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Simplified Class Diagram for Sensor Data Processing\relax }}{49}{figure.caption.264}
 \defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Couchbase limits for querying views\relax }}{52}{figure.caption.294}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.7}{\ignorespaces A mockup of the debug dashboard\relax }}{53}{figure.caption.304}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Screenshot of the debug dashboard running on an iPad\relax }}{54}{figure.caption.305}
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces TypeScript in IntelliJ IDEA\relax }}{54}{figure.caption.278}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces TypeScript in IntelliJ IDEA\relax }}{58}{figure.caption.316}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
