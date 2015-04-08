@@ -51,7 +51,9 @@ has to be added manually to the own Swift project to expose the Ojective-C heade
 
 \section{Architecture}
 
-Below the presentation layer and the application logic, a clean sensor data processing foundation that provides the context information for the application has to be designed. This foundation is divided in three logical layers. At the bottom are the sensor data sources, consisting of the iOS sensor APIs and virtual sensors. As processing of sensor data is best done in several steps, as we will see in this chapter, two layers of sensor data processing are added, the first for low-level  algorithms called at higher frequency and the second for higher level ones, performing more computation-intensive tasks at a lower frequency.  
+\subsection{Overview}
+
+Below the presentation layer and the application logic, a clean sensor data processing foundation that provides the context information for the application has to be designed. This foundation, hereafter referred to as "Sensorbase framework", is divided in three logical layers. At the bottom are the sensor data sources, consisting of the iOS sensor APIs and virtual sensors. Since processing of sensor data is often done in several steps, as we will see in this chapter, two layers of sensor data processing are added, the first for low-level  algorithms called at higher frequency and the second for higher level ones, performing more computation-intensive tasks at a lower frequency.  
 
 \begin{figure}[H]
 \centering
@@ -97,35 +99,67 @@ Beside enabling automated unit tests at different abstraction levels, this layer
 \begin{itemize}
 \item During development, a simulation of walking through a park or museum is possible, for manually testing not only algorithms of the lower layers, but also elements of the uppermost layer like different screen transitions or other UI behavior.
 \item For demonstrating the guide to customers or prospects, a walk through a park or museum can be simulated at the desk on a real device running the guide, beeing much more intuitive than showing only screen shots.
-\item With an own class in the sensor data sources layer acting as an adapter to the iOS APIs it is easier to migrate the algorithms to a different mobile platform, by rewriting this adapter class for the target platforms sensor API and automatically translating the other sources that have no dependencies to the platform.
+\item With an own class in the sensor data sources layer acting as a bridge to the iOS APIs it is easier to migrate the algorithms to a different mobile platform, by rewriting this adapter class for the target platforms sensor API and automatically translating the other sources that have no dependencies to the platform.
 \end{itemize}
 
 With the last point in mind, the value classes holding sensor data were only used in the lowest layer and converted to own iOS independent classes for further processing.
 
+\subsection{Implementation concepts}
 
+The following class diagram shows how the sensor related classes are organized and how they are related to one another, using the accelerometer processing classes as an example (the classes concerning other sensor types are organized the same way). 
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=1.0\textwidth]{class-diagram-guide-app.png}
 \caption{Simplified Class Diagram for Sensor Data Processing}
+\label{fig:sensorbase-classes}
 \end{figure}
 
-Mock: useful for Testing the underlying layer,
-Adapter for iOS Sensor API,
-The Sensorbase class is a singleton and acts as facade for the whole framework. It provides a single interface to the set of interfaces of the sensorbase subsystem. Knowing which subsystem class is responsible for which call, it delegates client requests to the appropriate subsystem object (cf. \cite{gof}).
+Every layer observes the underlying layer, being subscribed to data updates and getting them via calls to their corresponding "processUpdate()" method. A common abstract class implements the observer pattern and is extended by two or three classes per layer and sensor type: a class implementing the actual processing algorithms needed for the processing step (e.g. HardwareAccelerometer), a class that acts as virtual sensor and forwards recorded data of that layer (e.g. VirtualAccelerometer) and a class used in automated tests for the underlying layers (e.g. HighLevelPedometerMock).
+For example, to test the step detection algorithm, the system can be set up using an instance of VirtualAccelerometer with known accelerometer data, observed by an instance of LowLevelPedometer, whick in turn is observed by an instance of HighLevelPedometerMock, where the timestamps of reported steps can be compared with expected ones.
+
+On the top lies the Sensorbase class. It is a singleton and acts as facade (cf. \cite[Ch.4, Facade]{gof}) for the whole framework, providing a single interface to the set of interfaces of the Sensorbase framework. It is responsible for instantiating the classes and connecting them based on the desired level of tracing. It also setups the framework for the usage with virtual sensors, loading a trace over the SensortraceManager, instantiating the involved virtual sensors, feeding them with the data concerning the corresponding sensor type and starting the playback.
+Inside the instances of the "Virtual..." classes, the loaded data is replayed using an independent thread to enable the concurrent execution of processing of different sensor types. More precisely, since threads cannot be directly created with Swift, nor does Swift offer a thread abstraction model of its own, the iOS/OSX "Grand Central Dispatch" (GCD) \cite[cf.][]{GCD-Reference} concept is used. 
+
+For external classes that want to observe the data updates of the lower layers, it offers methods accepting references to different types of observers that are passed to the proper objects of the framework for registration as observer. The debug view, for examples, uses these methods for registering itself as observer of 
+
+The SensortraceManager interface at the top left avoids binding the Sensorbase facade to the Couchbase database and so allowing to change the underlying database system more easily.
 
 
-\section{Sensors Layers}
+\subsection{An encountered Swift limitation}
 
-Sensor data is saved to couchbase database.
-Later access for replay (development), testing and presentations.
-The backend can access this saved data for later analysis.
+The class diagram of figure~\ref{fig:sensorbase-classes} is not Swift specific, since it shows abstract classes not available in Swift. Moreover, interfaces are named protocols and do not accept any implementation.
 
-Sensorbase debug view.
-\cite{GCD-Reference}
+When it came to expressing that for example the different LowLevelPedometer classes have a common implementation of some methods and simultaneously are AccelerometerObserver, the lack of abstract classes and abstract methods in Swift became visible. 
 
-\subsection{Querying the Mobile NoSQL Database}
+Swift does not offer a perfectly clean way to model the described situation at the time of writing. 
+
+There are two workarounds each with own drawbacks. The first is simulating an abstract method using a regular class and implement the concerned method with an assertion to cause a failure if it was not overridden by a subclass. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{swift-abstract-1.png}
+\caption{Simulating an abstract method using an assertion}
+\end{figure}
+
+The great drawback is that this error is detected only at run time, causing an application crash for a problem that can easily be detected at compile time respectively directly in the IDE.
+
+The second approach consists in not letting the LowLevelPedometerBase class implement the AccelerometerObserver protocol but letting each class extend the base class and implement the protocol separately.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{swift-abstract-2.png}
+\caption{Separating base class and protocol}
+\end{figure}
+
+There is no implementation independent type combining AccelerometerObserver and LowLevelPedometerBase.
+
+Both approaches share the same flaw, that LowLevelPedometerBase can be instantiated.
+
+\section{Querying the Mobile NoSQL Database}
 \label{sec:nosql-query}
+
+Since NoSQL queries differ substantially from common SQL based database drivers, this section explains the way the database is queried inside the SensorbaseCouchbaseManager class. 
 
 When the key of the document to retrieve is known, the JSON document can be retrieved by simply using a getter function on the database object. All other queries are performed quite differently from standard databases. 
 
