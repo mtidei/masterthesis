@@ -200,6 +200,27 @@
       \verb http://coffeescript.org
       \endverb
     \endentry
+    \entry{balsamiq}{url}{}
+      \name{labelname}{1}{}{%
+        {{hash=2eccea93c5fc386e982ce89975356a10}{Balsamiq\bibnamedelima Studios}{B\bibinitperiod\bibinitdelim S\bibinitperiod}{LLC}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=2eccea93c5fc386e982ce89975356a10}{Balsamiq\bibnamedelima Studios}{B\bibinitperiod\bibinitdelim S\bibinitperiod}{LLC}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{2eccea93c5fc386e982ce89975356a10}
+      \strng{fullhash}{2eccea93c5fc386e982ce89975356a10}
+      \field{labelalpha}{Balsamiq}
+      \field{sortinit}{B}
+      \field{labeltitle}{Balsamiq Mockups}
+      \field{shorthand}{Balsamiq}
+      \field{title}{Balsamiq Mockups}
+      \field{urlday}{07}
+      \field{urlmonth}{04}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb https://balsamiq.com/products/mockups/
+      \endverb
+    \endentry
     \entry{scalajs-interview}{url}{}
       \name{labelname}{1}{}{%
         {{hash=61ad0d2e5f25b6ccb676a82e70286647}{Bentley}{B\bibinitperiod}{Elliot}{E\bibinitperiod}{}{}{}{}}%
@@ -1080,6 +1101,29 @@
       \field{urlyear}{2015}
       \verb{url}
       \verb https://github.com/core-plot/core-plot
+      \endverb
+    \endentry
+    \entry{specs2}{url}{}
+      \name{labelname}{2}{}{%
+        {{hash=e2b6fd9f8820ade26739a0114bbe57bf}{Torreborre}{T\bibinitperiod}{Eric}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=a8b2e39951bba535f313f563f6abaef6}{contributors}{c\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{hash=e2b6fd9f8820ade26739a0114bbe57bf}{Torreborre}{T\bibinitperiod}{Eric}{E\bibinitperiod}{}{}{}{}}%
+        {{hash=a8b2e39951bba535f313f563f6abaef6}{contributors}{c\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{46ef505506100ebb4e74e0551455706d}
+      \strng{fullhash}{46ef505506100ebb4e74e0551455706d}
+      \field{labelalpha}{specs2}
+      \field{sortinit}{T}
+      \field{labeltitle}{specs2}
+      \field{shorthand}{specs2}
+      \field{title}{specs2}
+      \field{urlday}{10}
+      \field{urlmonth}{04}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://etorreborre.github.io/specs2/
       \endverb
     \endentry
     \entry{typesafeact}{url}{}

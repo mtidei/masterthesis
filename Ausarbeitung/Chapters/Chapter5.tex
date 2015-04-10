@@ -1,22 +1,22 @@
 % Chapter 5
 
-\chapter{CA Guide Back End} % Main chapter title
+\chapter{The Guide's Back End} % Main chapter title
 
 \label{backend} % For referencing the chapter elsewhere, use \ref{Chapter1} 
 
-\lhead{Chapter 5. \emph{CA Guide Back End}} % This is for the header on each page - perhaps a shortened title
+\lhead{Chapter 5. \emph{The Guide's Back End}} % This is for the header on each page - perhaps a shortened title
 
 %----------------------------------------------------------------------------------------
 
 \section{Introduction}
 
-The CA Guide back end is meant to be used by the park or museum staff responsible for designing and optimizing the visiting experience. In contrast to the front end, the user interface can be more complex requiring an introductory training and support. Of course, the usability deserves special attention in spite of the training, as it has a major influence on the frequency a software is used, the attitude towards it and so the success of the whole product. %TODO Citation
+The guide's back end is meant to be used by the park or museum staff responsible for designing and optimizing the visiting experience. In contrast to the front end, the user interface can be more complex requiring an introductory training and support. Of course, the usability deserves special attention in spite of the training, as it has a major influence on the frequency a software is used, the attitude towards it and thus the success of the whole product. %TODO2 Citation
 
 There are two main tasks accomplished with the CA Guide back end:
 
 \begin{itemize}
-\item Modeling the outdoor or indoor site by defining areas on a map or floor plan and adding content that later will be presented on the mobile device when entering this area. Especially for indoor sites, single Bluetooth beacons with their identifying numbers and positions must be added to the plan to enable the mobile device to locate itself.
-\item Analytic functions for understanding how the visitors move trough the exhibition and thus allowing to optimize it, similar to the way the behavior of website visitors is tracked and used to optimize the web presence\footnote{Of course, the privacy of the visitor has to be respected at any time. The data must only be collected anonymously and respecting all local privacy and data protection regulations.}.
+\item As graphical modeling tool, it is used to model the outdoor or indoor site by defining areas on a map or floor plan and adding content that will be presented later on the mobile device when entering this area (and some other rules apply). Especially for indoor sites, single Bluetooth beacons with their identifying numbers and positions must be added to the plan to enable the mobile device to locate itself.
+\item As analytical tool, it offers analytic functions for understanding how visitors move trough the park/museum/exhibition and thus allowing to optimize it. This is similar to the way the behavior of website visitors is tracked and used to optimize a web presence, ported to physical sites.\footnote{Of course, the privacy of the visitor has to be respected at any time. The data must only be collected anonymously and respecting all local privacy and data protection regulations.}.
 \end{itemize}
 
 %TODO In Place editing
@@ -25,7 +25,7 @@ There are two main tasks accomplished with the CA Guide back end:
 
 The back end user interface has to run in a standard web browser without specific plugins. This has several advantages: Users can start immediately to work with the product without installing any client. Having the project data in a cloud database, they can work on the same project from different locations using different computers without manually setting up a synchronization infrastructure. Computation expensive analytic functions can be performed directly on the database or web/application servers and only the results are transferred to the client, enabling it's usage on common hardware.
 
-By allowing collaborative editing, the museum staff can easily be supported remotely in real time without having to be on site. 
+By allowing collaborative editing, the museum staff can easily be supported remotely in real time without having to be on site.
 
 \section{Architectural Decisions}
 
@@ -34,7 +34,7 @@ One of the main challenges developing for the web is the client/server code barr
 
 Modern web applications need to be highly responsive for providing a good user experience and thus be accepted by them. Operations like adding, editing or deleting entities have to be performed without having to do a full page reload to display some sort of HTML form and reloading the whole page again after the form was submitted to the server. This can be achieved using asynchronous calls to the server in the background, exchanging only the needed data with the server and refreshing just the needed part of the HTML DOM. Many operations like resorting a table can even be performed completely in the browser without even performing a server request.
 
-This technique is commonly known as AJAX (Asynchronuous JavaScript and XML) and inside this acronym's phrase one can already spot the main problem. While AJAX gained popularity during the last years, it leveraged the massive usage of JavaScript, a dynamically typed scripting language originally not designed for big projects. In fact, JavaScript\footnote{In the cited interview Eich says "The name is a total lie" - it was just a marketing decision. JavaScript has been standardized later by Ecma International to ECMAScript.} was developed in 1995 by Brendan Eich in ten days for the Netscape browser, which is an extremely short time despite Eich's big experience in building languages \cite{interview-eich}. That led him to design the language to be malleable, and there are many libraries making programming in JavaScript a little "less painful", without solving the problem of lacking static types and other flaws.
+This technique is commonly known as AJAX (Asynchronuous JavaScript and XML) and inside this acronym's phrase one can already spot the main problem. While AJAX gained popularity during the last years, it leveraged the massive usage of JavaScript, a dynamically typed scripting language originally not designed for big projects. In fact, JavaScript\footnote{In the cited interview Eich says "The name is a total lie" - it was just a marketing decision, the language is not related to Java. JavaScript has been standardized later by Ecma International to ECMAScript.} was developed in 1995 by Brendan Eich in ten days for the Netscape browser, which is an extremely short time despite Eich's big experience in building languages \cite{interview-eich}. That led him to design the language to be malleable, and there are many libraries making programming in JavaScript a little "less painful", without solving the problem of lacking static types and other flaws.
 
 So the two main problems to be solved are:
 
@@ -79,26 +79,26 @@ Beside avoiding to use ECMAScript directly, the big advantage of using Scala.js 
 
 On 5th February 2015, at the time of this writing and exactly two years after this project was started, the release v0.6.0 was announced on the official Scala website and the experimental flag was removed, defining Scala.js "production-ready" \cite{scalajs06}.
 
-So I decided to try this very promising compiler for the CA Guide back end.
+So I decided to use this very promising compiler for the CA Guide back end.
 
 \section{Setting up the Development Platform}
 
 \subsection{Project Structure, Scala and Play}
 
-Typesafe's Play web framework %TODO see section bla
- is used as basis for developing the CA Guide back end. It is installed using the Activator tool, which acts as build tool and dependency manager.
+Typesafe's Play web framework (cd. section~\ref{sec:play}) serves as basis for the guide's back end. It is installed using the Activator tool, which acts as build tool and dependency manager.
  
 The project is configured according to the "Play! application with Scala.js" skeleton \cite{playscalajs} referenced on the Scala.js homepage, splitting it up into three subprojects:
 
 \begin{description}[leftmargin=!,labelwidth=\widthof{\bfseries editor-server}]
-\item[$\bullet$ editor-server] The Play project including server side Scala code and the typical Play application structure consisting of an app folder%TODO
+\item[$\bullet$ editor-server] The Play project including server side Scala code and the typical Play application structure
+%TODO consisting of an app folder
 \item[$\bullet$ editor-client] Client only source code, the Scala.js project
 \item[$\bullet$ editor-shared] Shared Scala sources, accessible from both the client and server source code
 \end{description} 
  
 The project was imported in IntelliJ IDEA 14 as sbt project, which worked very well without major problems. 
 
-Using the activator command in a shell, %TODO run - start webserver and rebuild on page refreh, test command executes the tests
+After starting the activator tool in a shell on the project root directory, several commands are available. The three most important commands are "run", "test" and "testOnly", where the first starts the web server and automatically rebuilds the project on every page refresh in the browser, if files were modified. The "test" command executes all defined tests, whereas "testOnly" is used with 1..* specs2 \cite{specs2} specification names\footnote{The names of the implemented test classes extending the specs2 "Specification" class} to selectively execute only desired tests.
 
 \subsection{Adding Reactive Couchbase as Scala Database Driver}
 
@@ -158,11 +158,9 @@ After adding the bootstrap.css to Play's folder "public/css" and the glyph fonts
 
 \subsection{Activating the Less Compiler}
 
-Cascading style sheets are the common way to separate design and data of web sites and applications. Less is a meta language on top of css, Link
-evolution step of standard css files, adding missing concepts to write more concise and better readable css-code. It was started in 2009 as open-source project by Alexis Sellier \cite{less}.
+Cascading style sheets are the common way to separate design and data of web sites and applications. Less is a meta language on top of css, adding missing concepts to write more concise and better readable css-code. It was started in 2009 as open-source project by Alexis Sellier \cite{less}.
 
 After enabling less, assets can be placed under assets/less and are automatically compiled to regular css files with the regular 'compile' command or when an automatic rebuild is triggered by a browser page refresh after changing a file.
-%less as css
 
 
 \section{Architecture and Design}
@@ -171,15 +169,85 @@ After enabling less, assets can be placed under assets/less and are automaticall
 
 %Single page,  
 
+In former days, web applications consisted mainly of a collection of several html documents and forms. On every user action, a new document were created at server side, and served to the client already containing the data to display, where the browsers rendered the page.
+
+To create a modern reactive web application, full page reloads giving the feeling of navigating a website have to be minimized and some parts of the server side code code has to be moved to the client. 
+After an initial page request to Play's web server, the web browser get's the basic html document and loads all referenced resources, consisiting of css files, images and the compiled client side scala code now available as javascript. From now on, all interactions with the webserver are done asynchronously by the client side controllers and updating parts of the user interface when necessary.
+
+For example, to setup the main screen, a list of sites is requested using an AJAX call from the server, which in turn performs a database request to load the data and send it to the client, where it is stored in a client side model accessed by the view to render GUI elements.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{sequence-diagram-webapp.png}
+\caption{High level sequence diagram of initial page request and edit action}
+\end{figure}
+
+When the user edits an entity, e.g. a site, the client passes the updated site to the server for persistent storage and informs the user of the result.
+
+In the next subsections, different involved concepts and technologies are discussed, starting from the server side HTTP interface.
+
 \subsection{The Controller}
 
-\subsubsection{Designing the REST HTTP Interface}
+\subsubsection{Designing the HTTP REST Interface}
 
-%HTTP methods
-%Excerp routing file, reverse routing, single place of definition
+All actions initiated by the web client code involving the server are performed using a Representational State Transfer (REST) interface accessed with standard HTTP requests using common HTTP methods GET, PUT, DELETE, thus forming a so called RESTful API. %TODO Citation
+The elegance of such an API is that it uses directly what HTTP provides instead of building another layer of abstraction upon it.
+
+For all types of the guide's entities, sites, areas and beacons, four actions are defined for the following tasks:
+
+\begin{itemize}[noitemsep,nolistsep]
+\item Get a list of all entities of that type
+\item Get the full details of a single entity instance
+\item Update a single entity instance
+\item Delete an entity instance
+\end{itemize}
+
+Additionally, an action is defined for publishing a site to the shared database as site aggregate.
+
+Play has a good support for building such an interface. A file named "routing" is used to map the API calls to the corresponding controller action. The following listing is an excerpt of the guide's back-end routing file showing mainly area related routes.
+
+\begin{lstlisting}[caption={Excerpt from the routing file},basicstyle=\footnotesize\ttfamily,language=python,aboveskip=15pt]
+# Home page and tests
+GET        /                     controllers.Application.index
+
+# Area related routes
+GET        /site/:siteId/areas   controllers.Areas.list(siteId: String)
+GET        /area/:id             controllers.Areas.getArea(id: String)
+PUT        /area/:id             controllers.Areas.save(id: String)
+DELETE     /area/:id             controllers.Areas.delete(id: String)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file      controllers.Assets.at(path="/public", file)
+\end{lstlisting}
+
+To get a list of all areas on a server running locally on port 9000 (the standard for Play), a normal HTTP GET request to "http://localhost:9000/site/Site-CXN01/areas" can be issued. As that is the same request type a browser creates, the interface can be queried by  pointing a web browser to that address.
+Play detects the first matching route, binds "Site-CXN01" to the siteId variable, checks if the type matches and calls the  controllers.Areas.list("Site-CXN01").
+
+As stateless interface, the server does not keep track of what site is beeing edited. All needed information to process any request has to be encoded in the HTTP verb, the url and the request body. For that reason, there cannot be an action like "get all areas/beacons of the currently active site" combined with an action to set the current area. The site id is included in the api call to obtains the areas and in the call to obtain the beacons, too. One big benefit of that approach is being able to distribute requests over multiple independent servers. 
+
+% reverse routing, single place of definition, 
 
 \subsubsection{Controller Actions}
 
+\begin{lstlisting}[caption={An exemplary controller action},basicstyle=\footnotesize\ttfamily,language=scala,aboveskip=15pt]
+/**
+* Action for retrieving a serialized list of all sites
+*/
+def list(siteId: String) = Action.async {
+
+  // Get a Future on a list of areas retrieved from db
+  val areaFuture = Area.getAreas(siteId)
+
+  // On completion, generate an Ok Result containing the serialized area list
+  areaFuture.map {
+    areaList => Ok(
+
+      // write is upickle's method for serializing the data
+      write(areaList)
+    )
+  }
+}
+\end{lstlisting}
 
 \subsection{The Model}
 
@@ -189,22 +257,58 @@ After enabling less, assets can be placed under assets/less and are automaticall
 
 \subsubsection{Creating NoSQL Design Documents}
 
+In contrast to Couchbase Mobile, views are created directly on the database server. Views are grouped by so called design documents  
+
 \subsubsection{Accessing the Database using Scala Futures}
 
 The interface of the Reactive Couchbase Driver makes extensive use of Futures, a language feature introduced in Scala 2.10\footnote{The most recent Edition of \cite{scala-book} at the time of writing doesn't cover Scala 2.10. A more detailed description of Futures can be found in the Scala Online Documentation \cite{scala-futures}.}.
 
 In this section the Future concept is explained using a simple query which retrieves a list of all sites stored in the guide-editor Couchbase bucket.
 
+\subsubsection{Mini DSL for Defining Buildings}
+
+Selected buildings that are part of the site have to be modelled with their position and a floorplan for every floor. The floorplans are later overlaid to the map for indoor site modelling and indoor analytics.
+  
+For defining the building with their floors, a little internal DSL was designed, letting the beauty of the Scala language emerge.
+
+The resulting definition of a building resembles natural language.
+
+\begin{lstlisting}[caption={Definition of a building with its floors in Scala},basicstyle=\tiny\ttfamily,language=c,aboveskip=15pt]
+// Techcenter Park 31
+  new Building  placedAtSouthWest Coordinates(47.652374, 9.167594)
+                andNorthEast      Coordinates(47.652580, 9.168151)
+                using ("park31-attic-floor"   asFloor 3)
+                using ("park31-1st-floor"     asFloor 2)
+                using ("park31-1st-floor"     asFloor 1)
+                using ("park31-ground-floor"  asFloor 0)
+\end{lstlisting}
+
+The two methods of the Building class "placedAtSouthWest" and "andNorthEast" take a parameter of type Coordinates. They return a reference to the object to create a so called fluent interface. %TODO link
+The last method "using" takes a tuple of type (Int, String) that groups a floor number with the corresponding floorplan name. An implicit conversion from String to an helper class enables calling the "asFloor" method, that creates the tuple, on a string.
+
+Paired with Scala's infix notation, the high readability of the DSL is finally achieved. 
+The involved code is attached in Appendix\ref{AppendixA}.
 
 \subsection{The View}
 
+\subsubsection{Goals and Mockups}
+
 \subsubsection{Play HTML Templates}
 
-\subsubsection{Mockups}
+%Serve initial html document with compiled css, js
 
 \subsubsection{The Client code in Scala.js}
 
 %Own MVC, the Model acts as a kind of local cache. Resorting, filtering
 %Controller generates call to the REST Interface
 
+\subsubsection{Interaction with a Mapping Service}
 
+%Trait MapView
+%Typed use of Google Maps v3
+
+\section{Summary}
+
+This chapter provided an overview of architectural decisions and the technology stack used to create the back-end. Furthermore, some important design elements were discussed.\\ 
+The next chapter shows how the back-end is used to model an exemplary site.
+%TODO and analyzing some recorded tracks.

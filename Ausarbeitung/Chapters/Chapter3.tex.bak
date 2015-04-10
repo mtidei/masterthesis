@@ -178,6 +178,6 @@ For the automatic synchronization of the shared bucket between the server and th
 }
 \end{lstlisting}
 
-After creating this file and a management bucket named "sync\_gateway" on the server, the gateway can be started and exposes a REST sync API at port 4984 and an admin API at port 4985. A rudimentary synchronization gateway web gui is also available at "localhost:4985/admin/db/guide".
+After creating this file and a management bucket named "sync\_gateway" on the server, the gateway can be started and exposes a REST sync API at port 4984 and an admin API at port 4985. A rudimentary synchronization gateway web gui is also available at "localhost:4985/\_admin/db/guide".
 
 For the shared bucket, all communication has to pass over this synchronization gateway, avoiding to communicate directly to the actual database server. The gateway keeps track of the documents revisions with the management bucket and by adding a management property called "\_sync" to each document, used to save the revision number and other internal version control data. 

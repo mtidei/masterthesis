@@ -2023,12 +2023,13 @@
     <bcf:citekey order="59">scalajs-interview</bcf:citekey>
     <bcf:citekey order="60">scalajs06</bcf:citekey>
     <bcf:citekey order="61">playscalajs</bcf:citekey>
-    <bcf:citekey order="62">reactivecouchbase</bcf:citekey>
-    <bcf:citekey order="63">upickle</bcf:citekey>
-    <bcf:citekey order="64">bootstrap</bcf:citekey>
-    <bcf:citekey order="65">less</bcf:citekey>
-    <bcf:citekey order="66">scala-book</bcf:citekey>
-    <bcf:citekey order="67">scala-futures</bcf:citekey>
+    <bcf:citekey order="62">specs2</bcf:citekey>
+    <bcf:citekey order="63">reactivecouchbase</bcf:citekey>
+    <bcf:citekey order="64">upickle</bcf:citekey>
+    <bcf:citekey order="65">bootstrap</bcf:citekey>
+    <bcf:citekey order="66">less</bcf:citekey>
+    <bcf:citekey order="67">scala-book</bcf:citekey>
+    <bcf:citekey order="68">scala-futures</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="nyt">
   <bcf:sorting>

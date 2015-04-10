@@ -154,7 +154,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.8}Summary}{56}{section.310}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}CA Guide Back End}{57}{chapter.311}
+\contentsline {chapter}{\numberline {5}The Guide's Back End}{57}{chapter.311}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.1}Introduction}{57}{section.312}
 \defcounter {refsection}{0}\relax 
@@ -174,68 +174,74 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.4.1}Project Structure, Scala and Play}{61}{subsection.323}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.2}Adding Reactive Couchbase as Scala Database Driver}{61}{subsection.324}
+\contentsline {subsection}{\numberline {5.4.2}Adding Reactive Couchbase as Scala Database Driver}{62}{subsection.325}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.3}Adding \IeC {\textmu }Pickle as Lightweight Serialization Framework}{62}{subsection.342}
+\contentsline {subsection}{\numberline {5.4.3}Adding \IeC {\textmu }Pickle as Lightweight Serialization Framework}{62}{subsection.343}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.4}Adding Bootstrap as UI Framework}{63}{subsection.350}
+\contentsline {subsection}{\numberline {5.4.4}Adding Bootstrap as UI Framework}{63}{subsection.351}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.4.5}Activating the Less Compiler}{63}{subsection.351}
+\contentsline {subsection}{\numberline {5.4.5}Activating the Less Compiler}{63}{subsection.352}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Architecture and Design}{64}{section.352}
+\contentsline {section}{\numberline {5.5}Architecture and Design}{64}{section.353}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.1}Overview}{64}{subsection.353}
+\contentsline {subsection}{\numberline {5.5.1}Overview}{64}{subsection.354}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.2}The Controller}{64}{subsection.354}
+\contentsline {subsection}{\numberline {5.5.2}The Controller}{65}{subsection.356}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.5.2.1}Designing the REST HTTP Interface}{64}{subsubsection.355}
+\contentsline {subsubsection}{\numberline {5.5.2.1}Designing the HTTP REST Interface}{65}{subsubsection.357}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.5.2.2}Controller Actions}{64}{subsubsection.356}
+\contentsline {subsubsection}{\numberline {5.5.2.2}Controller Actions}{66}{subsubsection.370}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.3}The Model}{64}{subsection.357}
+\contentsline {subsection}{\numberline {5.5.3}The Model}{67}{subsection.389}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.5.3.1}Designing Classes to Cross-Compile}{64}{subsubsection.358}
+\contentsline {subsubsection}{\numberline {5.5.3.1}Designing Classes to Cross-Compile}{67}{subsubsection.390}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.5.3.2}Creating NoSQL Design Documents}{64}{subsubsection.359}
+\contentsline {subsubsection}{\numberline {5.5.3.2}Creating NoSQL Design Documents}{67}{subsubsection.391}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.5.3.3}Accessing the Database using Scala Futures}{64}{subsubsection.360}
+\contentsline {subsubsection}{\numberline {5.5.3.3}Accessing the Database using Scala Futures}{67}{subsubsection.392}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.5.4}The View}{64}{subsection.362}
+\contentsline {subsubsection}{\numberline {5.5.3.4}Mini DSL for Defining Buildings}{67}{subsubsection.394}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.5.4.1}Play HTML Templates}{64}{subsubsection.363}
+\contentsline {subsection}{\numberline {5.5.4}The View}{68}{subsection.403}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.5.4.2}Mockups}{64}{subsubsection.364}
+\contentsline {subsubsection}{\numberline {5.5.4.1}Goals and Mockups}{68}{subsubsection.404}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.5.4.3}The Client code in Scala.js}{64}{subsubsection.365}
+\contentsline {subsubsection}{\numberline {5.5.4.2}Play HTML Templates}{68}{subsubsection.405}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}System Review}{65}{chapter.366}
+\contentsline {subsubsection}{\numberline {5.5.4.3}The Client code in Scala.js}{68}{subsubsection.406}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Introduction}{65}{section.367}
+\contentsline {subsubsection}{\numberline {5.5.4.4}Interaction with a Mapping Service}{68}{subsubsection.407}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Modelling the Tech Center}{65}{section.368}
+\contentsline {section}{\numberline {5.6}Summary}{68}{section.408}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.1}Indoor Modelling}{65}{subsection.369}
+\contentsline {chapter}{\numberline {6}Example Site Model}{69}{chapter.409}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.2}Outdoor Modelling}{65}{subsection.370}
+\contentsline {section}{\numberline {6.1}Introduction}{69}{section.410}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Testing the CA Guide Front End}{65}{section.371}
+\contentsline {section}{\numberline {6.2}Modelling the Tech Center}{69}{section.411}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Analytics with the CA Guide Back End}{65}{section.372}
+\contentsline {subsection}{\numberline {6.2.1}Indoor Modelling}{69}{subsection.412}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusion}{66}{chapter.373}
+\contentsline {subsection}{\numberline {6.2.2}Outdoor Modelling}{69}{subsection.413}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Summary}{66}{section.374}
+\contentsline {section}{\numberline {6.3}Testing the CA Guide Front End}{69}{section.414}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.1}The CA Guide}{66}{subsection.375}
+\contentsline {section}{\numberline {6.4}Analytics with the CA Guide Back End}{69}{section.415}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.2}Swift and Scala}{66}{subsection.376}
+\contentsline {chapter}{\numberline {7}Conclusion}{70}{chapter.416}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Future Work}{67}{section.377}
+\contentsline {section}{\numberline {7.1}Summary}{70}{section.417}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1.1}The CA Guide}{70}{subsection.418}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1.2}Swift and Scala}{70}{subsection.419}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Future Work}{71}{section.420}
 \defcounter {refsection}{0}\relax 
 \vspace {2em}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}JSON Site Modelling File}{68}{appendix.378}
+\contentsline {chapter}{\numberline {A}A Little Scala DSL}{72}{appendix.421}
 \defcounter {refsection}{0}\relax 
 \vspace {2em}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{69}{dummy.379}
+\contentsline {chapter}{Bibliography}{76}{dummy.543}

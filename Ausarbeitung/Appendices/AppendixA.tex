@@ -1,10 +1,133 @@
 % Appendix A
 
-\chapter{JSON Site Modelling File} % Main appendix title
+\chapter{A Little Scala DSL} % Main appendix title
 
 \label{AppendixA} % For referencing this appendix elsewhere, use \ref{AppendixA}
 
-\lhead{Appendix A. \emph{Appendix Title Here}} % This is for the header on each page - perhaps a shortened title
+\lhead{Appendix A. \emph{A Little DSL in Scala}} % This is for the header on each page - perhaps a shortened title
 
-Write your Appendix content here.
+\begin{lstlisting}[caption={Building.scala},basicstyle=\small\ttfamily,language=c,aboveskip=15pt]
+
+import shared.model.Coordinates
+
+/**
+ * Tiny Internal DSL for defining buildings
+ * Maurizio Tidei, 2015.
+ */
+class Building {
+
+  // The south-west corner
+  var sw: Option[Coordinates] = None
+
+  // The north-east corner
+  var ne: Option[Coordinates] = None
+
+  // A map floor number -> floorplan image name
+  var floors = Map[Int,String]()
+
+  /**
+   * Defines the south-west corner
+   * @param coord The south-west Coordindates
+   */
+  def placedAtSouthWest(coord: Coordinates) = {
+
+    sw = Some(coord)
+    this
+  }
+
+  /**
+   * Defines the north-east corner
+   * @param coord The north-east Coordinates
+   * @return
+   */
+  def andNorthEast(coord: Coordinates) = {
+
+    ne = Some(coord)
+    this
+  }
+
+  /**
+   * Adds a floor
+   * @param floor a tuple combining the floor number to a floorplan image name
+   */
+  def using(floor: (Int, String)) = {
+
+    floors += (floor._1 -> floor._2)
+    this
+  }
+}
+
+/**
+ * Helper class for implicit conversion of Strings
+ * @param floorImageName
+ */
+class FloorImage(floorImageName: String) {
+
+  /**
+   * Creates a tuple combining the floorImageName with the floor number
+   * @param number The floor number
+   * @return tuple for Building's using method
+   */
+  def asFloor(number: Int) = {
+
+    (number, floorImageName)
+  }
+}
+
+/**
+ * Companion object
+ */
+object Building {
+
+  // Defines the implicit conversion from String to FloorImage
+  implicit def stringToFloorImage(floorImageName: String) = new FloorImage(floorImageName)
+
+  // A list of buildings
+  val list = List(
+
+  // Techcenter Park 31
+  new Building  placedAtSouthWest Coordinates(47.652374, 9.167594)
+                andNorthEast      Coordinates(47.652580, 9.168151)
+                using ("park31-attic-floor"   asFloor 3)
+                using ("park31-1st-floor"     asFloor 2)
+                using ("park31-1st-floor"     asFloor 1)
+                using ("park31-ground-floor"  asFloor 0)
+
+  )
+}
+\end{lstlisting}
+
+\begin{lstlisting}[caption={Coordinates.scala},basicstyle=\small\ttfamily,language=c,aboveskip=15pt]
+
+/**
+ * A geographic coordinate pair
+ *
+ * @param lat The latitude
+ * @param lon The longitude
+ * Maurizio Tidei, 2015.
+ */
+case class Coordinates(var lat: Double, var lon: Double) {
+
+
+  /**
+   * Add two coordinates
+   * @return the resulting Coordinate
+   */
+  def +(that: Coordinates): Coordinates = {
+
+    return Coordinates(this.lat + that.lat, this.lon + that.lon)
+  }
+
+
+  /**
+   * Multiply a coordinate with a tuple of two doubles
+   * @return the resulting Coordinate
+   */
+  def *(tuple: Tuple2[Double, Double]): Coordinates = {
+
+    return Coordinates(this.lat * tuple._1, this.lon * tuple._2)
+  }
+
+}
+\end{lstlisting}
 
