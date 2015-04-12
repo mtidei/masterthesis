@@ -92,6 +92,8 @@
 \definecolor{keyword}{HTML}{BA2CA3}
 \definecolor{string}{HTML}{D12F1B}
 \definecolor{comment}{HTML}{008400}
+
+\definecolor{keywordScala}{HTML}{000080}
  
 \lstset{
   language=swift,
@@ -116,7 +118,7 @@
     private,protected,requires,return,sealed,%
     super,this,throw,trait,true,try,%
     type,val,var,while,with,yield},
-  otherkeywords={=>,<-,<\%,<:,>:,\#,@},
+  otherkeywords={=>,<-,<\%,<:,>:,\#,@param,@return},
   sensitive=true,
   morecomment=[l]{//},
   morecomment=[n]{/*}{*/},
@@ -124,6 +126,12 @@
   morestring=[b]',
   morestring=[b]"""
 }
+
+\lstdefinestyle{ScalaStyle}{
+ keywordstyle=\color{keywordScala}
+}
+
+
 
 
 \begin{document}
@@ -148,8 +156,8 @@
 \hypersetup{pdfkeywords=\keywordnames}
 
 % HTWG
-\newcommand{\thema}{Design and Implementation of a Platform for Context-Aware Mobile Guides}
-\newcommand{\schlagworte}{Contextual Computing, Indoor Navigation, Scala, Swift}
+\newcommand{\thema}{A Framework for Context-Aware Visitor Guide Systems}
+\newcommand{\schlagworte}{Context-Aware Computing, Mobile Computing, Indoor Navigation, Scala, Swift, Play, Couchbase}
 \newcommand{\zusammenfassung}{Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.}
 \newcommand{\ausgabedatum}{16.10.2014}
 \newcommand{\abgabedatum}{16.04.2015}

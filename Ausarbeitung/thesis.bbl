@@ -311,6 +311,27 @@
       \field{title}{Mobile Robot Positioning Sensors and Techniques}
       \field{year}{1997}
     \endentry
+    \entry{httpcodes}{url}{}
+      \name{labelname}{1}{}{%
+        {{hash=737a983523b9ded59adc1ddee5977faf}{Consortium}{C\bibinitperiod}{World\bibnamedelimb Wide\bibnamedelima Web}{W\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=737a983523b9ded59adc1ddee5977faf}{Consortium}{C\bibinitperiod}{World\bibnamedelimb Wide\bibnamedelima Web}{W\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{737a983523b9ded59adc1ddee5977faf}
+      \strng{fullhash}{737a983523b9ded59adc1ddee5977faf}
+      \field{labelalpha}{HTTP-Codes}
+      \field{sortinit}{C}
+      \field{labeltitle}{HTTP/1.1: Status Code Definitions}
+      \field{shorthand}{HTTP-Codes}
+      \field{title}{HTTP/1.1: Status Code Definitions}
+      \field{urlday}{10}
+      \field{urlmonth}{04}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
+      \endverb
+    \endentry
     \entry{MapReduceArticle}{article}{}
       \name{labelname}{2}{}{%
         {{hash=4aecfb0cc2e1e3b7899129fa2a94e2b8}{Dean}{D\bibinitperiod}{Jeffrey}{J\bibinitperiod}{}{}{}{}}%
@@ -383,6 +404,27 @@
       \field{urlyear}{2015}
       \verb{url}
       \verb http://www.scala-js.org
+      \endverb
+    \endentry
+    \entry{ts-importer}{url}{}
+      \name{labelname}{1}{}{%
+        {{hash=b8752adb4b3bac87121dcb60def76939}{Doeraene}{D\bibinitperiod}{Sébastien}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=b8752adb4b3bac87121dcb60def76939}{Doeraene}{D\bibinitperiod}{Sébastien}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b8752adb4b3bac87121dcb60def76939}
+      \strng{fullhash}{b8752adb4b3bac87121dcb60def76939}
+      \field{labelalpha}{TS-Importer}
+      \field{sortinit}{D}
+      \field{labeltitle}{TypeScript Importer for Scala.js}
+      \field{shorthand}{TS-Importer}
+      \field{title}{TypeScript Importer for Scala.js}
+      \field{urlday}{17}
+      \field{urlmonth}{02}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb https://github.com/sjrd/scala-js-ts-importer
       \endverb
     \endentry
     \entry{cocoapods}{url}{}
@@ -740,6 +782,27 @@
       \verb http://www.couchbase.com/nosql-databases/couchbase-server
       \endverb
       \keyw{couchbase}
+    \endentry
+    \entry{googlemapsapi}{url}{}
+      \name{labelname}{1}{}{%
+        {{hash=2720e823db87672e3be1971d976ca746}{Inc.}{I\bibinitperiod}{Google}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{hash=2720e823db87672e3be1971d976ca746}{Inc.}{I\bibinitperiod}{Google}{G\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{2720e823db87672e3be1971d976ca746}
+      \strng{fullhash}{2720e823db87672e3be1971d976ca746}
+      \field{labelalpha}{GoogleMaps-API}
+      \field{sortinit}{I}
+      \field{labeltitle}{Google Maps JavaScript API V3 Reference}
+      \field{shorthand}{GoogleMaps-API}
+      \field{title}{Google Maps JavaScript API V3 Reference}
+      \field{urlday}{22}
+      \field{urlmonth}{01}
+      \field{urlyear}{2015}
+      \verb{url}
+      \verb https://developers.google.com/maps/documentation/javascript/reference
+      \endverb
     \endentry
     \entry{typescript}{url}{}
       \name{labelname}{2}{}{%

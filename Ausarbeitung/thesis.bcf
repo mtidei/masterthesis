@@ -2028,8 +2028,13 @@
     <bcf:citekey order="64">upickle</bcf:citekey>
     <bcf:citekey order="65">bootstrap</bcf:citekey>
     <bcf:citekey order="66">less</bcf:citekey>
-    <bcf:citekey order="67">scala-book</bcf:citekey>
-    <bcf:citekey order="68">scala-futures</bcf:citekey>
+    <bcf:citekey order="67">httpcodes</bcf:citekey>
+    <bcf:citekey order="68">scala-book</bcf:citekey>
+    <bcf:citekey order="69">scala-futures</bcf:citekey>
+    <bcf:citekey order="70">googlemapsapi</bcf:citekey>
+    <bcf:citekey order="71">ts-importer</bcf:citekey>
+    <bcf:citekey order="72">typescript-repo</bcf:citekey>
+    <bcf:citekey order="73">ts-importer</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" type="entry" label="nyt">
   <bcf:sorting>

@@ -107,7 +107,7 @@ Every type of context information has one or more sensors as direct or indirect 
 \begin{figure}[H]
 \centering
 \includegraphics[height=0.20\textheight]{sensors-growth}
-\caption{Evolution of sensors \cite[Ch. 1]{sensors-book}}
+\caption{Evolution of sensors \cite[Ch. 1]{sensors-book}, with kind permission}
 \end{figure}
 
 According to \cite{sensors-book}, sensors had a enormous growth over the last 30 years and, with accelerating improvement and deployment rates. The authors identify sensors as a technology nexus driven, inter alia, by public healthcare, sports and fitness, pervasive communications and the Internet of Things (IOT). In turn, sensors enable innovation in many sectors, so that one sector benefits of improvements made due the demands of another sector. 

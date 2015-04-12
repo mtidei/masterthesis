@@ -526,7 +526,6 @@ urldate = {2015-03-30},
 shorthand = {Proximity}
 }
 
-
 @url {cbattachment,
 title = {Attachment | Couchbase - Mobile Developers},
 author = {Couchbase Inc.},
@@ -535,6 +534,53 @@ urldate = {2015-02-04},
 shorthand = {Attachment}
 }
 
+@url {swift-1-2,
+title = {Swift 1.2 improvements},
+author = {Apple Inc.},
+url = {https://developer.apple.com/swift/blog/?id=22},
+urldate = {2015-03-14},
+shorthand = {Swift-1.2}
+}
+
+@url {balsamiq,
+title = {Balsamiq Mockups},
+author = {Balsamiq Studios, LLC},
+url = {https://balsamiq.com/products/mockups/},
+urldate = {2015-04-07},
+shorthand = {Balsamiq}
+}
+
+@url {specs2,
+title = {specs2},
+author = {Eric Torreborre and contributors},
+url = {http://etorreborre.github.io/specs2/},
+urldate = {2015-04-10},
+shorthand = {specs2}
+}
+
+@url {httpcodes,
+title = {HTTP/1.1: Status Code Definitions},
+author = {World Wide Web Consortium},
+url = {http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html},
+urldate = {2015-04-10},
+shorthand = {HTTP-Codes}
+}
+
+@url {googlemapsapi,
+title = {Google Maps JavaScript API V3 Reference},
+author = {Google Inc.},
+url = {https://developers.google.com/maps/documentation/javascript/reference},
+urldate = {2015-01-22},
+shorthand = {GoogleMaps-API}
+}
+
+@url {ts-importer,
+title = {TypeScript Importer for Scala.js},
+author = {Sébastien Doeraene},
+url = {https://github.com/sjrd/scala-js-ts-importer},
+urldate = {2015-02-17},
+shorthand = {TS-Importer}
+}
 
 @url {key,
 title = {},

@@ -48,6 +48,7 @@ The next subsection focuses on different solution attempts.
 \subsection{Solution Attempts}
 
 \subsubsection{Improved Javascript}
+\label{sec:impjs}
 
 In the last years, several new scripting languages are emerging that compile to JavaScript. 
 
@@ -167,8 +168,6 @@ After enabling less, assets can be placed under assets/less and are automaticall
 
 \subsection{Overview}
 
-%Single page,  
-
 In former days, web applications consisted mainly of a collection of several html documents and forms. On every user action, a new document were created at server side, and served to the client already containing the data to display, where the browsers rendered the page.
 
 To create a modern reactive web application, full page reloads giving the feeling of navigating a website have to be minimized and some parts of the server side code code has to be moved to the client. 
@@ -220,14 +219,52 @@ DELETE     /area/:id             controllers.Areas.delete(id: String)
 GET     /assets/*file      controllers.Assets.at(path="/public", file)
 \end{lstlisting}
 
-To get a list of all areas on a server running locally on port 9000 (the standard for Play), a normal HTTP GET request to "http://localhost:9000/site/Site-CXN01/areas" can be issued. As that is the same request type a browser creates, the interface can be queried by  pointing a web browser to that address.
-Play detects the first matching route, binds "Site-CXN01" to the siteId variable, checks if the type matches and calls the  controllers.Areas.list("Site-CXN01").
-
 As stateless interface, the server does not keep track of what site is beeing edited. All needed information to process any request has to be encoded in the HTTP verb, the url and the request body. For that reason, there cannot be an action like "get all areas/beacons of the currently active site" combined with an action to set the current area. The site id is included in the api call to obtains the areas and in the call to obtain the beacons, too. One big benefit of that approach is being able to distribute requests over multiple independent servers. 
+
+To get a list of all areas from a server running locally on port 9000 (the standard for Play), a normal HTTP GET request to the URL "http://localhost:9000/site/Site-CXN01/areas" can be issued. Since that is the same request type a browser creates, the interface can be queried by pointing a web browser to that address.
+Play detects the first matching route, binds "Site-CXN01" to the siteId variable, checks if the type matches and calls the controllers.Areas.list("Site-CXN01"). The next subsection shows this exemplary Play Action.
 
 % reverse routing, single place of definition, 
 
 \subsubsection{Controller Actions}
+
+Play actions are, in essence, functions that take a parameter of type Request and return a Play Result, that represent a HTTP response with a header and a body. There are several helper for building results, the most important one is "Ok(body)" that creates a HTTP response "200 OK" (cf. \cite{httpcodes}) with the passed content as body.
+
+Synchronous actions are defined using the apply method of the Action companion object, that takes a closure returning a Result. So the a very simple action can be built with Action{Ok("Hello World!")}.
+
+To define asynchronous actions, there is a similar helper method "Action.async", that this time takes a closure returning a future result - formally a Future[Result]. Since Scala Futures are an interesting way to model asynchronous and concurrent execution, widely used in Play and the used Couchbase database driver, section~\ref{sec:futures} contains a short excursus on Futures and Promises.
+
+\begin{lstlisting}[caption={An exemplary asynchronous controller action},basicstyle=\footnotesize\ttfamily,language=scala,aboveskip=15pt]
+/**
+* Action for retrieving a serialized list of all areas in the site
+*/
+def list(siteId: String) = Action.async {
+
+  // Generate a Future[Result] containing a list of areas retrieved from db
+}
+\end{lstlisting}
+
+The construction of the Future[Result] containing the areas areas is discussed in section~\ref{sec:dbfutures}.
+
+\subsection{Excursus: Futures and Promises}
+\label{sec:futures}
+
+\subsection{The Model}
+
+\subsubsection{Designing Classes to Cross-Compile}
+
+%ClassDTO + Class, implicit conversion to Class: val site:Site = siteDTO, site.save() 
+
+\subsubsection{Creating NoSQL Design Documents}
+
+In contrast to Couchbase Mobile, views are created directly on the database server. Views are grouped by so called design documents  
+
+\subsubsection{Accessing the Database using Scala Futures}
+\label{sec:dbfutures}
+
+The interface of the Reactive Couchbase Driver makes extensive use of Futures, a language feature introduced in Scala 2.10\footnote{The most recent Edition of \cite{scala-book} at the time of writing doesn't cover Scala 2.10. A more detailed description of Futures can be found in the Scala Online Documentation \cite{scala-futures}.}.
+
+In this section the Future concept is explained using a simple query which retrieves a list of all sites stored in the guide-editor Couchbase bucket.
 
 \begin{lstlisting}[caption={An exemplary controller action},basicstyle=\footnotesize\ttfamily,language=scala,aboveskip=15pt]
 /**
@@ -249,22 +286,6 @@ def list(siteId: String) = Action.async {
 }
 \end{lstlisting}
 
-\subsection{The Model}
-
-\subsubsection{Designing Classes to Cross-Compile}
-
-%ClassDTO + Class, implicit conversion to Class: val site:Site = siteDTO, site.save() 
-
-\subsubsection{Creating NoSQL Design Documents}
-
-In contrast to Couchbase Mobile, views are created directly on the database server. Views are grouped by so called design documents  
-
-\subsubsection{Accessing the Database using Scala Futures}
-
-The interface of the Reactive Couchbase Driver makes extensive use of Futures, a language feature introduced in Scala 2.10\footnote{The most recent Edition of \cite{scala-book} at the time of writing doesn't cover Scala 2.10. A more detailed description of Futures can be found in the Scala Online Documentation \cite{scala-futures}.}.
-
-In this section the Future concept is explained using a simple query which retrieves a list of all sites stored in the guide-editor Couchbase bucket.
-
 \subsubsection{Mini DSL for Defining Buildings}
 
 Selected buildings that are part of the site have to be modelled with their position and a floorplan for every floor. The floorplans are later overlaid to the map for indoor site modelling and indoor analytics.
@@ -273,39 +294,161 @@ For defining the building with their floors, a little internal DSL was designed,
 
 The resulting definition of a building resembles natural language.
 
-\begin{lstlisting}[caption={Definition of a building with its floors in Scala},basicstyle=\tiny\ttfamily,language=c,aboveskip=15pt]
+\begin{lstlisting}[caption={Definition of a building with its floors in Scala},basicstyle=\footnotesize\ttfamily,language=scala,style=ScalaStyle,aboveskip=15pt]
 // Techcenter Park 31
-  new Building  placedAtSouthWest Coordinates(47.652374, 9.167594)
-                andNorthEast      Coordinates(47.652580, 9.168151)
-                using ("park31-attic-floor"   asFloor 3)
-                using ("park31-1st-floor"     asFloor 2)
-                using ("park31-1st-floor"     asFloor 1)
-                using ("park31-ground-floor"  asFloor 0)
+new Building  placedAtSouthWest Coordinates(47.652374, 9.167594)
+              andNorthEast      Coordinates(47.652580, 9.168151)
+              using ("park31-attic-floor"   asFloor 3)
+              using ("park31-2nd-floor"     asFloor 2)
+              using ("park31-1st-floor"     asFloor 1)
+              using ("park31-ground-floor"  asFloor 0)
 \end{lstlisting}
 
-The two methods of the Building class "placedAtSouthWest" and "andNorthEast" take a parameter of type Coordinates. They return a reference to the object to create a so called fluent interface. %TODO link
+The two methods of the Building class "placedAtSouthWest" and "andNorthEast" take a parameter of type Coordinates. They return a reference to the object to create a so called fluent interface, where method calls ca be chained. %TODO2 link
 The last method "using" takes a tuple of type (Int, String) that groups a floor number with the corresponding floorplan name. An implicit conversion from String to an helper class enables calling the "asFloor" method, that creates the tuple, on a string.
 
 Paired with Scala's infix notation, the high readability of the DSL is finally achieved. 
-The involved code is attached in Appendix\ref{AppendixA}.
+The involved code is attached in Appendix~\ref{AppendixA}.
 
 \subsection{The View}
 
-\subsubsection{Goals and Mockups}
+\subsubsection{Concept}
+
+The user interface of the back-end was first conceptualized using the already mentioned mockup tool.\\
+The first screen should present a list of all sites as bootstrap panel components with the site's name and description. Next to the list a zoomed out map shows the geographical position of the single sites. An "Add Site" button at the bottom of the list allows to create new sites.  
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\textwidth]{mockup-guide-editor}
+\caption{Concept of the site list screen}
+\end{figure}
+
+For fast and comfortable editing, an edit icon (the small pens on the concept screen) has to activate in-place editing of the name and the description when clicked. Another icon at the top left of each site panel is connected to a delete action, asking the user with a modal dialog if he is sure before actually deleting that site.
+
+When a site panel is clicked, the next screen shows a list of areas contained in that map using again a panel for every ares. A tab control on top of the list enables the user to switch the list to the beacons. The panels can be clicked to open a bigger panel showing all details of the selected site or beacon.
+
+The map depicts the single geographical definition of the areas using geometric shapes as circles, squares or polygons. Clicking on an area should open the corresponding site the same way as it was selected on the list. The geometric shapes should be editable directly on the map. In a similar way, the positions of single beacons have to be represented on the map by a distinctive shape or icon.
+
+A button on the top right of the screen starts the publishing of the current site to the shared database.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{mockup-guide-editor-areas}
+\caption{Concept of the modeling screen for a single site}
+\end{figure}
 
 \subsubsection{Play HTML Templates}
 
-%Serve initial html document with compiled css, js
+Play has a powerful HTML template engine supporting typed parameters and nesting. For the guide back-end, a HTML template is used to serve the initial HTML document with the basic HTML structure containing a left column for the lists and a right column for the map used by the client code. This document contains references to the compiled css files, external js libraries and, most important, the js files compiled by Scala.js.
 
-\subsubsection{The Client code in Scala.js}
+An an universal escape character "@" allows to interweave Scala variables and code with templates. This snippet shows how a parameter named title is inserted in the template.
 
-%Own MVC, the Model acts as a kind of local cache. Resorting, filtering
-%Controller generates call to the REST Interface
+\begin{lstlisting}[basicstyle=\footnotesize\ttfamily,language=c,aboveskip=15pt,frame=none]
+<title>@title</title>
+<link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/bootstrap.css")">
+\end{lstlisting}
+
+In the second line, a helper method of a managed object is called returning a reverse route. This is useful to avoid duplicating path information already provided in the routes files.
+
+%The HTML <script> elements referencing the Scala.js generated resources are inserted via @playscalajs.html.scripts("/assets", projectName = "editorClient"). The two parameters are the base path for assets and the Scala.js project name.
+
+\subsubsection{The Web Client View in Scala.js}
+
+The Scala code inside the "editorClient" project is integrated in the main play template calling the  helper method provided by Scala.js.
+
+\begin{lstlisting}[basicstyle=\footnotesize\ttfamily,language=c,aboveskip=3pt,frame=none]
+@playscalajs.html.scripts("/assets", projectName = "editorClient")
+\end{lstlisting}
+
+The web client is implemented using an own MVC system. Transferred objects are hold in a local model, a sort of local cache. This enables actions like resorting or filtering the displayed list of entities without involving the server.
+Controller actions interact with the server side REST interface and update the local model. The view contains own html templates representing single sites, areas, and beacons.
+ 
+Even in the code targeted for to the browser, Scala Futures can be used. For example, displaying a dialog and waiting for user input is an asynchronous action that can be modeled nicely using a Future, as done for the back-end's Dialog class.
+
+\begin{lstlisting}[basicstyle=\footnotesize\ttfamily,language=scala,aboveskip=15pt,caption="Excerpt of the Dialog class"]
+class Dialog {
+  val promise = Promise[Int]()
+  /**
+   * Show a dialog
+   * @param title The title to display.
+   * @param message The message appearing body of the dialog.
+   * @param options A Map defining the possible user choices. 
+   *        The key is the option index and the value the buttons label. 
+   * @return Future[Int] The future index of the pressed button
+   */
+  def show(title: String, message: String, options: Map[Int, String]) : Future[Int] = {
+
+    // [...] Build the dialog with a button for each options element 
+    // register actions for every button with the corresponding index
+    jQuery(s"button#$index").click( (event: JQueryEventObject) => 
+      // complete the promise.future with the number of the user's choice
+      promise success $index
+      // [...] close the dialog
+    )
+    // [...] display the dialog and return the promise's future
+    promise.future
+  }
+}
+\end{lstlisting}
+
+After opening the dialog, a onSuccess callback is connected to the obtained future with a case block handling the possible user choices\footnote{No more Future use cases in future, I promise.}.
+
+\begin{lstlisting}[basicstyle=\footnotesize\ttfamily,language=scala,aboveskip=15pt,caption="Excerpt of the Dialog class"]
+val futureUserChoice = Dialog.show("Confirm Deletion", "Sure to delete the Area?", Map(0->"Cancel", 1->"Delete"))
+futureUserChoice onSuccess {
+  case 0 => logInfo("Cancel pressed") // Nothing to do
+  case 1 => logInfo("Delete pressed")
+            areaController.deleteArea(id) onSuccess {
+              case true => jQuery("#arealist div#" + id).fadeOut()
+            }
+}
+\end{lstlisting}
+
 
 \subsubsection{Interaction with a Mapping Service}
 
-%Trait MapView
-%Typed use of Google Maps v3
+Being able to display a site's map and interact with it is essential for the guide back-end. 
+
+For the first development stage that is part of this thesis, Google Maps were chosen as mapping service provider with it's rich JavaScript API v3 \cite{googlemapsapi}. 
+
+With later development in mind, for example directly using floorplans and other site representations without google maps, the concrete map component is decoupled from the rest of the system using a MapView trait. The class GoogleMapView implements all methods defined in MapView interacting with a google.maps.Map object. Thus it serves as adapter, converting the guide back end data types to the one's used in the Google API.
+
+To access the actual Maps JavaScript API inside the GoogleMapView class in a typed way, the "Scala-js-ts-importer" tool by Sébastien Doeraene \cite{ts-importer} was used, which translates TypeScript type definitions to Scala code compatible with Scala.js. As already stated in section~\ref{sec:impjs}, \cite{typescript-repo} offers type definitions of a vast amount of JavaScript APIs, including one for the Google Maps API.
+
+After some smaller modifications\footnote{The author notes on the project's site, that "the process is not 100 \% accurate, so manual editing is often needed afterwards. This can be improved, but not to perfection, because the features offered by the type systems of TypeScript and Scala.js differ in some subtle ways." \cite{ts-importer}}, the type definitions could be imported and the API accessed as if it were written in Scala.
+
+For bridging semantically equivalent types like our Coordinates class and Google's LatLng class, Scala's implicit conversions are perfectly suited.
+
+\begin{lstlisting}[basicstyle=\footnotesize\ttfamily,language=scala,aboveskip=15pt,caption="Implicit conversions between two different geographic coordinates classes"]
+// Define an implicit conversion from our coordinates to the ones used
+// in Google Maps. So we can use ours where Google's LatLng are expected.
+implicit def coordinatesToLatLong(coordinates: Coordinates): LatLng = {
+  new LatLng(coordinates.lat, coordinates.lon)
+}
+// And the other way around.
+implicit def coordinatesToLatLong(latLng: LatLng): Coordinates = {
+  new Coordinates(latLng.lat, latLng.lng)
+}
+\end{lstlisting}
+
+With this implicit conversions and the type definitions in scope, we can interact with Google Maps in a concise and beautiful way. As a short example, the implementation of the addMarker method of our MapView trait is included. Note that "new Marker()" creates a google.maps.Marker object and setPosition is a (LatLng) -> Unit function.
+
+\begin{lstlisting}[basicstyle=\footnotesize\ttfamily,language=Scala,style=ScalaStyle,aboveskip=15pt,caption="A method using JavaScript type definitions and implicit conversions"]
+/**
+* Add a marker to the map
+*
+* @param id an id allowing to reference to the marker later
+* @param coordinates
+*/
+def addMarker(id: String, coordinates: Coordinates) = {
+  val marker = new Marker()
+  marker.setTitle(id)
+  marker.setMap(map)
+  marker.setPosition(coordinates)
+  marker.setIcon(new MarkerImage(url = "/images/beacon.png", anchor = new Point(16,16)))
+  markers(id) = marker
+}
+\end{lstlisting}
 
 \section{Summary}
 
